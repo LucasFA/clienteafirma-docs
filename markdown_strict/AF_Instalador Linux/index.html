@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Preparación del entorno - My Docs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Preparaci\u00f3n del entorno";
+        var mkdocs_page_input_path = "markdown_strict/AF_Instalador Linux.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> My Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Welcome to MkDocs</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Markdown strict</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Firmar_AutoFirma_Linux/">AF Firmar AutoFirma Linux</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Firmar_AutoFirma_OS_X/">AF Firmar AutoFirma OS X</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Preparación del entorno</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#configuracion-de-la-dependencia-con-java">Configuración de la dependencia con Java</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#configuracion-de-la-version-de-autofirma">Configuración de la versión de AutoFirma</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Mac%20OS%20X/">AF Instalador Mac OS X</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Windows/">AF Instalador Windows</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_desarrollo_plugins_ES/">AF manual desarrollo plugins ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_instalacion_usuarios_ES/">AF manual instalacion usuarios ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_instalacion_y_gestion_ES/">AF manual instalacion y gestion ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ANEXO_Firma-electronica-en-varias-fases/">Firma electrónica en tres fases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_arquitectura_ES/">CF arquitectura ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_catalogo_aplicaciones/">CF catalogo aplicaciones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_distribuciones/">CF distribuciones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_funcional_ES/">CF funcional ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-incidencias/">CF guia incidencias</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-uso-interfaz/">CF guia uso interfaz</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-uso/">CF guia uso</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-firmas-pdf/">CF manual firmas pdf</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-firmas-xml/">CF manual firmas xml</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-integrador/">CF manual integrador</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-migracion/">CF manual migracion</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual_integracion_modulos_ES/">CF manual integracion modulos ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_plan-pruebas/">CF plan pruebas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_roadmap_ES/">CF roadmap ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Comunicacion_Navegador_y_App_en_Entorno_Movil/">El camino de ida: Desde el navegador Web hacia la App</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../DECLARACION_ACCESIBILIDAD/">Declaración de Accesibilidad</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Diagramas%20de%20secuencia%20de%20los%20procesos%20de%20firma%20m%C3%B3vil/">Firma monofásica (Windows 8 / Windows RT y Android)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Firma_por_lotes_predefinidos_con_el_MiniApplet_Cliente/">Firma por lotes predefinidos con el MiniApplet Cliente</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Informe%20-%20Alternativas_Applets_para_firma/">Informe   Alternativas Applets para firma</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Invocaci%C3%B3n%20por%20protocolo%20de%20aplicaciones%20nativas%20desde%20p%C3%A1ginas%20Web/">¿Qué es la invocación por protocolo?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../La_seguridad_en_el_Servicio_de_firma_del_Cliente/">Tabla de contenido</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MCF_manual-integrador_ES/">MCF manual integrador ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MCF_roadmap_ES/">MCF roadmap ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Manual%20para%20la%20configuraci%C3%B3n%20de%20los%20campos%20de%20firma%20para%20la%20aplicaci%C3%B3n%20de%20firma%20manuscrita%20en%20tableta/">Manual para la configuración de los campos de firma para la aplicación de firma manuscrita en tableta</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_Manual_App_Portafirmas_Android/">PF Manual App Portafirmas Android</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_Manual_App_Portafirmas_iOS/">PF Manual App Portafirmas iOS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_manual-configuracion_servicios_ES/">PF manual configuracion servicios ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Sintaxis_invocacion_Cliente_Afirma/">Sintaxis invocacion Cliente Afirma</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../afirma_movil_intro/"><<img src="media/image1.jpeg"</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">My Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Markdown strict</li>
+      <li class="breadcrumb-item active">Preparación del entorno</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="preparacion-del-entorno">Preparación del entorno</h1>
+<p>Los recursos para la generación del instalador .deb de AutoFirma se
+encuentran comprimidos en formato TAR en GitHub, en la dirección
+<a href="https://github.com/ctt-gob-es/clienteafirma/blob/master/afirma-simple-installer/linux/AutoFirmaLinuxInstaller_deb.tar.gz">https://github.com/ctt-gob-es/clienteafirma/blob/master/afirma-simple-installer/linux/AutoFirmaLinuxInstaller_deb.tar.gz</a></p>
+<p>Este archivo contiene la estructura de directorios y los recursos
+necesarios para generar el instalador de la aplicación. Este archivo
+debe descomprimirse únicamente en un sistema Unix para garantizar que
+los permisos de los ficheros no se ven alterados.</p>
+<p>La estructura de directorios contenida en el archivo y su utilidad de
+describe a continuación:</p>
+<p>src -&gt; Directorio raíz</p>
+<blockquote>
+<p>/DEBIAN -&gt; Directorio donde se incluye la configuración y los
+<em>scripts</em>.</p>
+</blockquote>
+<ul>
+<li>
+<p>control -&gt; fichero de configuración</p>
+</li>
+<li>
+<p>postint -&gt; script de post-instalación</p>
+</li>
+<li>
+<p>postrm -&gt; script de post-borrado</p>
+</li>
+<li>
+<p>prerm -&gt; script de pre-borrado</p>
+</li>
+</ul>
+<blockquote>
+<p>/etc</p>
+<p>/firefox</p>
+<p>/pref</p>
+</blockquote>
+<ul>
+<li>AutoFirma.js -&gt; JavaScript que asocia el protocolo “afirma”</li>
+</ul>
+<blockquote>
+<p>/usr -&gt; Los ficheros de este directorio se copiarán en las carpetas
+respectivas de Linux</p>
+<p>/bin</p>
+</blockquote>
+<ul>
+<li>AutoFirma -&gt; Ejecuta AutoFirma.jar con los parámetros recibidos
+    por URL</li>
+</ul>
+<blockquote>
+<p>/lib</p>
+<p>/AutoFirma -&gt; Directorio con los JAR de AutoFirma y su configurador</p>
+</blockquote>
+<ul>
+<li>
+<p>AutoFirma.jar -&gt; Biblioteca de Autofirma. (DEBE INCLUIRLA EL
+    ADMINISTRADOR).</p>
+</li>
+<li>
+<p>AutoFirmaConfigurador.jar -&gt; Biblioteca del instalador de
+    AutoFirma. (DEBE INCLUIRLA EL ADMINISTRADOR).</p>
+</li>
+</ul>
+<blockquote>
+<p>/share</p>
+<p>/applications</p>
+</blockquote>
+<ul>
+<li>afirma.desktop -&gt; Propiedades de AutoFirma como aplicación de
+    escritorio</li>
+</ul>
+<blockquote>
+<p>/AutoFirma</p>
+</blockquote>
+<ul>
+<li>AutoFirma.png -&gt; Icono de la aplicación</li>
+</ul>
+<blockquote>
+<p>/doc</p>
+<p>/AutoFirma</p>
+</blockquote>
+<ul>
+<li>copyright -&gt; Información sobre la licencia de AutoFirma</li>
+</ul>
+<h2 id="configuracion-de-la-dependencia-con-java">Configuración de la dependencia con Java</h2>
+<p>El instalador funciona indistintamente con Oracle JDK o con OpenJDK,
+pero si se desea restringir a un entorno de ejecución de Java en
+concreto o si se quiere cambiar de versión, en el fichero “control” hay
+que editar la opción depends en función de la versión de java con la que
+se quiere generar el instalador. En este caso:</p>
+<ul>
+<li>
+<p>Depends: libnss3-tools</p>
+</li>
+<li>
+<p>Recomends : openjdk-11-jre</p>
+</li>
+</ul>
+<p>Adicionalmente, en este fichero se define la información de la
+aplicación (versión, tamaño, etc.).</p>
+<h2 id="configuracion-de-la-version-de-autofirma">Configuración de la versión de AutoFirma</h2>
+<p>Cada nueva versión de AutoFirma puede requerir que se actualicen
+diversos textos de los ficheros de instalación. Ejemplos claros son el
+número de versión y la fecha del <em>copyright</em>. Los textos susceptibles de
+actualizarse se encuentran en los siguientes ficheros de la estructura
+de directorios:</p>
+<ul>
+<li>
+<p>src -&gt; DEBIAN -&gt; control</p>
+<ul>
+<li>En este fichero se encuentran textos como el número de versión
+    de AutoFirma, el correo de contacto, el tamaño que ocupa la
+    aplicación una vez instalada o la URL de la página del producto.</li>
+</ul>
+</li>
+<li>
+<p>src -&gt; DEBIAN -&gt; copyright</p>
+<ul>
+<li>En este fichero se muestra la información de licencia del
+    producto y el año de <em>copyright</em>.</li>
+</ul>
+</li>
+<li>
+<p>src -&gt; usr -&gt; share -&gt; doc -&gt; AutoFirma -&gt; copyright</p>
+<ul>
+<li>En este fichero se muestra la información de licencia del
+    producto.</li>
+</ul>
+</li>
+</ul>
+<h1 id="generacion-del-instalador-deb">Generación del instalador (.deb)</h1>
+<p>Para generar el instalador de AutoFirma es necesario añadir los JAR de
+la última versión de AutoFirma y del configurador al directorio
+“src/usr/lib/AutoFirma” de la estructura previamente comentada. Estos
+ficheros deberán aparecer con los nombres:</p>
+<ul>
+<li>
+<p><strong>AutoFirma.jar:</strong> Última versión de AutoFirma (módulo
+    “afirma-simple” de GitHub generado con la opción “-Denv=install”
+    para que incluya todas las dependencias necesarias).</p>
+</li>
+<li>
+<p><strong>AutoFirmaConfigurador.jar</strong>: Última versión del configurador de
+    AutoFirma (módulo “afirma-ui-simple-configurator” de GitHub generado
+    con la opción “-Denv=install” para que incluya todas las
+    dependencias necesarias).</p>
+</li>
+</ul>
+<p>Para la generación crearemos el fichero por línea de comandos. Abriremos
+una consola, nos situaremos a la altura del directorio “src” de la
+estructura de directorios del paquete instalador y utilizaremos el
+siguiente comando:</p>
+<p>fakeroot dpkg-deb --build src AutoFirma_X_Y.deb</p>
+<p>Como resultado, se habrá generado en el directorio actual el archivo
+instalador “AutoFirma_X_Y.deb”.</p>
+<p>La subcadena “X_Y” se deberá sustituir por el número de versión asignado
+a la aplicación.</p>
+<h1 id="instalacion-de-la-aplicacion">Instalación de la aplicación</h1>
+<p>Para instalar el fichero generado existen dos opciones.</p>
+<ul>
+<li>
+<p>Hacer doble clic sobre el fichero, el fichero se instalará mediante
+    la instalación de paquetes de Ubuntu.</p>
+</li>
+<li>
+<p>Instalación por línea de comandos, ejecutando uno de los siguientes
+    comandos (se supone que el <em>.deb</em> generado se llama
+    AutoFirma_X_Y.deb):</p>
+</li>
+</ul>
+<blockquote>
+<p>sudo dpkg -i AutoFirma_X_Y.deb</p>
+</blockquote>
+<p>Si el comando anterior da un error por no encontrarse instaladas las
+dependencias necesarias, se deberá ejecutar a continuación el comando:</p>
+<blockquote>
+<p>sudo apt-get –f install ./AutoFirma_X_Y.deb</p>
+</blockquote>
+<p>Según la versión de Ubuntu, también puede ser necesario ejecutar:</p>
+<blockquote>
+<p>sudo apt --fix-broken install</p>
+</blockquote>
+<h1 id="desinstalacion-de-la-aplicacion">Desinstalación de la aplicación</h1>
+<p>Para realizar la desinstalación de un fichero <em>.deb</em> en el sistema hay
+que escribir el siguiente comando en la consola (requiere permisos de
+administración)</p>
+<p>sudo apt-get remove --purge autofirma</p>
+<p>autofirma es el nombre del paquete con el que se ha instalado en la
+aplicación, dicho nombre viene definido en el fichero control dentro de
+src/DEBIAN</p>
+<h1 id="instalador-rpm">Instalador .rpm</h1>
+<h1 id="preparacion-del-entorno_1">Preparación del entorno</h1>
+<p>En el repositorio se incluye por duplicado el directorio de recursos
+necesario para generar el instalador de AutoFirma, uno pensado para la
+generación del paquete RPM para Fedora y otro para OpenSuse. Este
+directorio deberá situarse en su sistema de tal forma que en el
+directorio raíz del usuario se encuentre inmediatamente el subdirectorio
+“rpmbuild”.</p>
+<p>La estructura de este directorio se describe a continuación:</p>
+<blockquote>
+<p>rpmbuild</p>
+<p>BUILD</p>
+</blockquote>
+<ul>
+<li>
+<p>autofirma.js: Fichero que indica a Firefox como abrir AutoFirma.</p>
+</li>
+<li>
+<p>autofirma.png: Icono de la aplicación.</p>
+</li>
+<li>
+<p>autofirma.jar: Biblioteca de Autofirma. (DEBE INCLUIRLA EL
+    ADMINISTRADOR).</p>
+</li>
+<li>
+<p>autofirmaConfigurador.jar: Biblioteca del instalador de AutoFirma.
+    (DEBE INCLUIRLA EL ADMINISTRADOR).</p>
+</li>
+<li>
+<p>LICENSE: Fichero de licencia.</p>
+</li>
+</ul>
+<blockquote>
+<p>BUILDROOT</p>
+<p>RPMS</p>
+<p>SOURCES</p>
+</blockquote>
+<ul>
+<li>autofirma.tar.gz: Archivo en el que se encuentra un fichero
+    indicando donde se encuentra los ficheros fuente de la aplicación.
+    Puede sustituirse por el mismo archivo con los auténticos ficheros
+    fuente.</li>
+</ul>
+<blockquote>
+<p>SPECS</p>
+</blockquote>
+<ul>
+<li>autofirma.spec: Fichero de definición del proceso de instalación.</li>
+</ul>
+<blockquote>
+<p>SRPMS</p>
+</blockquote>
+<h2 id="diferenciacion-de-los-entornos-fedora-y-opensuse">Diferenciación de los entornos Fedora y OpenSUSE</h2>
+<p>Los recursos utilizados para el empaquetado de las versiones de
+AutoFirma para Fedora y OpenSUSE son muy similares. En ambos casos se
+genera un instalador RPM, pero las diferencias entre ambas
+distribuciones hacen necesario respetar una serie de diferencias. Se
+proporciona un directorio con los recursos para cada instalador para que
+no sea necesario modificar los distintos ficheros cada vez que deseen
+construirse, pero se señalan a continuación las diferencias para que
+quede constancia:</p>
+<ul>
+<li>
+<p>Los nombres de las dependencias de NSS son distintos en ambos
+    entornos, por ello, en el fichero “autofirma.spec”, esta dependencia
+    se marca de la siguiente forma:</p>
+<ul>
+<li>
+<p>Fedora:</p>
+<ul>
+<li>Requires: nss-tools</li>
+</ul>
+</li>
+<li>
+<p>OpenSuse:</p>
+<ul>
+<li>Requires: mozilla-nss-tools</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>En OpenSuse, en el script de construcción, no se indicará en la
+    primera línea el intérprete a utilizar. Por ello, en el apartado
+    “%build” del fichero “autofirma.spec”:</p>
+<ul>
+<li>
+<p>Fedora:</p>
+<ul>
+<li>La primera línea será “#!/bin/bash”.</li>
+</ul>
+</li>
+<li>
+<p>OpenSuse:</p>
+<ul>
+<li>Se escriben las líneas del script sin cabecera.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Cambia el directorio clásico para los ficheros independientes de
+    arquitectura. Por ello, en “autofirma.spec”, cambiarán algunas
+    rutas:</p>
+<ul>
+<li>
+<p>Fedora:</p>
+<ul>
+<li>Se utilizará la ruta “/usr/share/”.</li>
+</ul>
+</li>
+<li>
+<p>OpenSuse:</p>
+<ul>
+<li>Se utilizarán las rutas “/usr/share/” y “/usr/local/share/”.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Indicaciones adicionales para el registro del esquema afirma en
+    OpenSuse.</p>
+<ul>
+<li>
+<p>En OpenSuse se registra el esquema “afirma” también en los
+    ficheros:</p>
+<ul>
+<li>
+<p>/usr/local/share/applications/mimeapps.list</p>
+</li>
+<li>
+<p>/usr/share/applications/gnome-mimeapps.list</p>
+</li>
+<li>
+<p>/usr/local/share/applications/gnome-mimeapps.list</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="configuracion-de-la-version-de-autofirma_1">Configuración de la versión de AutoFirma</h2>
+<p>Cada nueva versión de AutoFirma puede requerir que se actualicen
+diversos textos de los ficheros de instalación. Ejemplos claros son el
+número de versión y la fecha del <em>copyright</em>. Los textos susceptibles de
+actualizarse se encuentran en los siguientes ficheros de la estructura
+de directorios:</p>
+<ul>
+<li>
+<p>rpmbuild -&gt; SPEC -&gt; autofirma.spec</p>
+<ul>
+<li>En este fichero se encuentra el número de versión y revisión de
+    la aplicación. Su licencia y el log de cambios de la versión.</li>
+</ul>
+</li>
+<li>
+<p>rpmbuild -&gt; BUILD -&gt; LICENSE</p>
+<ul>
+<li>En este fichero se incluye el texto de licencia del producto.</li>
+</ul>
+</li>
+</ul>
+<h1 id="generacion-del-instalador-rpm">Generación del instalador (.rpm)</h1>
+<p>Para generar el instalador de AutoFirma es necesario añadir los JAR de
+la última versión de AutoFirma y del configurador al directorio
+“~/rpmbuild/SOURCES” de la estructura previamente comentada. Estos
+ficheros deberán aparecer con los nombres:</p>
+<ul>
+<li>
+<p><strong>autofirma.jar:</strong> Última versión de AutoFirma (módulo
+    “afirma-simple” de GitHub generado con la opción “-Denv=install”
+    para que incluya todas las dependencias necesarias).</p>
+</li>
+<li>
+<p><strong>autofirmaConfigurador.jar</strong>: Última versión del configurador de
+    AutoFirma (módulo “afirma-ui-simple-configurator” de GitHub generado
+    con la opción “-Denv=install” para que incluya todas las
+    dependencias necesarias).</p>
+</li>
+</ul>
+<p>Generaremos el instalador desde línea de comandos. Para ello, abriremos
+una consola, nos situaremos a la altura del directorio “rpmbuild” de la
+estructura de directorios del paquete instalador y utilizaremos el
+siguiente comando:</p>
+<p>rpmbuild -bb SPECS/autofirma.spec</p>
+<p>Como resultado, se habrá generado en el directorio “RPMS” un directorio
+“noarch” con el archivo instalador “autofirma-X.Y.Z-R.noarch.rpm”.</p>
+<p>La subcadena “X.Y.Z-R” será el número de versión seguida de la revisión
+de la aplicación.</p>
+<h1 id="firma-de-los-rpm">Firma de los RPM</h1>
+<p>Para la firma de los RPM utilizaremos una clave PGP.</p>
+<h1 id="configurar-entorno">Configurar entorno</h1>
+<p>Para la firma con claves PGP, primeramente, será necesario configurar el
+entorno:</p>
+<ol>
+<li>Instalar las claves en el almacén de claves local. Para ello,
+    usaremos el comendo:</li>
+</ol>
+<p>gpg --import private_key.asc</p>
+<p>En este comando, “private_key.asc” será el fichero con las claves
+pública y privada.</p>
+<ol>
+<li>Crearemos o editaremos el fichero "~/.rpmmacros" con el siguiente
+    contenido, indicando en el las rutas correspondientes:</li>
+</ol>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p># Este valor siempre será “gpg”</p>
+<p>%_signature gpg</p>
+<p># Ruta completa al fichero “.gnupg”, comúnmente situado en el</p>
+<p># directorio de usuario</p>
+<p>%_gpg_path /home/usuario/.gnupg</p>
+<p># Nombre con el que se creó la clave PGP. Se puede consultar con</p>
+<p># el comando: gpg --list-secret-keys</p>
+<p>%_gpg_name NOMBRE DE LA ENTIDAD</p>
+<p># Ruta completa de ejecutable “gpg”. Puede obtenerse con el
+comando:</p>
+<p># which gpg</p>
+<p>%_gpgbin /usr/bin/gpg</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<ol>
+<li>Si no se tiene ya, instalar “rpm-sign” mediante el siguiente
+    comando:</li>
+</ol>
+<p>sudo yum install rpm-sign</p>
+<h1 id="firmar-rpm">Firmar RPM</h1>
+<p>Para la firmar el instalador, basta con ejecutar el comando:</p>
+<p>rpm --addsign autofirma-X.Y.Z.noarch.rpm</p>
+<h1 id="comprobacion-de-firma-interna">Comprobación de firma interna</h1>
+<p>Para comprobar un RPM firmado usaremos el comando:</p>
+<p>rpm --checksig autofirma-X.Y.Z.noarch.rpm</p>
+<h1 id="comprobacion-de-firma-externa">Comprobación de firma externa</h1>
+<p>Para comprobar una firma externa (.sig) usaremos el comando:</p>
+<p>gpg --verify autofirma-X.Y.Z.noarch.rpm.sig autofirma-X.Y.Z.noarch.rpm</p>
+<h1 id="generacion-de-sha1sum">Generación de sha1sum</h1>
+<p>Al publicar el instalador es recomendable publicar también en la web las
+huellas digitales de cada uno de los ficheros para que los usuarios
+puedan comprobar la validez de los ficheros descargados. Se puede
+generar la huella de todos los ficheros que deseemos con el comando:</p>
+<p>sha1sum FICHERO</p>
+<p>Para calcular la huella de todos los ficheros, se puede usar en el
+directorio:</p>
+<p>sha1sum *</p>
+<h1 id="instalacion-de-la-aplicacion_1">Instalación de la aplicación</h1>
+<p>Antes de instalar la aplicación, si el instalador RPM de esta se ha
+firmado, se debería agregar la clave pública PGP del firmante al almacén
+de confianza del sistema. La clave pública PGP puede descargarse como un
+fichero “.asc” junto al archivo de instalación. Para importar esta clave
+PGP a nuestro almacén usaremos el comendo:</p>
+<p>sudo rpm --import PUBLIC_KEY.asc</p>
+<p>En este comando, “PUBLIC_KEY.asc” será el fichero con la clave pública.</p>
+<p>Una vez importada la clave PGP, el sistema podrá validar automáticamente
+la firma del instalador RPM. Para instalar AutoFirma a partir del
+archivo RPM existen varias opciones, de las cuales se presentan dos:</p>
+<ol>
+<li>
+<p>Hacer doble clic sobre el fichero, el fichero se instalará mediante
+    el instalador de paquetes del sistema.</p>
+</li>
+<li>
+<p>Desde línea de comandos, ejecutar:</p>
+</li>
+</ol>
+<p>sudo rpm -i autofirma-X.Y.Z.noarch.rpm</p>
+<p>En la sentencia anterior, “autofirma-X.Y.Z.noarch.rpm” sería el nombre
+del fichero RPM que se desea instalar.</p>
+<h1 id="desinstalacion-de-la-aplicacion_1">Desinstalación de la aplicación</h1>
+<p>Para realizar la desinstalación de un fichero RPM en el sistema hay que
+escribir el siguiente comando en la consola (requiere permisos de
+administración)</p>
+<p>sudo rpm –e autofirma</p>
+<p>En la sentencia anterior, “autofirma” es el nombre predefinido del
+paquete con el que se ha instalado en la aplicación, dicho nombre viene
+definido en el fichero de especificación del instalador, por lo que la
+sentencia debe escribirse tal cual.</p>
+<h1 id="actualizacion-de-la-aplicacion">Actualización de la aplicación</h1>
+<p>El proceso de actualización de los RPM implica la instalación de una
+versión y la desinstalación de la anterior. Debido a un problema en el
+proceso de desinstalación de AutoFirma 1.7.1 y anteriores, al
+desinstalarlas se eliminan también recursos de la versión a la que se
+estaba desinstalando. Por este motivo, cuando queramos actualizar desde
+AutoFirma 1.8 a una posterior, bastará usar el comando:</p>
+<p>sudo rpm -U autofirma-X.Y.Z.noarch.rpm</p>
+<p>Sin embargo, cuando estemos actualizando desde una versión anterior,
+deberemos indicar que no se ejecute el proceso de desinstalación de esa
+versión. Para ello usaremos el comando.</p>
+<p>sudo rpm -U --nopreun --nopostun autofirma-X.Y.Z.noarch.rpm</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../AF_Firmar_AutoFirma_OS_X/" class="btn btn-neutral float-left" title="AF Firmar AutoFirma OS X"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../AF_Instalador%20Mac%20OS%20X/" class="btn btn-neutral float-right" title="AF Instalador Mac OS X">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../AF_Firmar_AutoFirma_OS_X/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../AF_Instalador%20Mac%20OS%20X/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

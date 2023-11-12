@@ -1,0 +1,2320 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>CF manual integracion modulos ES - My Docs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "CF manual integracion modulos ES";
+        var mkdocs_page_input_path = "markdown_strict/CF_manual_integracion_modulos_ES.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> My Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Welcome to MkDocs</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Markdown strict</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Firmar_AutoFirma_Linux/">AF Firmar AutoFirma Linux</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Firmar_AutoFirma_OS_X/">AF Firmar AutoFirma OS X</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Linux/">Preparación del entorno</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Mac%20OS%20X/">AF Instalador Mac OS X</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Windows/">AF Instalador Windows</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_desarrollo_plugins_ES/">AF manual desarrollo plugins ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_instalacion_usuarios_ES/">AF manual instalacion usuarios ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_instalacion_y_gestion_ES/">AF manual instalacion y gestion ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ANEXO_Firma-electronica-en-varias-fases/">Firma electrónica en tres fases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_arquitectura_ES/">CF arquitectura ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_catalogo_aplicaciones/">CF catalogo aplicaciones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_distribuciones/">CF distribuciones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_funcional_ES/">CF funcional ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-incidencias/">CF guia incidencias</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-uso-interfaz/">CF guia uso interfaz</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-uso/">CF guia uso</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-firmas-pdf/">CF manual firmas pdf</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-firmas-xml/">CF manual firmas xml</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-integrador/">CF manual integrador</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-migracion/">CF manual migracion</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">CF manual integracion modulos ES</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#interfaces-de-utilidad">Interfaces de Utilidad</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#esgobafirmacoresignersaosigner">es.gob.afirma.core.signers.AOSigner</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#esgobafirmacoreciphersaocipher">es.gob.afirma.core.ciphers.AOCipher</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#esgobafirmacoreenvelopersaoenveloper">es.gob.afirma.core.envelopers.AOEnveloper</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#clases-de-utilidad">Clases de Utilidad</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#esgobafirmacoremiscbase64">es.gob.afirma.core.misc.Base64</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#esgobafirmacoremiscmimehelper">es.gob.afirma.core.misc.MimeHelper</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#esgobafirmacoremiscaoutil">es.gob.afirma.core.misc.AOUtil</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#factorias">Factorías</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#esgobafirmacoresignersaosignerfactory">es.gob.afirma.core.signers.AOSignerFactory</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#esgobafirmacoreuiaouifactory">es.gob.afirma.core.ui.AOUIFactory</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_plan-pruebas/">CF plan pruebas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_roadmap_ES/">CF roadmap ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Comunicacion_Navegador_y_App_en_Entorno_Movil/">El camino de ida: Desde el navegador Web hacia la App</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../DECLARACION_ACCESIBILIDAD/">Declaración de Accesibilidad</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Diagramas%20de%20secuencia%20de%20los%20procesos%20de%20firma%20m%C3%B3vil/">Firma monofásica (Windows 8 / Windows RT y Android)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Firma_por_lotes_predefinidos_con_el_MiniApplet_Cliente/">Firma por lotes predefinidos con el MiniApplet Cliente</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Informe%20-%20Alternativas_Applets_para_firma/">Informe   Alternativas Applets para firma</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Invocaci%C3%B3n%20por%20protocolo%20de%20aplicaciones%20nativas%20desde%20p%C3%A1ginas%20Web/">¿Qué es la invocación por protocolo?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../La_seguridad_en_el_Servicio_de_firma_del_Cliente/">Tabla de contenido</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MCF_manual-integrador_ES/">MCF manual integrador ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MCF_roadmap_ES/">MCF roadmap ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Manual%20para%20la%20configuraci%C3%B3n%20de%20los%20campos%20de%20firma%20para%20la%20aplicaci%C3%B3n%20de%20firma%20manuscrita%20en%20tableta/">Manual para la configuración de los campos de firma para la aplicación de firma manuscrita en tableta</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_Manual_App_Portafirmas_Android/">PF Manual App Portafirmas Android</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_Manual_App_Portafirmas_iOS/">PF Manual App Portafirmas iOS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_manual-configuracion_servicios_ES/">PF manual configuracion servicios ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Sintaxis_invocacion_Cliente_Afirma/">Sintaxis invocacion Cliente Afirma</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../afirma_movil_intro/"><<img src="media/image1.jpeg"</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">My Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Markdown strict</li>
+      <li class="breadcrumb-item active">CF manual integracion modulos ES</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>El Cliente @firma se compone de múltiples módulos que le dotan de las
+distintas funcionalidades de firma, acceso a almacenes y otras
+características, o que proporcionan funcionalidades de carácter general
+que se utilizan en otros módulos.</p>
+<p>El presente documento explica a rasgos generales los principales módulos
+y clases Java del Cliente @firma, enfocando la explicación para permitir
+que un desarrollador los integre en sus aplicaciones Java y pueda
+utilizar las funcionalidades de alto nivel que ofrece.</p>
+<p>La funcionalidad e interfaces de las clases internas del Cliente @firma
+son susceptibles a cambios sin previo aviso. Se recomienda que los
+desarrolladores que utilicen los módulos del cliente @firma utilicen
+versiones estables de los mismos para evitar cambios. Los módulos del
+Cliente @firma 1.6 y superiores podrán encontrarse en el repositorio
+central de Maven. Los ficheros fuente del proyecto y todas sus
+dependencias modificadas están disponibles en GitHub:</p>
+<p><a href="https://github.com/ctt-gob-es/">https://github.com/ctt-gob-es/</a></p>
+<p>No se ofrece soporte sobre las distintas clases del proyecto, si bien sí
+se corregirá cualquier error que afecte al funcionamiento de los
+productos con soporte del Cliente @firma.</p>
+<p>La descripción completa de las clases y métodos que se mencionan en este
+documento puede encontrarse en el Javadoc de los distintos módulos del
+proyecto.</p>
+<h1 id="nucleo-del-cliente">Núcleo del cliente</h1>
+<p>El módulo <em>core</em> del Cliente @firma (<strong>afirma-core</strong>) es el módulo
+principal del proyecto. Las principales clases de interés de este módulo
+son:</p>
+<ul>
+<li>
+<p>Interfaces de utilidad</p>
+<ul>
+<li>
+<p><strong>AOSigner</strong>: Interfaz de los manejadores de firma.</p>
+</li>
+<li>
+<p><strong>AOCipher</strong>: Interfaz de los manejadores de cifrado.</p>
+</li>
+<li>
+<p><strong>AOEnveloper</strong>: Interfaz de los manejadores de envoltorios de
+    datos.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Clases de utilidad</p>
+<ul>
+<li>
+<p><strong>Base64</strong>: Clase para la codificación y descodificación de
+    cadenas en base 64.</p>
+</li>
+<li>
+<p><strong>MimeHelper</strong>: Clase para la identificación de tipos de datos.</p>
+</li>
+<li>
+<p><strong>AOUtil</strong>: Clase con funciones de utilidad general.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Factorías</p>
+<ul>
+<li>
+<p><strong>AOSignerFactory</strong>: Factoría para la obtención centralizada de
+    manejadores de firma.</p>
+</li>
+<li>
+<p><strong>AOUIFactory</strong>: Factoría para la obtención centralizada de las
+    clases de gestión de interfaces.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="interfaces-de-utilidad">Interfaces de Utilidad</h2>
+<p>En este apartado se mostrarán las interfaces que implementan las
+distintas clases que proporcionan al Cliente @firma las capacidades de
+gestión de firmas, cifrados y sobres digitales.</p>
+<h3 id="esgobafirmacoresignersaosigner"><em>es.gob.afirma.core.signers.AOSigner</em></h3>
+<p>Es la interfaz básica que implementa cada uno de los manejadores de
+firma del Cliente. Esta clase proporciona varios métodos de utilidad
+para el tratamiento de las firmas y la generación de firmas, cofirmas y
+contrafirmas.</p>
+<p>Los manejadores de firma que implementan esta interfaz gestionan firmas
+en un formato concreto. Por ejemplo: CAdES, PAdES, XAdES, Factura
+Electrónica,... Estas implementaciones se encuentran en los distintos
+módulos de firma que se describen en el apartado <u>Módulos de
+firma</u>.</p>
+<p>Los métodos de especial interés para el manejo de firma electrónicas
+son:</p>
+<ul>
+<li>
+<p><strong>boolean isValidDataFile(byte[] data) throws IOException</strong></p>
+<ul>
+<li>Indica si los datos proporcionados pueden ser firmados por el
+    manejador de firma. Hay formatos de firma que siempre
+    responderán que sí, como el manejador de CAdES que puede firmar
+    cualquier tipo de datos, mientras que otros deberán comprobar
+    que los datos son compatibles, como el manejador de PAdES que
+    sólo puede firmar documentos PDF y tendrá que comprobar que los
+    datos son de este tipo.</li>
+</ul>
+</li>
+<li>
+<p><strong>boolean isSign(byte[] data) throws IOException</strong></p>
+<ul>
+<li>Indica si los datos indicados se corresponden con una firma
+    compatible con el formato del manejador. Esto es importante para
+    identificar si esos datos son una firma que podamos cofirmar o
+    contrafirmar. Hay que tener en cuenta que existen formatos
+    compatibles con otros, aunque no en ambos sentidos. Por ejemplo,
+    una firma CAdES puede considerarse una firma CMS, por lo que el
+    manejador de CMS devolvería true al pasarle una firma CAdES en
+    el método isSign(byte[] data). Sin embargo, una firma CMS no
+    tiene por qué ser una firma CAdES, así que el manejador de CAdES
+    podría devolver false si se le pasa una firma CMS.</li>
+</ul>
+</li>
+<li>
+<p><strong>byte[] getData(byte[] signData) throws AOException</strong> <strong>,
+    IOException</strong></p>
+<ul>
+<li>Recupera los datos que se firmaron si estos están contenidos en
+    la firma electrónica pasada por parámetro. Si los datos no están
+    contenidos devolverá null, y si los datos no se corresponden con
+    una firma soportada por el manejador o se obtiene un error al
+    recuperarlos, se lanzará una excepción.</li>
+</ul>
+</li>
+<li>
+<p><strong>byte[] sign(byte[] data, String algorithm, PrivateKey key,
+    Certificate[] certChain, Properties extraParams) throws
+    AOException, IOException</strong></p>
+<ul>
+<li>Realiza la firma de unos datos. El manejador de firma debe
+    soportar los datos indicados. Deberemos configurar el algoritmo
+    de firma (consultar la documentación de la clase AOSignConstants
+    para más información), la clave y la cadena de certificación del
+    certificado de firma (consultar el apartado de almacenes de
+    certificados para comprobar cómo se obtienen) y las propiedades
+    de configuración del formato en modo Properties (consultar las
+    propiedades soportadas por cada formato de firma).</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ejemplo de uso:</strong></p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>...</p>
+<p>// Instanciamos el manejador de firmas PAdES incluido en</p>
+<p>// el módulo afirma-crypto-pdf</p>
+<p>AOSigner signer = <strong>new</strong> AOPDFSigner();</p>
+<p>// Comprobamos que el documento que deseamos firmar sea</p>
+<p>// compatible con el manejador (que sea un PDF)</p>
+<p><strong>if</strong> (!signer.isValidDataFile(data)) {</p>
+<p><strong>throw</strong> <strong>new</strong>
+IllegalArgumentException(</p>
+<p>"No se ha introducido un documento PDF valido");</p>
+<p>}</p>
+<p>// Generamos una firma PAdES</p>
+<p><strong>byte</strong>[] signedPDF = signer.sign(</p>
+<p>data, AOSignConstants.SIGN_ALGORITHM_SHA512WITHRSA, key,</p>
+<p>certChain, <strong>null</strong>);</p>
+<p>...</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<ul>
+<li>
+<p><strong>byte[] cosign(byte[] sign, String algorithm, PrivateKey key,
+    Certificate[] certChain, Properties extraParams) throws
+    AOException, IOException</strong></p>
+<ul>
+<li>
+<p>Realiza la cofirma de unos datos a partir de una firma. Esta
+    firma debe contener los datos originalmente firmados o, si no
+    los tiene, debe haberse realizado con el mismo algoritmo de
+    firma que la cofirma que vamos a realizar (para poder
+    reaprovechar la huella digital de los datos). Es importante
+    saber si nuestro manejador de firma soporta la operación de
+    cofirma.</p>
+</li>
+<li>
+<p>Para realizar la cofirma también deberemos indicar el algoritmo
+    de firma, la clave y la cadena del certificado de firma y la
+    configuración en formato Properties que deseamos aplicar
+    (consultar la documentación del formato de firma para conocer os
+    parámetros soportados).</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ejemplo de uso:</strong></p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>...</p>
+<p>// Instanciamos el manejador de firmas CAdES incluido en los
+módulos</p>
+<p>// afirma-crypto-cades y afirma-crypto-cades-multi</p>
+<p>AOSigner signer = <strong>new</strong> AOCAdESSigner();</p>
+<p>// Comprobamos que el documento que deseamos firmar sea
+compatible</p>
+<p>// con el manejador</p>
+<p><strong>if</strong> (!signer.isSign(data)) {</p>
+<p><strong>throw</strong> <strong>new</strong>
+IllegalArgumentException(</p>
+<p>"No se ha introducido una firma CAdES valida");</p>
+<p>}</p>
+<p>// Cofirmamos</p>
+<p><strong>byte</strong>[] cosignature = signer.cosign(</p>
+<p>data, AOSignConstants.SIGN_ALGORITHM_SHA512WITHRSA,</p>
+<p>key, certChain, <strong>null</strong>);</p>
+<p>...</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<ul>
+<li>
+<p><strong>byte[] cosign(byte[] data, byte[] sign, String algorithm,
+    PrivateKey key, Certificate[] certChain, Properties extraParams)
+    throws AOException, IOException</strong></p>
+<ul>
+<li>Este método realiza la cofirma de unos datos tal como el
+    anterior pero, en esta ocasión, se le pueden pasar los datos
+    originalmente firmados por si estos no están incluidos en la
+    firma que proporcionamos.</li>
+</ul>
+</li>
+<li>
+<p><strong>byte[] countersign(byte[] sign, String algorithm,
+    CounterSignTarget targetType, Object[] targets, PrivateKey key,
+    Certificate[] certChain, Properties extraParams) throws
+    AOException, IOException</strong></p>
+<ul>
+<li>
+<p>Este método genera la contrafirma de una firma. La firma
+    indicada debe estar soportada por el manejador y este debe ser
+    compatible con la operación de contrafirma. Como parámetro se le
+    indica la firma (no tiene porqué incluir los datos originalmente
+    firmados), el algoritmo de firma, el tipo de contrafirma, los
+    nodos del árbol de firmas que se desea contrafirmar, la clave y
+    la cadena del certificado de firma y las propiedades de
+    configuración de la operación en forma de Properties.</p>
+</li>
+<li>
+<p>El tipo de contrafirma indica si se deben firmar todos los nodos
+    del árbol de firmas, sólo lo nodos hoja, una serie de nodos
+    concretos o los nodos correspondientes a unos determinados
+    firmantes. Se determinan los objetivos a contrafirmar mediante
+    los valores del enumerado CounterSignTarget. Sólo en el caso de
+    la contrafirma de nodos (NODES) y firmantes (SIGNERS) será
+    necesario utilizar el parámetro targets en donde se indicarán
+    los índices de los nodos a contrafirmar (en el caso de la
+    contrafirma de nodos) o los nombres de los firmantes (en el caso
+    de la contrafirma de firmantes). La posición de los nodos se
+    determina en preorden a partir del árbol de firmas devuelto con
+    el método getSignersStructure(byte[] signature, boolean
+    asSimpleSignInfo) y el nombre de los firmantes el obtenido como
+    elementos del árbol devuelto por este método cuando
+    asSimpleSignInfo es false.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ejemplo de uso:</strong></p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>...</p>
+<p>// Instanciamos el manejador de firmas XAdES incluido en el
+módulo</p>
+<p>// afirma-crypto-xades</p>
+<p>AOSigner signer = <strong>new</strong> AOXAdESSigner();</p>
+<p>// Comprobamos que el documento que deseamos firmar sea
+compatible</p>
+<p>// con el manejador</p>
+<p><strong>if</strong> (!signer.isSign(data)) {</p>
+<p><strong>throw</strong> <strong>new</strong>
+IllegalArgumentException(</p>
+<p>"No se ha introducido una firma XAdES valida");</p>
+<p>}</p>
+<p>// Contrafirmamos los nodos hoja</p>
+<p><strong>byte</strong>[] countersignature = signer.countersign(</p>
+<p>data, AOSignConstants.SIGN_ALGORITHM_SHA512WITHRSA,</p>
+<p>CounterSignTarget.LEAFS, <strong>null</strong>, key, certChain,
+<strong>null</strong>);</p>
+<p>...</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<p>Si nuestra aplicación utiliza un único formato de firma podemos
+instanciar directamente el manejador de firma del formato deseado para
+realizar las distintas operaciones. Si, por el contrario, nuestra
+aplicación utiliza más de un formato de firma o puede cambiar de formato
+en un futuro, se pueden gestionar los manejadores de firma a través de
+la clase AOSignerFactory descrita en el apartado de <u>Factorías</u>
+incluidos en el núcleo del Cliente @firma.</p>
+<h3 id="esgobafirmacoreciphersaocipher"><em>es.gob.afirma.core.ciphers.AOCipher</em></h3>
+<p>Esta interfaz es la que implementan los manejadores de las funciones de
+cifrado simétrico. Estos manejadores permiten el cifrado y el descifrado
+de datos para las configuraciones que soporten. También deben permitir
+obtener claves de cifrado válidas para esas configuraciones, ya sea
+generándolas u obteniéndolas a partir de una versión codificada de la
+misma.</p>
+<p>Los métodos de principal interés de estos manejadores son:</p>
+<ul>
+<li>
+<p><strong>Key generateKey(AOCipherConfig algorithmConfig) throws
+    NoSuchAlgorithmException, AOException</strong></p>
+<ul>
+<li>Genera una clave de cifrado aleatoria compatible con una
+    configuración de cifrado dada. Si la configuración no está
+    soportada o no se puede generar la clave se lanza una excepción.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ejemplo de uso</strong></p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>...</p>
+<p>AOCipherConfig cipherConfig = <strong>new</strong>
+AOCipherConfig(</p>
+<p>AOCipherAlgorithm.AES, <strong>null</strong>,
+<strong>null</strong>);</p>
+<p>AOCipher cipher = AOSunJCECipher();</p>
+<p>Key key = cipher.generateKey(cipherConfig);</p>
+<p>...</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<ul>
+<li>
+<p><strong>Key decodeKey(byte[] keyEncoded, AOCipherConfig algorithmConfig,
+    Object[] params) throws KeyException</strong></p>
+<ul>
+<li>Obtiene un objeto clave a partir de su versión codificada. Este
+    método es útil cuando ya existe una clave privada almacenada de
+    forma externa o introducida directamente por el usuario. Recibe
+    la codificación de esta clave, la configuración del algoritmo de
+    cifrado con la que es compatible y una lista de parámetros
+    adicionales por si son necesarios para la descodificación. En
+    caso de error al generar la clave se lanza una excepción.</li>
+</ul>
+</li>
+<li>
+<p><strong>byte[] cipher(byte[] data, AOCipherConfig algorithmConfig, Key
+    cipherKey) throws AOException, KeyException</strong></p>
+<ul>
+<li>Cifra simétricamente unos datos (data) a partir de una
+    configuración de cifrado (algorithmConfig) y una clave de
+    cifrado (cipherKey). La configuración de cifrado debe estar
+    soportada por el manejador y la clave de cifrado ser compatible
+    con este algoritmo. Se lanzará una excepción si la configuración
+    no está soportada, la clave no es válida o no se puede realizar
+    el cifrado.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ejemplo de uso</strong></p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>...</p>
+<p>// Definimos la configuracion de cifrado</p>
+<p>AOCipherConfig cipherConfig = <strong>new</strong>
+AOCipherConfig(</p>
+<p>AOCipherAlgorithm.AES, <strong>null</strong>,
+<strong>null</strong>);</p>
+<p>AOCipher cipher = AOSunJCECipher();</p>
+<p>// Generamos la clave</p>
+<p>Key key = cipher.generateKey(cipherConfig);</p>
+<p>// Ciframos los datos</p>
+<p><strong>byte</strong>[] cipheredData = cipher.cipher(data,
+cipherConfig, key);</p>
+<p>// Obtenemos la codificacion de la clave generada</p>
+<p><strong>byte</strong>[] keyEncoded = key.getEncoded();</p>
+<p>...</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<ul>
+<li>
+<p><strong>byte[] decipher(byte[] data, AOCipherConfig algorithmConfig,
+    Key decipherKey) throws AOException, InvalidKeyException</strong></p>
+<ul>
+<li>Descifra unos datos cifrados (data) a partir de una
+    configuración de cifrado (algorithmConfig) y una clave de
+    cifrado (decipherKey). La configuración de cifrado debe estar
+    soportada por el manejador y la clave de cifrado ser compatible
+    con este algoritmo. Se lanzará una excepción si la configuración
+    no está soportada, la clave no es válida o no se puede realizar
+    el descifrado.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ejemplo de uso</strong></p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>...</p>
+<p>// Definimos la configuracion de descifrado</p>
+<p>AOCipherConfig cipherConfig = <strong>new</strong>
+AOCipherConfig(</p>
+<p>AOCipherAlgorithm.AES, <strong>null</strong>,
+<strong>null</strong>);</p>
+<p>AOCipher cipher = AOSunJCECipher();</p>
+<p>// Recogemos la clave codificada utilizada en el proceso de
+cifrado</p>
+<p>Key key = cipher.decodeKey(keyEncoded, cipherConfig,
+<strong>null</strong>);</p>
+<p>// Desciframos los datos</p>
+<p><strong>byte</strong>[] plainData = cipher.decipher(data,
+cipherConfig, key);</p>
+<p>...</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<h3 id="esgobafirmacoreenvelopersaoenveloper"><em>es.gob.afirma.core.envelopers.AOEnveloper</em></h3>
+<p>Es la interfaz que implementan los manejadores que gestionan la
+generación y apertura de sobres digitales y otros envoltorios. La única
+implementación funcional de este método es AOCMSEnveloper (del módulo
+<strong>afirma-crypto-cms-enveloper</strong>).</p>
+<p>Los métodos más relevantes para la gestión de los envoltorios son:</p>
+<ul>
+<li>
+<p><strong>byte[] envelop(byte[] data, String signAlgorithm, String type,
+    PrivateKeyEntry keyEntry, X509Certificate[] certDest,
+    AOCipherAlgorithm cipherAlgorithm, String dataType, Properties
+    extraParams) throws AOException</strong></p>
+<ul>
+<li>
+<p>Método para la generación de un envoltorio. Según el tipo (type)
+    este envoltorio puede incluir los datos en plano o estar estos
+    procesados de alguna manera. Los formatos más extendidos cifran
+    estos datos de tal forma que sólo uno de los destinatarios pueda
+    descifrarlo.</p>
+</li>
+<li>
+<p>Una configuración común de este tipo de envoltorios son los
+    sobres electrónicos. En estos sobres, los datos son cifrados
+    mediante un algoritmo simétrico y una clave aleatoria. La clave
+    se incluye a su vez múltiples veces en el sobre, cifrada cada
+    una de ellas con la clave pública del certificado de uno de los
+    destinatarios definidos en el sobre. De esta forma, cada
+    destinatario declarado podrá descifrar con su clave privada la
+    clave con la que se cifraron los datos y con esta ya obtener los
+    datos originales.</p>
+</li>
+<li>
+<p>El método recibe los datos a envolver, el algoritmo de firma que
+    se desee utilizar en los envoltorios que lo requieran y cuyo
+    algoritmo de huella digital se utilizará de ser necesario (por
+    ejemplo, indicando SHA256withRSA se utilizará este algoritmo
+    para la firma de los envoltorios que lo necesiten y el algoritmo
+    SHA156 para los envoltorios que necesiten algoritmo de huella
+    digital), el tipo de envoltorio deseado (cuyos valores se
+    definirán para cada implementación de la interfaz), la clave
+    privada de quien genera el envoltorio para poder identificarlo
+    como remitente (según el tipo de envoltorio), los certificados
+    de los destinatarios (según el tipo de envoltorio), la
+    configuración de cifrado (según el tipo de envoltorio), el tipo
+    de los datos envueltos (opcional) y parámetros adicionales que
+    puedan hacer falta para la configuración de la operación (según
+    las necesidades del envoltorio).</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>byte[] recoverData(byte[] envelop, PrivateKeyEntry
+    addresseePke) throws InvalidKeyException, AOException</strong></p>
+<ul>
+<li>Método para recuperar el contenido de un envoltorio de datos.
+    Este método recibe el envoltorio y la clave privada de un
+    destinatario cuando se hayan especificado destinatarios para el
+    envoltorio (según tipo). El método lanza excepciones cuando la
+    clave indicada no se valida o no se pertenezca a un destinario
+    del envoltorio o cuando se produzca otro error durante su
+    apertura.</li>
+</ul>
+</li>
+</ul>
+<h2 id="clases-de-utilidad">Clases de Utilidad</h2>
+<p>En el núcleo del Cliente @firma se incluyen una serie de clases de
+utilidad general que se utilizan en casi todos los módulos del Cliente y
+que un desarrollador/integrador puede utilizar en aquellas aplicaciones
+que integren el Cliente @firma. A continuación se detalla cada una de
+estas clases y los métodos que proporcionan para facilitar la labor del
+integrador/desarrollador.</p>
+<h3 id="esgobafirmacoremiscbase64"><em>es.gob.afirma.core.misc.Base64</em></h3>
+<p>Es una clase para la codificación de datos a Base 64 y viceversa. Esta
+clase cuenta con varios métodos estáticos que se pueden utilizar para
+tratar aquellas entradas y salidas del Cliente.</p>
+<ul>
+<li>
+<p><strong>static String encode( byte[] source )</strong></p>
+<ul>
+<li>Codifica datos en una cadena en base 64.</li>
+</ul>
+</li>
+<li>
+<p><strong>static String encode( byte[] source, boolean urlSafe )</strong></p>
+<ul>
+<li>Como el anterior, pero, si se indica que la codificación sea
+    <em>URL Safe</em>, el base 64 resultante usará el carácter ‘-’ en lugar
+    de ‘+’ y ‘_’ en lugar de ‘/’. De esta forma, la cadena base 64
+    podrá enviarse a través de una URL sin provocar errores de
+    codificación.</li>
+</ul>
+</li>
+<li>
+<p><strong>static byte[] decode( String s ) throws IOException</strong></p>
+<ul>
+<li>Decodifica una cadena en base 64 en datos binarios. Se lanza una
+    excepción si la cadena proporcionada no es interpretable como
+    base 64.</li>
+</ul>
+</li>
+<li>
+<p><strong>static byte[] decode( String s, boolean urlSafe ) throws
+    IOException</strong></p>
+<ul>
+<li>Como el anterior, pero, si se indica que la codificación sea
+    <em>URL Safe</em>, esperará que la cadena base 64 proporcionada esté
+    codificada de esta manera.</li>
+</ul>
+</li>
+</ul>
+<h3 id="esgobafirmacoremiscmimehelper"><em>es.gob.afirma.core.misc.MimeHelper</em></h3>
+<p>Clase para la identificación del tipo de datos. Esta clase proporciona
+el MimeType de los datos y, si es posible, la extensión asignada a ese
+tipo de documentos y una descripción textual. Además, incluye métodos
+estáticos para obtener el OID de un tipo de dato a partir de su MimeType
+y viceversa.</p>
+<p>Para el análisis de unos datos es necesario crear un objeto de esta
+clase con esos datos y después obtener los valores identificados.</p>
+<p>Los métodos de interés de la clase son:</p>
+<ul>
+<li>
+<p><strong>MimeHelper(byte[] data)</strong></p>
+<ul>
+<li>Constructor a partir del cual obtenemos un objeto capaz de
+    analizar los datos proporcionados.</li>
+</ul>
+</li>
+<li>
+<p><strong>String getMimeType()throws IOException</strong></p>
+<ul>
+<li>Obtiene el MimeType de los datos. Devuelve
+    "application/octet-stream" si no puede identificarlos.</li>
+</ul>
+</li>
+<li>
+<p><strong>String getExtension()</strong></p>
+<ul>
+<li>Obtiene la extensión del tipo de fichero en el que se almacenan
+    estos datos.</li>
+</ul>
+</li>
+<li>
+<p><strong>static String transformMimeTypeToOid(String mimetype)</strong></p>
+<ul>
+<li>Método estático que obtiene el OID identificador del tipo de
+    datos correspondiente a un MimeType. Si no se encuentra, se
+    devuelve el OID genérico "1.2.840.113549.1.7.1".</li>
+</ul>
+</li>
+<li>
+<p><strong>static String transformOidToMimeType(String oid)</strong></p>
+<ul>
+<li>Método estático que obtiene el MimeType asignado a un OID
+    identificador de tipo de datos. Si no se encuentra, se devuelve
+    el MimeType ("application/octet-stream").</li>
+</ul>
+</li>
+</ul>
+<h3 id="esgobafirmacoremiscaoutil"><em>es.gob.afirma.core.misc.AOUtil</em></h3>
+<p>Clase con múltiples métodos estáticos de utilidad general.</p>
+<ul>
+<li>
+<p><strong>static boolean copyFile(File source, File dest) throws
+    IOException</strong></p>
+<ul>
+<li>Clase para copiar el fichero indicado por source en la ruta de
+    dest.</li>
+</ul>
+</li>
+<li>
+<p><strong>static URI createURI(String file) throws URISyntaxException</strong></p>
+<ul>
+<li>Método para crear una URI a partir de cualquier cadena de texto
+    con forma de URI o URL (remota o local). Admite los separadores
+    de ruta "/" y "\, y rutas locales que no empiecen por
+    "file://".</li>
+</ul>
+</li>
+<li>
+<p><strong>static InputStream loadFile(URI uri) throws IOException</strong></p>
+<ul>
+<li>Abre un flujo de datos con el contenido de una URI.</li>
+</ul>
+</li>
+<li>
+<p><strong>static byte[] getDataFromInputStream(InputStream input) throws
+    IOException</strong></p>
+<ul>
+<li>Lee todo el contenido de un flujo de datos.</li>
+</ul>
+</li>
+<li>
+<p><strong>static String getCN(X509Certificate c)</strong></p>
+<ul>
+<li>Obtiene el nombre común (CN o <em>Common Name</em>) del <em>Subject</em> de un
+    certificado. Si no tiene definido el nombre común devuelve la
+    unidad organizativa (OU o <em>Organization Unit</em>). Si no encuentra
+    tampoco esta se devuelve el valor del RDN más significativo
+    según el orden.</li>
+</ul>
+</li>
+<li>
+<p><strong>static String getCN(String principal)</strong></p>
+<ul>
+<li>Obtiene el nombre común (CN o <em>Common Name</em>) a partir del
+    <em>Principal</em> de un certificado. Si no tiene definido el nombre
+    común devuelve la unidad organizativa (OU o <em>Organization
+    Unit</em>). Si no encuentra tampoco esta se devuelve el valor del
+    RDN más significativo según el orden.</li>
+</ul>
+</li>
+</ul>
+<h2 id="factorias">Factorías</h2>
+<p>Estas son factorías que permiten gestionar de forma centralizada algunos
+de los recursos con los que cuenta el Cliente @firma. El uso de estas
+factorías facilitará cambios posteriores en su aplicación, la ampliación
+de sus funcionalidades y el soporte de distintos entornos.</p>
+<h3 id="esgobafirmacoresignersaosignerfactory"><em>es.gob.afirma.core.signers.AOSignerFactory</em></h3>
+<p>La clase AOSignerFactory es la factoría desde la que se cargan los
+manejadores de firma para cada formato soportado por el Cliente. Cuando
+deseemos trabajar con un formato de firma, podemos solicitar a esta
+clase el manejador adecuado para ese formato. Para que la factoría
+devuelve el manejador de un formato concreto, será necesario haber
+importado en el proyecto el módulo de firma correspondiente a ese
+formato.</p>
+<p>Los dos principales métodos de interés son:</p>
+<ul>
+<li>
+<p><strong>static AOSigner getSigner(String signFormat)</strong></p>
+<ul>
+<li>Este método permite obtener un manejador de firma para el
+    formato de firma indicado. Este método es el que se utiliza
+    comúnmente para seleccionar el manejador de firma a utilizar
+    cuando son varios los formatos soportados por la aplicación o
+    puede cambiarse de formato en un futuro. En caso de soportar un
+    único formato se podría instanciar directamente un objeto del
+    manejador de firma concreto. El manejador de firma instanciado
+    es un objeto que implementa la interfaz AOSigner. Pueden tomarse
+    los nombres de formatos de firma de la clase AOSignConstants.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ejemplo de uso:</strong></p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>...</p>
+<p>AOSigner signer = AOSignerFactory.getSigner(</p>
+<p>AOSignConstants.SIGN_FORMAT_CADES);</p>
+<p>// Firmamos en formato CAdES</p>
+<p><strong>byte</strong>[] signature = signer.sign(</p>
+<p>data, // Datos que se firman</p>
+<p>AOSignConstants.SIGN_ALGORITHM_SHA1WITHRSA, // Algoritmo de firma</p>
+<p>key, // Referencia a la clave privada</p>
+<p>certChain, // Cadena de certificación</p>
+<p><strong>null</strong> // Propiedades extra de configuración</p>
+<p>) ;</p>
+<p>...</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<ul>
+<li>
+<p><strong>static AOSigner getSigner(byte[] signData) throws IOException</strong></p>
+<ul>
+<li>Este método permite obtener el manejador de firma más adecuado
+    para manipular firmas con el formato de la firma introducida por
+    parámetro. La principal utilidad de este método es comprobar si
+    unos datos son en realidad una firma con un formato soportado.
+    Una vez obtenido el manejador podemos utilizarlo para manipular
+    la firma y, por ejemplo, cofirmarla/contrafirmar, extraer los
+    datos que se firmaron u obtener información de ella. Si los
+    datos introducidos no se corresponde con una firma soportada
+    (podría ser una firma pero en un formato que desconocemos, una
+    para el que ahora no tenemos disponible el manejador o una firma
+    en un formato soportado pero con alguna peculiaridad para la que
+    no está preparada el manejador) se devuelve null.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ejemplo de uso:</strong></p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>...</p>
+<p><strong>byte</strong>[] cosignature = <strong>null</strong>;</p>
+<p>// Cofirmamos en el mismo formato en el que esta firmada</p>
+<p>AOSigner signer = AOSignerFactory.getSigner(signature);</p>
+<p><strong>if</strong> (signer != <strong>null</strong>) {</p>
+<p>cosignature = signer.cosign(</p>
+<p>signature, // Firma</p>
+<p>AOSignConstants.SIGN_ALGORITHM_SHA1WITHRSA, // Algoritmo</p>
+<p>key, // Referencia a la clave privada</p>
+<p>certChain, // Cadena de certificación</p>
+<p><strong>null</strong> // Propiedades extra de configuracion</p>
+<p>);</p>
+<p>}</p>
+<p>...</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<h3 id="esgobafirmacoreuiaouifactory"><em>es.gob.afirma.core.ui.AOUIFactory</em></h3>
+<p>Esta es una factoría orientada a obtener información del usuario o
+decisiones por su parte mediante componentes gráficos. AOUIFactory
+utiliza, según el entorno en el que se ejecute el Cliente, un gestor u
+otro para generar los diálogos gráficos que se necesiten. Actualmente,
+esta factoría utiliza por defecto una u otra implementación según el
+entorno en el que se ejecute que se encuentre. En un futuro, podrían
+darse de alta nuevos manejadores y gracias a esta factoría no sería
+necesario hacer cambios en el código, tan sólo establecerla como el
+manejador activo. Los manejadores implementados se encuentran en el
+módulo <strong>afirma-ui-core-jse</strong>.</p>
+<p>Aunque el diálogo de selección de certificados también se maneja
+internamente mediante esta factoría, para una integración por separado
+de este diálogo en otra herramienta, es más sencillo hacerlo a través de
+la clase AOKeyStoreDialog definida en el módulo
+<strong>afirma-core-keystores</strong>, debido a la relación intrínseca entre el
+diálogo de selección de certificados y los distintos almacenes a los que
+se tiene acceso. Para saber más sobre esta clase, consulte el apartado
+<u>Módulo afirma-core-keystores</u> para más información.</p>
+<p>Los manejadores de interfaces gráficos implementan la interfaz:
+<strong>es.gob.afirma.core.ui.AOUIManager</strong>.</p>
+<p>La selección del gestor de interfaces a utilizar se hará de forma
+automática pero es posible establecer explícitamente qué gestor utilizar
+mediante el método:</p>
+<ul>
+<li><strong>static void setUIManager(AOUIManager manager)</strong></li>
+</ul>
+<p>Los métodos estáticos que proporciona AOUIFactory directamente para su
+uso son:</p>
+<ul>
+<li>
+<p><strong>static File[] getLoadFiles(String dialogTitle, String
+    currentDir, String filename, String[] extensions, String
+    description, boolean selectDirectory, boolean multiSelect, Object
+    icon, Object parentComponent)</strong></p>
+<ul>
+<li>Muestra un diálogo para la selección de ficheros. También se
+    puede mencionar múltiples Se puede configurar mediante
+    parámetros para permitir seleccionar uno o varios ficheros o, en
+    su lugar, permitir seleccionar un directorio. Son configurables
+    también el título del diálogo, el nombre del fichero, las
+    extensiones permitidas, la descripción del tipo de fichero, el
+    icono y el componente padre sobre el que mostrar el diálogo si
+    corresponde.</li>
+</ul>
+</li>
+<li>
+<p><strong>static char[] getPassword(String text, Object parent)</strong></p>
+<ul>
+<li>Muestra un diálogo para la obtención de una contraseña. Permite
+    establecer el texto de solicitud de la contraseña y el
+    componente padre sobre el que mostrar el diálogo, si
+    corresponde.</li>
+</ul>
+</li>
+<li>
+<p><strong>static char[] getPassword(String text, String charset, boolean
+    beep, Object parent)</strong></p>
+<ul>
+<li>Muestra un diálogo para la obtención de una contraseña. Permite
+    establecer el texto de solicitud de la contraseña, el conjunto
+    de caracteres permitidos, indicar si se debe reproducir un
+    <em>beep</em> del sistema si se trata de insertar un carácter no válido
+    y configurar el componente padre sobre el que mostrar el
+    diálogo, si corresponde.</li>
+</ul>
+</li>
+<li>
+<p><strong>static File getSaveDataToFile(byte[] data, String dialogTitle,
+    String currentDir, String selectedFile, String[] exts, String
+    description, Object parent)</strong></p>
+<ul>
+<li>Muestra un diálogo para el guardado de datos en disco y la
+    obtención del fichero guardado. Permite establecer los datos a
+    guardar, el título del diálogo, el directorio actual, el fichero
+    seleccionado por defecto, un listado de las extensiones de
+    fichero que se desea que aparezcan en el diálogo, la descripción
+    del tipo de fichero y el componente padre sobre el que mostrar
+    el diálogo, si corresponde.</li>
+</ul>
+</li>
+<li>
+<p><strong>static Object showCertificateSelectionDialog(Object parent,
+    NameCertificateBean[] selectionValues)</strong></p>
+<ul>
+<li>Muestra un diálogo para la obtención de un alias de certificado
+    seleccionado por el usuario. Permite configurar el componente
+    padre sobre el que mostrar el diálogo, si corresponde, y el
+    listado con los certificados (y su información) entre los que
+    puede seleccionarse. Se devuelve el alias del certificado
+    seleccionado.</li>
+</ul>
+</li>
+<li>
+<p><strong>static int showConfirmDialog(Object parent, Object message, String
+    title, int optionType, int messageType)</strong></p>
+<ul>
+<li>Muestra un diálogo para solicitar la confirmación del usuario.
+    Permite configurar el componente padre sobre el que mostrar el
+    diálogo, el mensaje que aparecerá en el mismo, su título, las
+    opciones disponibles y el tipo de diálogo.</li>
+</ul>
+</li>
+<li>
+<p><strong>static Object showInputDialog(Object parent, Object message,
+    String title, int messageType, Object icon, Object[]
+    selectionValues, Object initialSelectionValue)</strong></p>
+<ul>
+<li>Muestra un diálogo para obtener la opción seleccionada por el
+    usuario entre las múltiples que se configuran. Permite
+    configurar el componente padre sobre el que mostrar el diálogo,
+    el mensaje que aparecerá en el mismo, su título, el tipo de
+    diálogo, el icono que deberá mostrarse, las opciones
+    seleccionables y el valor inicialmente seleccionado.</li>
+</ul>
+</li>
+</ul>
+<h1 id="almacenes-de-certificados">Almacenes de certificados</h1>
+<p>El uso de certificados es imprescindible para ejecutar las operaciones
+de firma y ensobrado de datos. Estos certificados se localizan en
+almacenes de certificados, desde donde cualquier aplicación compatible
+puede acceder a ellos.</p>
+<p>El Cliente @firma es compatible con múltiples almacenes de certificados
+(almacenes sistema, almacenes en disco, almacenes con formato
+estándar...). La gestión de estos almacenes se realiza de forma
+centralizada, de tal forma que es posible indicar a qué almacén deseamos
+acceder y extraer los certificados que en ellos se encuentran y las
+claves necesarias para realizar operaciones criptográficas como la firma
+de documentos.</p>
+<p>La gestión de almacenes centralizada se realiza en el Cliente @firma
+mediante el módulo <strong>afirma-core-keystores</strong>. Adicionalmente, para el
+acceso al almacén de certificados de Mozilla Firefox es necesario el
+módulo <strong>afirma-keystores-mozilla</strong>, y para el uso de certificados
+simples (que no están en una almacén) se utiliza
+<strong>afirma-keystores-single</strong>.</p>
+<h2 id="modulo-afirma-core-keystores"><strong>Módulo afirma-core-keystores</strong></h2>
+<p>Es el módulo principal para la gestionar de almacenes de claves y
+certificados. Este módulo cuenta con una factoría mediante la cual es
+posible seleccionar el almacén de claves deseado, lo que nos devuelve un
+manejador para el mismo. Mediante es manejador podremos realizar una
+serie de operaciones como son, introducir la clave para el acceso al
+almacén, listar los certificados que contiene y extraer sus claves.</p>
+<p>Las clases de especial interés de este módulo son:</p>
+<h3 id="esgobafirmakeystoresaokeystore"><em>es.gob.afirma.keystores.AOKeyStore</em></h3>
+<p>Enumerado con el listado de almacenes inicialmente soportado por los
+clientes. Principalmente, estos son:</p>
+<ul>
+<li>
+<p><strong>WINDOWS</strong>. Almacén de claves personales de Windows. Sólo
+    disponible en sistemas Windows.</p>
+</li>
+<li>
+<p><strong>APPLE</strong>. Almacén de claves de Mac OS X. Sólo disponible en
+    sistemas Mac OS X. Permite acceder tanto al almacén central del
+    sistema como a almacenes en fichero (si se indica su ruta).</p>
+</li>
+<li>
+<p><strong>MOZ_UNI</strong>. Almacén de claves de Mozilla Firefox. Sólo disponible
+    en aquellos en los que se encuentre instalado Mozilla Firefox. En
+    caso de encontrarse instalados e insertados dispositivos PKCS#11,
+    los certificados de estos se listarán junto con los del almacén
+    interno de Mozilla. Este almacén sólo puede utilizarse si se
+    encuentra disponible el módulo <strong>afirma-keystores-mozilla</strong>.</p>
+</li>
+<li>
+<p><strong>SHARED_NSS</strong>. Almacén de claves central de Linux. Funciona igual
+    que el almacén MOZ_UNI y también depende del módulo
+    <strong>afirma-keystores-mozilla</strong>.</p>
+</li>
+<li>
+<p><strong>PKCS12</strong>. Almacenes en disco acordes con el estándar PKCS#12. Para
+    el uso de este manejador es necesario que se especifique la ruta en
+    donde se encuentra del almacén que se solicita (fichero ".p12" y
+    ".pfx").</p>
+</li>
+<li>
+<p><strong>JAVA</strong>. Almacenes en disco acordes al formato Java de almacén de
+    certificado (JKS). Para el uso de este manejador es necesario que se
+    especifique la ruta en donde se encuentra del almacén que se
+    solicita (fichero ".jks").</p>
+</li>
+<li>
+<p><strong>PKCS11</strong>. Almacenes en dispositivo externo con controlador
+    PKCS#11. Para el acceso a este tipo de dispositivos es necesario que
+    se especifique la ruta de la biblioteca PKCS#11 (".dll", ".so",
+    ".dlib",...) que lo controla.</p>
+</li>
+<li>
+<p><strong>SINGLE</strong>. Certificados "sueltos" en disco. Es necesario que se
+    indique la ruta del certificado concreto que desea cargar (".cer",
+    ".p7b"...). Estos certificados carecen de clave privada, por lo que
+    no pueden utilizarse para la firma de documentos, aunque sí como
+    destinatarios de un sobre electrónico.</p>
+</li>
+<li>
+<p><strong>WINADDRESSBOOK</strong>. Libreta de direcciones de Windows. Sólo
+    disponible en sistemas Windows. Estos certificados carecen de clave
+    privada, por lo que no pueden utilizarse para la firma de
+    documentos, aunque sí como destinatarios de un sobre electrónico.</p>
+</li>
+<li>
+<p><strong>JCEKS</strong>: Almacén de claves según formato Java. Permite el almacén
+    de claves, como las de cifrado de datos. Requiere que se indique el
+    fichero del almacén.</p>
+</li>
+<li>
+<p><strong>DNIEJAVA:</strong> Almacén del DNIe al que se accederá mediante el la
+    biblioteca JMulticard. Es necesario incluir esta biblioteca en el
+    proyecto para poder utilizar este almacén.</p>
+</li>
+<li>
+<p><strong>KNOWN_SMARTCARDS</strong>: Almacén compuesto por diversas tarjetas
+    inteligentes de las que se buscará el PKCS#11 en el sistema. El
+    Cliente @firma utiliza este almacén cuando se carga desde un perfil
+    temporal de Windows.</p>
+</li>
+</ul>
+<h3 id="esgobafirmakeystoresaokeystoremanagerfactory"><em>es.gob.afirma.keystores.AOKeyStoreManagerFactory</em></h3>
+<p>Es la factoría a partir de la cual se obtienen los distintos manejadores
+de almacén de certificados. El método para obtener estos manejadores es:</p>
+<ul>
+<li>
+<p><strong>static AggregatedKeyStoreManager getAOKeyStoreManager(AOKeyStore
+    store, String lib, String description, PasswordCallback pssCallback,
+    Object parentComponent) throws AOKeystoreAlternativeException,
+    IOException</strong></p>
+<ul>
+<li>Recibe el tipo de almacén deseado, la ruta de la biblioteca o
+    almacén y su descripción si no se trata de un almacén de
+    sistema, un <em>callback</em> a través del cual se pueda insertar la
+    clave del almacén y un componente visual para la visualización
+    de los posibles diálogos modales sobre el mismo. Puede lanzar
+    una IOException si no puede acceder al almacén, o una
+    AOKeyStoreAlternativeException si el almacén no está disponible
+    y se propone una alternativa (declarada en la propia excepción).</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ejemplo de uso</strong></p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>...</p>
+<p>// Obtenemos el gestor del almacen de certificados de Mozilla
+Firefox</p>
+<p>AOKeyStoreManager ksm =
+AOKeyStoreManagerFactory.getAOKeyStoreManager(</p>
+<p>AOKeyStore.MOZ_UNI,</p>
+<p><strong>null</strong>,</p>
+<p><strong>null</strong>,</p>
+<p>AOKeyStore.MOZ_UNI.getStorePasswordCallback(null),</p>
+<p><strong>null</strong>);</p>
+<p>...</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<p><strong>Ejemplo de uso</strong></p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>...</p>
+<p>// Creamos un PasswordCallback que ya incluye la contraseña su
+uso</p>
+<p>// directo</p>
+<p>PasswordCallback psc = <strong>new</strong>
+CachePasswordCallback("123456".getChars());</p>
+<p>// Obtenemos el gestor para un almacén en fichero local de tipo
+PKCS12</p>
+<p>// sin interacción del usuario (valido para su uso en servidor)</p>
+<p>AOKeyStoreManager ksm =
+AOKeyStoreManagerFactory.getAOKeyStoreManager(</p>
+<p>AOKeyStore.PKCS12,</p>
+<p>"/ruta/almacen.pfx",</p>
+<p><strong>null</strong>,</p>
+<p>psc,</p>
+<p><strong>this</strong>.parent);</p>
+<p>...</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<h3 id="esgobafirmakeystoresaokeystoremanager"><em>es.gob.afirma.keystores.AOKeyStoreManager</em></h3>
+<p>Manejador para la gestión de un almacén de certificados. Un objeto de
+este tipo permite obtener los alias de los certificados del almacén, los
+propios certificados y sus claves.</p>
+<p>Los métodos de principal interés de esta clase son:</p>
+<ul>
+<li>
+<p><strong>String[] getAliases()</strong></p>
+<ul>
+<li>Recupera un <em>array</em> con los alias de todos los certificados del
+    almacén. Estos alias serán los que utilizaremos para obtener los
+    certificados y las claves del almacén.</li>
+</ul>
+</li>
+<li>
+<p><strong>X509Certificate getCertificate(String alias)</strong></p>
+<ul>
+<li>Recupera del almacén el certificado con el alias indicado.</li>
+</ul>
+</li>
+<li>
+<p><strong>X509Certificate[] getCertificateChain(String alias)</strong></p>
+<ul>
+<li>Recupera del almacén todo lo posibles de la cadena de
+    certificación del certificado con el alias indicado.</li>
+</ul>
+</li>
+<li>
+<p><strong>void setEntryPasswordCallBack(PasswordCallback pwc)</strong></p>
+<ul>
+<li>Establece el PasswordCallback para la autorizar la obtención de
+    las PrivateKeyEntry del almacén.</li>
+</ul>
+</li>
+<li>
+<p><strong>KeyStore.PrivateKeyEntry getKeyEntry(String alias) throws
+    KeyStoreException, NoSuchAlgorithmException,
+    UnrecoverableEntryException</strong></p>
+<ul>
+<li>Recupera del almacén la referencia a la clave privada del
+    certificado cuyo alias se indica. Utiliza el PassworCallback
+    indica mediante setEntryPasswordCallBack o, si no se indicó, el
+    por defecto para el almacén de claves configurado. Se lanzará
+    una excepción en caso de ocurrir un error en el tratamiento del
+    almacén de claves (KeyStoreException), la clave que se intenta
+    recuperar no sea válida (NoSuchAlgorithmException), no se
+    consiga recuperar la clave (UnrecoverableEntryException) o el
+    usuario cancele la operación (AOCancelledOperationException).</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ejemplo de uso</strong></p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>...</p>
+<p>// Recuperamos los alias del almacen y la referencia a clave
+privada</p>
+<p>// del primero de ellos</p>
+<p>PrivateKeyEntry scKeyEntry = <strong>null</strong>;</p>
+<p>String[] aliases = ksm.getAliases();</p>
+<p><strong>if</strong> (aliases.length &gt; 0) {</p>
+<p>scKeyEntry = ksm.getKeyEntry(aliases[0]);</p>
+<p>}</p>
+<p>...</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<h3 id="esgobafirmakeystoresaokeystoredialog"><em>es.gob.afirma.keystores.AOKeyStoreDialog</em></h3>
+<p>Clase que controla el diálogo de selección de certificados. Su
+implementación depende de los módulos gráficos del proyecto:
+<strong>afirma-ui-core-jse</strong> y <strong>afirma-ui-core-jse-keystores</strong>.</p>
+<p>La configuración acerca del almacén del que se deben mostrar los
+certificados y cuales de ellos se deben visualizar se establece por
+medio de sus constructores:</p>
+<ul>
+<li>
+<p><strong>AOKeyStoreDialog(AOKeyStoreManager ksm, Object parentComponent,
+    boolean checkPrivateKeys, boolean showExpiredCertificates, boolean
+    checkValidity)</strong></p>
+<ul>
+<li>
+<p>Crea el diálogo para la selección de un certificado permitiendo
+    configurar:</p>
+<ul>
+<li>
+<p><strong>ksm</strong>: Manejador del almacén de claves al que acceder.</p>
+</li>
+<li>
+<p><strong>parentComponent</strong>: Componente gráfico sobre el que se
+    muestra el diálogo.</p>
+</li>
+<li>
+<p><strong>checkPrivateKeys</strong>: Establece si deben mostrarse
+    únicamente los certificados que posean clave privada con la
+    cual firmar.</p>
+</li>
+<li>
+<p><strong>showExpiredCertificates</strong>: Establece si deben mostrarse
+    también los certificados que se encuentren fuera de su
+    periodo de validez.</p>
+</li>
+<li>
+<p><strong>checkValidity</strong>: Habilita que se muestre un diálogo de
+    advertencia si se selecciona un certificado que pueda ser
+    considerado no válido (fuera del periodo de validez,...).</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>AOKeyStoreDialog(AOKeyStoreManager ksm, Object parentComponent,
+    boolean checkPrivateKeys, boolean showExpiredCertificates, boolean
+    checkValidity, List&lt;? extends CertificateFilter&gt; certFilters,
+    boolean mandatoryCertificate)</strong></p>
+<ul>
+<li>
+<p>Crea el diálogo para la selección de un certificado permitiendo
+    configurar:</p>
+<ul>
+<li>
+<p><strong>ksm</strong>: Manejador del almacén de claves al que acceder.</p>
+</li>
+<li>
+<p><strong>parentComponent</strong>: Componente gráfico sobre el que se
+    muestra el diálogo.</p>
+</li>
+<li>
+<p><strong>checkPrivateKeys</strong>: Establece si deben mostrarse
+    únicamente los certificados que posean clave privada con la
+    cual firmar.</p>
+</li>
+<li>
+<p><strong>showExpiredCertificates</strong>: Establece si deben mostrarse
+    también los certificados que se encuentren fuera de su
+    periodo de validez.</p>
+</li>
+<li>
+<p><strong>checkValidity</strong>: Habilita que se muestre un diálogo de
+    advertencia si se selecciona un certificado que pueda ser
+    considerado no válido (fuera del periodo de validez,...).</p>
+</li>
+<li>
+<p><strong>certFilters</strong>: Listado de filtros de certificados. Sólo se
+    mostrarán los certificados que pasen, al menos, por uno de
+    los filtros indicados.</p>
+</li>
+<li>
+<p><strong>mandatoryCertificate</strong>: Establece que si sólo hay un
+    certificado pasa el proceso de filtrado, o si no hay filtros
+    y sólo hay un certificado en el almacén, se devuelva el
+    alias de este certificado sin ni siquiera mostrara el
+    diálogo de selección.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Para la visualización y uso del diálogo contamos principalmente con el
+método:</p>
+<ul>
+<li>
+<p><strong>String show() throws AOCertificatesNotFoundException;</strong></p>
+<ul>
+<li>
+<p>Muestra el diálogo de selección de certificados según la
+    configuración establecida en el constructor. Devuelve el alias
+    del certificado seleccionado por el usuario, o directamente el
+    único que hubiese que mostrar si se configuró el parámetro
+    mandatory a true.</p>
+</li>
+<li>
+<p>Si no se encuentran certificado se lanza la excepción
+    AOCertificatesNotFoundException, mientras que si el usuario
+    cierra el diálogo sin seleccionar un certificado se lanza una
+    AOCancelledOperationException.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="esgobafirmakeystoresfilterscertificatefilter"><em>es.gob.afirma.keystores.filters.CertificateFilter</em></h3>
+<p>Clase abstracta de la que debe heredar un filtro de certificados.
+Existen varios filtros de certificados implementados en el módulo
+<strong>afirma-keystores-filters</strong>.</p>
+<p>Los métodos que se deben implementar son:</p>
+<ul>
+<li>
+<p><strong>boolean matches(X509Certificate cert)</strong></p>
+<ul>
+<li>Debe devolver true si el certificado indicado cumple con los
+    criterios establecidos en el filtro.</li>
+</ul>
+</li>
+<li>
+<p><strong>String[] matches(String[] aliases, AOKeyStoreManager ksm)</strong></p>
+<ul>
+<li>
+<p>Debe devolver el listado con los alias de los certificados que
+    cumplen con los criterios establecidos en el filtro.</p>
+</li>
+<li>
+<p>Si no se implementa este método, se utilizará el método anterior
+    por cada certificado individual si supera el filtro establecido,
+    en cuyo caso pasa a la lista de certificados válidos.</p>
+</li>
+<li>
+<p>Implementar este método es útil cuando se desean establecer
+    condiciones especiales que afectan a diversos certificados. Por
+    ejemplo, un certificado sólo se mostrará si está declarado como
+    un certificado de firma o, si no está declarado como tal pero no
+    hay ningún otro certificado con ese número de serie del
+    <em>Subject</em>.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="modulo-afirma-keystores-mozilla"><strong>Módulo afirma-keystores-mozilla</strong></h2>
+<p>Módulo particular para el acceso al almacén de Java. Salvo que se desee
+obtener exclusivamente acceso al almacén de Mozilla Firefox, no es
+recomendable manipular directamente las clases de este módulo. Obtenga
+este manejador mediante la factoría de <strong>afirma-core-keystores</strong>
+indicando el tipo de almacén AOKeyStore.MOZ_UNI.</p>
+<p>Este almacén gestiona de forma unificada los certificados del almacén
+interno de Mozilla y los certificados de los dispositivos externos
+instalados en el almacén mediante su PKCS#11.</p>
+<h2 id="modulo-afirma-keystores-single"><strong>Módulo afirma-keystores-single</strong></h2>
+<p>Módulo particular para el manejo de certificados en disco no contenidos
+en ningún almacén de certificados. Salvo que se desee únicamente
+utilizar estos certificados, no es necesario manipular directamente las
+clases de este módulo. Obtenga este manejador mediante la factoría de
+<strong>afirma-core-keystores</strong> indicando el tipo de almacén
+AOKeyStore.SINGLE.</p>
+<p>Los certificados gestionados mediante este manejador carecen de clave
+privada, por lo que no se pueden utilizar para realizar firmas
+electrónicas ni otras operaciones criptográficas. En cambio, pueden
+utilizarse para designar a los destinatarios de sobres electrónicos.</p>
+<p>Para utilizar el diálogo gráfico de selección con los certificados de
+este almacén será necesario establecer correctamente el parámetro que
+determina si se deben mostrar los certificados que carecen de clave
+privada.</p>
+<h2 id="modulo-afirma-keystores-capiaddressbook"><strong>Módulo afirma-keystores-capiaddressbook</strong></h2>
+<p>Módulo particular para el acceso a la libreta de direcciones de sistemas
+Windows. Salvo que se desee únicamente utilizar los certificados de es
+almacén, no es necesario manipular directamente la clase de este módulo.
+Obtenga este manejador mediante la factoría de <strong>afirma-core-keystores</strong>
+indicando el tipo de almacén AOKeyStore.WINADDRESSBOOK.</p>
+<p>Los certificados gestionados mediante este manejador carecen de clave
+privada, por lo que no se pueden utilizar para realizar firmas
+electrónicas ni otras operaciones criptográficas. En cambio, pueden
+utilizarse para designar a los destinatarios de sobres electrónicos.</p>
+<p>Para utilizar el diálogo gráfico de selección con los certificados de
+este almacén será necesario establecer correctamente el parámetro que
+determina si se deben mostrar los certificados que carecen de clave
+privada.</p>
+<h1 id="modulos-de-firma">Módulos de firma</h1>
+<p>Un módulo de firma se compone del conjunto de clases que permiten la
+gestión de un formato de firma (generación, identificación y extracción
+de datos de firma) donde, al menos una de las cuales, debe implementar
+la interfaz <strong>es.gob.afirma.core.signers.AOSigner</strong> para permitir su uso
+de forma homogénea al resto de módulos.</p>
+<p>El que el Cliente @firma soporte o no un formato de firma depende de si
+integra o no el módulo de firma que se encarga de la gestión de ese
+formato. Cada uno de los módulos tiene sus propias dependencias, de tal
+forma que una construcción del Cliente puede disponer de distintos
+módulos, no necesariamente todos ellos, mientras se incluyan las
+dependencias de cada uno.</p>
+<p>Para gestionar firmas en un formato concreto deberemos utilizar las
+clases del módulo que implementa AOSigner y se encarga de la gestión de
+este formato. Para consultar cómo utilizar la clase AOSigner, revisa el
+apartado <u>Interfaces de Utilidad</u> de este documento.</p>
+<p>Para gestionar de forma centralizada los formatos de firma disponibles
+utilice la clase <strong>es.gob.afirma.core.signers.AOSignerFactory</strong>. Puede
+consultar más información sobre esta clase en el apartado
+<u>Factorías</u> de este módulo.</p>
+<p>A continuación se listan los distintos módulos de firma de los que
+dispone el Cliente @firma y los formatos que soporta:</p>
+<h2 id="modulo-afirma-crypto-cades"><strong>Módulo afirma-crypto-cades</strong></h2>
+<p>Este módulo permite la generación y gestión de firmas en formato CAdES y
+firmas empaquetadas CAdES-ASiC-S. Todas las firmas CAdES generadas son
+acordes al formato B-Level.</p>
+<p>Este módulo depende del <em>core</em> del proyecto (<strong>afirma-core</strong>) y del
+módulo de funciones de gestión de firmas binarias
+(<strong>afirma-crypto-core-pkcs7</strong>). El módulo <strong>afirma-crypto-cades</strong> no
+soporta las operaciones de cofirma y contrafirma para lo que requiere
+que se incluya el módulo <strong>afirma-crypto-cades-multi</strong> para estas
+funciones. Utilizaremos el módulo <strong>afirma-crypto-cades</strong> sin incluir el
+módulo <strong>afirma-crypto-cades-multi</strong> sólo cuando nuestra aplicación no
+realice nunca multifirmas CAdES. Como dependencias externas utiliza las
+bibliotecas de SpongyCastle.</p>
+<p>El manejador de firma que implementa la interfaz AOSigner para el manejo
+de firmas CAdES es <strong>es.gob.afirma.signers.cades.AOCAdESSigner</strong>.</p>
+<p>Para obtener este manejador a partir de la factoría AOSignerFactory,
+debe utilizarse la constante
+es.gob.afirma.core.signers.AOSignConstants.SIGN_FORMAT_CADES.</p>
+<p>El manejador de firma que implementa la interfaz AOSigner para el manejo
+de firmas CAdES-ASiC-S es
+<strong>es.gob.afirma.signers.cades.asic.AOCAdESASiCSSigner</strong>.</p>
+<p>Para obtener este manejador a partir de la factoría AOSignerFactory,
+debe utilizarse la constante
+es.gob.afirma.core.signers.AOSignConstants.SIGN_FORMAT_CADES_ASIC_S.</p>
+<p>Las opciones de configuración específicas para la generación de firmas,
+cofirmas y contrafirmas CAdES se detallan en el manual de integración
+del Cliente @firma y el Javadoc de la clase
+<strong>es.gob.afirma.signers.cades.AOCAdESExtraParams</strong>.</p>
+<h2 id="modulo-afirma-crypto-cadestri-client"><strong>Módulo afirma-crypto-cadestri-client</strong></h2>
+<p>Este módulo permite la generación de firmas en formato CAdES y
+empaquetados CAdES-ASiC-S de forma trifásica. Las firmas soportadas por
+este módulo son exactamente iguales a las del módulo
+<strong>afirma-crypto-cades</strong>. Este módulo sólo permite generar firmas de los
+formatos soportados y no implementa el resto de métodos de la interfaz
+AOSigner (detección de datos válidos, identificación de formatos de
+firma, extracción de los datos…)</p>
+<p>Este módulo sólo tiene dependencia con el módulo <em>core</em>
+(<strong>afirma-core</strong>) y, para funcionar, requiere conectar con el servicio
+de firmas trifásicas del Cliente @firma.</p>
+<p>El manejador de firma que implementa la interfaz AOSigner para la
+generación de firmas trifásicas CAdES es
+<strong>es.gob.afirma.signers.cadestri.client.AOCAdESTriPhaseSigner</strong> y la
+constante para obtener el manejador a partir de la factoría
+AOSignerFactory es
+es.gob.afirma.core.signers.AOSignConstants.SIGN_FORMAT_CADES_TRI.</p>
+<p>El manejador de firma que implementa la interfaz AOSigner para la
+generación de firmas trifásicas empaquetadas CAdES-ASiC-S es
+<strong>es.gob.afirma.signers.cadestri.client.asic.AOCAdESASiCSTriPhaseSigner</strong>
+y la constante para obtener el manejador a partir de la factoría
+AOSignerFactory es
+es.gob.afirma.core.signers.AOSignConstants.SIGN_FORMAT_CADES_ASIC_S_TRI.</p>
+<h2 id="modulo-afirma-crypto-cms"><strong>Módulo afirma-crypto-cms</strong></h2>
+<p>Este módulo permite la generación y gestión de firmas en formato
+CMS/PKCS#7.</p>
+<p>Este módulo depende del <em>core</em> del proyecto (<strong>afirma-core</strong>) y de
+<strong>afirma-crypto-core-pkcs7</strong>, el módulo de funciones de gestión de
+firmas binarias. Como dependencias externas utiliza las bibliotecas de
+SpongyCastle.</p>
+<p>El manejador de firma que implementa la interfaz AOSigner es
+<strong>es.gob.afirma.signers.cms.AOCMSSigner</strong>.</p>
+<p>Para obtener este manejador a partir de la factoría AOSignerFactory,
+debe utilizarse la constante
+es.gob.afirma.core.signers.AOSignConstants.SIGN_FORMAT_CMS.</p>
+<p>Las opciones de configuración específicas para la generación de firmas,
+cofirmas y contrafirmas CMS se detallan en el manual de integración del
+Cliente @firma y el Javadoc de la clase
+<strong>es.gob.afirma.signers.cms.AOCMSExtraParams</strong>.</p>
+<h2 id="modulo-afirma-crypto-pdf"><strong>Módulo afirma-crypto-pdf</strong></h2>
+<p>Este módulo permite la generación y gestión de firmas en formato
+PAdES/PDF. Las firmas PAdES generadas serán acordes al formato B-Level
+cuando se especifique el subfiltro ETSI.CAdES.detached a través de las
+propiedades extraParams.</p>
+<p>Este módulo depende del <em>core</em> del proyecto (<strong>afirma-core</strong>), el módulo
+de funciones de gestión de firmas binarias
+(<strong>afirma-crypto-core-pkcs7</strong>), el módulo para la generación de sellos
+de tiempo en firmas binarias (<strong>afirma-crypto-core-pkcs7-tsp</strong>) y el
+módulo de generación de firmas CAdES (<strong>afirma-crypto-cades</strong>). Como
+dependencias externas utiliza las bibliotecas de SpongyCastle e iText
+(versión propia generada sobre la versión 2.1.7 de iText).</p>
+<p>El manejador de firma que implementa la interfaz AOSigner es
+<strong>es.gob.afirma.signers.pades.AOPDFSigner</strong>.</p>
+<p>Para obtener este manejador a partir de la factoría AOSignerFactory,
+debe utilizarse la constante
+es.gob.afirma.core.signers.AOSignConstants.SIGN_FORMAT_PADES.</p>
+<p>Las opciones de configuración específicas para la generación de firmas y
+multifirmas PAdES se detallan en el manual de integración del Cliente
+@firma y el Javadoc de la clase
+<strong>es.gob.afirma.signers.pades.PDFExtraParams</strong>.</p>
+<h2 id="modulo-afirma-crypto-padestri-client"><strong>Módulo afirma-crypto-padestri-client</strong></h2>
+<p>Este módulo permite la generación de firmas en formato PAdES de forma
+trifásica. Las firmas soportadas por este módulo son exactamente iguales
+a las del módulo <strong>afirma-crypto-pdf</strong>. Este módulo sólo permite generar
+firmas de los formatos soportados y no implementa el resto de métodos de
+la interfaz AOSigner (detección de datos válidos, identificación de
+formatos de firma, extracción de los datos…)</p>
+<p>Este módulo sólo tiene dependencia con el módulo <em>core</em>
+(<strong>afirma-core</strong>) y, para funcionar, requiere conectar con el servicio
+de firmas trifásicas del Cliente @firma.</p>
+<p>El manejador de firma que implementa la interfaz AOSigner para la
+generación de firmas trifásicas PAdES es
+<strong>es.gob.afirma.signers.cadestri.client.AOPAdESTriPhaseSigner</strong> y la
+constante para obtener el manejador a partir de la factoría
+AOSignerFactory es
+es.gob.afirma.core.signers.AOSignConstants.SIGN_FORMAT_PADES_TRI.</p>
+<h2 id="modulo-afirma-crypto-xades"><strong>Módulo afirma-crypto-xades</strong></h2>
+<p>Este módulo permite la generación y gestión de firmas en formato XAdES,
+firmas de Factura Electrónica (FacturaE) y firmas empaquetadas
+XAdES-ASiC-S. Todas las firmas XAdES generadas son acordes al formato
+B-Level.</p>
+<p>Este módulo depende del <em>core</em> del proyecto (<strong>afirma-core</strong>) y de el
+módulo de funciones de gestión de firmas XML
+(<strong>afirma-crypto-core-xml</strong>). Como dependencia externa utiliza la
+biblioteca JXAdES.</p>
+<p>Los manejadores de firma que implementa la interfaz AOSigner son:</p>
+<ul>
+<li>
+<p><strong>es.gob.afirma.signers.xades.AOXAdESSigner</strong>: Para las firmas
+    XAdES.</p>
+</li>
+<li>
+<p><strong>es.gob.afirma.signers.xades.AOFacturaESigner</strong>: Para la firma de
+    facturas electrónicas.</p>
+</li>
+<li>
+<p><strong>es.gob.afirma.signers.xades.asic.AOXAdESASiCSSigner</strong>: Para las
+    firmas empaquetadas XAdES-ASiC-S.</p>
+</li>
+</ul>
+<p>Para obtener estos manejadores a partir de la factoría AOSignerFactory,
+deben utilizarse las constantes
+es.gob.afirma.core.signers.AOSignConstants.SIGN_FORMAT_XADES (para el
+formato XAdES)
+es.gob.afirma.core.signers.AOSignConstants.SIGN_FORMAT_FACTURAE (para el
+formato FacturaE) y
+es.gob.afirma.core.signers.AOSignConstants.SIGN_FORMAT_XADES-ASIC-S
+(para el formato XAdES-ASiC-S)</p>
+<p>Las opciones de configuración específicas para la generación de firmas,
+cofirmas y contrafirmas XAdES se detallan en el manual del Cliente
+@firma y el Javadoc de la clase
+<strong>es.gob.afirma.signers.xades.AOXAdESExtraParams</strong>. Salvo que se
+configure explícitamente el tipo de firma XAdES, se generarán firmas
+XAdES Enveloping.</p>
+<p>Las opciones de configuración específicas para la generación de firmas
+de facturas electrónicas son un subconjunto de las permitidas en las
+firmas XAdES y se detallan en el manual de integración del Cliente
+@firma y el Javadoc del método sign() de la clase
+<strong>es.gob.afirma.signers.xades.AOFacturaESigner</strong>.</p>
+<p>Las opciones de configuración específicas para la generación de firmas,
+cofirmas y contrafirmas XAdES-ASiC-S se detallan en el Javadoc de la
+clase <strong>es.gob.afirma.signers.xades.AOXAdESASiCSExtraParams</strong>.</p>
+<h2 id="modulo-afirma-crypto-xadestri-client"><strong>Módulo afirma-crypto-xadestri-client</strong></h2>
+<p>Este módulo permite la generación de firmas en formato XAdES, FacturaE y
+empaquetados XAdES-ASiC-S de forma trifásica. Las firmas soportadas por
+este módulo son exactamente iguales a las del módulo
+<strong>afirma-crypto-xades</strong>. Este módulo sólo permite generar firmas de los
+formatos soportados y no implementa el resto de métodos de la interfaz
+AOSigner (detección de datos válidos, identificación de formatos de
+firma, extracción de los datos…)</p>
+<p>Este módulo sólo tiene dependencia con el módulo <em>core</em>
+(<strong>afirma-core</strong>) y, para funcionar, requiere conectar con el servicio
+de firmas trifásicas del Cliente @firma.</p>
+<p>El manejador de firma que implementa la interfaz AOSigner para la
+generación de firmas trifásicas XAdES es
+<strong>es.gob.afirma.signers.cadestri.client.AOXAdESTriPhaseSigner</strong> y la
+constante para obtener el manejador a partir de la factoría
+AOSignerFactory es
+es.gob.afirma.core.signers.AOSignConstants.SIGN_FORMAT_XADES_TRI.</p>
+<p>El manejador de firma que implementa la interfaz AOSigner para la
+generación de firmas trifásicas de factura electrónica es
+<strong>es.gob.afirma.signers.cadestri.client.AOFacturaETriPhaseSigner</strong> y la
+constante para obtener el manejador a partir de la factoría
+AOSignerFactory es
+es.gob.afirma.core.signers.AOSignConstants.SIGN_FORMAT_FACTURAE_TRI.</p>
+<p>El manejador de firma que implementa la interfaz AOSigner para la
+generación de firmas trifásicas empaquetadas XAdES-ASiC-S es
+<strong>es.gob.afirma.signers.cadestri.client.asic.AOXAdESASiCSTriPhaseSigner</strong>
+y la constante para obtener el manejador a partir de la factoría
+AOSignerFactory es
+es.gob.afirma.core.signers.AOSignConstants.SIGN_FORMAT_XADES_ASIC_S_TRI.</p>
+<h2 id="modulo-afirma-crypto-xmlsignature"><strong>Módulo afirma-crypto-xmlsignature</strong></h2>
+<p>Este módulo permite la generación y gestión de firmas en formato
+XMLdSign.</p>
+<p>Este módulo depende del <em>core</em> del proyecto (<strong>afirma-core</strong>) y del
+módulo de funciones de gestión de firmas XML
+(<strong>afirma-crypto-core-xml</strong>).</p>
+<p>El manejador de firma que implementa la interfaz AOSigner es
+<strong>es.gob.afirma.signers.xmldsig.AOXMLDSigSigner</strong>.</p>
+<p>Para obtener este manejador a partir de la factoría AOSignerFactory,
+debe utilizarse la constante
+es.gob.afirma.core.signers.AOSignConstants.SIGN_FORMAT_XMLDSIG.</p>
+<p>Las opciones de configuración específicas para la generación de firmas,
+cofirmas y contrafirmas XMLdSig se detallan en el manual de integración
+del Cliente @firma y el Javadoc de la clase
+<strong>es.gob.afirma.signers.xmldsig.AOXMLDSigExtraParams</strong>. Salvo que se
+configure explícitamente el tipo de firma XMLdSig, se generarán firmas
+XMLdSig Enveloping.</p>
+<h2 id="modulo-afirma-crypto-odf"><strong>Módulo afirma-crypto-odf</strong></h2>
+<p>Este módulo permite la generación y gestión de firmas en formato ODF
+(Open Document Format).</p>
+<p>Este módulo depende del <em>core</em> del proyecto (<strong>afirma-core</strong>) y del
+módulo de funciones de gestión de firmas XML
+(<strong>afirma-crypto-core-xml</strong>).</p>
+<p>El manejador de firma que implementa la interfaz AOSigner es
+<strong>es.gob.afirma.signers.odf.AOODFSigner</strong>.</p>
+<p>Para obtener este manejador a partir de la factoría AOSignerFactory,
+debe utilizarse la constante
+es.gob.afirma.core.signers.AOSignConstants.SIGN_FORMAT_ODF.</p>
+<p>Las opciones de configuración específicas para la generación de firmas y
+multifirmas ODF se detallan en el manual de integración del Cliente
+@firma y el Javadoc de la clase
+<strong>es.gob.afirma.signers.odf.AOODFExtraParams</strong>.</p>
+<h2 id="modulo-afirma-crypto-ooxml"><strong>Módulo afirma-crypto-ooxml</strong></h2>
+<p>Este módulo permite la generación y gestión de firmas en formato OOXML
+(Office Open XML).</p>
+<p>Este módulo depende del <em>core</em> del proyecto (<strong>afirma-core</strong>) y del
+módulo de funciones de gestión de firmas XML
+(<strong>afirma-crypto-core-xml</strong>) y los módulos de firmas XAdES
+(<strong>afirma-crypto-xades</strong>) y XMLdSig (<strong>afirma-crypto-xmlsignature</strong>), de
+los que se vale para generar las firmas internas de OOXML.</p>
+<p>El manejador de firma que implementa la interfaz AOSigner es
+<strong>es.gob.afirma.signers.ooxml.AOOOXMLSigner</strong>.</p>
+<p>Para obtener este manejador a partir de la factoría AOSignerFactory,
+debe utilizarse la constante
+es.gob.afirma.core.signers.AOSignConstants.SIGN_FORMAT_OOXML.</p>
+<p>Las opciones de configuración específicas para la generación de firmas y
+multifirmas OOXML se detallan en el manual de integración del Cliente
+@firma y el Javadoc de la clase
+<strong>es.gob.afirma.signers.ooxml.AOOOXMLExtraParams</strong>.</p>
+<h1 id="firma-masiva">Firma masiva</h1>
+<p>Los procesos de firma masiva consisten en la realización de varias
+firmas/multifirmas electrónicas por medio de una única operación de cara
+al usuario. Aunque este es un procedimiento que se puede programar
+directamente a partir de la repetición en bucle de las operaciones de
+firma, el Cliente @firma cuenta con 2 clases que gestionan buena parte
+de la lógica deseable de este tipo de operaciones.</p>
+<p>Estas 2 clases se encuentran en el módulo <strong>afirma-core-massive</strong> y son:</p>
+<ul>
+<li>
+<p><strong>es.gob.afirma.massive.DirectorySignatureHelper</strong>: Para la gestión
+    de firmas/multifirmas masivas de directorios.</p>
+</li>
+<li>
+<p><strong>es.gob.afirma.massive.MassiveSignatureHelper</strong>: Para la gestión de
+    firmas/multifirmas masivas de datos, fichero o hashes con una
+    configuración prefijada.</p>
+</li>
+</ul>
+<h2 id="modulo-afirma-core-massive"><strong>Módulo afirma-core-massive</strong></h2>
+<h3 id="esgobafirmamassivedirectorysignaturehelper"><em>es.gob.afirma.massive.DirectorySignatureHelper</em></h3>
+<p>Es la clase que permite la firma masiva de ficheros en disco. Esta clase
+cuenta con un constructor con el que se puede establecer el algoritmo,
+el formato por defecto y el modo de firma que se debe utilizar una vez
+creado el objeto pueden utilizarse las distintas funciones con las que
+cuenta para establecer la configuración de operación y ejecutarla. Los
+métodos más relevantes son:</p>
+<ul>
+<li>
+<p><strong>void setFileFilter(java.io.FileFilter fileFilter)</strong></p>
+<ul>
+<li>Establece los filtros de fichero que deben pasar los ficheros de
+    los directorios sobre los que se operan.</li>
+</ul>
+</li>
+<li>
+<p><strong>void setOverwritePreviuosFileSigns(boolean overwrite)</strong></p>
+<ul>
+<li>Establece si debe sobre escribirse cualquier fichero con el
+    mismo nombre que una de las firmas generadas.</li>
+</ul>
+</li>
+<li>
+<p><strong>void setActiveLog(boolean activeLog)</strong></p>
+<ul>
+<li>Establece si debe generarse un fichero de log con el resultado.
+    Por defecto, se genera.</li>
+</ul>
+</li>
+<li>
+<p><strong>void setLogPath(String path)</strong></p>
+<ul>
+<li>Establece la ruta del fichero de log. Por defecto, el fichero de
+    salida de firmas.</li>
+</ul>
+</li>
+<li>
+<p><strong>boolean massiveSign(MassiveType type, String startDir, boolean
+    recurse, String outDir, boolean createOutDir, boolean
+    originalFormat, PrivateKeyEntry keyEntry, Properties config) throws
+    AOException</strong></p>
+<ul>
+<li>Ejecuta la operación determinada por type sobre el directorio
+    startDir y sus subdirectorios (en caso de que recurse sea true)
+    y genera las firmas resultantes en outDir (creándolo si así se
+    indica en createOutDir). Si se especifica originalFormat las
+    multifirmas se realizarán con el formato de la firma original en
+    lugar del establecido en el constructor. La clave de firma es
+    keyEntry y config determina la configuración de firma.</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>Ejemplo de uso:</strong></p>
+</blockquote>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>...</p>
+<p>// Creamos el gestor de firmas de directorios</p>
+<p>DirectorySignatureHelper massiveHelper =</p>
+<p><strong>new</strong> DirectorySignatureHelper(</p>
+<p>AOSignConstants.SIGN_ALGORITHM_SHA1WITHRSA,</p>
+<p>AOSignConstants.SIGN_ALGORITHM_PADES,</p>
+<p>AOSignConstants.SIGN_MODE_IMPLICIT);</p>
+<p>// Restringimos la firma solo a ficheros PDF</p>
+<p>massiveHelper.setFileFilter(<strong>new</strong> FileFilter {</p>
+<p><strong>public</strong> <strong>boolean</strong> accept(File file)
+{</p>
+<p><strong>return</strong>
+file.getName().toLowerCase().endsWith(".pdf");</p>
+<p>}</p>
+<p>});</p>
+<p>// Desactivamos la generación del fichero de log</p>
+<p>massiveHelper.setActiveLog(<strong>false</strong>);</p>
+<p>// Establecemos una configuracion de firma</p>
+<p>Properties config = <strong>new</strong> Properties();</p>
+<p>config.setProperty("signReason", "Prueba");</p>
+<p>config.setProperty("signatureProductionCity", "Madrid");</p>
+<p>config.setProperty("signerContact", "fulanito@mail.es");</p>
+<p>// Ejecutamos una operación masiva de firma sobre todos</p>
+<p>// los ficheros del directorio indicado</p>
+<p>massiveHelper.massiveSign(</p>
+<p>MassiveType.SIGN, "C:/pruebas", <strong>true</strong>, "C:/salida",
+<strong>true</strong>,</p>
+<p><strong>true</strong>, pke, config);</p>
+<p>...</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<ul>
+<li>
+<p><strong>boolean massiveSign(MassiveType type, String[] filenames, String
+    outDir, boolean createOutDir, boolean originalFormat,
+    PrivateKeyEntry keyEntry, Properties config) throws AOException</strong></p>
+<ul>
+<li>Ejecuta la operación determinada por type sobre los ficheros de
+    los que se proporciona la ruta mediante filenames. Genera las
+    firmas resultantes en outDir (creándolo si así se indica en
+    createOutDir). Si se especifica originalFormat las multifirmas
+    se realizarán con el formato de la firma original en lugar del
+    establecido en el constructor. La clave de firma es keyEntry y
+    config determina la configuración de firma.</li>
+</ul>
+</li>
+</ul>
+<h3 id="esgobafirmamassivemassivesignaturehelper"><em>es.gob.afirma.massive.MassiveSignatureHelper</em></h3>
+<p>Esta es la clase que contiene la lógica para la realización de firmas
+masivas de modo programático. La clase se construye con una
+configuración completa con todos los parámetros necesarios para la
+ejecución de la operación masiva. Para aquellos parámetros que no estén
+establecidos se utilizará la configuración por defecto. En ningún caso
+debe bloquearse la ejecución mostrando un diálogo visual al usuario o
+solicitándole información.</p>
+<p>El constructor de la clase y los métodos de mayor interés son:</p>
+<ul>
+<li>
+<p><strong>MassiveSignatureHelper(MassiveSignConfiguration configuration)
+    throws AOException</strong></p>
+<ul>
+<li>Construye el objeto para la ejecución de la operación masiva
+    proporcionándole la configuración completa de firma. Durante la
+    construcción del objeto se establecen los valores para la
+    operación y se selecciona el manejador de firma a partir del
+    formato configurado. Si no existe ningún manejador disponible
+    para el formato indicado, se lanzará una excepción.</li>
+</ul>
+</li>
+<li>
+<p><strong>void setMassiveOperation(MassiveType massiveOperation)</strong></p>
+<ul>
+<li>Permite modificar, después de la construcción del objeto e
+    incluso iniciado el proceso masivo, la operación que se debe
+    ejecutar (firma, cofirma, contrafirma de nodos hoja o
+    contrafirma completa).</li>
+</ul>
+</li>
+<li>
+<p><strong>void setSignatureFormat(String signatureFormat)</strong></p>
+<ul>
+<li>Permite modificar, después de la construcción del objeto e
+    incluso iniciado el proceso masivo, el formato de firma que ese
+    debe utilizar. Este método sólo afecta a la operación de firma
+    masiva. A ninguno de los procesos de multifirma.</li>
+</ul>
+</li>
+<li>
+<p><strong>byte[] signData(byte[] data)</strong></p>
+<ul>
+<li>Firma/multifirma los datos indicados con la configuración
+    establecida por defecto. Si es una firma masiva y se configuró
+    un nuevo formato con setSignatureFormat(String) después de la
+    construcción del objeto, se utilizará este último.</li>
+</ul>
+</li>
+<li>
+<p><strong>byte[] signFile(String fileUri)</strong></p>
+<ul>
+<li>Firma/multifirma el contenido del fichero indicado con la
+    configuración establecida por defecto.</li>
+</ul>
+</li>
+<li>
+<p><strong>byte[] signHash(byte[] hash)</strong></p>
+<ul>
+<li>Firma el hash indicado con la configuración establecida por
+    defecto. Este método sólo puede utilizarse cuando la operación
+    masiva configurada sea la firma, ni cofirma ni contrafirma.</li>
+</ul>
+</li>
+<li>
+<p><strong>String getCurrentLogEntry()</strong></p>
+<ul>
+<li>Recupera un texto descriptivo con el resultado de la última
+    operación ejecutado mediante los métodos signData(byte[]),
+    signFile(String) o signHash(byte[]).</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ejemplo de uso</strong></p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>...</p>
+<p>// Establecemos la configuracion propia del formato</p>
+<p>Properties extraParams = <strong>new</strong> Properties();</p>
+<p>extraParams.setProperty("includeOnlySignningCertificate",
+"true");</p>
+<p>// Establecemos la configuracion de la operación</p>
+<p>MassiveSignConfig config = <strong>new</strong>
+MassiveSignConfig(pke);</p>
+<p>config.setMassiveOperation(MassiveType.COUNTERSIGN_LEAFS);</p>
+<p>config.setSignatureFormat(AOSignConstants.SIGN_FORMAT_CADES);</p>
+<p>config.setOriginalFormat(<strong>true</strong>);</p>
+<p>config.setExtraParams(extraParams);</p>
+<p>MassiveSignatureHelper massiveHelper =</p>
+<p><strong>new</strong> MassiveSignatureHelper(config);</p>
+<p>// Contrafirmamos los ficheros cuyas rutas se encuentran en</p>
+<p>// el array FILES.</p>
+<p>// Si es un PDF, lo cofirmamos en su lugar</p>
+<p><strong>byte</strong>[] result = <strong>null</strong>;</p>
+<p><strong>for</strong> (String path : FILES) {</p>
+<p><strong>if</strong> (path.toLowerCase().endsWith(".pdf")) {</p>
+<p>massiveHelper.setSignatureFormat(</p>
+<p>AOSignConstants.SIGN_FORMAT_PADES);</p>
+<p>result = massiveHelper.signFile(path);</p>
+<p>massiveHelper.setSignatureFormat(</p>
+<p>AOSignConstants.SIGN_FORMAT_CADES);</p>
+<p>}</p>
+<p><strong>else</strong> {</p>
+<p>result = massiveHelper.signFile(path);</p>
+<p>}</p>
+<p>// Operamos como corresponda con el resultado</p>
+<p>procesar(result);</p>
+<p>}</p>
+<p>...</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<h1 id="modulos-de-cifrado">Módulos de cifrado</h1>
+<p>A diferencia de los módulos de firma, el Cliente @firma sólo cuenta
+actualmente con un módulo de cifrado simétrico de datos. Este módulo es
+el que se utiliza en los procesos de cifrado del <em>applet</em> Cliente.</p>
+<p>Un módulo de cifrado debe poseer al menos una clase que implemente la
+interfaz <strong>es.gob.afirma.core.ciphers.AOCipher</strong>, así es posible
+utilizar de forma homogénea todos los manejadores con las funciones de
+cifrado que se puedan crear para uso del Cliente.</p>
+<p>Actualmente no existe ninguna factoría que permita recuperar los
+distintos manejadores de funciones de cifrado por lo que se deberán
+utilizar estos directamente a través de su clase AOCipher.</p>
+<h2 id="modulo-afirma-crypto-cipher"><strong>Módulo afirma-crypto-cipher</strong></h2>
+<p>Este módulo de cifrado está basado en el proveedor de seguridad SunJCE
+de Java. El módulo mantiene internamente la lista de configuraciones
+soportadas, tomadas estas de las disponibles en Java 6, por lo que no
+será posible utilizar otro tipo de configuraciones de cifrado. Los
+algoritmos soportados son:</p>
+<ul>
+<li>
+<p>AES</p>
+</li>
+<li>
+<p>ARCFOUR</p>
+</li>
+<li>
+<p>Blowfish</p>
+</li>
+<li>
+<p>DES</p>
+</li>
+<li>
+<p>DESede</p>
+</li>
+<li>
+<p>RC2</p>
+</li>
+<li>
+<p>PBEWithMD5AndDES</p>
+</li>
+<li>
+<p>PBEWithSHA1AndDESede</p>
+</li>
+<li>
+<p>PBEWithSHA1AndRC2_40</p>
+</li>
+</ul>
+<p>Cada uno de estos algoritmos soporta varias configuraciones de modo y
+<em>padding</em>, pero de no indicarse se utilizará la que por defecto define
+el proveedor.</p>
+<p>Este módulo sólo tiene como dependencia al módulo con el núcleo del
+proyecto (<strong>afirma-core</strong>).</p>
+<p>La clase del módulo que implementa la interfaz AOCipher es
+<strong>es.gob.afirma.ciphers.jce.AOSunJCECipher</strong>.</p>
+<p>Además del propio manejador de funciones de cifrado, este módulo
+incorpora una clase para la creación y gestión de una almacén de claves
+de cifrado, AOCipherKeyStoreHelper.</p>
+<h3 id="esgobafirmaciphersaocipherkeystorehelper"><em>es.gob.afirma.ciphers.AOCipherKeyStoreHelper</em></h3>
+<p>Esta clase permite la gestión de un único almacén de claves por usuario
+del sistema. Este almacén se sitúa inevitablemente en el fichero
+<em>ciphkeys.jceks</em>, situado en el directorio del usuario. Esta clase no
+utiliza ningún tipo de interfaz gráfico, por lo que advertencias y
+cualquier otro tipo de acceso deberán realizarse de forma externa. Los
+métodos principales para la gestión de este almacén son:</p>
+<ul>
+<li>
+<p><strong>static boolean storeExists()</strong></p>
+<ul>
+<li>Método estático para comprobar la existencia del almacén de
+    claves del usuario actual.</li>
+</ul>
+</li>
+<li>
+<p><strong>AOCipherKeyStoreHelper(char[] p) throws AOException,
+    IOException, GeneralSecurityException</strong></p>
+<ul>
+<li>Constructor para obtener acceso al almacén de claves del usuario
+    o para crearlo en caso de que no exista.</li>
+</ul>
+</li>
+<li>
+<p><strong>String[] getAliases()</strong></p>
+<ul>
+<li>Lista los alias de las claves del almacén.</li>
+</ul>
+</li>
+<li>
+<p><strong>Key getKey(String alias) throws AOException</strong></p>
+<ul>
+<li>Recupera una clave de cifrado del almacén, a partir de su alias.</li>
+</ul>
+</li>
+<li>
+<p><strong>void storeKey(String alias, Key key) throws AOException</strong></p>
+<ul>
+<li>Almacena una clave en el almacén identificándola con el alias
+    indicado.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ejemplo de uso</strong></p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>...</p>
+<p><strong>char</strong>[] password = <strong>null</strong>;</p>
+<p>// Si el almacen existe solicitamos la contrasena establecida, si
+no</p>
+<p>// existe solicitamos la contrasena para su creacion</p>
+<p><strong>if</strong> (AOCipherKeyStoreHelper.storeExists()) {</p>
+<p>password = mostrarDialogoSolicitarContrasenaParaApertura();</p>
+<p>} <strong>else</strong> {</p>
+<p>password = mostrarDialogoSolicitarContrasenaParaCreacion();</p>
+<p>}</p>
+<p>AOCipherKeyStoreHelper cipherKs =
+AOCipherKeyStoreHelper(password);</p>
+<p>// Listamos los alias del almacen y recuperamos la clave del
+primero</p>
+<p>// de ellos</p>
+<p>Key key = <strong>null</strong>;</p>
+<p>String[] aliases = cipherKs.getAliases();</p>
+<p><strong>if</strong> (aliases.length &gt; 0) {</p>
+<p>key = cipherKs.getKey(aliases[0]);</p>
+<p>}</p>
+<p><strong>return</strong> key;</p>
+<p>...</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<h1 id="ejemplos-generales">Ejemplos generales</h1>
+<h2 id="seleccion-de-almacen-y-firma"><strong>Selección de almacén y firma</strong></h2>
+<p><strong>Secuencia:</strong></p>
+<ol>
+<li>
+<p>Selecciona un almacén de certificados en base al sistema operativo
+    en el que se ejecute, car</p>
+</li>
+<li>
+<p>Carga el almacén de claves.</p>
+</li>
+<li>
+<p>Muestra un diálogo de selección de certificados.</p>
+</li>
+<li>
+<p>Obtiene el alias del certificado seleccionado.</p>
+</li>
+<li>
+<p>Selecciona el manejador de firma del formato CAdES.</p>
+</li>
+<li>
+<p>Genera una firma de implícita de los datos proporcionado.</p>
+</li>
+<li>
+<p>Devuelve el resultado.</p>
+</li>
+</ol>
+<p><strong>Código:</strong></p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p><strong>public</strong> <strong>byte</strong>[]
+firma(<strong>byte</strong>[] datos, Component componentePadre)<br />
+<strong>throws</strong> KeyStoreException,
+NoSuchAlgorithmException,<br />
+UnrecoverableEntryException, AOKeystoreAlternativeException,<br />
+IOException, AOCertificatesNotFoundException, AOException {</p>
+<p>// Selección del almacén de claves por defecto en base al</p>
+<p>// sistema operativo</p>
+<p>AOKeyStore ks;</p>
+<p><strong><mark>switch</mark></strong> (Platform.<em>getOS</em>())
+{</p>
+<p><strong>case</strong> <em><strong>WINDOWS</strong></em>:</p>
+<p>ks = AOKeyStore.<em><strong>WINDOWS</strong></em>; // Almacén de
+Windows</p>
+<p><strong>break</strong>;</p>
+<p><strong>case</strong> <em><strong>MACOSX</strong></em>:</p>
+<p>ks = AOKeyStore.<em><strong>APPLE</strong></em>; // Llavero de
+macOS</p>
+<p><strong>break</strong>;</p>
+<p><strong>case</strong> <em><strong>LINUX</strong></em>:</p>
+<p>ks = AOKeyStore.<em><strong>MOZ_UNI</strong></em>; // Almacén de
+Mozilla</p>
+<p><strong>break</strong>;</p>
+<p><strong>default</strong>:</p>
+<p>ks = AOKeyStore.<em><strong>PKCS12</strong></em>; // Almacén en
+fichero P12/PFX</p>
+<p><mark>}</mark></p>
+<p>// Carga del almacén de claves</p>
+<p><strong>final</strong> AOKeyStoreManager ksm =
+AOKeyStoreManagerFactory.<em>getAOKeyStoreManager</em>(</p>
+<p>ks,</p>
+<p><strong>null</strong>,</p>
+<p>"Almacén de claves PKCS#12", // Este texto sólo se mostrará para
+PKCS#12</p>
+<p>ks.getStorePasswordCallback(componentePadre),</p>
+<p>componentePadre);</p>
+<p>// Creamos el diálogo de selección de certificados</p>
+<p><strong>final</strong> AOKeyStoreDialog dialog = <strong>new</strong>
+AOKeyStoreDialog(</p>
+<p>ksm,</p>
+<p>componentePadre,</p>
+<p><strong>true</strong>, // Sólo certificados con claves privadas</p>
+<p><strong>true</strong>, // No mostrar los caducados</p>
+<p><strong>false</strong>); // Mostrar advertencia cuando se
+seleccionase alguno caducado</p>
+<p>// Mostramos el dialogo de selección</p>
+<p><strong>final</strong> String selectedAlias = dialog.show();</p>
+<p>// Si no se selecciono un certificado, se aborta la operacion</p>
+<p><strong>if</strong> (selectedAlias == <strong>null</strong>) {</p>
+<p><strong>throw</strong> <strong>new</strong>
+AOCancelledOperationException(</p>
+<p>"Operacion cancelada por el usuario");</p>
+<p>}</p>
+<p>// Obtención de la clave de firma</p>
+<p><strong>final</strong> PrivateKeyEntry pke =
+ksm.getKeyEntry(selectedAlias);</p>
+<p>// Seleccion del manejador de firma</p>
+<p><strong>final</strong> AOSigner signer =</p>
+<p>AOSignerFactory.<em>getSigner</em>(AOSignConstants.<em><strong>SIGN_FORMAT_CADES</strong></em>);</p>
+<p>// Configuramos las propiedades que deseemos del formato</p>
+<p><strong>final</strong> Properties extraParams = <strong>new</strong>
+Properties();</p>
+<p>// Firma implicita (Attached)</p>
+<p>extraParams.setProperty(CAdESExtraParams.<em><strong>MODE</strong></em>,
+"implicit"); //$NON-NLS-1$</p>
+<p><strong>final</strong> <strong>byte</strong>[] firma =
+signer.sign(</p>
+<p>datos, // Datos que deseamos firmar</p>
+<p>AOSignConstants.<em><strong>SIGN_ALGORITHM_SHA256WITHRSA</strong></em>,
+// Algoritmo de firma</p>
+<p>pke.getPrivateKey(), // Referencia a la clave privada</p>
+<p>pke.getCertificateChain(), // Cadena de certificación</p>
+<p>extraParams); // Parámetros extra de configuración</p>
+<p><strong>return</strong> firma;</p>
+<p>}</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<p><strong>Módulos requeridos (además de sus dependencias):</strong></p>
+<ul>
+<li>
+<p>afirma-core</p>
+</li>
+<li>
+<p>afirma-core-keystore</p>
+</li>
+<li>
+<p>afirma-keystores-mozilla</p>
+</li>
+<li>
+<p>afirma-crypto-cades</p>
+</li>
+<li>
+<p>afirma-ui-core-jse-keystores</p>
+</li>
+</ul>
+<p>&lt;<img src="media/image1.png"
+style="width:0.91667in;height:0.32292in"
+alt="Creative Commons License" /></p>
+<p>Esta obra está bajo una licencia <a href="#Licencia_Creative_Commons">Creative Commons
+Reconocimiento-NoComercial-CompartirIgual 3.0
+Unported</a>.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../CF_manual-migracion/" class="btn btn-neutral float-left" title="CF manual migracion"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../CF_plan-pruebas/" class="btn btn-neutral float-right" title="CF plan pruebas">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../CF_manual-migracion/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../CF_plan-pruebas/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

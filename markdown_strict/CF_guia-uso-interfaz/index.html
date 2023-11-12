@@ -1,0 +1,2870 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>CF guia uso interfaz - My Docs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "CF guia uso interfaz";
+        var mkdocs_page_input_path = "markdown_strict/CF_guia-uso-interfaz.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> My Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Welcome to MkDocs</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Markdown strict</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Firmar_AutoFirma_Linux/">AF Firmar AutoFirma Linux</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Firmar_AutoFirma_OS_X/">AF Firmar AutoFirma OS X</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Linux/">Preparación del entorno</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Mac%20OS%20X/">AF Instalador Mac OS X</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Windows/">AF Instalador Windows</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_desarrollo_plugins_ES/">AF manual desarrollo plugins ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_instalacion_usuarios_ES/">AF manual instalacion usuarios ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_instalacion_y_gestion_ES/">AF manual instalacion y gestion ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ANEXO_Firma-electronica-en-varias-fases/">Firma electrónica en tres fases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_arquitectura_ES/">CF arquitectura ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_catalogo_aplicaciones/">CF catalogo aplicaciones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_distribuciones/">CF distribuciones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_funcional_ES/">CF funcional ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-incidencias/">CF guia incidencias</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">CF guia uso interfaz</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-uso/">CF guia uso</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-firmas-pdf/">CF manual firmas pdf</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-firmas-xml/">CF manual firmas xml</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-integrador/">CF manual integrador</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-migracion/">CF manual migracion</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual_integracion_modulos_ES/">CF manual integracion modulos ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_plan-pruebas/">CF plan pruebas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_roadmap_ES/">CF roadmap ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Comunicacion_Navegador_y_App_en_Entorno_Movil/">El camino de ida: Desde el navegador Web hacia la App</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../DECLARACION_ACCESIBILIDAD/">Declaración de Accesibilidad</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Diagramas%20de%20secuencia%20de%20los%20procesos%20de%20firma%20m%C3%B3vil/">Firma monofásica (Windows 8 / Windows RT y Android)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Firma_por_lotes_predefinidos_con_el_MiniApplet_Cliente/">Firma por lotes predefinidos con el MiniApplet Cliente</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Informe%20-%20Alternativas_Applets_para_firma/">Informe   Alternativas Applets para firma</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Invocaci%C3%B3n%20por%20protocolo%20de%20aplicaciones%20nativas%20desde%20p%C3%A1ginas%20Web/">¿Qué es la invocación por protocolo?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../La_seguridad_en_el_Servicio_de_firma_del_Cliente/">Tabla de contenido</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MCF_manual-integrador_ES/">MCF manual integrador ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MCF_roadmap_ES/">MCF roadmap ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Manual%20para%20la%20configuraci%C3%B3n%20de%20los%20campos%20de%20firma%20para%20la%20aplicaci%C3%B3n%20de%20firma%20manuscrita%20en%20tableta/">Manual para la configuración de los campos de firma para la aplicación de firma manuscrita en tableta</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_Manual_App_Portafirmas_Android/">PF Manual App Portafirmas Android</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_Manual_App_Portafirmas_iOS/">PF Manual App Portafirmas iOS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_manual-configuracion_servicios_ES/">PF manual configuracion servicios ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Sintaxis_invocacion_Cliente_Afirma/">Sintaxis invocacion Cliente Afirma</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../afirma_movil_intro/"><<img src="media/image1.jpeg"</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">My Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Markdown strict</li>
+      <li class="breadcrumb-item active">CF guia uso interfaz</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>&lt;<img src="media/image3.png"
+style="width:0.91667in;height:0.32292in"
+alt="Creative Commons License" /></p>
+<p>Esta obra está bajo una licencia <a href="#Licencia_Creative_Commons"><u>Creative Commons
+Reconocimiento-NoComercial-CompartirIgual 3.0
+Unported</u></a>.</p>
+<p>Índice</p>
+<p><a href="#introducción">1. Introducción [4](#introducción)</a></p>
+<p><a href="#objeto-del-documento">2. Objeto del documento
+[5](#objeto-del-documento)</a></p>
+<p><a href="#requisitos-mínimos">3. Requisitos mínimos [6](#requisitos-mínimos)</a></p>
+<p><a href="#guía-de-uso">4. Guía de Uso [7](#guía-de-uso)</a></p>
+<p><a href="#perfiles-de-usuario">Perfiles de usuario [9](#perfiles-de-usuario)</a></p>
+<p><a href="#opciones-de-configuración">Opciones de configuración
+[10](#opciones-de-configuración)</a></p>
+<p><a href="#firma-electrónica">Firma electrónica [16](#firma-electrónica)</a></p>
+<p><a href="#multifirma">Multifirma [19](#multifirma)</a></p>
+<p><a href="#cofirma">Cofirma [20](#cofirma)</a></p>
+<p><a href="#contrafirma">Contrafirma [21](#contrafirma)</a></p>
+<p><a href="#multifirma-masiva">Multifirma Masiva [24](#multifirma-masiva)</a></p>
+<p><a href="#validación-de-firmas">Validación de firmas
+[30](#validación-de-firmas)</a></p>
+<p><a href="#cifrado-de-datos">Cifrado de datos [32](#cifrado-de-datos)</a></p>
+<p><a href="#contraseña-de-cifrado">Contraseña de cifrado
+[33](#contraseña-de-cifrado)</a></p>
+<p><a href="#clave-de-cifrado">Clave de cifrado [34](#clave-de-cifrado)</a></p>
+<p><a href="#almacén-de-claves-de-cifrado">Almacén de claves de cifrado
+[35](#almacén-de-claves-de-cifrado)</a></p>
+<p><a href="#descifrado-de-datos">Descifrado de datos [37](#descifrado-de-datos)</a></p>
+<p><a href="#contraseña-de-cifrado-1">Contraseña de cifrado
+[38](#contraseña-de-cifrado-1)</a></p>
+<p><a href="#clave-de-cifrado-1">Clave de cifrado [39](#clave-de-cifrado-1)</a></p>
+<p><a href="#ensobrado-digital">Ensobrado digital [41](#ensobrado-digital)</a></p>
+<p><a href="#desensobrado-digital">Desensobrado digital
+[46](#desensobrado-digital)</a></p>
+<p><a href="#política-de-firma-de-la-age">5. Política de firma de la AGE
+[48](#política-de-firma-de-la-age)</a></p>
+<p><a href="#factura-electrónica">6. Factura electrónica
+[49](#factura-electrónica)</a></p>
+<p><a href="#instalación-de-certificados.">7. Instalación de Certificados.
+[50](#instalación-de-certificados.)</a></p>
+<p><a href="#instalación-de-certificados-software-en-windows-internet-explorer">Instalación de certificados software en Windows / Internet Explorer
+[51](#instalación-de-certificados-software-en-windows-internet-explorer)</a></p>
+<p><a href="#instalación-de-certificados-software-en-mozilla-firefox">Instalación de certificados software en Mozilla Firefox
+[56](#instalación-de-certificados-software-en-mozilla-firefox)</a></p>
+<p><a href="#instalación-de-certificados-software-en-el-almacén-de-mac-os-x">Instalación de certificados software en el almacén de Mac OS X
+[59](#instalación-de-certificados-software-en-el-almacén-de-mac-os-x)</a></p>
+<p><a href="#instalación-de-certificados-software-en-google-chrome-y-apple-safari">Instalación de certificados software en Google Chrome y Apple Safari
+[60](#instalación-de-certificados-software-en-google-chrome-y-apple-safari)</a></p>
+<p><a href="#uso-de-certificados-desde-tarjetas-inteligentes">Uso de certificados desde tarjetas inteligentes
+[60](#uso-de-certificados-desde-tarjetas-inteligentes)</a></p>
+<p><a href="#dnie-dni-electrónico">DNIe (DNI Electrónico)
+[60](#dnie-dni-electrónico)</a></p>
+<p><a href="#otros-certificados">Otros certificados [67](#otros-certificados)</a></p>
+<p><a href="#resolución-de-problemas">8. Resolución de Problemas
+[68](#resolución-de-problemas)</a></p>
+<p><a href="#la-aplicación-se-bloquea-al-realizar-búsquedas-en-la-pantalla-de-ayuda">La aplicación se bloquea al realizar búsquedas en la pantalla de ayuda
+[68](#la-aplicación-se-bloquea-al-realizar-búsquedas-en-la-pantalla-de-ayuda)</a></p>
+<p><a href="#glosario-de-términos">9. Glosario de términos
+[69](#glosario-de-términos)</a></p>
+<p><a href="#faq.">10. FAQ. [72](#faq.)</a></p>
+<p><a href="#Licencia_Creative_Commons">Creative Commons
+[74](#Licencia_Creative_Commons)</a></p>
+<p><strong><br />
+</strong></p>
+<h1 id="introduccion">Introducción</h1>
+<p>La Interfaz de Escritorio del Cliente @firma es una aplicación de
+escritorio que permite acceder a las distintas funcionalidades
+criptográficas del Cliente @firma sin necesidad de instalarlo ni
+ejecutar el navegador Web.</p>
+<p>La interfaz de escritorio está orientada a un uso personal de las
+distintas funciones criptográficas de las que dispone y no como parte de
+una tramitación Web. Se facilita su uso por medio de asistentes que
+explican cada paso a seguir para la realización de una operación y, al
+contrario que el Cliente @firma, desde la Interfaz de Escritorio es
+posible decidir a qué almacén de certificados deseamos acceder.</p>
+<p>La interfaz de escritorio hace uso de los certificados digitales X.509 y
+de las claves privadas asociadas a los mismos que estén instalados en
+alguno de los almacenes de certificados del sistema o en un almacén en
+fichero. Los almacenes soportados son:</p>
+<ul>
+<li>
+<p>Almacén de Windows / Internet Explorer</p>
+</li>
+<li>
+<p>Almacén de Mozilla Firefox</p>
+</li>
+<li>
+<p>Almacén de Mac OS X</p>
+</li>
+<li>
+<p>Almacén en fichero P12/PFX</p>
+</li>
+</ul>
+<p>También es posible utilizar dispositivos de firma externos como el DNIe,
+para lo cual es necesario configurar estos dispositivos en el almacén de
+certificados desde el que se desee utilizar.</p>
+<p><span class="mark"><br />
+</span></p>
+<h1 id="objeto-del-documento">Objeto del documento</h1>
+<p>El objeto del presente documento es explicar el procedimiento básico
+para la realización de las distintas operaciones criptográficas
+soportadas por la interfaz de escritorio del Cliente @firma:</p>
+<ul>
+<li>
+<p>Firma electrónica</p>
+</li>
+<li>
+<p>Multifirma</p>
+</li>
+<li>
+<p>Multifirma masiva</p>
+</li>
+<li>
+<p>Cifrado de datos</p>
+</li>
+<li>
+<p>Descifrado de datos</p>
+</li>
+<li>
+<p>Ensobrado digital</p>
+</li>
+<li>
+<p>Desensobrado digital</p>
+</li>
+</ul>
+<p>Adicionalmente, se detalla el procedimiento que debe seguir el usuario
+para la instalación de certificados electrónicos en los distintos
+almacenes soportados.</p>
+<h1 id="requisitos-minimos">Requisitos mínimos</h1>
+<p><strong>Sistema operativo:</strong></p>
+<ul>
+<li>
+<p>XP, Vista, 7, Server 2003, Server2008</p>
+</li>
+<li>
+<p>Linux (Guadalinex, Ubuntu)</p>
+</li>
+<li>
+<p>MacOS X 10.6, 10.7</p>
+</li>
+<li>
+<p>Sun Solaris / OpenSolaris 10</p>
+</li>
+</ul>
+<p><strong>Máquina virtual Java:</strong></p>
+<ul>
+<li>JRE 1.6 update 30 o superior</li>
+</ul>
+<p>Certificado digital de usuario instalado en el almacén que se desee
+utilizar o disponible a través de un módulo PKCS#11 configurado en el
+sistema (por ejemplo el DNIe).</p>
+<h1 id="guia-de-uso">Guía de Uso</h1>
+<p>La interfaz de escritorio del Cliente @firma es una aplicación
+independiente que puede utilizarse sin necesidad de que el propio
+Cliente esté instalado en el sistema del usuario. Para la ejecución de
+esta interfaz es necesario cumplir con los requisitos detallados en el
+apartado “Requisitos mínimos” del presente documento.</p>
+<p>La vista principal de la interfaz de escritorio es:</p>
+<p>&lt;<img src="media/image4.png"
+style="width:5.90556in;height:3.36172in" /></p>
+<p>En ella se muestra una serie de pestañas que permiten acceden a
+distintas funcionalidades de la Interfaz de Escritorio del Cliente
+@firma. Estas son:</p>
+<ul>
+<li>
+<p><strong>Firma:</strong> Para la realización de firmas electrónicas.</p>
+</li>
+<li>
+<p><strong>Multifirma:</strong> Para la realización de cofirma y contrafirmas.</p>
+</li>
+<li>
+<p><strong>Validación:</strong> Para la validación de firmas a nivel de estructura y
+    la extracción de los datos firmados.</p>
+</li>
+<li>
+<p><strong>Cifrado:</strong> Para el cifrado de datos.</p>
+</li>
+<li>
+<p><strong>Descifrado:</strong> Para el descifrado de datos.</p>
+</li>
+</ul>
+<p>Adicionalmente, es posible habilitar el resto de opciones disponibles
+activando la vista avanzada de la Interfaz desde la pantalla de opciones
+(ver apartado “<em>Opciones de configuración</em>”), con lo cual la interfaz
+aparecería como sigue:</p>
+<p>&lt;<img src="media/image5.png"
+style="width:5.90556in;height:3.36172in" /></p>
+<p>En la vista avanzada nuevas opciones que dan acceso a otras de las
+funciones criptográficas del Cliente @firma. Las nuevas opciones
+disponibles son:</p>
+<ul>
+<li>
+<p><strong>Firma Masiva:</strong> Para la realización de operaciones de firma y
+    multifirma sobre una gran cantidad de ficheros simultáneamente.</p>
+</li>
+<li>
+<p><strong>Ensobrado:</strong> Para la generación de sobres digitales.</p>
+</li>
+<li>
+<p><strong>Desensobrado:</strong> Para el extraer los documentos de los sobres
+    digitales.</p>
+</li>
+</ul>
+<p>Adicionalmente, la vista avanzada desbloquea nuevas opciones en elemento
+de las pestañas de la vista simple. Estas son:</p>
+<ul>
+<li>
+<p>Los formatos de firma “XAdES Enveloping” y “XAdES Enveloped”.</p>
+</li>
+<li>
+<p>El modo de cifrado/descifrado mediante claves.</p>
+</li>
+<li>
+<p>Algoritmos de cifrado/descifrados distintos de:</p>
+<ul>
+<li>
+<p>SHA1 con 3Des (para el cifrado/descifrado mediante contraseñas).</p>
+</li>
+<li>
+<p>AES (para el cifrado/descifrado mediante claves).</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>La interfaz de escritorio dispone de un <strong>sistema de ayuda integrado</strong>.
+Cuando el usuario tiene alguna duda sobre el objetivo de un componente
+de la interfaz puede seleccionarlo y <strong>pulsar el botón “F1”</strong> de su
+teclado. El sistema de ayuda se activará y le mostrará la ayuda relativa
+al componente seleccionado.</p>
+<h2 id="perfiles-de-usuario">Perfiles de usuario</h2>
+<p>La interfaz de escritorio del Cliente @firma permite configurar perfiles
+de usuario en los que se almacenan las opciones de configuración
+establecidas por este. Al arrancar la aplicación, si ya definió algún
+perfil de usuario, se le mostrará un diálogo para la selección del
+perfil. En este diálogo, deberá seleccionar el perfil que desee cargar y
+pulsar el botón Aceptar.</p>
+<p>&lt;<img src="media/image6.png"
+style="width:4.41732in;height:3.12598in" /></p>
+<p>Puede crear nuevos perfiles de usuario, o editar y eliminar los
+existentes, desde la ventana de opciones de configuración de la interfaz
+de escritorio. Consulte el apartado “Opciones de configuración” para más
+información.</p>
+<h2 id="opciones-de-configuracion">Opciones de configuración</h2>
+<p>Es posible acceder a las opciones de configuración de la Interfaz de
+Escritorio del Cliente @firma por medio del elemento “Opciones” del menú
+“Herramientas”.</p>
+<p>&lt;<img src="media/image7.png"
+style="width:5.43307in;height:1.16929in" /></p>
+<p>Las opciones disponibles en la ventana de Opciones, por medio de cada
+una de sus pestañas, son:</p>
+<ul>
+<li>General:</li>
+</ul>
+<p>&lt;<img src="media/image8.png"
+style="width:4.37402in;height:5in" /></p>
+<ul>
+<li>
+<p>General:</p>
+<ul>
+<li>
+<p>Habilitar opciones de configuración avanzadas</p>
+<p>Esta opción habilita la vista y opciones avanzadas de la
+Interfaz de Escritorio.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Criptografía:</p>
+<ul>
+<li>
+<p>Algoritmo de huella digital por defecto:</p>
+<p>Es el algoritmo que se debe utilizar para ejecutar las firmas
+electrónicas. Por defecto se utilizará SHA-1 (SHA1withRSA). No
+se recomienda modificar este valor salvo que se esté seguro que
+el formato de firmas y el almacén de certificados que se desea
+utilizar soportan este algoritmo.</p>
+</li>
+<li>
+<p>Utilizar también este algoritmo para las referencias internas
+    XML.</p>
+<p>Esta opción permite que las referencias internas de las firmas
+XML se realicen con el algoritmo seleccionado.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Política de firma</p>
+<ul>
+<li>
+<p>Configurar política de firma</p>
+<p>Habilita la creación de firmas EPES. Esta configuración aplica a
+firmas en formato CAdES, XAdES y PAdES.</p>
+</li>
+<li>
+<p>Identificador de la política (OID)</p>
+<p>OID identificador de la política de firma.</p>
+</li>
+<li>
+<p>Calificador de la política de firma (URL)</p>
+<p>URL con la localización de la política de firma.</p>
+</li>
+<li>
+<p>Huella digital SHA1</p>
+<p>Huella digital declarada para la política de firma.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Consulte la documentación de su política de firma para conocer los
+valores predefinidos para cada propiedad de la política. Puede consultar
+las opciones de configuración de la política de firma de la AGE en el
+apartado “<strong>Política de firma de la AGE</strong>” del presente documento.</p>
+<p>Para la generación de firmas de facturas electrónicas no es necesario
+configurar la política de firma, basta con configurar el formato de
+firma de facturas electrónicas, ya que este establece internamente los
+atributos de la política. Cualquier configuración de política de firma
+establecida a través de este diálogo se ignorará al generar firmas en
+formato de factura electrónica.</p>
+<ul>
+<li>Configuración de firma</li>
+</ul>
+<p>&lt;<img src="media/image9.png"
+style="width:4.13542in;height:4.72619in" /></p>
+<ul>
+<li>
+<p>Firmas de documentos PDF:</p>
+<ul>
+<li>
+<p>Motivo / razón de la firma electrónica.</p>
+<p>Establece el motivo asociado a las firmas PDF que se generen.</p>
+</li>
+<li>
+<p>Lugar donde se realiza la firma electrónica.</p>
+<p>Establece la localización asociada a las firmas PDF que se
+generen.</p>
+</li>
+<li>
+<p>Datos de contacto del firmante.</p>
+<p>Establece la información de contacto de quien genera la firma
+PDF.</p>
+</li>
+<li>
+<p>Formato PAdES.</p>
+<p>Establece el tipo de firmas PAdES que se generarán. Las opciones
+posibles son</p>
+</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>PAdES Básico (Necesario si queremos generar varias firmas sobre el
+    mismo PDF)</p>
+</li>
+<li>
+<p>PAdES BES</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>Accesibilidad</li>
+</ul>
+<p>&lt;<img src="media/image10.png"
+style="width:4.37402in;height:5in" /></p>
+<ul>
+<li>
+<p>Texto:</p>
+<ul>
+<li>
+<p>Grande</p>
+<p>Aumenta el tamaño del texto para facilitar su legibilidad.</p>
+</li>
+<li>
+<p>Negrita</p>
+<p>Configura que el texto por defecto aparezca en negrita.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Combinación de colores:</p>
+<ul>
+<li>
+<p>Alto contraste</p>
+<p>Habilita el modo alto contraste para la aplicación.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Gestión del foco</p>
+<ul>
+<li>
+<p>Remarcar elementos con foco</p>
+<p>Remarca los componentes que reciben el foco.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Ventana</p>
+<ul>
+<li>
+<p>Maximizar todas las ventanas</p>
+<p>Maximiza todas las ventanas de la aplicación para mejorar su
+visibilidad.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Cursos de texto</p>
+<ul>
+<li>
+<p>Grande</p>
+<p>Aumenta el tamaño del cursor de texto para facilitar su
+localización.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Valores por defecto</p>
+<p>Restablece la configuración por defecto de accesibilidad.</p>
+</li>
+<li>
+<p>Aplicar</p>
+<p>Aplica a la interfaz la configuración de accesibilidad introducida.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>Perfiles de usuario</li>
+</ul>
+<p>&lt;<img src="media/image11.png"
+style="width:4.37402in;height:5in" /></p>
+<ul>
+<li>
+<p>Perfil actual</p>
+<ul>
+<li>Perfil actual cargado.</li>
+</ul>
+</li>
+<li>
+<p>Perfiles</p>
+<ul>
+<li>
+<p>Perfiles disponibles</p>
+<p>Listado de perfiles de usuario disponibles. Cada perfil tiene
+asociado valores para cada una de las opciones de configuración
+de las pestañas General, Contexto de firma y Accesibilidad de la
+ventana de opciones.</p>
+</li>
+<li>
+<p>Cargar</p>
+<p>Carga el perfil seleccionado, restableciendo las opciones
+configuradas para ese perfil.</p>
+</li>
+<li>
+<p>Eliminar</p>
+<p>Elimina el perfil seleccionado. Se pedirá confirmación al
+usuario antes de proceder a la eliminación.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Guardar</p>
+<p>Guarda las opciones de configuración establecidas actualmente en las
+pestañas General, Contexto de firma y Accesibilidad en el perfil
+actual de usuario. Si el perfil actual es el Predeterminado, se
+creará un nuevo perfil tal como ocurriría con la opción Guardar
+como.</p>
+<ul>
+<li>
+<p>Guardar como</p>
+<p>Crea un nuevo perfil de usuario con las opciones de
+configuración establecidas actualmente. Se le pedirá al usuario
+que inserte el nombre del nuevo perfil.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="firma-electronica">Firma electrónica</h2>
+<p>Desde la pestaña “<em>Firma</em>” es posible realizar firmas electrónicas sobre
+un documento local o remoto en diversos formatos.</p>
+<p>&lt;<img src="media/image12.png"
+style="width:5.90556in;height:3.36172in" /></p>
+<p>Las opciones disponibles son:</p>
+<ul>
+<li>
+<p>Fichero a firmar digitalmente:</p>
+<ul>
+<li>Permite seleccionar el fichero que se desea firmar. Es posible
+    pulsar el botón “Examinar” para buscar un fichero en disco o
+    escribir directamente su ruta (local o remota) en la caja de
+    texto asociada.</li>
+</ul>
+</li>
+<li>
+<p>Almacén de certificados:</p>
+<ul>
+<li>
+<p>Permite seleccionar el almacén en donde se encuentra el
+    certificado que deseamos utilizar para realizar la firma. Las
+    opciones disponibles son:</p>
+<ul>
+<li>
+<p>Windows / Internet Explorer: Para tomar el certificado del
+    almacén de Windows o un dispositivo externo (por ejemplo, el
+    DNIe) instalado en el sistema.</p>
+</li>
+<li>
+<p>Mozilla Firefox (unificado): Para tomar el certificado del
+    almacén de Firefox o un dispositivo externo (por ejemplo, el
+    DNIe) configurado en este almacén.</p>
+</li>
+<li>
+<p>PKCS#12 / PFX: Para tomar el certificado de un almacén en
+    disco en formato P12 o PFX.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Formato:</p>
+<ul>
+<li>
+<p>Permite seleccionar el formato de firma electrónica. Los
+    formatos disponibles son:</p>
+<ul>
+<li>
+<p>Firma estándar (XAdES Detached): Principal formato de firma
+    avanzada XML utilizado en la Administración Pública.</p>
+</li>
+<li>
+<p>XAdES enveloping: Sólo disponible en la vista avanzada.
+    Formato de firma avanzada XML.</p>
+</li>
+<li>
+<p>XAdES enveloped: Sólo disponible en la vista avanzada.
+    Formato de firma avanzada XML. Sólo permite firmar ficheros
+    XML.</p>
+</li>
+<li>
+<p>CAdES: Formato de firma avanzada binaria. Permite decidir si
+    se deben incluir los datos firmados dentro del fichero de
+    firma.</p>
+</li>
+<li>
+<p>PAdES: Formato de firma avanzada para documentos PDF. Sólo
+    permite firmar este tipo de documentos.</p>
+</li>
+<li>
+<p>Factura Electrónica: Formato específico para la firma de
+    facturas electrónicas acordes la versión 3.1 del esquema de
+    factura. Este formato configura todas las propiedades
+    necesarias (incluida la política de firma) para que las
+    firmas sean correctamente validadas por los validadores de
+    facturas.</p>
+</li>
+<li>
+<p>ODF (Open Document Format): Formato de firma de documentos
+    ODF. Estos son los documentos generados por las suites
+    ofimáticas “OpenOffice.org” y “LibreOffice”. Los formatos
+    soportados son: “.odt”, “.ods” y “.odp”.</p>
+</li>
+<li>
+<p>OOXML (Office Open XML): Formato de firma de documentos
+    OOXML. Estos son los documentos generados por la suite
+    ofimática “Microsoft Office” 2007 y 2010. Los formatos
+    soportados son: “.docx”, “.xlsx”, “.pptx” y “.ppsx”. La
+    Plataforma servidora @firma y la herramienta VALIDe no
+    validan este tipo de firmas.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Para ejecutar la operación pulse el botón “Firmar”. A continuación se le
+mostrará un diálogo modal para la selección del certificado que desea
+utilizar para la firma.</p>
+<p>&lt;<img src="media/image13.png"
+style="width:4.2126in;height:1.75197in" /></p>
+<p>Si la operación finalizó correctamente, se le mostrará un diálogo para
+el guardado de la firma electrónica generada.</p>
+<p>Tenga en cuenta que si el almacén de certificados seleccionado está
+protegido con contraseña, se le solicitará esta antes de poder acceder
+al listado de certificados.</p>
+<p>&lt;<img src="media/image14.png"
+style="width:4.2126in;height:1.75197in" /></p>
+<p>Todas las firmas generadas a través de esta interfaz incluyen los datos
+firmados dentro del fichero de firma (firma implícita), a excepción de
+la firmas en formato CAdES en donde se da a elegir esta característica a
+través del diálogo:</p>
+<p>&lt;<img src="media/image15.png"
+style="width:4.2126in;height:1.75197in" /></p>
+<h2 id="multifirma">Multifirma</h2>
+<p>Desde la pestaña “<em>Multifirma</em>” es posible realizar cofirmas y
+contrafirmas sobre firmas electrónicas ya generadas. Esto es, agregar
+nuevos firmantes a firmas ya existentes, ya sea para aprobar también el
+documento (cofirmas) o aprobar una o varias de las firmas ya existentes
+(contrafirmas).</p>
+<p>&lt;<img src="media/image16.png"
+style="width:5.42913in;height:3.09055in" /></p>
+<p>Las opciones disponibles son:</p>
+<ul>
+<li>
+<p>Almacén / repositorio de certificados:</p>
+<ul>
+<li>
+<p>Permite seleccionar el almacén en donde se encuentra el
+    certificado que deseamos utilizar para realizar la firma. Las
+    opciones disponibles son:</p>
+<ul>
+<li>
+<p>Windows / Internet Explorer: Para tomar el certificado del
+    almacén de Windows o un dispositivo externo (por ejemplo, el
+    DNIe) instalado en el sistema.</p>
+</li>
+<li>
+<p>Mozilla Firefox (unificado): Para tomar el certificado del
+    almacén de Firefox o un dispositivo externo (por ejemplo, el
+    DNIe) configurado en este almacén.</p>
+</li>
+<li>
+<p>PKCS#12 / PFX: Para tomar el certificado de un almacén en
+    disco en formato P12 o PFX.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Tipo de multifirma</p>
+<ul>
+<li>
+<p>Agregar nueva firma (Cofirma): Permite agregar nuevas firmas a
+    un documento de firmas. En el caso de las firmas PDF, ODF y
+    OOXML. Para agregar nuevas firmas al documento basta con
+    firmarlo múltiples veces a través de la pestaña “Firma” de la
+    interfaz.</p>
+</li>
+<li>
+<p>Refrendar una firma (Contrafirma): Permite firmar firmas
+    anteriores de un documento de firmas.</p>
+<p>Al pulsar el botón “Firmar” se abrirá un asistente para la
+generación de la multifirma. Este asistente variará según se
+haya decidido realizar una cofirma o una contrafirma.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="cofirma">Cofirma</h3>
+<p>Esta opción nos mostrará un asistente para la generación de una cofirma
+electrónica. A lo largo de varios pasos se nos explicará en que consiste
+esta operación y se nos solicitarán los datos necesarios para
+ejecutarla:</p>
+<p>&lt;<img src="media/image17.png"
+style="width:4.17323in;height:3.64173in" /></p>
+<p>Al pulsar el botón “Siguiente &gt;” accederemos a la primera pantalla
+del asistente, en donde deberemos seleccionar el documento que deseamos
+firmar y el fichero con el resto de firma generadas.</p>
+<p>&lt;<img src="media/image18.png"
+style="width:4.17323in;height:3.64173in" /></p>
+<p>Al pulsar el botón “Siguiente &gt;” se nos mostrará un diálogo para la
+selección del certificado que dese utilizar para la cofirma. Seleccione
+el certificado deseado y a continuación se le mostrará un segundo
+diálogo para el guardado de la multifirma generada o, en caso de error,
+una ventana con el mensaje de error correspondiente.</p>
+<h3 id="contrafirma">Contrafirma</h3>
+<p>Esta opción nos mostrará el asistente para la generación de una
+contrafirma electrónica. A lo largo de varios pasos se nos explicará en
+que consiste esta operación y se nos solicitarán los datos necesarios
+para ejecutarla:</p>
+<p>&lt;<img src="media/image19.png"
+style="width:4.17323in;height:3.64173in" /></p>
+<p>Al pulsar el botón “Siguiente &gt;” accederemos a la primera pantalla
+del asistente, en donde deberemos seleccionar el fichero con las firmas
+que deseemos contrafirmar.</p>
+<p>&lt;<img src="media/image20.png"
+style="width:4.16929in;height:3.64173in" /></p>
+<p>Al pulsar “Siguiente &gt;” no aparecerá una nueva pantalla en donde se
+nos mostrará el árbol de firmas de documento y deberemos indicar cuáles
+de ellas queremos contrafirmar.</p>
+<p>&lt;<img src="media/image21.png"
+style="width:4.16929in;height:3.64173in" /></p>
+<p>Las opciones disponibles en esta pantalla son:</p>
+<ul>
+<li>
+<p>Firmas que desea contrafirmar:</p>
+<ul>
+<li>
+<p>Permite seleccionar las firmas que se desean contrafirmar. Los
+    valores posible son:</p>
+<ul>
+<li>
+<p>Firmas seleccionadas: Contrafirma todas las firmas que
+    seleccionadas en el árbol de firmas.</p>
+</li>
+<li>
+<p>Firmantes seleccionados: Contrafirma todas las firmas de los
+    autores de los cuales se ha seleccionado al menos una firma
+    en el árbol de firmas.</p>
+</li>
+<li>
+<p>Todo el árbol de firmas: Contrafirmas todas las firmas.</p>
+</li>
+<li>
+<p>Firmas de último nivel: Contrafirma todas las firmas que no
+    tienen todavía ninguna contrafirma.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Árbol de firmas:</p>
+<ul>
+<li>
+<p>Listado en forma de árbol de todas las firmas contenidas en el
+    fichero de firma seleccionado anteriormente. Para seleccionar
+    una firma, basta con hacer clic sobre la misma, para seleccionar
+    más de una, mantenga pulsada la tecla Control (“<em>Ctrl</em>”) al
+    seleccionarlas y para seleccionar varias firmas consecutivas,
+    mantenga pulsada la tecla Mayúsculas (“<em>Shift</em>”) y seleccione la
+    primera y última del rango.</p>
+<p>Al pulsar el botón “Siguiente &gt;” se nos mostrará un diálogo
+para la selección del certificado que dese utilizar para la
+firma. Seleccione el certificado deseado y a continuación se le
+mostrará un segundo diálogo para el guardado de la multifirma
+generada o, en caso de error, una ventana con el mensaje de
+error correspondiente.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="multifirma-masiva">Multifirma Masiva</h2>
+<p>Desde la pestaña “<em>Firma masiva</em>” es posible realizar firmas y
+multifirmas en bloque. Esto implica ordenar una operación de firma que
+afectará a múltiples ficheros y generará un nuevo fichero de firma para
+cada uno de ellos.</p>
+<p>Esta pestaña sólo está disponible en el modo de vista avanzada.</p>
+<p><strong>IMPORTANTE:</strong> El DNIe exige que el usuario acepte individualmente toda
+y cada una de las firmas individuales del proceso de firma masiva.</p>
+<p>&lt;<img src="media/image22.png"
+style="width:5.90556in;height:3.36172in" /></p>
+<p>Las opciones que se muestran en esta pantalla son:</p>
+<ul>
+<li>
+<p>Almácen / repositorio de certificados.</p>
+<ul>
+<li>
+<p>Permite seleccionar el almacén en donde se encuentra el
+    certificado que deseamos utilizar para realizar la firma. Las
+    opciones disponibles son:</p>
+<ul>
+<li>
+<p>Windows / Internet Explorer: Para tomar el certificado del
+    almacén de Windows o un dispositivo externo (por ejemplo, el
+    DNIe) instalado en el sistema.</p>
+</li>
+<li>
+<p>Mozilla Firefox (unificado): Para tomar el certificado del
+    almacén de Firefox o un dispositivo externo (por ejemplo, el
+    DNIe) configurado en este almacén.</p>
+</li>
+<li>
+<p>PKCS#12 / PFX: Para tomar el certificado de un almacén en
+    disco en formato P12 o PFX.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Opciones de la firma por lotes</p>
+<ul>
+<li>Alerta sonora al finalizar el proceso: Utiliza el <em>beep</em> del
+    sistema para emitir un sonido una vez finaliza el proceso de
+    firma masiva.</li>
+</ul>
+</li>
+</ul>
+<p>Al pulsar el botón “Firmar” se abrirá el asistente para finalizar la
+configuración de la operación de multifirma masiva.</p>
+<p>&lt;<img src="media/image23.png"
+style="width:4.16929in;height:3.64173in" /></p>
+<p>Al pulsa el botón “Siguiente &gt;”, nos aparece una nueva ventana donde
+se nos explica el proceso según la operación de firma seleccionada y se
+nos permite configurar tanto esta como el formato de firma.</p>
+<p>&lt;<img src="media/image24.png"
+style="width:4.16929in;height:3.64173in" /></p>
+<p>Las opciones de configuración son:</p>
+<ul>
+<li>
+<p>Operación predeterminada:</p>
+<ul>
+<li>
+<p>Firma: Firna cada uno de los ficheros del lote usando el formato
+    de firma seleccionado.</p>
+</li>
+<li>
+<p>Cofirma: Cofirma todos los ficheros de firma del lote y firmará
+    con el formato seleccionado todos aquellos que no sean.</p>
+</li>
+<li>
+<p>Contrafirma: Contrafirmará todos los ficheros de firma del lote.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Formato:</p>
+<ul>
+<li>Formato de firma utilizado cuando se solicita la operación de
+    firma, o cuando se solicita la operación de cofirma y se
+    encuentran documentos de datos.</li>
+</ul>
+</li>
+</ul>
+<p>Cuando se pulsa el botón “Siguiente &gt;” nos desplazamos a una nueva
+pantalla del asistente. Desde esta nos es posible establecer
+configuraciones adicionales sobre el formato de firma y los nodos que
+deben contrafirmarse. Si se seleccionó la operación de firma, no se
+mostrará la pantalla mostrada a continuación, sino la siguiente, y si se
+seleccionó la operación de cofirma no se mostrarán las opciones para la
+configuración de la contrafirma sólo parecerá cuando se seleccione esta
+operación.</p>
+<p>&lt;<img src="media/image25.png"
+style="width:4.16929in;height:3.64173in" /></p>
+<p>Las opciones configurables en esta pantalla son:</p>
+<ul>
+<li>
+<p>Respetar el formato de firma</p>
+<ul>
+<li>Si no se activa esta casilla, se considerará que cualquier
+    fichero del lote no acorde al formato de firma indicado en el
+    paso anterior es un fichero de datos. En caso de marcarla y
+    cuando la operación seleccionada sea cofirma o contrafirma, se
+    comprobará para cada fichero del lote si es un formato de firma
+    soportado y, en caso de serlo, se multifirmará en el formato
+    correspondiente.</li>
+</ul>
+</li>
+<li>
+<p>Opciones de contrafirma:</p>
+<ul>
+<li>
+<p>Nos permite indicar que firmas del fichero deben contrafirmarse.
+    Las opciones son:</p>
+<ul>
+<li>
+<p>Contrafirmar todas las firmas: Agrega una contrafirma a cada
+    firma del fichero.</p>
+</li>
+<li>
+<p>Contrafirmar únicamente los últimos firmantes: Agrega una
+    contrafirma a todas aquellas firmas que no tuvieran una
+    previamente.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Al pulsar el botón “Siguiente &gt;” accederemos a una nueva ventana
+desde la que podemos configurar los ficheros que pertenecerán al lote de
+firma.</p>
+<p>&lt;<img src="media/image26.png"
+style="width:4.16929in;height:3.64173in" /></p>
+<p>Las opciones de configuración son:</p>
+<ul>
+<li>
+<p>Directorio con los ficheros de datos.</p>
+<ul>
+<li>Aquí podemos indicar el directorio en donde se encuentran los
+    ficheros con los que queremos operar. Podemos introducir la ruta
+    en la caja de texto correspondiente o pulsar el botón “Examinar”
+    para buscar el directorio en el sistema del usuario.</li>
+</ul>
+</li>
+<li>
+<p>Incluir subdirectorios de forma recursiva.</p>
+<ul>
+<li>Al seleccionar esta casilla se incluirán en el lote de firma
+    todos los ficheros de los subdirectorios de aquel que hemos
+    seleccionado.</li>
+</ul>
+</li>
+<li>
+<p>Aplicar sólo a los ficheros con extensión:</p>
+<ul>
+<li>En esta caja de texto podemos introducir las extensiones,
+    separadas por comas (‘,’), de los ficheros que deseamos que se
+    incluyan en el lote de firma. Por ejemplo, con la cadena
+    “txt,pdf” sólo entrarían en el lote los ficheros “txt” y “pdf”
+    del directorio seleccionado.</li>
+</ul>
+</li>
+</ul>
+<p>Al pulsar el botón “Siguiente &gt;” se nos mostrará una nueva ventana
+desde la que podremos seleccionar el directorio en donde se almacenarán
+las firmas generadas.</p>
+<p>&lt;<img src="media/image27.png"
+style="width:4.16929in;height:3.64173in" /></p>
+<p>Las opciones configurables en esta pantalla son:</p>
+<ul>
+<li>
+<p>Directorio de firmas.</p>
+<ul>
+<li>Aquí podemos indicar el directorio en donde se encuentran los
+    ficheros con los que queremos operar. Podemos introducir la ruta
+    en la caja de texto correspondiente o pulsar el botón “Examinar”
+    para buscar el directorio en el sistema del usuario.</li>
+</ul>
+</li>
+<li>
+<p>Sobrescribir ficheros si ya existen.</p>
+<ul>
+<li>Si marcamos esta casilla se sobrescribirá cualquier fichero que
+    exista en el directorio de salida con el mismo nombre que alguno
+    de los ficheros que ya existen. Si no se marca la casilla se
+    agregará un número en serie al nombre del fichero. Si por
+    ejemplo: se fuese a generar el fichero “firma.csig” y ya
+    existiese uno con este nombre, se crearía “firma(1).csig”; si
+    este también existiera se crearía “firma(2).csig” y así
+    sucesivamente.</li>
+</ul>
+</li>
+<li>
+<p>Fichero de log.</p>
+<ul>
+<li>Este es el fichero que se creará y mostrará el resultado de la
+    operación masiva. Todos los errores que se hayan producido
+    durante el proceso vendrán listados en este fichero.</li>
+</ul>
+</li>
+</ul>
+<p>Al pulsar el botón “Siguiente &gt;” quedará configurado el
+procedimiento, tras lo cual se nos mostrará un nuevo diálogo y deberemos
+pulsar el botón “Finalizar” para iniciar el procedimiento de firma
+masiva.</p>
+<p>&lt;<img src="media/image28.png"
+style="width:4.16929in;height:3.64173in" /></p>
+<p>Una vez terminado el procedimiento, se nos informará del resultado y, en
+caso de error, se nos remitirá al fichero de log.</p>
+<h2 id="validacion-de-firmas">Validación de firmas</h2>
+<p>En la pestaña “<em>Validación</em>” se nos muestra un cuadro para la selección
+del fichero de firma que deseemos validar. La validación que se
+realizará del mismo consiste en la comprobación de la estructura de la
+firma, no de los datos contenidos en ella.</p>
+<p>&lt;<img src="media/image29.png"
+style="width:5.42913in;height:3.09055in" /></p>
+<p>Al pulsar el botón “Validar” se abrirá una nueva ventana con el
+resultado del proceso de validación.</p>
+<p>&lt;<img src="media/image30.png"
+style="width:4.16929in;height:3.64173in" /></p>
+<p>La pantalla del visor de firmas muestra el icono y el texto
+correspondiente al resultado de la validación. Adicionalmente, muestra
+el fichero de firma analizado y los datos de la firma:</p>
+<ul>
+<li>
+<p>Formato de firma</p>
+<ul>
+<li>Formato de firma identificado en el fichero.</li>
+</ul>
+</li>
+<li>
+<p>Datos firmados</p>
+<ul>
+<li>
+<p>Enlace a los datos contenidos en la firma. Si se conoce la
+    aplicación por defecto para abrir los datos contenidos en la
+    firma, lo cual depende de que se haya podido identificar el
+    formato de estos datos (que es distinto al formato de la firma),
+    se abrirán con esta aplicación. Si no se pudo identificar el
+    formato o no hay aplicación por defecto para visualizarlos, se
+    dará la opción de guardarlos en el sistema del usuario.</p>
+</li>
+<li>
+<p>Enlace para la carga de datos. Si la firma no contenía los datos
+    firmados no habrá sido posible validar contra estos la
+    información de la firma. En este caso, el resultado de la
+    validación indicará que esta no se pudo completar y aquí se
+    mostrará un enlace para la carga de los datos. Al pulsarlo se
+    mostrará un diálogo de selección y, al seleccionar un fichero de
+    datos, se realizará el proceso de validación completo, incluida
+    la validación de los datos.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Árbol de firmas del documento</p>
+<ul>
+<li>Árbol con los firmantes identificados en la firma, organizados
+    de tal modo que representen la estructura de firmas del
+    documento. Al seleccionar uno de los firmantes se abrirá el
+    certificado que se utilizo para realizar la firma (sin clave
+    privada).</li>
+</ul>
+</li>
+</ul>
+<h2 id="cifrado-de-datos">Cifrado de datos</h2>
+<p>Desde la pestaña “<em>Cifrado</em>” podemos acceder a las funcionalidades el
+cifrado simétrico de datos. Mediante estas funciones podemos cifrar
+documentos para uso personal que no queremos que nadie vea o documentos
+sensibles que debemos enviar a otra persona. Sólo alguien con la
+clave/contraseña utilizada para el cifrado podrá descifrar este
+documento y acceder a su contenido. La operación de descifrado de datos
+se realiza desde la pestaña “<em>Descifrado</em>”.</p>
+<p>&lt;<img src="media/image31.png"
+style="width:5.42913in;height:3.09055in" /></p>
+<p>Las opciones de configuración de esta pantalla son:</p>
+<ul>
+<li>
+<p>Fichero a cifrar digitalmente:</p>
+<ul>
+<li>Permite seleccionar el fichero que se desea cifrar. Es posible
+    pulsar el botón “Examinar” para buscar un fichero en disco o
+    escribir directamente su ruta en la caja de texto asociada.</li>
+</ul>
+</li>
+<li>
+<p>Mecanismo de cifrado:</p>
+<ul>
+<li>Permite establecer si se desea utilizar una contraseña para el
+    cifrado o una clave de cifrado, específica o autogenerada, para
+    el algoritmo de cifrado seleccionado.</li>
+</ul>
+</li>
+<li>
+<p>Algoritmo de cifrado electrónico:</p>
+<ul>
+<li>
+<p>Es el algoritmo que se utilizará para el cifrado de datos. La
+    lista de algoritmos varía según el mecanismo de cifrado escogido
+    y la vista activa en la interfaz. Los algoritmos disponibles
+    son:</p>
+<ul>
+<li>
+<p>Para el cifrado por contraseña (pre-establecido en la vista
+    simple):</p>
+<ul>
+<li>
+<p>SHA1 y 3DES (pre-establecido en la vista simple).</p>
+</li>
+<li>
+<p>SHA1 y RC2.</p>
+</li>
+<li>
+<p>MD5 y DES.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Para el cifrado mediante clave:</p>
+<ul>
+<li>
+<p>AES</p>
+</li>
+<li>
+<p>Alleged RC4</p>
+</li>
+<li>
+<p>Blowfish</p>
+</li>
+<li>
+<p>DES</p>
+</li>
+<li>
+<p>3DES</p>
+</li>
+<li>
+<p>RC2</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>En la vista simple de la interfaz, el mecanismo de cifrado es
+obligatoriamente “Contraseña de cifrado” y el algoritmo es siempre
+“Contraseña SHA1 y 3DES”.</p>
+<p>Al pulsar en el botón “Cifrar” nos aparecerá un asistente para ayudarnos
+a configurar el proceso de cifrado.</p>
+<p>&lt;<img src="media/image32.png"
+style="width:4.16929in;height:3.64173in" /></p>
+<p>Al pulsar el botón “Siguiente &gt;” accederemos a las pantallas de
+configuración del asistente, que variará según el mecanismo de cifrado
+elegido.</p>
+<h3 id="contrasena-de-cifrado">Contraseña de cifrado</h3>
+<p>En la primera pantalla del asistente para el cifrado con contraseña se
+nos pedirá introducir dos veces la contraseña que deseamos utilizar para
+el cifrado. Las dos contraseñas introducidas deben ser la misma,
+respetando minúsculas y mayúsculas, y no deben contener caracteres no
+ASCII como vocales acentuadas, la letra ‘ñ’ o caracteres extraños.</p>
+<p>&lt;<img src="media/image33.png"
+style="width:4.16929in;height:3.64173in" /></p>
+<p>Las opciones que aparecen en esta pantalla son:</p>
+<ul>
+<li>
+<p>Introduzca la contraseña:</p>
+<ul>
+<li>En esta caja de texto debe introducir la contraseña que desee
+    utilizar para el cifrado de datos, respetando las condiciones ya
+    explicadas.</li>
+</ul>
+</li>
+<li>
+<p>Introduzca de nuevo la contraseña:</p>
+<ul>
+<li>En esta caja de texto debe volver a introducir la contraseña de
+    cifrado. Si no coincide con la primera contraseña, se le
+    informará al pulsar el botón “Siguiente &gt;”.</li>
+</ul>
+</li>
+<li>
+<p>Mostrar contraseña</p>
+<ul>
+<li>Hace aparecer la contraseña en texto claro.</li>
+</ul>
+</li>
+</ul>
+<p>Al pulsar el botón “Siguiente &gt;” se ejecutará el proceso de cifrado.
+En caso de finalizar el proceso correctamente le aparecerá un diálogo
+para el guardado del fichero con los datos cifrado. En caso de error le
+aparecerá el mensaje de error correspondiente.</p>
+<h3 id="clave-de-cifrado">Clave de cifrado</h3>
+<p>En la primera pantalla del asistente para el cifrado con clave se nos
+pedirá la clave que deseamos utilizar para el cifrado. Esta clave debe
+respetar un formato concreto para cada algoritmo de cifrado y debe
+introducirse en Base64. La alternativa, mucho más recomendable, a
+introducir la clave, es generar una clave válida aleatoria.</p>
+<p>&lt;<img src="media/image34.png"
+style="width:4.16929in;height:3.64173in" /></p>
+<p>Las opciones de configuración que aparecen en esta pantalla son:</p>
+<ul>
+<li>
+<p>Clave de cifrado:</p>
+<ul>
+<li>En esta caja de texto podemos introducir la clave en base 64.</li>
+</ul>
+</li>
+<li>
+<p>Autogenerar:</p>
+<ul>
+<li>Mediante este botón generaremos una clave aleatoria válida para
+    el algoritmo de cifrado seleccionado, ahorrándonos introducir
+    una manualmente.</li>
+</ul>
+</li>
+<li>
+<p>Almacén</p>
+<ul>
+<li>Permite abrir el almacén de claves del usuario para seleccionar
+    para el cifrado una clave ya allí almacenada.</li>
+</ul>
+</li>
+<li>
+<p>Guardar en almacén de claves de cifrado de @firma.</p>
+<ul>
+<li>Si marcamos esta casilla la clave de cifrado introducida, ya se
+    haya introducido manualmente o autogenerado, se almacenará en el
+    almacén de claves del Cliente @firma. Para saber mçás del
+    almacén de claves del Cliente @firma consulte el apartado
+    “<em>Almacén de claves de cifrado</em>”.</li>
+</ul>
+</li>
+</ul>
+<p>Al pulsar el botón “Siguiente &gt;” se ejecutará el proceso de cifrado.
+En caso de error, se mostrará el mensaje pertinente y, en caso de
+finalizar la operación correctamente, se solicitará mediante un diálogo
+dónde desea guardarse el fichero cifrado. Si se marcó la casilla para
+almacenar la clave en el almacén se almacenará una vez finalizado el
+proceso.</p>
+<h3 id="almacen-de-claves-de-cifrado">Almacén de claves de cifrado</h3>
+<p>El almacén de claves de cifrado del Cliente @firma es compartido por el
+Cliente y la Interfaz de Escritorio. Las características del mismo son:</p>
+<ul>
+<li>
+<p>No es necesario tener instalado el Cliente @firma.</p>
+</li>
+<li>
+<p>Está protegido por una contraseña que deberá establecer el usuario
+    la primera vez que se almacene en él una clave.</p>
+<p>&lt;<img src="media/image35.png"
+style="width:3.16142in;height:1.31496in" /></p>
+</li>
+<li>
+<p>Cada vez que se almacene una clave, se nos pedirá un alias con el
+    que identificarla.</p>
+<p>&lt;<img src="media/image36.png"
+style="width:3.15354in;height:1.31102in" /></p>
+</li>
+<li>
+<p>Los alias de las claves se almacenarán siempre en minúsculas.</p>
+</li>
+<li>
+<p>Se almacena en el directorio del usuario con el nombre
+    “ciphkeys.jceks”.</p>
+</li>
+<li>
+<p>No se elimina aunque se desinstale el Cliente @firma o la Interfaz
+    de Escritorio.</p>
+</li>
+</ul>
+<p>Tenga en cuenta que si el usuario elimina este almacén manualmente, se
+perderán todas las claves de cifrado que tuviese almacenadas.</p>
+<h2 id="descifrado-de-datos">Descifrado de datos</h2>
+<p>Desde la pestaña “<em>Descifrado</em>” podemos descifrar un fichero de datos
+que haya sido previamente cifrado por medio de las funcionalidades de la
+pestaña “<em>Cifrado</em>”.</p>
+<p>&lt;<img src="media/image37.png"
+style="width:5.42913in;height:3.09055in" /></p>
+<p>Las opciones de configuración de esta pantalla son:</p>
+<ul>
+<li>
+<p>Fichero de datos:</p>
+<ul>
+<li>Permite seleccionar el fichero que se desea descifrar. Es
+    posible pulsar el botón “Examinar” para buscar un fichero en
+    disco o escribir directamente su ruta en la caja de texto
+    asociada.</li>
+</ul>
+</li>
+<li>
+<p>Mecanismo de cifrado:</p>
+<ul>
+<li>Permite establecer si el fichero se cifró mediante una
+    contraseña o una clave de cifrado.</li>
+</ul>
+</li>
+<li>
+<p>Algoritmo de cifrado electrónico:</p>
+<ul>
+<li>
+<p>Es el algoritmo que se utilizó para el cifrado de datos. La
+    lista de algoritmos varía según el mecanismo de cifrado escogido
+    y la vista activa en la interfaz. Los algoritmos disponibles
+    son:</p>
+<ul>
+<li>
+<p>Para el descifrado con contraseña (pre-establecido en la
+    vista simple):</p>
+<ul>
+<li>
+<p>SHA1 y 3DES (pre-establecido en la vista simple).</p>
+</li>
+<li>
+<p>SHA1 y RC2.</p>
+</li>
+<li>
+<p>MD5 y DES.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Para el descifrado mediante clave:</p>
+<ul>
+<li>
+<p>AES</p>
+</li>
+<li>
+<p>Alleged RC4</p>
+</li>
+<li>
+<p>Blowfish</p>
+</li>
+<li>
+<p>DES</p>
+</li>
+<li>
+<p>3DES</p>
+</li>
+<li>
+<p>RC2</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>En la vista simple de la interfaz, el mecanismo de cifrado es
+obligatoriamente “Contraseña de cifrado” y el algoritmo es siempre
+“Contraseña SHA1 y 3DES”.</p>
+<p>Recuerde que el mecanismo y el algoritmo de cifrado seleccionado debe
+coincidir con el utilizado cuando se cifró el documento. Para facilitar
+este aspecto, es recomendable utilizar siempre los mismos valores para
+estos parámetros.</p>
+<p>Al pulsar el botón “Descifrar” se nos abrirá el asistente para la
+configuración del proceso de descifrado.</p>
+<p>&lt;<img src="media/image38.png"
+style="width:4.16929in;height:3.64173in" /></p>
+<p>Al pulsar el botón “Siguiente &gt;” se nos mostrará la pantalla del
+asistente para la inserción de la contraseña o clave de cifrado. Esta
+pantalla variará según el mecanismo de cifrado seleccionado.</p>
+<h3 id="contrasena-de-cifrado_1">Contraseña de cifrado</h3>
+<p>Si se seleccionó el mecanismo de cifrado mediante contraseña, el
+asistente nos mostrará una pantalla para la inserción de la contraseña
+de cifrado. Sólo será necesario insertar esta para llevar a cabo el
+proceso.</p>
+<p>&lt;<img src="media/image39.png"
+style="width:4.16929in;height:3.64173in" /></p>
+<p>Las opciones de configuración disponibles son:</p>
+<ul>
+<li>
+<p>Contraseña de cifrado:</p>
+<ul>
+<li>En la caja de texto que aparece deberemos insertar la contraseña
+    que se utilizó para el cifrado de los datos. Deben respetarse
+    las mayúsculas y minúsculas de la contraseña original.</li>
+</ul>
+</li>
+</ul>
+<p>Al pulsar el botón “Siguiente &gt;” se llevará a cabo el proceso de
+descifrado. Si ocurriese un error durante el mismo, se informaría al
+usuario con el mensaje correspondiente. Asegúrese en este caso de haber
+seleccionado el mecanismo y el algoritmo de cifrado correctos, además de
+la contraseña. Si el proceso finaliza correctamente, se mostrará un
+diálogo para el guardado del documento descifrado.</p>
+<h3 id="clave-de-cifrado_1">Clave de cifrado</h3>
+<p>Si se seleccionó el mecanismo de cifrado mediante clave, el asistente
+nos mostrará una pantalla para la inserción de la clave que se utilizó
+en el proceso de cifrado. Sólo será necesario insertarla o recuperarla
+del almacén de claves para llevar a cabo el proceso.</p>
+<p>&lt;<img src="media/image40.png"
+style="width:4.16929in;height:3.64173in" /></p>
+<p>Las opciones de configuración disponibles en esta pantalla son:</p>
+<ul>
+<li>
+<p>Clave de descifrado:</p>
+<ul>
+<li>En esta caja de texto puede insertar la clave de cifrado en base
+    64 que utilizó para el cifrado de los datos. Tenga en cuenta que
+    la clave debe disponer de un formato concreto según el algoritmo
+    de cifrado utilizado.</li>
+</ul>
+</li>
+<li>
+<p>Examinar almacén:</p>
+<ul>
+<li>
+<p>Permite acceder al almacén de claves (para lo que deberemos
+    conocer su contraseña) y recuperar una de las claves
+    almacenadas. Si almacenó la clave en el almacén durante el
+    proceso de cifrado, este es el mecanismo recomendado para
+    seleccionarla.</p>
+<p>Al lado de los alias que aparecen en el almacén y que designan a
+claves del mismo, puede verse el algoritmo con la que es
+compatible a clave.</p>
+<p>&lt;<img src="media/image41.png"
+style="width:3.15354in;height:1.31102in" /></p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Al pulsar el botón “Siguiente &gt;” se llevará a cabo el descifrado de
+los datos. En caso de producirse un error durante el mismo, se mostrará
+el mensaje correspondiente, mientras que, si finalizó correctamente, se
+mostrará un diálogo para selección donde se desea almacenar el documento
+descifrado.</p>
+<h2 id="ensobrado-digital">Ensobrado digital</h2>
+<p>Desde la pestaña “<em>Ensobrado</em>” es posible generar sobres digitales para
+la transferencia de datos segura con otras personas.</p>
+<p>Esta pestaña sólo está disponible en el modo de vista avanzada.</p>
+<p><strong>IMPORTANTE:</strong> El DNIe y otros dispositivos externos tienen bloqueado
+el proceso de desenvoltura de sobres, así que nunca deben utilizarse
+para generar sobre digitales.</p>
+<p>&lt;<img src="media/image42.png"
+style="width:5.42913in;height:3.09055in" /></p>
+<p>Las opciones de configuración disponibles son:</p>
+<ul>
+<li>
+<p>Fichero de datos:</p>
+<ul>
+<li>Permite seleccionar el documento que deseamos introducir en el
+    sobre digital. Es posible pulsar el botón “Examinar” para buscar
+    un fichero en disco o escribir directamente su ruta en la caja
+    de texto asociada.</li>
+</ul>
+</li>
+<li>
+<p>Opciones del sobre digital:</p>
+<ul>
+<li>
+<p>Tipo de sobre: Indica el tipo de sobre electrónico que debe
+    generarse. Los tipos soportados son:</p>
+<ul>
+<li>
+<p>Sobre autenticado: Este es el tipo por defecto y el sobre
+    más seguro. Cifra los datos contenidos en el sobre y agrega
+    un código de autenticación para detectar modificación en el
+    sobre.</p>
+</li>
+<li>
+<p>Sobre firmado: Cifra los datos contenidos en el sobre y
+    posteriormente lo firma.</p>
+</li>
+<li>
+<p>Sobre simple: Cifra los datos contenidos en el sobre.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Al pulsar el botón “Generar” se inicializará el asistente para la
+generación de sobres electrónicos.</p>
+<p>&lt;<img src="media/image43.png"
+style="width:4.16929in;height:3.64173in" /></p>
+<p>Al pulsar el botón “Siguiente &gt;“ pasaremos al primer paso para la
+generación del sobre electrónico: la selección del los destinatarios del
+sobre. Desde esta pantalla podrán indicarse los distintos destinatarios
+del sobre por medio de sus certificados.</p>
+<p>&lt;<img src="media/image44.png"
+style="width:4.16929in;height:3.64173in" /></p>
+<p>Las opciones de configuración disponibles en esta pantalla son:</p>
+<ul>
+<li>
+<p>Añadir un destinatario desde…</p>
+<ul>
+<li>
+<p>Este listado contiene los almacenes disponibles para la
+    extracción de una clave pública para el envío de datos. Es de
+    suponer que no disponemos de los certificados con la clave
+    pública de los destinatarios en nuestro almacén personal, así
+    que sólo están disponibles los almacenes en fichero y la libreta
+    de direcciones. Los almacenes concretos disponibles son:</p>
+<ul>
+<li>
+<p>PKCS#7 / X.509: Certificado en fichero (.cer) con clave
+    pública.</p>
+</li>
+<li>
+<p>PKCS#12 / PFX: Certificado en almacén en fichero (.p12,
+    .pfx).</p>
+</li>
+<li>
+<p>Windows / Internet Explorer (otras personas / libreta de
+    direcciones): Almacén de Windows con las claves públicas de
+    otras personas.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Añadir</p>
+<ul>
+<li>Abre un diálogo para la selección de un certificado del almacén
+    seleccionado. Si el almacén está protegido con contraseña será
+    necesario introducirla. Al seleccionar un certificado, este se
+    agrega al listado de destinatarios.</li>
+</ul>
+</li>
+<li>
+<p>Eliminar destinatario</p>
+<ul>
+<li>Permite eliminar el destinatario seleccionado de la lista de
+    destinatarios.</li>
+</ul>
+</li>
+</ul>
+<p>Es obligatorio seleccionar al menos un destinatario para el sobre
+digital. Al pulsar el botón “Siguiente &gt;” nos aparecerá la ventana
+para la selección del remitente del sobre. En esta pantalla podemos
+seleccionar nuestro certificado para identificarnos como remitentes del
+sobre. Este paso es opcional en la generación de Sobres Simples y
+obligatorio en los Sobres Firmados o Autenticados.</p>
+<p><strong>En este paso, sí es posible utilizar el DNIe.</strong></p>
+<p>&lt;<img src="media/image45.png"
+style="width:4.16929in;height:3.64173in" /></p>
+<p>Las opciones disponibles en esta pantalla son:</p>
+<ul>
+<li>
+<p>Añadir remitebnte desde el repositorio / almacén de certificados…</p>
+<ul>
+<li>
+<p>Este listado contiene los posibles almacenes que pueden contener
+    el certificado del quien genera el sobre digital. Los almacenes
+    concretos disponibles son:</p>
+<ul>
+<li>
+<p>Windows / Internet Explorer: Para tomar el certificado del
+    almacén de Windows o un dispositivo externo (por ejemplo, el
+    DNIe) instalado en el sistema.</p>
+</li>
+<li>
+<p>Mozilla Firefox (unificado): Para tomar el certificado del
+    almacén de Firefox o un dispositivo externo (por ejemplo, el
+    DNIe) configurado en este almacén.</p>
+</li>
+<li>
+<p>PKCS#12 / PFX: Para tomar el certificado de un almacén en
+    disco en formato P12 o PFX.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Añadir</p>
+<ul>
+<li>Abre un diálogo para la selección de un certificado del almacén
+    seleccionado. Si el almacén está protegido con contraseña será
+    necesario introducirla. Al seleccionar un certificado, este se
+    agrega al listado de remitentes. Actualmente la Interfaz de
+    Escritorio del Cliente @firma sólo soporta la configuración de
+    un remitente para el sobre electrónico.</li>
+</ul>
+</li>
+<li>
+<p>Eliminar remitente</p>
+<ul>
+<li>Permite eliminar el remitente seleccionado de la lista de
+    remitentes.</li>
+</ul>
+</li>
+</ul>
+<p>Al pulsar el botón “Siguiente &gt;” se lleva a cabo el proceso de
+generación del sobre electrónico. Si ocurriese un error durante el
+proceso, se mostrará el mensaje correspondiente, y si finaliza el
+proceso correctamente se nos mostrará un diálogo para almacenar el sobre
+electrónico generado.</p>
+<h2 id="desensobrado-digital">Desensobrado digital</h2>
+<p>Desde la pestaña “Dese<em>nsobrado</em>” es posible extraer el fichero
+contenido en un sobre digital. Para ello sólo será necesario seleccionar
+uno de los certificados designados como destinatarios del sobre.</p>
+<p>&lt;<img src="media/image46.png"
+style="width:5.42913in;height:3.09055in" /></p>
+<p>Las opciones de configuración en esta pantalla son:</p>
+<ul>
+<li>
+<p>Sobre digital:</p>
+<ul>
+<li>Permite seleccionar el sobre digital. Es posible pulsar el botón
+    “Examinar” para buscar un fichero en disco o escribir
+    directamente su ruta en la caja de texto asociada.</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Almacén / repositorio de certificados:</p>
+<ul>
+<li>
+<p>Permite seleccionar el almacén en donde se encuentra el
+    certificado del destinatario del sobre. Las opciones disponibles
+    son:</p>
+<ul>
+<li>
+<p>Windows / Internet Explorer: Para tomar el certificado del
+    almacén de Windows o un dispositivo externo (por ejemplo, el
+    DNIe) instalado en el sistema.</p>
+</li>
+<li>
+<p>Mozilla Firefox (unificado): Para tomar el certificado del
+    almacén de Firefox o un dispositivo externo (por ejemplo, el
+    DNIe) configurado en este almacén.</p>
+</li>
+<li>
+<p>PKCS#12 / PFX: Para tomar el certificado de un almacén en
+    disco en formato P12 o PFX.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Opciones de apertura de sobre digital:</p>
+<ul>
+<li>Iniciar contenido del sobre tras la apertura: Si se marcar esta
+    casilla, una vez extraído el contenido del sobre se abrirá con
+    la aplicación por defecto para la extensión de fichero con el
+    que se almacene.</li>
+</ul>
+</li>
+</ul>
+<p>Al pulsar el botón “Extraer” se mostrará un diálogo modal con los
+certificados del repositorio seleccionado. El usuario deberá seleccionar
+el certificado de uno de los destinatarios del sobre. Si el certificado
+no perteneciese a uno de los destinatarios o se produjese un error
+durante la extracción del contenido del sobre, se notificará; mientras
+que, si el proceso finaliza correctamente, se mostrará un diálogo para
+el guardado del documento extraído del sobre. Una vez extraído el
+documento, este se abrirá si se marcó la casilla “Iniciar contenido del
+sobre tras la apertura”.</p>
+<h1 id="politica-de-firma-de-la-age">Política de firma de la AGE</h1>
+<p>La política de firma de la AGE define un marco legal de firma
+electrónica concreto y común para la administración pública española. La
+declaración de esta política de firma indica que se han cumplido los
+requisitos exigidos por la política durante el proceso de firma
+electrónica.</p>
+<p>Actualmente, se encuentra en vigencia la versión 1.9 de la política de
+la AGE. Puede descargar y consultar la información relativa a la misma
+desde el siguiente enlace:</p>
+<p><a href="http://administracionelectronica.gob.es/ctt/politicafirma/descargas">http://administracionelectronica.gob.es/ctt/politicafirma/descargas</a></p>
+<p>En la interfaz de escritorio del Cliente @firma deberá configurar los
+atributos apropiados desde la pantalla de opciones generales de la
+aplicación. Los valores asignados a las distintas propiedades son:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Propiedad</strong></th>
+<th><strong>Valor</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identificador</td>
+<td>2.16.724.1.3.1.1.2.1.9</td>
+</tr>
+<tr>
+<td>Cualificador</td>
+<td><a href="https://sede.060.gob.es/politica_de_firma_anexo_1.pdf">https://sede.060.gob.es/politica_de_firma_anexo_1.pdf</a></td>
+</tr>
+<tr>
+<td>Huella digital SHA1</td>
+<td>G7roucf600+f03r/o0bAOQ6WAs0=</td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>ADVERTENCIA</u></strong>:</p>
+<ul>
+<li>
+<p>Las firmas XAdES soportadas por la política deben ser <em>Detached</em>
+    implícita o <em>Enveloped</em> implícita.</p>
+</li>
+<li>
+<p>Las firmas ODF y OOXML no definen una política de firma.</p>
+</li>
+</ul>
+<h1 id="factura-electronica">Factura electrónica</h1>
+<p>Los esquemas de factura electrónica existentes definen las
+características que debe cumplir una firma de factura electrónica acorde
+al esquema en cuestión. El formato utilizado para la firma es XAdES
+Enveloped, pero esta debe cumplir con ciertas propiedades específicas
+que no pueden configurarse a través del Cliente @firma o su interfaz de
+escritorio.</p>
+<p>Para la firma de facturas electrónicas, el Cliente @firma y la interfaz
+de escritorio incluyen un formato de firma específico. Este formato se
+encarga de configurar automáticamente todas las propiedades necesarias
+para que la factura firmada sea correctamente validada por los
+validadores de firma (incluidos la Plataforma @firma,
+<a href="https://valide.redsara.es/valide/">VALIDe</a> y el <a href="http://www11.mityc.es/FacturaE/">validador de facturas
+electrónicas del Ministerio de Industria, Turismo y
+Comercio</a>).</p>
+<p>Las firmas generadas con el formato de firma de factura se realizan
+conforme al esquema 3.1 de factura electrónica. Esto incluye, entre
+otros atributos, la configuración de la política de firma de facturas,
+por lo que no es necesario que el usuario configure la política de firma
+en la pantalla de opciones de la interfaz. Al generar una firma con el
+formato de factura electrónica la política de firma configurada por el
+usuario se ignorará.</p>
+<p>El usuario, si lo desea, puede firmar una factura con el formato XAdES
+Enveloped, el modo implícito y configurar la política de firma de
+factura electrónica. De hacerlo, se generará una firma con estas
+características que se validará correctamente en la Plataforma @firma y
+<a href="https://valide.redsara.es/valide/">VALIDe</a>, pero no será aceptada por
+el <a href="http://www11.mityc.es/FacturaE/">validador de facturas electrónicas del Ministerio de Industria,
+Turismo y Comercio</a>.</p>
+<p>Puede consultar el apartado Opciones de configuración para saber cómo
+configurar una política de firma.</p>
+<p><strong><br />
+</strong></p>
+<h1 id="instalacion-de-certificados">Instalación de Certificados.</h1>
+<blockquote>
+<p>Para el uso de la interfaz de escritorio del Cliente @firma es
+necesario disponer de un certificado electrónico, el cual puede
+encontrarse almacenado:</p>
+</blockquote>
+<ul>
+<li>
+<p><strong>En el Navegador</strong>. En el almacén de certificados del navegador
+    dentro de la pestaña "personal" aparecen los que poseen clave
+    privada y dentro de la pestaña "otras personas" aparecen los de
+    clave pública.</p>
+</li>
+<li>
+<p><strong>Tarjeta inteligente</strong>. El DNI electrónico es un dispositivo seguro
+    de creación de firma conforme a la norma CWA 14169. Esta norma está
+    reconocida por la Unión Europea y se considera que la firma
+    electrónica realizada con el DNI electrónico es equivalente a una
+    firma manuscrita a efectos legales. Estas firmas son las más seguras
+    porque la clave privada nunca sale de la tarjeta inteligente, por lo
+    que no puede ser copiada por terceros.</p>
+</li>
+</ul>
+<blockquote>
+<p>Es importante recordar, que cuando se instala un certificado, el mismo
+queda instalado únicamente para el navegador o sistema en el que se
+realice dicha instalación, siendo necesario realizar la misma acción
+si se quisiera disponer del mismo certificado en otro navegador que
+utilice un almacén de certificados distinto.</p>
+<p>A continuación se detalla los diferentes pasos a seguir para la
+instalación del certificado según el lugar de almacenamiento de los
+mismos:</p>
+</blockquote>
+<h2 id="instalacion-de-certificados-software-en-windows-internet-explorer">Instalación de certificados software en Windows / Internet Explorer</h2>
+<blockquote>
+<p>En primer lugar, en el menú superior del navegador, seleccionamos la
+opción “<strong>Herramientas</strong>” y a continuación hacemos clic sobre la
+opción “<strong>Opciones de Internet</strong>”.</p>
+<p>&lt;<img src="media/image47.png"
+style="width:2.83333in;height:2.57292in" /></p>
+<p>A continuación seleccionamos la opción “Certificados”, dentro de la
+pestaña “<strong>Contenido</strong>”</p>
+<p>&lt;<img src="media/image48.png"
+style="width:2.69792in;height:3.51042in" /></p>
+<p>Continuamos seleccionando la opción “<strong>Importar</strong>”, se nos abrirá el
+“<strong>Asistente para importación de certificados</strong>”.</p>
+<p>&lt;<img src="media/image49.png"
+style="width:4.16667in;height:3.85417in" /></p>
+<p>&lt;<img src="media/image50.png"
+style="width:4in;height:3.10417in" /></p>
+<p>Pulsaremos “<strong>Siguiente</strong>” en la primera ventana del asistente, tras
+lo cual, nos pedirá que seleccionemos la ubicación del certificado que
+deseamos instalar, para lo cual, pulsaremos el botón
+“<strong>Examinar...”.</strong></p>
+<p>Se nos abrirá una ventana en la cual tendremos que buscar el
+certificado que deseamos instalar, una vez encontrado, seleccionaremos
+el certificado y pulsaremos sobre el botón “<strong>Abrir</strong>”.</p>
+<p>&lt;<img src="media/image51.png"
+style="width:4.625in;height:3.55208in" /></p>
+<p>&lt;<img src="media/image52.png"
+style="width:4.875in;height:3.63542in" /></p>
+<p>Tras seleccionar el botón “<strong>Siguiente</strong>”, en la siguiente ventana el
+asistente nos pedirá que introduzcamos la contraseña usada en el
+cifrado del certificado, introducimos la clave y pulsamos sobre el
+botón “<strong>Siguiente</strong>”</p>
+<p>&lt;<img src="media/image53.png"
+style="width:4.66667in;height:3.64583in" /></p>
+<p>En la siguiente ventana, el asistente nos pedirá que seleccionemos el
+almacén en el cual se guardará el certificado, seleccionaremos la
+opción “Colocar todos los certificados en el siguiente almacén”.</p>
+<p>Pulsaremos sobre el botón “<strong>Examinar</strong>”, seleccionaremos la carpeta
+“<strong>Personal</strong>” y pulsaremos el botón “<strong>Siguiente</strong>”.</p>
+<p>&lt;<img src="media/image54.png"
+style="width:4.4375in;height:3.4375in" /></p>
+<p>&lt;<img src="media/image55.png"
+style="width:2.98958in;height:2.71875in" /></p>
+<p>Tras este paso, el asistente nos informará de que el certificado ha
+quedado importado correctamente.</p>
+</blockquote>
+<h2 id="instalacion-de-certificados-software-en-mozilla-firefox">Instalación de certificados software en Mozilla Firefox</h2>
+<blockquote>
+<p>En primer lugar, en el menú superior del navegador, seleccionamos la
+opción “<strong>Herramientas</strong>” y a continuación hacemos clic sobre la
+opción “<strong>Opciones</strong>”.</p>
+<p>&lt;<img src="media/image56.png"
+style="width:2.73958in;height:2.11458in" /></p>
+<p>A continuación seleccionamos la pestaña “<strong>Avanzado</strong>” del menú
+superior de la nueva ventana, tras lo cual, seleccionamos la
+subpestaña “<strong>Cifrado</strong>”, en la que seleccionaremos la opción “<strong>Ver
+certificados</strong>”</p>
+<p>&lt;<img src="media/image57.png"
+style="width:4.58333in;height:4.25in" /></p>
+<p>Continuamos seleccionando la opción “<strong>Importar</strong>”, se nos abrirá una
+ventana en la cual tendremos que buscar el certificado que deseamos
+instalar, una vez encontrado, seleccionaremos el certificado y
+pulsaremos sobre el botón “<strong>Abrir</strong>”.</p>
+<p>&lt;<img src="media/image58.png"
+style="width:4.75in;height:3.34375in" /></p>
+<p>&lt;<img src="media/image59.png"
+style="width:4.75in;height:3.48958in" /></p>
+<p>El navegador nos pedirá que introduzcamos la contraseña usada en el
+cifrado del certificado, introducimos la clave y pulsamos sobre el
+botón “<strong>Aceptar</strong>”.</p>
+<p>&lt;<img src="media/image60.png"
+style="width:5.60417in;height:3.94792in" /></p>
+<p>Una vez realizado este paso, el sistema nos informará con un mensaje
+que el certificado ha quedado instalado de forma satisfactoria.</p>
+</blockquote>
+<h2 id="instalacion-de-certificados-software-en-el-almacen-de-mac-os-x">Instalación de certificados software en el almacén de Mac OS X</h2>
+<blockquote>
+<p>Para instalar un certificado en Mac OS X sólo deberemos hacer doble
+clic sobre el certificado para solicitar su instalación y seleccionar
+el almacén de certificados del sistema.</p>
+<p>&lt;<img src="media/image61.png"
+style="width:4.125in;height:2.01042in"
+alt="keychain-access-add-certificate" /></p>
+<p>Seguidamente, insertaremos la contraseña de usuario del sistema para
+finalizar la importación.</p>
+<p>&lt;<img src="media/image62.png"
+style="width:3.96875in;height:2.23958in"
+alt="keychain-access-authenticate" /></p>
+<p>Aunque este proceso de instalación de certificados es el común en Mac
+OS X, pueden existir cambios entre cada una de sus versiones. Para
+conocer los detalles de cada versión acuda a la página Web de soporte
+de su sistema operativo. Para Mac OS X 10.6 es:</p>
+<p><a href="http://docs.info.apple.com/article.html?path=Mac/10.6/es/9082.html">http://docs.info.apple.com/article.html?path=Mac/10.6/es/9082.html</a></p>
+</blockquote>
+<h2 id="instalacion-de-certificados-software-en-google-chrome-y-apple-safari">Instalación de certificados software en Google Chrome y Apple Safari</h2>
+<blockquote>
+<p>Los navegadores Web Google Chrome y Apple Safari no disponen de un
+almacén de certificados propio, en su lugar utilizan el almacén de
+certificados del sistema operativo que utilice el usuario. Esto es:</p>
+</blockquote>
+<ul>
+<li>En <strong>Microsoft Windows</strong>: El almacén de certificados que Internet
+    Explorer.</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>En <strong>Linux</strong>: El almacén de certificados de Mozilla Firefox.</p>
+</li>
+<li>
+<p>En <strong>Solaris</strong> / <strong>OpenSolaris</strong>: El almacén de certificados de
+    Mozilla Firefox.</p>
+</li>
+<li>
+<p>En <strong>Mac OS X</strong>: El almacén de certificados del sistema operativo.</p>
+</li>
+</ul>
+<blockquote>
+<p>Si nuestro sistema operativo es Microsoft Windows deberemos seguir los
+pasos descritos en el apartado “Instalación de certificados software
+en Windows / Internet Explorer“.</p>
+<p>Si nuestro sistema operativo es Linux o Solaris se importarán los
+certificados a través de Mozilla Firefox tal como se describe en el
+apartado “Instalación de certificados software en Mozilla Firefox”.</p>
+<p>Si nuestro sistema operativo es Mac OS X deberán instalarse los
+certificados tal como se describe en el apartado “Instalación de
+certificados software en el almacén de Mac OS X”.</p>
+</blockquote>
+<h2 id="uso-de-certificados-desde-tarjetas-inteligentes">Uso de certificados desde tarjetas inteligentes</h2>
+<h3 id="dnie-dni-electronico">DNIe (DNI Electrónico)</h3>
+<blockquote>
+<p>Para la utilización del DNI electrónico es necesario contar
+determinados  elementos hardware y software  que nos van a permitir el
+acceso al chip de la tarjeta y, por tanto,  la utilización de los
+certificados contenidos en él.</p>
+<p>a)  Elementos hardware</p>
+<p>El DNI electrónico requiere el siguiente equipamiento físico:</p>
+</blockquote>
+<ul>
+<li>
+<p>Un Ordenador personal (Intel -a partir de Pentium III- o tecnología
+    similar).</p>
+</li>
+<li>
+<p>Un lector de tarjetas inteligentes  <u><strong>que cumpla el estándar ISO
+    7816</strong>.</u>  Existen distintas implementaciones, bien integrados en
+    el teclado, bien externos (conectados vía USB) o bien a través de
+    una interfaz PCMCIA.</p>
+</li>
+</ul>
+<blockquote>
+<p>Para elegir un lector que sean compatible con el DNI electrónico
+verifique que, al menos,</p>
+</blockquote>
+<ul>
+<li>
+<p>Cumpla el estándar ISO 7816 (1, 2 y 3).</p>
+</li>
+<li>
+<p>Soporta tarjetas asíncronas basadas en protocolos <strong>T=0 (y T=1).</strong></p>
+</li>
+<li>
+<p>Soporta velocidades de comunicación mínimas de 9.600 bps.</p>
+</li>
+<li>
+<p>Soporta los estándares:</p>
+<ul>
+<li>
+<p>API PC/SC (Personal Computer/Smart Card)</p>
+</li>
+<li>
+<p>CSP (Cryptographic Service Provider, Microsoft)</p>
+</li>
+<li>
+<p>API PKCS#11</p>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>b)  Elementos software</p>
+<p>**     Sistemas operativos**</p>
+<p>El DNI electrónico puede operar en diversos entornos:</p>
+</blockquote>
+<ul>
+<li>
+<p>Microsoft Windows</p>
+</li>
+<li>
+<p>Linux</p>
+</li>
+<li>
+<p>Unix (Solaris)</p>
+</li>
+<li>
+<p>Mac OS X</p>
+</li>
+</ul>
+<blockquote>
+<p>**     Navegadores**</p>
+<p>El DNI electrónico es compatible con todos los navegadores:</p>
+</blockquote>
+<ul>
+<li>
+<p>Microsoft Internet Explorer (versión 6.0 o superior)</p>
+</li>
+<li>
+<p>Mozilla Firefox (versión 1.5)</p>
+</li>
+<li>
+<p>Netscape (versión 4.78 o superior) </p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Controladores / Módulos criptográficos</strong> </p>
+<p>Para poder interaccionar adecuadamente con las tarjetas criptográficas
+en general y con el DNI electrónico en particular, el equipo ha de
+tener instalados unas "piezas" de software denominadas módulos
+criptográficos. </p>
+</blockquote>
+<ul>
+<li>
+<p>En un entorno <strong>Microsoft Windows</strong>, el equipo debe tener instalado
+    un servicio que se denomina "Cryptographic Service Provider" 
+    <strong>(CSP).</strong></p>
+</li>
+<li>
+<p>En los entornos <strong>UNIX / Linux o MAC</strong> podemos utilizar el DNI
+    electrónico a través de un módulo criptográfico denominado
+    <strong>PKCS#11.</strong></p>
+</li>
+</ul>
+<blockquote>
+<p>Tanto el <strong>CSP</strong>  como el <strong>PKCS#11</strong>  específico para el DNI
+electrónico podrán obtenerse en el Área de Descargas de la web del
+DNI-e, accediendo a la siguiente URL:
+<a href="http://www.dnielectronico.es/descargas/index.html">http://www.dnielectronico.es/descargas/index.html</a>, o en el sitio Web
+de OpenDNIe (recomendado para sistemas Linux y Solaris):
+<a href="http://opendnie.cenatic.es/">http://opendnie.cenatic.es/</a></p>
+<p>Opcionalmente puede acceder a
+<a href="https://zonatic.usatudni.es/aplicaciones/asistente-dnie">https://zonatic.usatudni.es/aplicaciones/asistente-dnie</a>, para la
+descarga de un instalador sencillo y accesible del controlador.</p>
+<p>Si optamos por el área de descargas de
+<a href="http://www.dnielectronico.es">www.dnielectronico.es</a> deberemos
+seleccionar la primera opción si tenemos un Sistema Operativo Windows
+o la segunda en caso de tener otro Sistema Operativo.</p>
+<p>&lt;<img src="media/image63.png"
+style="width:5.90625in;height:2.3125in" /></p>
+<p>En la siguiente pantalla seleccionaremos la opción “<strong>Sistemas
+Windows. Compatible con Vista”,</strong> tras lo cual se nos descargara el
+software. Seleccionaremos “<strong>Guardar</strong>” y elegiremos la carpeta
+deseada donde queremos que sea descargado.</p>
+<p>&lt;<img src="media/image64.png"
+style="width:5.90625in;height:2.88542in" /></p>
+<p>&lt;<img src="media/image65.png"
+style="width:3.71875in;height:1.67708in" /></p>
+<p>Una vez descargado el fichero con la nomenclatura “DNIe_vx_j_y.zip” lo
+descomprimiremos y accederemos al fichero “DNIe_vx_j_y.exe”.</p>
+<p>El software se instalará automáticamente y se le pedirá reiniciar el
+equipo.</p>
+<p>&lt;<img src="media/image66.png"
+style="width:4.375in;height:3.34375in" /></p>
+<p>&lt;<img src="media/image67.png"
+style="width:4.375in;height:3.35417in" /></p>
+<p>Es posible, dependiendo de la configuración de su navegador, que nos
+aparezca la siguiente ventana:</p>
+<p>&lt;<img src="media/image68.png"
+style="width:4.125in;height:3.85417in" /></p>
+<p>Se nos solicitará, por tanto que instalemos en el certificado raíz del
+DNIe, para ello deberemos seleccionar sobre “<strong>Instalar
+certificado...”</strong></p>
+<p>&lt;<img src="media/image69.png"
+style="width:4.5in;height:3.51042in" /></p>
+<p>Pulsaremos sobre el botón “<strong>Siguiente</strong>”</p>
+<p>&lt;<img src="media/image70.png"
+style="width:3.875in;height:3.15625in" /></p>
+<p>Seleccionamos la opción “Colocar todos los certificados en el
+siguiente almacén” y pulsamos sobre el botón “<strong>Examinar...”</strong></p>
+<p>&lt;<img src="media/image71.png"
+style="width:2.96875in;height:2.71875in" /></p>
+<p>Seleccionaremos el almacén de certificados <strong>“Entidades Emisoras Raíz
+de Confianza”</strong></p>
+<p>En la siguiente ventana seleccionaremos la opción <strong>“Finalizar”</strong></p>
+<p>&lt;<img src="media/image72.emf"
+style="width:5.125in;height:2.17708in" /></p>
+<p>Si nos aparece la siguiente advertencia, seleccionaremos “Si” para
+permitir que la autoridad raíz del DNIe, se instale en el navegador y
+se pueda así establecer la cadena de confianza de certificación.</p>
+<p>Tras lo cual, el software quedará instalado y listo para su uso.</p>
+<p>Adicionalmente, para operar con un lector de tarjetas inteligentes,
+será necesario instalar  un <strong>driver</strong> que, normalmente, se distribuye
+con el propio lector.</p>
+<p><strong>Nota:</strong> Para hacer uso del software de cambio de PIN virtual, deberá
+tener instalado en el equipo la versión <strong>JAVA 1.5 o superior</strong>.</p>
+<p>Para más información puede acudir a la página
+<a href="http://www.dnielectronico.es">http://www.dnielectronico.es</a> o contactar con el Servicio de Atención
+al Ciudadano en el teléfono 900 364 463 o en el correo
+<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#97;&#99;&#64;&#100;&#110;&#105;&#101;&#108;&#101;&#99;&#116;&#114;&#111;&#110;&#105;&#99;&#111;&#46;&#101;&#115;">&#115;&#97;&#99;&#64;&#100;&#110;&#105;&#101;&#108;&#101;&#99;&#116;&#114;&#111;&#110;&#105;&#99;&#111;&#46;&#101;&#115;</a></p>
+</blockquote>
+<h3 id="otros-certificados">Otros certificados</h3>
+<blockquote>
+<p>En el caso de hacer uso de otro certificado desde una tarjeta
+inteligente deberá consultar con la entidad emisora del mismo para que
+le indique su forma de uso.</p>
+</blockquote>
+<h1 id="resolucion-de-problemas">Resolución de Problemas</h1>
+<p>Para la resolución de problemas relacionados con las distintas
+operaciones de firma soportadas, consulte la Guía de Incidencias de
+este.</p>
+<h2 id="la-aplicacion-se-bloquea-al-realizar-busquedas-en-la-pantalla-de-ayuda">La aplicación se bloquea al realizar búsquedas en la pantalla de ayuda</h2>
+<p>Se ha detectado que al buscar determinadas palabras, a través de la
+herramienta de búsqueda de la pantalla de ayuda de la aplicación, la
+interfaz se queda bloqueada y no es posible recuperar el control de la
+aplicación.</p>
+<p>Este comportamiento se debe a un comportamiento anómalo de la API de
+ayuda de Java (JavaHelp) y no ha solución al error producido. Si ocurre
+este comportamiento, deberá forzar el cierre de la aplicación (consulte
+el manual de su sistema operativo) para eliminar el bloqueo.</p>
+<h1 id="glosario-de-terminos">Glosario de términos</h1>
+<h6 id="firma-electronica_1">Firma electrónica</h6>
+<p>Es el conjunto de datos, en forma electrónica, anejos a otros datos
+electrónicos o asociados funcionalmente con ellos, utilizados como medio
+para identificar formalmente al autor o a los autores del documento que
+la recoge.</p>
+<h6 id="xml-digital-signature-xmldsig">XML Digital Signature (XMLDSig)</h6>
+<p>Es una recomendación del W3C que define una sintaxis XML para la firma
+digital</p>
+<h6 id="xml-advanced-signature-xades">XML Advanced Signature (XAdES)</h6>
+<p>Es un conjunto de extensiones a las recomendaciones XML-DSig haciéndolas
+adecuadas para la firma electrónica avanzada.</p>
+<h6 id="rsa">RSA</h6>
+<p>Es un sistema criptográfico de clave pública desarrollado en 1977. En la
+actualidad, RSA es el primer y más utilizado algoritmo de este tipo y es
+válido tanto para cifrar como para firmar digitalmente.</p>
+<h6 id="xml">XML</h6>
+<p>Es un metalenguaje extensible de etiquetas desarrollado por el World
+Wide Web Consortium (W3C). Es una simplificación y adaptación del SGML y
+permite definir la gramática de lenguajes específicos (de la misma
+manera que HTML es a su vez un lenguaje definido por SGML). Por lo tanto
+XML no es realmente un lenguaje en particular, sino una manera de
+definir lenguajes para diferentes necesidades. Algunos de estos
+lenguajes que usan XML para su definición son XHTML, SVG, MathML.</p>
+<h6 id="office-open-xml-ooxml">Office Open XML (OOXML)</h6>
+<p>Es un formato de archivo abierto y estándar cuyas extensiones más
+comunes son .docx, .xlsx y .pptx. Se le utiliza para representar y
+almacenar hojas de cálculo, diagramas, presentaciones y documentos de
+texto. Un archivo Office Open XML contiene principalmente datos basados
+en el lenguaje de marcado XML, comprimidos en un contenedor .zip
+específico.</p>
+<h6 id="open-document-format-odf">Open Document Format (ODF)</h6>
+<p>Es un formato de fichero estándar para el almacenamiento de documentos
+ofimáticos tales como hojas de cálculo, memorandos, gráficas y
+presentaciones. Aunque las especificaciones fueron inicialmente
+elaboradas por Sun, el estándar fue desarrollado por el comité técnico
+para Open Office XML de la organización OASIS y está basado en un
+esquema XML inicialmente creado e implementado por la suite ofimática
+OpenOffice.org (ver OpenOffice.org XML).</p>
+<h6 id="zip">ZIP</h6>
+<p>Es un formato de almacenamiento sin pérdida, muy utilizado para la
+compresión de datos como imágenes, programas o documentos.</p>
+<h6 id="pdf">PDF</h6>
+<p>Es un formato de almacenamiento de documentos, desarrollado por la
+empresa Adobe Systems. Este formato es de tipo compuesto (imagen
+vectorial, mapa de bits y texto).</p>
+<h6 id="sha">SHA</h6>
+<p>Es un sistema de funciones hash criptográficas relacionadas de la
+Agencia de Seguridad Nacional de los Estados Unidos y publicadas por el
+National Institute of Standards and Technology (NIST). El primer miembro
+de la familia fue publicado en 1993 es oficialmente llamado SHA. Sin
+embargo, hoy día, no oficialmente se le llama SHA-0 para evitar
+confusiones con sus sucesores. Dos años más tarde el primer sucesor de
+SHA fue publicado con el nombre de SHA-1. Existen cuatro variantes más
+que se han publicado desde entonces cuyas diferencias se basan en un
+diseño algo modificado y rangos de salida incrementados: SHA-224,
+SHA-256, SHA-384, y SHA-512 (llamándose SHA-2 a todos ellos).</p>
+<h6 id="pkcs">PKCS</h6>
+<p>Se refiere a un grupo de estándares de criptografía de clave pública
+concebidos y publicados por los laboratorios de RSA en California. A RSA
+Security se le asignaron los derechos de licenciamiento para la patente
+de algoritmo de clave asimétrica RSA y adquirió los derechos de
+licenciamiento para muchas otras patentes de claves.</p>
+<h6 id="w3c">W3C</h6>
+<p>Es un consorcio internacional que produce recomendaciones para la World
+Wide Web. Está dirigida por Tim Berners-Lee, el creador original de URL
+(Uniform Resource Locator, Localizador Uniforme de Recursos), HTTP
+(HyperText Transfer Protocol, Protocolo de Transferencia de HiperTexto)
+y HTML (Lenguaje de Marcado de HiperTexto) que son las principales
+tecnologías sobre las que se basa la Web.</p>
+<h6 id="openofficeorg">OpenOffice.org</h6>
+<p>es una suite ofimática libre (código abierto y distribución gratuita)
+que incluye herramientas como procesador de textos, hoja de cálculo,
+presentaciones, herramientas para el dibujo vectorial y base de datos.
+Está disponible para varias plataformas, tales como Microsoft Windows,
+GNU/Linux, BSD, Solaris y Mac OS X. Soporta numerosos formatos de
+archivo, incluyendo como predeterminado el formato estándar ISO/IEC
+OpenDocument (ODF), entre otros formatos comunes. A febrero de 2010,
+OpenOffice soporta más de 110 idiomas.</p>
+<h6 id="base64">Base64</h6>
+<p>Es un sistema de numeración posicional que usa 64 como base. Es la mayor
+potencia de dos que puede ser representada usando únicamente los
+caracteres imprimibles de ASCII. Esto ha propiciado su uso para
+codificación de correos electrónicos, PGP y otras aplicaciones. Todas
+las variantes famosas que se conocen con el nombre de Base64 usan el
+rango de caracteres A-Z, a-z y 0-9 en este orden para los primeros 62
+dígitos, pero los símbolos escogidos para los últimos dos dígitos varían
+considerablemente de unas a otras. Otros métodos de codificación como
+UUEncode y las últimas versiones de binhex usan un conjunto diferente de
+64 caracteres para representar 6 dígitos binarios, pero éstos nunca son
+llamados Base64.</p>
+<h6 id="asn1">ASN.1</h6>
+<p>Es una norma para representar datos independientemente de la máquina que
+se esté usando y sus formas de representación internas. Es un protocolo
+de nivel de presentación en el modelo OSI.</p>
+<h6 id="autoridad-de-certificacion-ca">Autoridad de Certificación (CA)</h6>
+<p>Es una entidad de confianza, responsable de emitir y revocar los
+certificados digitales o certificados, utilizados en la firma
+electrónica, para lo cual se emplea la criptografía de clave pública.
+Jurídicamente es un caso particular de Prestador de Servicios de
+Certificación.</p>
+<h6 id="certificado-digital">Certificado Digital</h6>
+<p>Es un documento digital mediante el cual un tercero confiable (una
+autoridad de certificación) garantiza la vinculación entre la identidad
+de un sujeto o entidad y su clave pública.</p>
+<h6 id="infraestructura-de-clave-publica-pki">Infraestructura de Clave Pública (PKI)</h6>
+<p>Es una combinación de hardware y software, políticas y procedimientos de
+seguridad que permiten la ejecución con garantías de operaciones
+criptográficas como el cifrado, la firma digital o el no repudio de
+transacciones electrónicas.</p>
+<h1 id="faq">FAQ.</h1>
+<p><strong>¿Qué certificados son reconocidos por la plataforma?</strong></p>
+<p>La plataforma @firma admite certificados digitales reconocidos conforme
+el estándar ITU-T X.509 v3, emitidos por múltiples prestadores de
+servicios de certificación. Todos los prestadores se encuentran
+inscritos en el registro de la Secretaria de Estado de
+Telecomunicaciones y para la Sociedad de Información del Ministerio de
+Industria, Turismo y Comercio de autoridades conforme a lo establecido
+en el artículo 30 de la Ley 59/2003, de 19 de diciembre, de firma
+electrónica. Los prestadores reconocidos son:</p>
+<ol>
+<li>
+<p>DNI Electrónico</p>
+</li>
+<li>
+<p>Camerfirma</p>
+</li>
+<li>
+<p>Izenpe</p>
+</li>
+<li>
+<p>CATCert (Agencia Catalana de Certificación)</p>
+</li>
+<li>
+<p>ANF AC</p>
+</li>
+<li>
+<p>SCR (Servicio de Certificación de los Registradores)</p>
+</li>
+<li>
+<p>ACA</p>
+</li>
+<li>
+<p>ACCV (Autoridad de Certificación de la Comunidad Valenciana)</p>
+</li>
+<li>
+<p>ANCERT (Agencia Notarial de Certificación)</p>
+</li>
+<li>
+<p>FNMT (Fábrica Nacional de Moneda y Timbre)</p>
+</li>
+<li>
+<p>Firmaprofesional</p>
+</li>
+<li>
+<p>BANESTO CA</p>
+</li>
+</ol>
+<p>Si desea información más detallada sobre los certificados soportados,
+consulte la Declaración de Practicas de Validación de @firma en
+<a href="http://www.ctt.map.es/afirma">http://www.ctt.map.es/afirma</a>.</p>
+<p><strong>¿Cuáles son los tipos de certificados admitidos por las
+Administraciones?</strong></p>
+<p>De acuerdo con la Ley 59/2003, de Firma Electrónica, los tipos de
+certificados admitidos son: certificado de persona física y ,
+certificado de persona jurídica, certificado de sello electrónico para
+la actuación automatizada, certificado de sede electrónica
+administrativa y certificado de empleado público.  </p>
+<p>Cada uno de los certificados emitidos conllevará un grado de
+"confianza", asociado a los diferentes niveles de aseguramiento bajo los
+que se emitan, debido a los requisitos técnicos y de seguridad que estos
+niveles llevan asociados.</p>
+<p><strong><br />
+¿Qué información posee un certificado digital?</strong></p>
+<p>Un certificado digital es, en realidad, una clave pública, con cierta
+información adjunta, como el nombre del propietario, el periodo de
+validez de la clave, etc, permitiendo:</p>
+<blockquote>
+<p>La autenticación del usuario.</p>
+<p>La confidencialidad del mensaje.</p>
+<p>La integridad del documento.</p>
+<p>El no repudio.</p>
+</blockquote>
+<p>Los certificados digitales sólo son útiles si existe alguna Autoridad
+Certificadora (<em>Certification Authority</em> o CA) que los valide, ya que si
+uno se certifica a sí mismo no hay ninguna garantía de que su identidad
+sea la que anuncia.  </p>
+<p>El formato de certificados X.509 es un estándar del ITU-T
+(<em>International Telecommunication Union-Telecommunication Standarization
+Sector</em>) y el ISO/IEC (<em>International Standards Organization /
+International Electrotechnical Commission</em>).</p>
+<p>Los elementos del formato de un certificado X.509 v3 son:</p>
+<ul>
+<li>
+<p>Versión. El campo de versión contiene el número de versión del
+    certificado codificado.</p>
+</li>
+<li>
+<p>Número de serie del certificado. Este campo es un entero asignado
+    por la autoridad certificadora. Cada certificado emitido por una CA
+    debe tener un número de serie único.</p>
+</li>
+<li>
+<p>Identificador del algoritmo de firmado. Este campo identifica el
+    algoritmo empleado para firmar el certificado.</p>
+</li>
+<li>
+<p>Nombre del emisor. Este campo identifica la CA que ha firmado y
+    emitido el certificado.</p>
+</li>
+<li>
+<p>Periodo de validez. Este campo indica el periodo de tiempo durante
+    el cual el certificado es válido y la CA está obligada a mantener
+    información sobre el estado del mismo.</p>
+</li>
+<li>
+<p>Nombre del sujeto. Este campo identifica la identidad cuya clave
+    pública está certificada en el campo siguiente. El nombre debe ser
+    único para cada entidad certificada por una CA dada, aunque puede
+    emitir más de un certificado con el mismo nombre si es para la misma
+    entidad.</p>
+</li>
+<li>
+<p>Información de clave pública del sujeto. Este campo contiene la
+    clave pública, sus parámetros y el identificador del algoritmo con
+    el que se emplea la clave.</p>
+</li>
+</ul>
+<h4 id="_1"></h4>
+<p><span id="Licencia_Creative_Commons" class="anchor"></span>Creative
+Commons</p>
+<p><strong>Reconocimiento-NoComercial-CompartirIgual 3.0 Unported</strong></p>
+<p><strong>Usted es libre de:</strong></p>
+<p>| &lt;<img src="media/image73.png"   <br /> style="width:0.52083in;height:0.52083in" alt="share" />  | Compartir - copiar, distribuir, ejecutar y comunicar públicamente la obra |
+|------------|------------------------------------------------------------|
+| &lt;<img src="media/image74.png"   <br /> style="width:0.52083in;height:0.52083in" alt="remix" />  | hacer obras derivadas                                                     |</p>
+<p><strong>Bajo las condiciones siguientes:</strong></p>
+<p>| &lt;<img src="media/image75.png"<br /> style="width:0.52083in;height:0.52083in" alt="by" />  | <strong>Atribución</strong> — Debe reconocer los créditos de la obra de la manera especificada por el autor o el licenciante (pero no de una manera que sugiera que tiene su apoyo o que apoyan el uso que hace de su obra). |
+|------------|------------------------------------------------------------|
+| &lt;<img src="media/image76.png"<br /> style="width:0.52083in;height:0.52083in" alt="nc" />  | <strong>NoComercial</strong> — No puede utilizar esta obra para fines comerciales.                                                                                                                                           |
+| &lt;<img src="media/image77.png"<br /> style="width:0.52083in;height:0.52083in" alt="sa" />  | <strong>Compartir bajo la Misma Licencia</strong> — Si altera o transforma esta obra, o genera una obra derivada, sólo puede distribuir la obra generada bajo una licencia idéntica a ésta.                                  |</p>
+<p><strong>Entendiendo que:</strong></p>
+<blockquote>
+<p><strong>Renuncia</strong> — Alguna de estas condiciones puede no aplicarse si se
+obtiene el permiso del titular de los derechos de autor</p>
+<p><strong>Dominio Público</strong> — Cuando la obra o alguno de sus elementos se
+hallen en el dominio público según la ley vigente aplicable, esta
+situación no quedará afectada por la licencia.</p>
+<p><strong>Otros derechos</strong> — Los derechos siguientes no quedan afectados por
+la licencia de ninguna manera:</p>
+<p>Los derechos derivados de usos legítimos u otras limitaciones
+reconocidas por ley no se ven afectados por lo anterior.</p>
+<p>Los derechos morales del auto;</p>
+<p>Derechos que pueden ostentar otras personas sobre la propia obra o su
+uso, como por ejemplo derechos de imagen o de privacidad.</p>
+<p><strong>Aviso</strong> — Al reutilizar o distribuir la obra, tiene que dejar muy en
+claro los términos de la licencia de esta obra. La mejor forma de
+hacerlo es enlazar a esta página.</p>
+</blockquote>
+<p><strong><em>Licencia</em></strong></p>
+<p>LA OBRA O LA PRESTACIÓN (SEGÚN SE DEFINEN MÁS ADELANTE) SE PROPORCIONA
+BAJO LOS TÉRMINOS DE ESTA LICENCIA PÚBLICA DE CREATIVE COMMONS (CCPL O
+LICENCIA). LA OBRA O LA PRESTACIÓN SE ENCUENTRA PROTEGIDA POR LA LEY
+ESPAÑOLA DE PROPIEDAD INTELECTUAL Y/O CUALESQUIERA OTRAS NORMAS QUE
+RESULTEN DE APLICACIÓN. QUEDA PROHIBIDO CUALQUIER USO DE LA OBRA O
+PRESTACIÓN DIFERENTE A LO AUTORIZADO BAJO ESTA LICENCIA O LO DISPUESTO
+EN LA LEY DE PROPIEDAD INTELECTUAL.</p>
+<p>MEDIANTE EL EJERCICIO DE CUALQUIER DERECHO SOBRE LA OBRA O LA
+PRESTACIÓN, USTED ACEPTA Y CONSIENTE LAS LIMITACIONES Y OBLIGACIONES DE
+ESTA LICENCIA, SIN PERJUICIO DE LA NECESIDAD DE CONSENTIMIENTO EXPRESO
+EN CASO DE VIOLACIÓN PREVIA DE LOS TÉRMINOS DE LA MISMA. EL LICENCIADOR
+LE CONCEDE LOS DERECHOS CONTENIDOS EN ESTA LICENCIA, SIEMPRE QUE USTED
+ACEPTE LOS PRESENTES TÉRMINOS Y CONDICIONES.</p>
+<p><strong>1. Definiciones</strong></p>
+<ol>
+<li>La <strong>obra</strong> es la creación literaria, artística o científica
+    ofrecida bajo los términos de esta licencia.</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>
+<p>En esta licencia se considera una <strong>prestación</strong> cualquier
+    interpretación, ejecución, fonograma, grabación audiovisual, emisión
+    o transmisión, mera fotografía u otros objetos protegidos por la
+    legislación de propiedad intelectual vigente aplicable.</p>
+</li>
+<li>
+<p>La aplicación de esta licencia a una <strong>colección</strong> (definida más
+    adelante) afectará únicamente a su estructura en cuanto forma de
+    expresión de la selección o disposición de sus contenidos, no siendo
+    extensiva a éstos. En este caso la colección tendrá la consideración
+    de obra a efectos de esta licencia.</p>
+</li>
+<li>
+<p>El <strong>titular originario</strong> es:</p>
+</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>
+<p>En el caso de una obra literaria, artística o científica, la persona
+    natural o grupo de personas que creó la obra.</p>
+</li>
+<li>
+<p>En el caso de una obra colectiva, la persona que la edite y divulgue
+    bajo su nombre, salvo pacto contrario.</p>
+</li>
+<li>
+<p>En el caso de una interpretación o ejecución, el actor, cantante,
+    músico, o cualquier otra persona que represente, cante, lea, recite,
+    interprete o ejecute en cualquier forma una obra.</p>
+</li>
+<li>
+<p>En el caso de un fonograma, el productor fonográfico, es decir, la
+    persona natural o jurídica bajo cuya iniciativa y responsabilidad se
+    realiza por primera vez una fijación exclusivamente sonora de la
+    ejecución de una obra o de otros sonidos.</p>
+</li>
+<li>
+<p>En el caso de una grabación audiovisual, el productor de la
+    grabación, es decir, la persona natural o jurídica que tenga la
+    iniciativa y asuma la responsabilidad de las fijaciones de un plano
+    o secuencia de imágenes, con o sin sonido.</p>
+</li>
+<li>
+<p>En el caso de una emisión o una transmisión, la entidad de
+    radiodifusión.</p>
+</li>
+<li>
+<p>En el caso de una mera fotografía, aquella persona que la haya
+    realizado.</p>
+</li>
+<li>
+<p>En el caso de otros objetos protegidos por la legislación de
+    propiedad intelectual vigente, la persona que ésta señale.</p>
+</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>
+<p>Se considerarán <strong>obras derivadas</strong> aquellas obras creadas a partir
+    de la licenciada, como por ejemplo: las traducciones y adaptaciones;
+    las revisiones, actualizaciones y anotaciones; los compendios,
+    resúmenes y extractos; los arreglos musicales y, en general,
+    cualesquiera transformaciones de una obra literaria, artística o
+    científica. Para evitar la duda, si la obra consiste en una
+    composición musical o grabación de sonidos, la sincronización
+    temporal de la obra con una imagen en movimiento (synching) será
+    considerada como una obra derivada a efectos de esta licencia.</p>
+</li>
+<li>
+<p>Tendrán la consideración de <strong>colecciones</strong> la recopilación de obras
+    ajenas, de datos o de otros elementos independientes como las
+    antologías y las bases de datos que por la selección o disposición
+    de sus contenidos constituyan creaciones intelectuales. La mera
+    incorporación de una obra en una colección no dará lugar a una
+    derivada a efectos de esta licencia.</p>
+</li>
+<li>
+<p>El <strong>licenciador</strong> es la persona o la entidad que ofrece la obra o
+    prestación bajo los términos de esta licencia y le concede los
+    derechos de explotación de la misma conforme a lo dispuesto en ella.</p>
+</li>
+<li>
+<p><strong>Usted</strong> es la persona o la entidad que ejercita los derechos
+    concedidos mediante esta licencia y que no ha violado previamente
+    los términos de la misma con respecto a la obra o la prestación, o
+    que ha recibido el permiso expreso del licenciador de ejercitar los
+    derechos concedidos mediante esta licencia a pesar de una violación
+    anterior.</p>
+</li>
+<li>
+<p>La <strong>transformación</strong> de una obra comprende su traducción,
+    adaptación y cualquier otra modificación en su forma de la que se
+    derive una obra diferente. La creación resultante de la
+    transformación de una obra tendrá la consideración de obra derivada.</p>
+</li>
+<li>
+<p>Se entiende por <strong>reproducción</strong> la fijación directa o indirecta,
+    provisional o permanente, por cualquier medio y en cualquier forma,
+    de toda la obra o la prestación o de parte de ella, que permita su
+    comunicación o la obtención de copias.</p>
+</li>
+<li>
+<p>Se entiende por <strong>distribución</strong> la puesta a disposición del público
+    del original o de las copias de la obra o la prestación, en un
+    soporte tangible, mediante su venta, alquiler, préstamo o de
+    cualquier otra forma.</p>
+</li>
+<li>
+<p>Se entiende por <strong>comunicación pública</strong> todo acto por el cual una
+    pluralidad de personas, que no pertenezcan al ámbito doméstico de
+    quien la lleva a cabo, pueda tener acceso a la obra o la prestación
+    sin previa distribución de ejemplares a cada una de ellas. Se
+    considera comunicación pública la puesta a disposición del público
+    de obras o prestaciones por procedimientos alámbricos o
+    inalámbricos, de tal forma que cualquier persona pueda acceder a
+    ellas desde el lugar y en el momento que elija.</p>
+</li>
+<li>
+<p>La <strong>explotación</strong> de la obra o la prestación comprende la
+    reproducción, la distribución, la comunicación pública y, en su
+    caso, la transformación.</p>
+</li>
+</ol>
+<p><strong>2. Límites de los derechos.</strong> Nada en esta licencia pretende reducir o
+restringir cualesquiera límites legales de los derechos exclusivos del
+titular de los derechos de propiedad intelectual de acuerdo con la Ley
+de propiedad intelectual o cualesquiera otras leyes aplicables, ya sean
+derivados de usos legítimos, tales como la copia privada o la cita, u
+otras limitaciones como la resultante de la primera venta de ejemplares
+(agotamiento).</p>
+<p><strong>3. Concesión de licencia.</strong> Conforme a los términos y a las
+condiciones de esta licencia, el licenciador concede, por el plazo de
+protección de los derechos de propiedad intelectual y a título gratuito,
+una licencia de ámbito mundial no exclusiva que incluye los derechos
+siguientes:</p>
+<ol>
+<li>Derecho de reproducción, distribución y comunicación pública de la
+    obra o la prestación.</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>
+<p>Derecho a incorporar la obra o la prestación en una o más
+    colecciones.</p>
+</li>
+<li>
+<p>Derecho de reproducción, distribución y comunicación pública de la
+    obra o la prestación lícitamente incorporada en una colección.</p>
+</li>
+<li>
+<p>Derecho de transformación de la obra para crear una obra derivada
+    siempre y cuando se incluya en ésta una indicación de la
+    transformación o modificación efectuada.</p>
+</li>
+<li>
+<p>Derecho de reproducción, distribución y comunicación pública de
+    obras derivadas creadas a partir de la obra licenciada.</p>
+</li>
+<li>
+<p>Derecho a extraer y reutilizar la obra o la prestación de una base
+    de datos.</p>
+</li>
+<li>
+<p>Para evitar cualquier duda, el titular originario:</p>
+</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>
+<p>Conserva el derecho a percibir las remuneraciones o compensaciones
+    previstas por actos de explotación de la obra o prestación,
+    calificadas por la ley como irrenunciables e inalienables y sujetas
+    a gestión colectiva obligatoria.</p>
+</li>
+<li>
+<p>Renuncia al derecho exclusivo a percibir, tanto individualmente como
+    mediante una entidad de gestión colectiva de derechos, cualquier
+    remuneración derivada de actos de explotación de la obra o
+    prestación que usted realice.</p>
+</li>
+</ol>
+<p>Estos derechos se pueden ejercitar en todos los medios y formatos,
+tangibles o intangibles, conocidos en el momento de la concesión de esta
+licencia. Los derechos mencionados incluyen el derecho a efectuar las
+modificaciones que sean precisas técnicamente para el ejercicio de los
+derechos en otros medios y formatos. Todos los derechos no concedidos
+expresamente por el licenciador quedan reservados, incluyendo, a título
+enunciativo pero no limitativo, los derechos morales irrenunciables
+reconocidos por la ley aplicable. En la medida en que el licenciador
+ostente derechos exclusivos previstos por la ley nacional vigente que
+implementa la directiva europea en materia de derecho sui generis sobre
+bases de datos, renuncia expresamente a dichos derechos exclusivos.</p>
+<p><strong>4. Restricciones.</strong> La concesión de derechos que supone esta licencia
+se encuentra sujeta y limitada a las restricciones siguientes:</p>
+<ol>
+<li>Usted puede reproducir, distribuir o comunicar públicamente la obra
+    o prestación solamente bajo los términos de esta licencia y debe
+    incluir una copia de la misma, o su Identificador Uniforme de
+    Recurso (URI). Usted no puede ofrecer o imponer ninguna condición
+    sobre la obra o prestación que altere o restrinja los términos de
+    esta licencia o el ejercicio de sus derechos por parte de los
+    concesionarios de la misma. Usted no puede sublicenciar la obra o
+    prestación. Usted debe mantener intactos todos los avisos que se
+    refieran a esta licencia y a la ausencia de garantías. Usted no
+    puede reproducir, distribuir o comunicar públicamente la obra o
+    prestación con medidas tecnológicas que controlen el acceso o el uso
+    de una manera contraria a los términos de esta licencia. Esta
+    sección 4.a también afecta a la obra o prestación incorporada en una
+    colección, pero ello no implica que ésta en su conjunto quede
+    automáticamente o deba quedar sujeta a los términos de la misma. En
+    el caso que le sea requerido, previa comunicación del licenciador,
+    si usted incorpora la obra en una colección y/o crea una obra
+    derivada, deberá quitar cualquier crédito requerido en el apartado
+    4.b, en la medida de lo posible.</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>Si usted reproduce, distribuye o comunica públicamente la obra o la
+    prestación, una colección que la incorpore o cualquier obra
+    derivada, debe mantener intactos todos los avisos sobre la propiedad
+    intelectual e indicar, de manera razonable conforme al medio o a los
+    medios que usted esté utilizando:</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>
+<p>El nombre del autor original, o el seudónimo si es el caso, así como
+    el del titular originario, si le es facilitado.</p>
+</li>
+<li>
+<p>El nombre de aquellas partes (por ejemplo: institución, publicación,
+    revista) que el titular originario y/o el licenciador designen para
+    ser reconocidos en el aviso legal, las condiciones de uso, o de
+    cualquier otra manera razonable.</p>
+</li>
+<li>
+<p>El título de la obra o la prestación si le es facilitado.</p>
+</li>
+<li>
+<p>El URI, si existe, que el licenciador especifique para ser vinculado
+    a la obra o la prestación, a menos que tal URI no se refiera al
+    aviso legal o a la información sobre la licencia de la obra o la
+    prestación.</p>
+</li>
+<li>
+<p>En el caso de una obra derivada, un aviso que identifique la
+    transformación de la obra en la obra derivada (p. ej., "traducción
+    castellana de la obra de Autor Original," o "guión basado en obra
+    original de Autor Original").</p>
+<p>Este reconocimiento debe hacerse de manera razonable. En el caso de
+una obra derivada o incorporación en una colección estos créditos
+deberán aparecer como mínimo en el mismo lugar donde se hallen los
+correspondientes a otros autores o titulares y de forma comparable a
+los mismos. Para evitar la duda, los créditos requeridos en esta
+sección sólo serán utilizados a efectos de atribución de la obra o
+la prestación en la manera especificada anteriormente. Sin un
+permiso previo por escrito, usted no puede afirmar ni dar a entender
+implícitamente ni explícitamente ninguna conexión, patrocinio o
+aprobación por parte del titular originario, el licenciador y/o las
+partes reconocidas hacia usted o hacia el uso que hace de la obra o
+la prestación.</p>
+</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>Para evitar cualquier duda, debe hacerse notar que las restricciones
+    anteriores (párrafos 4.a y 4.b) no son de aplicación a aquellas
+    partes de la obra o la prestación objeto de esta licencia que
+    únicamente puedan ser protegidas mediante el derecho sui generis
+    sobre bases de datos recogido por la ley nacional vigente
+    implementando la directiva europea de bases de datos</li>
+</ol>
+<p><strong>5. Exoneración de responsabilidad</strong></p>
+<p>A MENOS QUE SE ACUERDE MUTUAMENTE ENTRE LAS PARTES, EL LICENCIADOR
+OFRECE LA OBRA O LA PRESTACIÓN TAL CUAL (ON AN "AS-IS" BASIS) Y NO
+CONFIERE NINGUNA GARANTÍA DE CUALQUIER TIPO RESPECTO DE LA OBRA O LA
+PRESTACIÓN O DE LA PRESENCIA O AUSENCIA DE ERRORES QUE PUEDAN O NO SER
+DESCUBIERTOS. ALGUNAS JURISDICCIONES NO PERMITEN LA EXCLUSIÓN DE TALES
+GARANTÍAS, POR LO QUE TAL EXCLUSIÓN PUEDE NO SER DE APLICACIÓN A USTED.</p>
+<p><strong>6. Limitación de responsabilidad.</strong> SALVO QUE LO DISPONGA EXPRESA E
+IMPERATIVAMENTE LA LEY APLICABLE, EN NINGÚN CASO EL LICENCIADOR SERÁ
+RESPONSABLE ANTE USTED POR CUALESQUIERA DAÑOS RESULTANTES, GENERALES O
+ESPECIALES (INCLUIDO EL DAÑO EMERGENTE Y EL LUCRO CESANTE), FORTUITOS O
+CAUSALES, DIRECTOS O INDIRECTOS, PRODUCIDOS EN CONEXIÓN CON ESTA
+LICENCIA O EL USO DE LA OBRA O LA PRESTACIÓN, INCLUSO SI EL LICENCIADOR
+HUBIERA SIDO INFORMADO DE LA POSIBILIDAD DE TALES DAÑOS.</p>
+<p><strong>7. Finalización de la licencia</strong></p>
+<ol>
+<li>Esta licencia y la concesión de los derechos que contiene terminarán
+    automáticamente en caso de cualquier incumplimiento de los términos
+    de la misma. Las personas o entidades que hayan recibido de usted
+    obras derivadas o colecciones bajo esta licencia, sin embargo, no
+    verán sus licencias finalizadas, siempre que tales personas o
+    entidades se mantengan en el cumplimiento íntegro de esta licencia.
+    Las secciones 1, 2, 5, 6, 7 y 8 permanecerán vigentes pese a
+    cualquier finalización de esta licencia.</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>Conforme a las condiciones y términos anteriores, la concesión de
+    derechos de esta licencia es vigente por todo el plazo de protección
+    de los derechos de propiedad intelectual según la ley aplicable. A
+    pesar de lo anterior, el licenciador se reserva el derecho a
+    divulgar o publicar la obra o la prestación en condiciones distintas
+    a las presentes, o de retirar la obra o la prestación en cualquier
+    momento. No obstante, ello no supondrá dar por concluida esta
+    licencia (o cualquier otra licencia que haya sido concedida, o sea
+    necesario ser concedida, bajo los términos de esta licencia), que
+    continuará vigente y con efectos completos a no ser que haya
+    finalizado conforme a lo establecido anteriormente, sin perjuicio
+    del derecho moral de arrepentimiento en los términos reconocidos por
+    la ley de propiedad intelectual aplicable.</li>
+</ol>
+<p><strong>8. Miscelánea</strong></p>
+<ol>
+<li>Cada vez que usted realice cualquier tipo de explotación de la obra
+    o la prestación, o de una colección que la incorpore, el licenciador
+    ofrece a los terceros y sucesivos licenciatarios la concesión de
+    derechos sobre la obra o la prestación en las mismas condiciones y
+    términos que la licencia concedida a usted.</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>
+<p>Cada vez que usted realice cualquier tipo de explotación de una obra
+    derivada, el licenciador ofrece a los terceros y sucesivos
+    licenciatarios la concesión de derechos sobre la obra objeto de esta
+    licencia en las mismas condiciones y términos que la licencia
+    concedida a usted.</p>
+</li>
+<li>
+<p>Si alguna disposición de esta licencia resulta inválida o
+    inaplicable según la Ley vigente, ello no afectará la validez o
+    aplicabilidad del resto de los términos de esta licencia y, sin
+    ninguna acción adicional por cualquiera las partes de este acuerdo,
+    tal disposición se entenderá reformada en lo estrictamente necesario
+    para hacer que tal disposición sea válida y ejecutiva.</p>
+</li>
+<li>
+<p>No se entenderá que existe renuncia respecto de algún término o
+    disposición de esta licencia, ni que se consiente violación alguna
+    de la misma, a menos que tal renuncia o consentimiento figure por
+    escrito y lleve la firma de la parte que renuncie o consienta.</p>
+</li>
+<li>
+<p>Esta licencia constituye el acuerdo pleno entre las partes con
+    respecto a la obra o la prestación objeto de la licencia. No caben
+    interpretaciones, acuerdos o condiciones con respecto a la obra o la
+    prestación que no se encuentren expresamente especificados en la
+    presente licencia. El licenciador no estará obligado por ninguna
+    disposición complementaria que pueda aparecer en cualquier
+    comunicación que le haga llegar usted. Esta licencia no se puede
+    modificar sin el mutuo acuerdo por escrito entre el licenciador y
+    usted.</p>
+</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../CF_guia-incidencias/" class="btn btn-neutral float-left" title="CF guia incidencias"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../CF_guia-uso/" class="btn btn-neutral float-right" title="CF guia uso">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../CF_guia-incidencias/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../CF_guia-uso/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

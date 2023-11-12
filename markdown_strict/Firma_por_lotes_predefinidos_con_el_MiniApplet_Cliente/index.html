@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Firma por lotes predefinidos con el MiniApplet Cliente - My Docs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Firma por lotes predefinidos con el MiniApplet Cliente";
+        var mkdocs_page_input_path = "markdown_strict/Firma_por_lotes_predefinidos_con_el_MiniApplet_Cliente.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> My Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Welcome to MkDocs</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Markdown strict</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Firmar_AutoFirma_Linux/">AF Firmar AutoFirma Linux</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Firmar_AutoFirma_OS_X/">AF Firmar AutoFirma OS X</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Linux/">Preparación del entorno</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Mac%20OS%20X/">AF Instalador Mac OS X</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Windows/">AF Instalador Windows</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_desarrollo_plugins_ES/">AF manual desarrollo plugins ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_instalacion_usuarios_ES/">AF manual instalacion usuarios ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_instalacion_y_gestion_ES/">AF manual instalacion y gestion ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ANEXO_Firma-electronica-en-varias-fases/">Firma electrónica en tres fases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_arquitectura_ES/">CF arquitectura ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_catalogo_aplicaciones/">CF catalogo aplicaciones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_distribuciones/">CF distribuciones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_funcional_ES/">CF funcional ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-incidencias/">CF guia incidencias</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-uso-interfaz/">CF guia uso interfaz</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-uso/">CF guia uso</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-firmas-pdf/">CF manual firmas pdf</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-firmas-xml/">CF manual firmas xml</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-integrador/">CF manual integrador</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-migracion/">CF manual migracion</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual_integracion_modulos_ES/">CF manual integracion modulos ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_plan-pruebas/">CF plan pruebas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_roadmap_ES/">CF roadmap ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Comunicacion_Navegador_y_App_en_Entorno_Movil/">El camino de ida: Desde el navegador Web hacia la App</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../DECLARACION_ACCESIBILIDAD/">Declaración de Accesibilidad</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Diagramas%20de%20secuencia%20de%20los%20procesos%20de%20firma%20m%C3%B3vil/">Firma monofásica (Windows 8 / Windows RT y Android)</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Firma por lotes predefinidos con el MiniApplet Cliente</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#notas-sobre-el-ejemplo-signsaverfile">Notas sobre el ejemplo SignSaverFile</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Informe%20-%20Alternativas_Applets_para_firma/">Informe   Alternativas Applets para firma</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Invocaci%C3%B3n%20por%20protocolo%20de%20aplicaciones%20nativas%20desde%20p%C3%A1ginas%20Web/">¿Qué es la invocación por protocolo?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../La_seguridad_en_el_Servicio_de_firma_del_Cliente/">Tabla de contenido</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MCF_manual-integrador_ES/">MCF manual integrador ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MCF_roadmap_ES/">MCF roadmap ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Manual%20para%20la%20configuraci%C3%B3n%20de%20los%20campos%20de%20firma%20para%20la%20aplicaci%C3%B3n%20de%20firma%20manuscrita%20en%20tableta/">Manual para la configuración de los campos de firma para la aplicación de firma manuscrita en tableta</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_Manual_App_Portafirmas_Android/">PF Manual App Portafirmas Android</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_Manual_App_Portafirmas_iOS/">PF Manual App Portafirmas iOS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_manual-configuracion_servicios_ES/">PF manual configuracion servicios ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Sintaxis_invocacion_Cliente_Afirma/">Sintaxis invocacion Cliente Afirma</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../afirma_movil_intro/"><<img src="media/image1.jpeg"</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">My Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Markdown strict</li>
+      <li class="breadcrumb-item active">Firma por lotes predefinidos con el MiniApplet Cliente</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>Mediante la nueva funcionalidad (aun en periodo de pruebas) es posible
+definir externamente un lote de firma mediante un fichero XML,
+ejecutándose este de forma desatendida por el cliente, con la
+concurrencia de los módulos servidores, y devolviéndose el resultado
+global de la ejecución del lote.</p>
+<h1 id="creacion-de-los-lotes">Creación de los lotes</h1>
+<p>Los integradores que deseen usar esta funcionalidad deben crear
+(externamente, sin usar el MiniApplet) el XML de definición del lote de
+firma, que debe seguir este esquema:</p>
+<p>&lt;xs:schema attributeFormDefault="unqualified"
+elementFormDefault="qualified"
+xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;</p>
+<p>&lt;xs:element name="signbatch"&gt;</p>
+<p>&lt;xs:complexType&gt;</p>
+<p>&lt;xs:sequence&gt;</p>
+<p>&lt;xs:element name="singlesign" maxOccurs="unbounded" minOccurs="1"&gt;</p>
+<p>&lt;xs:complexType&gt;</p>
+<p>&lt;xs:sequence&gt;</p>
+<p>&lt;xs:element type="xs:string" name="datasource"/&gt;</p>
+<p>&lt;xs:element name="format"&gt;</p>
+<p>&lt;xs:simpleType&gt;</p>
+<p>&lt;xs:restriction base="xs:string"&gt;</p>
+<p>&lt;xs:enumeration value="XAdES"/&gt;</p>
+<p>&lt;xs:enumeration value="CAdES"/&gt;</p>
+<p>&lt;xs:enumeration value="PAdES"/&gt;</p>
+<p>&lt;/xs:restriction&gt;</p>
+<p>&lt;/xs:simpleType&gt;</p>
+<p>&lt;/xs:element&gt;</p>
+<p>&lt;xs:element name="suboperation"&gt;</p>
+<p>&lt;xs:simpleType&gt;</p>
+<p>&lt;xs:restriction base="xs:string"&gt;</p>
+<p>&lt;xs:enumeration value="sign"/&gt;</p>
+<p>&lt;xs:enumeration value="cosign"/&gt;</p>
+<p>&lt;/xs:restriction&gt;</p>
+<p>&lt;/xs:simpleType&gt;</p>
+<p>&lt;/xs:element&gt;</p>
+<p>&lt;xs:element name="extraparams"&gt;</p>
+<p>&lt;xs:simpleType&gt;</p>
+<p>&lt;xs:restriction base="xs:base64Binary" /&gt;</p>
+<p>&lt;/xs:simpleType&gt;</p>
+<p>&lt;/xs:element&gt;</p>
+<p>&lt;xs:element name="signsaver"&gt;</p>
+<p>&lt;xs:complexType&gt;</p>
+<p>&lt;xs:sequence&gt;</p>
+<p>&lt;xs:element type="xs:string" name="class"/&gt;</p>
+<p>&lt;xs:element name="config"&gt;</p>
+<p>&lt;xs:simpleType&gt;</p>
+<p>&lt;xs:restriction base="xs:base64Binary" /&gt;</p>
+<p>&lt;/xs:simpleType&gt;</p>
+<p>&lt;/xs:element&gt;</p>
+<p>&lt;/xs:sequence&gt;</p>
+<p>&lt;/xs:complexType&gt;</p>
+<p>&lt;/xs:element&gt;</p>
+<p>&lt;/xs:sequence&gt;</p>
+<p>&lt;xs:attribute type="xs:string" name="Id" use="required"/&gt;</p>
+<p>&lt;/xs:complexType&gt;</p>
+<p>&lt;/xs:element&gt;</p>
+<p>&lt;/xs:sequence&gt;</p>
+<p>&lt;xs:attribute type="xs:integer" name="concurrenttimeout"
+use="optional"/&gt;</p>
+<p>&lt;xs:attribute name="stoponerror" use="optional"&gt;</p>
+<p>&lt;xs:simpleType&gt;</p>
+<p>&lt;xs:restriction base="xs:string"&gt;</p>
+<p>&lt;xs:enumeration value="true"/&gt;</p>
+<p>&lt;xs:enumeration value="false"/&gt;</p>
+<p>&lt;/xs:restriction&gt;</p>
+<p>&lt;/xs:simpleType&gt;</p>
+<p>&lt;/xs:attribute&gt;</p>
+<p>&lt;xs:attribute name="algorithm" use="required"&gt;</p>
+<p>&lt;xs:simpleType&gt;</p>
+<p>&lt;xs:restriction base="xs:string"&gt;</p>
+<p>&lt;xs:enumeration value="SHA1withRSA"/&gt;</p>
+<p>&lt;xs:enumeration value="SHA256withRSA"/&gt;</p>
+<p>&lt;xs:enumeration value="SHA384withRSA"/&gt;</p>
+<p>&lt;xs:enumeration value="SHA512withRSA"/&gt;</p>
+<p>&lt;/xs:restriction&gt;</p>
+<p>&lt;/xs:simpleType&gt;</p>
+<p>&lt;/xs:attribute&gt;</p>
+<p>&lt;/xs:complexType&gt;</p>
+<p>&lt;/xs:element&gt;</p>
+<p>&lt;/xs:schema&gt;</p>
+<p>Un posible ejemplo de XML creado siguiendo este esquema podría ser el
+siguiente:</p>
+<p>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</p>
+<p>&lt;signbatch stoponerror="false" algorithm="SHA256withRSA"
+concurrenttimeout="9223372036854775807"&gt;</p>
+<p>&lt;singlesign Id="7725374e-728d-4a33-9db9-3a4efea4cead"&gt;</p>
+<p>&lt;datasource&gt;http://google.com&lt;/datasource&gt;</p>
+<p>&lt;format&gt;XAdES&lt;/format&gt;</p>
+<p>&lt;suboperation&gt;sign&lt;/suboperation&gt;</p>
+<p>&lt;extraparams&gt;</p>
+<p>Iw0KI1N1biBBdWcgMjMgMTM6NDU6NDAgQ0VTVCAyMDE1DQpTaWduYXR1cmVJZD03NzI1Mzc0ZS03MjhkLTRhMzMtOWRiOS0zYTRlZmVhNGNlYWQNCg==</p>
+<p>&lt;/extraparams&gt;</p>
+<p>&lt;signsaver&gt;</p>
+<p>&lt;class&gt;es.gob.afirma.signers.batch.SignSaverFile&lt;/class&gt;</p>
+<p>&lt;config&gt;</p>
+<p>Iw0KI1N1biBBdWcgMjMgMTM6NDU6NDAgQ0VTVCAyMDE1DQpGaWxlTmFtZT1DXDpcXFVzZXJzXFx0b21hc1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXEZJUk1BMS54bWwNCg==</p>
+<p>&lt;/config&gt;</p>
+<p>&lt;/signsaver&gt;</p>
+<p>&lt;/singlesign&gt;</p>
+<p>&lt;singlesign Id="93d1531c-cd32-4c8e-8cc8-1f1cfe66f64a"&gt;</p>
+<p>&lt;datasource&gt;SG9sYSBNdW5kbw==&lt;/datasource&gt;</p>
+<p>&lt;format&gt;CAdES&lt;/format&gt;</p>
+<p>&lt;suboperation&gt;sign&lt;/suboperation&gt;</p>
+<p>&lt;extraparams&gt;</p>
+<p>Iw0KI1N1biBBdWcgMjMgMTM6NDU6NDAgQ0VTVCAyMDE1DQpTaWduYXR1cmVJZD05M2QxNTMxYy1jZDMyLTRjOGUtOGNjOC0xZjFjZmU2NmY2NGENCg==</p>
+<p>&lt;/extraparams&gt;</p>
+<p>&lt;signsaver&gt;</p>
+<p>&lt;class&gt;es.gob.afirma.signers.batch.SignSaverFile&lt;/class&gt;</p>
+<p>&lt;config&gt;</p>
+<p>Iw0KI1N1biBBdWcgMjMgMTM6NDU6NDAgQ0VTVCAyMDE1DQpGaWxlTmFtZT1DXDpcXFVzZXJzXFx0b21hc1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXEZJUk1BMi54bWwNCg==</p>
+<p>&lt;/config&gt;</p>
+<p>&lt;/signsaver&gt;</p>
+<p>&lt;/singlesign&gt;</p>
+<p>&lt;/signbatch&gt;</p>
+<p>En este se distinguen los siguientes elementos:</p>
+<p>Tamaño máximo del XML de definición de lote</p>
+<p>El XML de definición de lote no puede exceder en tamaño de 1.024KB. Si
+necesitase componer trabajos mayores, estos deberán fraccionarse en
+varios lotes.</p>
+<p>Cabecera de definición de lote</p>
+<p>En el ejemplo, es la línea “&lt;signbatch stoponerror="false"
+algorithm="SHA256withRSA"&gt;”. Contiene dos atributos configurables por
+el integrador:</p>
+<ol>
+<li>
+<p>“stoponerror”</p>
+<ol>
+<li>Cuando se establece a “false” se indica que el proceso debe
+    continuar incluso si alguna de las firmas del lote no puede
+    completarse, y cuando se establece a “true” el proceso se para
+    en el momento en el que se produce el primer error.</li>
+</ol>
+</li>
+<li>
+<p>“algorithm”</p>
+<ol>
+<li>
+<p>Indica el algoritmo de firma a usar para todo el lote, y puede
+    tener los siguientes valores:</p>
+<ol>
+<li>
+<p>SHA1withRSA</p>
+<ol>
+<li>No recomendado por obsoleto.</li>
+</ol>
+</li>
+<li>
+<p>SHA256withRSA</p>
+</li>
+<li>
+<p>SHA384withRSA</p>
+</li>
+<li>
+<p>SHA512withRSA</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p>Definición de cada firma dentro del lote</p>
+<p>Dentro del elemento de definición de lote debemos incluir uno o varios
+elementos de tipo “singlesign”, que es obligatorio cuenten en origen con
+un identificados único (en el ejemplo se observa la primera (el ejemplo
+contiene dos firmas dentro del lote) cabecera de definición de firma
+“&lt;singlesign id="7725374e-728d-4a33-9db9-3a4efea4cead"&gt;”, que
+indica que es una firma dentro del lote identificada por la cadena
+“7725374e-728d-4a33-9db9-3a4efea4cead”.</p>
+<p><em>Configuración de cada firma dentro del lote</em></p>
+<p>Cada una de las firmas dentro del lote puede ser configurada
+individualmente con los siguientes parámetros:</p>
+<p><em><u>Origen de los datos a firmar</u></em></p>
+<p>El origen de los datos debe indicarse dentro del elemento “datasource”
+del XML, por ejemplo:
+“&lt;datasource&gt;http://google.com&lt;/datasource&gt;”</p>
+<p>El origen de los datos a firmar puede indicarse:</p>
+<ol>
+<li>
+<p><em>Con una URL. En este caso el servidor (nunca el cliente) descargará
+    directamente los datos a firmar.</em></p>
+<ol>
+<li>
+<p><em>Se admite HTTP y HTTPS.</em></p>
+<ol>
+<li><em>Si se usa SSL con certificado cliente es necesario que el
+    certificado cliente esté instalado en el almacén de
+    certificados personales del Entorno de Ejecución de Java
+    (JRE).</em></li>
+</ol>
+</li>
+<li>
+<p><em>En este caso, la URL debe devolver los datos finales a firmar,
+    sin ninguna codificación intermedia (ni Base64 ni nada).</em></p>
+<ol>
+<li>
+<p><em>Así, por ejemplo, para firmar un PDF que esté disponible en
+    una URL debemos indicar directamente la URL que apunte a ese
+    PDF, como:</em></p>
+<ol>
+<li><em>https://atos.net/content/dam/global/documents/investor-presentations/atos-q1-2015-presentation.pdf</em></li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p><em>Si la URL apunta a una huella digital (para los modos de firma
+    que lo soporten), esta debe estar igualmente en binario, como:</em></p>
+<ol>
+<li><em>https://miweb.com/firmas/hash001.bin</em></li>
+</ol>
+</li>
+<li>
+<p><em>En el ejemplo, puede observarse que en la primera firma se
+    indica que el origen de los datos es la URL
+    “</em>http://google.com<em>”.</em></p>
+</li>
+</ol>
+</li>
+<li>
+<p><em>Indicando directamente los datos a firmar codificados en Base64. En
+    este caso el servidor descodificará el Base64 para obtener los datos
+    a firmar.</em></p>
+<ol>
+<li>
+<p><em>Puede usarse también para indicar directamente una huella (en
+    los modos de firma que lo soporten), teniéndose en este caso que
+    indicar en Base64.</em></p>
+</li>
+<li>
+<p><em>En el ejemplo, puede observarse que en la primera firma se
+    indica que el origen de los datos es el Base64
+    “</em>SG9sYSBNdW5kbw==<em>”, que descodificado equivale a la cadena de
+    texto “Hola Mundo”.</em></p>
+</li>
+</ol>
+</li>
+</ol>
+<p><em>Existe un caso adicional, y es que cuando se indica un texto que no
+puede interpretarse como una URL ni como Base64, se firma este
+directamente sin hacer ningún tipo de transformación. En general, debe
+evitarse evitar este tercer modo, ya que, por una parte, puede ser
+difícil diferenciar entre Base64 y texto normal, y por otra, pueden
+encontrarse errores de interpretación por la codificación del texto
+(ASCII, UTF-8, ANSI, etc.).</em></p>
+<p><em><u>Formato de firma</u></em></p>
+<p>El formato de firma a utilizar debe indicarse dentro del elemento
+“format” del XML, por ejemplo “&lt;format&gt;XAdES&lt;/format&gt;”.</p>
+<p>Se admiten los siguientes formatos:</p>
+<ol>
+<li>
+<p><em>XAdES</em></p>
+<ol>
+<li><em>“XAdES”</em></li>
+</ol>
+</li>
+<li>
+<p><em>CAdES</em></p>
+<ol>
+<li><em>“</em>CAdES<em>”</em></li>
+</ol>
+</li>
+<li>
+<p><em>PAdES</em></p>
+<ol>
+<li>
+<p><em>“PAdES”</em></p>
+</li>
+<li>
+<p><em>Con este formato solo se pueden firmar documentos PDF.</em></p>
+</li>
+</ol>
+</li>
+</ol>
+<p><em><u>Algoritmo de firma</u></em></p>
+<p>El algoritmo de firma a utilizar debe indicarse dentro del elemento
+“format” del XML, por ejemplo “&lt;format&gt;XAdES&lt;/format&gt;”.</p>
+<p>Se admiten los siguientes algoritmos:</p>
+<ol>
+<li>
+<p>SHA1withRSA</p>
+<ol>
+<li>
+<p>“<em>SHA1withRSA</em>”</p>
+</li>
+<li>
+<p>No se recomienda por obsoleto.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>SHA256withRSA</p>
+<ol>
+<li>“<em>SHA256withRSA</em>”</li>
+</ol>
+</li>
+<li>
+<p>SHA384withRSA</p>
+<ol>
+<li>“<em>SHA384withRSA</em>”</li>
+</ol>
+</li>
+<li>
+<p>SHA512withRSA</p>
+<ol>
+<li>“<em>SHA512withRSA</em>”</li>
+</ol>
+</li>
+</ol>
+<p><em><u>Operación de firma</u></em></p>
+<p>La operación concreta de firma a realizar debe indicarse dentro del
+elemento “suboperation” del XML, por ejemplo
+&lt;suboperation&gt;sign&lt;/suboperation&gt;”.</p>
+<p>Se admiten las siguientes operaciones:</p>
+<ol>
+<li>
+<p>Firma</p>
+<ol>
+<li>“sign”</li>
+</ol>
+</li>
+<li>
+<p>Cofirma</p>
+<ol>
+<li>“cosign”</li>
+</ol>
+</li>
+</ol>
+<p><em><u>Parámetros adicionales para la firma</u></em></p>
+<p>Los parámetros adicionales para el formato y la operación concreta de
+firma (tal y como se describen en el manual del MiniApplet) deben
+indicarse dentro del elemento “extraparams” del XML, por ejemplo
+“&lt;extraparams&gt;bW9kZT1pbXBsaWNpdA0Kc2lnbmF0dXJlUHJvZHVjdGlvbkNpdHk9TWFkcmlk&lt;/extraparams&gt;”.</p>
+<p>Estos parámetros adicionales deben indicarse codificando su
+representación textual como Base64. Así, las siguientes propiedades
+(indicando cada parámetro en una línea de texto con el formato
+<em>nombre_parámetro=valor</em>):</p>
+<p>mode=implicit</p>
+<p>signatureProductionCity=Madrid</p>
+<p>Quedarían codificadas en Base64 como:</p>
+<p>bW9kZT1pbXBsaWNpdA0Kc2lnbmF0dXJlUHJvZHVjdGlvbkNpdHk9TWFkcmlk</p>
+<p>Si no se desea establecer parámetros adicionales debe dejarse el nodo
+vacío.</p>
+<p><em><u>Configuración del guardado de la firma</u></em></p>
+<p>El guardado de la firma una vez esta se completa es una tarea que
+realiza igualmente el servidor, utilizando para ello clases especiales
+de guardado que el integrador debe codificar según sus necesidades.</p>
+<p>Las clases deben situarse en el CLASSPATH de Java de la aplicación Web
+en el lado servidor (normalmente dentro de un fichero JAR). Consulte la
+documentación de su servidor de aplicaciones para realizar esta tarea.</p>
+<p>Una forma muy cómoda de hacerlo es editando el WAR (es un fichero ZIP
+con la extensión cambiada) antes de desplegarlo, y añadiendo el JAR con
+las nuevas clases en el directorio WEB-INF/lib. Hay que tener cuidado de
+no alterar el resto de contenidos ni la estructura de carpetas antes de
+volver a comprimir el WAR (como ZIP).</p>
+<p>Estas clases deben implementar el interfaz Java <em>SignSaver</em>, que tiene
+la siguiente forma:</p>
+<p><strong>package</strong> es.gob.afirma.signers.batch;</p>
+<p><strong>import</strong> java.io.IOException;</p>
+<p><strong>import</strong> java.util.Properties;</p>
+<p>/** Interfaz para el guardado, almacenaje o envío de firmas una vez
+realizadas.</p>
+<p>* <strong>@author</strong> Tomás García-Merás. */</p>
+<p><strong>public</strong> <strong>interface</strong> SignSaver {</p>
+<p>/** Guarda una firma electrónica.</p>
+<p>* <strong>@param</strong> sign Definición de la firma que se hizo.</p>
+<p>* <strong>@param</strong> dataToSave Datos a guardar, resultado de la firma
+electrónica.</p>
+<p>* <strong>@throws</strong> IOException Si hay problemas durante el proceso. */</p>
+<p><strong>void</strong> saveSign(<strong>final</strong> SingleSign sign, <strong>final</strong> <strong>byte</strong>[]
+dataToSave) <strong>throws</strong> IOException;</p>
+<p>/** Deshace un guardado previo (para los modos transaccionales).</p>
+<p>* <strong>@param</strong> sign Identificador de la firma a deshacer. */</p>
+<p><strong>void</strong> rollback(<strong>final</strong> SingleSign sign);</p>
+<p>/** Configura cómo ha de guardarse la firma electrónica.</p>
+<p>* cada implementación requerirá unas propiedades distintas dentro del</p>
+<p>* objeto de propiedades.</p>
+<p>* <strong>@param</strong> config Propiedades de configuración. */</p>
+<p><strong>void</strong> init(<strong>final</strong> Properties config);</p>
+<p>/** Obtiene las propiedades de configuración.</p>
+<p>* <strong>@return</strong> Propiedades de configuración. */</p>
+<p>Properties getConfig();</p>
+<p>}</p>
+<p>Como se puede observar, el objeto de guardado recibe sus parámetros de
+funcionamiento y configuración en un fichero de propiedades de Java en
+el método “init”, que es invocado siempre inmediatamente después de ser
+instanciado.</p>
+<p>La forma de indicar qué clase de guardado a usar y con qué configuración
+es mediante el nodo “signsaver”, que contiene a su vez dos nodos:</p>
+<ul>
+<li>
+<p>“class”, con el nombre cualificado de la clase a usar.</p>
+</li>
+<li>
+<p>“config”, con las propiedades de configuración codificadas en
+    Base64.</p>
+</li>
+</ul>
+<p>Así, en el ejemplo tenemos el siguiente nodo:</p>
+<p>&lt;signsaver&gt;</p>
+<p>&lt;class&gt;es.gob.afirma.signers.batch.SignSaverFile&lt;/class&gt;</p>
+<p>&lt;config&gt;</p>
+<p>Iw0KI1RodSBBdWcgMjAgMTI6MTM6NDEgQ0VTVCAyMDE1DQpGaWxlTmFtZT1DXDpcXFVzZXJzXFx0b21hc1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXEZJUk1BMi54bWwNCg==</p>
+<p>&lt;/config&gt;</p>
+<p>&lt;/signsaver&gt;</p>
+<p>Este indica que debe usarse la clase de guardado
+“es.gob.afirma.signers.batch.SignSaverFile” con la configuración
+“Iw0KI1RodSBBdWcgMjAgMTI6MTM6NDEgQ0VTVCAyMDE1DQpGaWxlTmFtZT1DXDpcXFVzZXJzXFx0b21hc1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXEZJUk1BMi54bWwNCg==”,
+que si la descodificamos vemos que contiene:</p>
+<p>FileName=C\\Users\tomas\AppData\Local\Temp\FIRMA2.xml</p>
+<p>Que es la configuración que necesita para guardar la firma (esta clase
+simplemente guarda la firma en el fichero que se le indique en la
+configuración.</p>
+<p>Se incluyen con la implementación dos ejemplos de clases de guardado:</p>
+<ul>
+<li>
+<p>Guardado a fichero:</p>
+<ul>
+<li>
+<p>Clase:</p>
+<ul>
+<li>es.gob.afirma.signers.batch.SignSaverFile</li>
+</ul>
+</li>
+<li>
+<p>Parámetros de configuración:</p>
+<ul>
+<li>
+<p>FileName</p>
+<ul>
+<li>Indica el fichero donde debe guardarse la firma.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Esta clase es un simple ejemplo, y no debe usarse directamente
+    en producción, ya que presenta problemas de seguridad (podrían
+    indicarse que se sobrescriba un fichero de sistema).</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Envío a una dirección HTTP POST:</p>
+<ul>
+<li>
+<p>Clase: es.gob.afirma.signers.batch.SignSaverHttpPost</p>
+</li>
+<li>
+<p>Parámetros de configuración:</p>
+<ul>
+<li>
+<p>PostUrl</p>
+<ul>
+<li>Puede ser tanto HTTP como HTTPS</li>
+</ul>
+</li>
+<li>
+<p>PostParamName</p>
+<ul>
+<li>
+<p>Indica la URL a la que hacer el HTTP POST</p>
+</li>
+<li>
+<p>Indica el parámetro de la petición POST donde deben
+    adjuntarse los datos.</p>
+<ul>
+<li>Estos se adjuntarán siempre en Base64 con alfabeto
+    URL SAFE.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Esta clase realiza una llamada HTTP POST a la dirección
+    indicada, enviando como datos del POST un parámetro con el
+    nombre indicado cuyo valor será la codificación Base64 del
+    resultado de la firma. Es necesario entonces que el integrador
+    provea este servicio HTTP POST para recibir y tratar la firma
+    enviada (habitualmente un servicio Web).</p>
+<ul>
+<li>La URL indicada debe ser accesible desde el servidor (que es
+    quien realiza el envío).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="notas-sobre-el-ejemplo-signsaverfile"><strong>Notas sobre el ejemplo SignSaverFile</strong></h5>
+<p>La clase es.gob.afirma.signers.batch.SignSaverFile, es, como se ha
+comentado anteriormente, únicamente un ejemplo de implementación el del
+interfaz es.gob.afirma.signers.batch.SignSaver que puede resultar de
+utilidad para depuración, pero que no debe ser utilizada <u>nunca</u> en
+entornos reales.</p>
+<p>Para evitar su exposición accidental, se distribuye con la escritura a
+disco deshabilitada mediante una variable final:</p>
+<p>/** El guardado real está deshabilitado por defecto, habilitar para
+usar esta clase</p>
+<p>* para depuración. No debe usarse para entornos reales, ya que no hay
+comprobaciones de</p>
+<p>* qué ficheros pueden sobrescribirse. */</p>
+<p><strong>private</strong> <strong>static</strong> <strong>final</strong> <strong>boolean</strong> <strong><em>DISABLED</em></strong> = <strong>true</strong>;</p>
+<p>Si desea usarla para pruebas con escrituras reales en disco, debe
+habilitarla cambiando el valor de dicha variable:</p>
+<p><strong>private</strong> <strong>static</strong> <strong>final</strong> <strong>boolean</strong> <strong><em>DISABLED</em></strong> = <strong>false</strong>;</p>
+<h1 id="respuesta-a-una-ejecucion-de-un-lote">Respuesta a una ejecución de un lote</h1>
+<p>Cuando se termina de procesar un lote de firma, el cliente recibe como
+respuesta un XML que describe como ha resultado el proceso.</p>
+<p>Este XML es acorde al siguiente esquema:</p>
+<p>&lt;xs:schema attributeFormDefault="unqualified"
+elementFormDefault="qualified"
+xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;</p>
+<p>&lt;xs:element name="signs"&gt;</p>
+<p>&lt;xs:complexType&gt;</p>
+<p>&lt;xs:sequence&gt;</p>
+<p>&lt;xs:element name="signresult" maxOccurs="unbounded" minOccurs="0"&gt;</p>
+<p>&lt;xs:complexType&gt;</p>
+<p>&lt;xs:simpleContent&gt;</p>
+<p>&lt;xs:extension base="xs:string"&gt;</p>
+<p>&lt;xs:attribute type="xs:string" name="id" use="required"/&gt;</p>
+<p>&lt;xs:attribute type="xs:string" name="result" use="required"/&gt;</p>
+<p>&lt;xs:attribute type="xs:string" name="description" use="optional"/&gt;</p>
+<p>&lt;/xs:extension&gt;</p>
+<p>&lt;/xs:simpleContent&gt;</p>
+<p>&lt;/xs:complexType&gt;</p>
+<p>&lt;/xs:element&gt;</p>
+<p>&lt;/xs:sequence&gt;</p>
+<p>&lt;/xs:complexType&gt;</p>
+<p>&lt;/xs:element&gt;</p>
+<p>&lt;/xs:schema&gt;</p>
+<p>Un ejemplo de XML devuelto podría ser el siguiente:</p>
+<p>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</p>
+<p>&lt;signs&gt;</p>
+<p>&lt;signresult id="001-XAdES" result="DONE_AND_SAVED"
+description=""/&gt;</p>
+<p>&lt;signresult id="002-CAdES" result="DONE_AND_SAVED"
+description=""/&gt;</p>
+<p>&lt;signresult id="003-CAdES" result="DONE_AND_SAVED"
+description=""/&gt;</p>
+<p>&lt;signresult id="004-CAdES" result="DONE_AND_SAVED"
+description=""/&gt;</p>
+<p>&lt;/signs&gt;</p>
+<p>En él distinguimos un nodo “signresult” por cada una de las firmas del
+lote, con su correspondiente identificador.</p>
+<p>Este puede tener tres atributos:</p>
+<ol>
+<li>
+<p>“id”</p>
+<ol>
+<li>Identificador de la firma.</li>
+</ol>
+</li>
+<li>
+<p>“result”</p>
+<ol>
+<li>Resultado del proceso.</li>
+</ol>
+</li>
+<li>
+<p>“description” (opcional)</p>
+<ol>
+<li>Descripción del resultado del proceso.</li>
+</ol>
+</li>
+</ol>
+<h1 id="descripcion-del-modo-transaccional-de-ejecucion-de-los-lotes">Descripción del modo transaccional de ejecución de los lotes</h1>
+<p>Cuando se indica que un lote debe pararse en caso de error (con el
+atributo “stoponerror="true"” en la cabecera del XML de definición), se
+activa un modo transaccional, que sigue el siguiente proceso:</p>
+<ol>
+<li>
+<p>Las firmas son generadas íntegramente en servidor, pero no se
+    guardan hasta que no se realizan todas las del lote. SI una
+    generación fallase se interrumpe todo el proceso y se da por
+    perdido.</p>
+</li>
+<li>
+<p>Una vez están generadas, se comienza el proceso de guardado de
+    firmas (<u>el orden del lote no es relevante</u>, el programa puede
+    guardarlas en un orden distinto). Si un guardado falla, se deshacen
+    los guardados que sí se hubiesen completado adecuadamente, llamado
+    para ello al método “rollback(<strong>final</strong> SingleSign sign)” de la
+    clase de guardado (<em>SignSaver</em>) definida en el lote para cada firma.</p>
+<ol>
+<li>
+<p>Es responsabilidad del integrador implementar adecuadamente este
+    método “rollback(<strong>final</strong> SingleSign sign)” en su clase de
+    guardado.</p>
+<ol>
+<li>En los ejemplos provistos de implementaciones de
+    <em>SignSaver</em>, si se usa salvado en un archivo del sistema de
+    ficheros, el “rollback” simplemente borra el fichero creado,
+    pero si se usa el ejemplo de HTTP POST, el “rollback” no
+    deshace la operación (realmente no hace nada, ya que no hay
+    forma de deshacer una llamada HTTP).</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Diagramas%20de%20secuencia%20de%20los%20procesos%20de%20firma%20m%C3%B3vil/" class="btn btn-neutral float-left" title="Firma monofásica (Windows 8 / Windows RT y Android)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Informe%20-%20Alternativas_Applets_para_firma/" class="btn btn-neutral float-right" title="Informe   Alternativas Applets para firma">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Diagramas%20de%20secuencia%20de%20los%20procesos%20de%20firma%20m%C3%B3vil/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Informe%20-%20Alternativas_Applets_para_firma/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,1926 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>CF funcional ES - My Docs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "CF funcional ES";
+        var mkdocs_page_input_path = "markdown_strict/CF_funcional_ES.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> My Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Welcome to MkDocs</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Markdown strict</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Firmar_AutoFirma_Linux/">AF Firmar AutoFirma Linux</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Firmar_AutoFirma_OS_X/">AF Firmar AutoFirma OS X</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Linux/">Preparación del entorno</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Mac%20OS%20X/">AF Instalador Mac OS X</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Windows/">AF Instalador Windows</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_desarrollo_plugins_ES/">AF manual desarrollo plugins ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_instalacion_usuarios_ES/">AF manual instalacion usuarios ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_instalacion_y_gestion_ES/">AF manual instalacion y gestion ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ANEXO_Firma-electronica-en-varias-fases/">Firma electrónica en tres fases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_arquitectura_ES/">CF arquitectura ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_catalogo_aplicaciones/">CF catalogo aplicaciones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_distribuciones/">CF distribuciones</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">CF funcional ES</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#objetivo">Objetivo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#alcance">Alcance</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#descripcion">Descripción</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-incidencias/">CF guia incidencias</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-uso-interfaz/">CF guia uso interfaz</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-uso/">CF guia uso</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-firmas-pdf/">CF manual firmas pdf</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-firmas-xml/">CF manual firmas xml</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-integrador/">CF manual integrador</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-migracion/">CF manual migracion</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual_integracion_modulos_ES/">CF manual integracion modulos ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_plan-pruebas/">CF plan pruebas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_roadmap_ES/">CF roadmap ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Comunicacion_Navegador_y_App_en_Entorno_Movil/">El camino de ida: Desde el navegador Web hacia la App</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../DECLARACION_ACCESIBILIDAD/">Declaración de Accesibilidad</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Diagramas%20de%20secuencia%20de%20los%20procesos%20de%20firma%20m%C3%B3vil/">Firma monofásica (Windows 8 / Windows RT y Android)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Firma_por_lotes_predefinidos_con_el_MiniApplet_Cliente/">Firma por lotes predefinidos con el MiniApplet Cliente</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Informe%20-%20Alternativas_Applets_para_firma/">Informe   Alternativas Applets para firma</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Invocaci%C3%B3n%20por%20protocolo%20de%20aplicaciones%20nativas%20desde%20p%C3%A1ginas%20Web/">¿Qué es la invocación por protocolo?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../La_seguridad_en_el_Servicio_de_firma_del_Cliente/">Tabla de contenido</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MCF_manual-integrador_ES/">MCF manual integrador ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MCF_roadmap_ES/">MCF roadmap ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Manual%20para%20la%20configuraci%C3%B3n%20de%20los%20campos%20de%20firma%20para%20la%20aplicaci%C3%B3n%20de%20firma%20manuscrita%20en%20tableta/">Manual para la configuración de los campos de firma para la aplicación de firma manuscrita en tableta</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_Manual_App_Portafirmas_Android/">PF Manual App Portafirmas Android</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_Manual_App_Portafirmas_iOS/">PF Manual App Portafirmas iOS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_manual-configuracion_servicios_ES/">PF manual configuracion servicios ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Sintaxis_invocacion_Cliente_Afirma/">Sintaxis invocacion Cliente Afirma</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../afirma_movil_intro/"><<img src="media/image1.jpeg"</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">My Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Markdown strict</li>
+      <li class="breadcrumb-item active">CF funcional ES</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>Índice de contenidos</p>
+<p><a href="#introducción">1 Introducción [3](#introducción)</a></p>
+<p><a href="#objetivo">1.1 Objetivo [3](#objetivo)</a></p>
+<p><a href="#alcance">1.2 Alcance [3](#alcance)</a></p>
+<p><a href="#descripción">1.3 Descripción [4](#descripción)</a></p>
+<p><a href="#requisitos-funcionales">2 Requisitos funcionales
+[7](#requisitos-funcionales)</a></p>
+<p><a href="#descomposición-funcional">3 Descomposición funcional
+[9](#descomposición-funcional)</a></p>
+<p><a href="#firma">3.1 Firma [9](#firma)</a></p>
+<p><a href="#cofirma">3.2 Cofirma [11](#cofirma)</a></p>
+<p><a href="#contrafirmar">3.3 Contrafirmar [13](#contrafirmar)</a></p>
+<p><a href="#firma-masiva-de-hashes-procedimiento-deprecado">3.4 Firma masiva de hashes (Procedimiento deprecado)
+[15](#firma-masiva-de-hashes-procedimiento-deprecado)</a></p>
+<p><a href="#multifirma-masiva-de-ficheros">3.5 Multifirma masiva de ficheros
+[17](#multifirma-masiva-de-ficheros)</a></p>
+<p><a href="#multifirma-masiva-programática">3.6 Multifirma masiva programática
+[19](#multifirma-masiva-programática)</a></p>
+<p><a href="#cifrado-simétrico">3.7 Cifrado simétrico [21](#cifrado-simétrico)</a></p>
+<p><a href="#descifrado-simétrico">3.8 Descifrado simétrico
+[23](#descifrado-simétrico)</a></p>
+<p><a href="#ensobrado-digital">3.9 Ensobrado digital [25](#ensobrado-digital)</a></p>
+<p><a href="#abrir-sobre-digital">3.10 Abrir sobre digital
+[26](#abrir-sobre-digital)</a></p>
+<p><a href="#algoritmos-de-cifrado">Anexo A. Algoritmos de cifrado
+[27](#algoritmos-de-cifrado)</a></p>
+<p><a href="#sobres-digitales">Anexo B. Sobres digitales [29](#sobres-digitales)</a></p>
+<h1 id="introduccion">Introducción</h1>
+<h2 id="objetivo">Objetivo</h2>
+<p>El objeto de este documento es realizar una descripción general y
+funcional del cliente de firma y cifrado de la Plataforma @Firma.</p>
+<h2 id="alcance">Alcance</h2>
+<p>Descripción del cliente de firma y cifrado y de las funcionalidades
+atribuidas. Abarcará los siguientes aspectos:</p>
+<ul>
+<li>
+<p>Descripción de los tipos de firma y formatos soportados por el
+    cliente.</p>
+</li>
+<li>
+<p>Identificación y descripción de los procesos que permite realizar el
+    cliente de firma.</p>
+</li>
+<li>
+<p>Identificación de las funcionalidades de cifrado, los algoritmos
+    empleados y la usabilidad de estos.</p>
+</li>
+<li>
+<p>Identificación de los sobres digitales soportados y la usabilidad de
+    estos.</p>
+</li>
+</ul>
+<h2 id="descripcion">Descripción</h2>
+<p>El cliente de firma, llamado Cliente @firma, es un componente que se
+ejecuta en la máquina del usuario en forma de Applet y le permite
+realizar diversas operaciones criptográficas:</p>
+<ul>
+<li>
+<p>Firma / multifirma electrónica de documentos.</p>
+</li>
+<li>
+<p>Procesos de firma / multifirma masiva.</p>
+</li>
+<li>
+<p>Cifrado / descifrado de datos.</p>
+</li>
+<li>
+<p>Generación y apertura de sobre digitales.</p>
+</li>
+</ul>
+<p>La firma electrónica es el equivalente electrónico a la firma
+manuscrita. El usuario puede seleccionar cualquier tipo de datos para
+firmar.</p>
+<p>El origen de los datos puede ser tanto un fichero, datos en memoria y,
+para algunos formatos de firma electrónica, huellas digitales (hashes).</p>
+<p>Los formatos soportados por el sistema de firma son:</p>
+<ul>
+<li>
+<p>PKCS#7 / CMS</p>
+</li>
+<li>
+<p>CAdES-BES / CAdES-EPES</p>
+</li>
+<li>
+<p>XMLdSig</p>
+</li>
+<li>
+<p>XAdES-BES / XAdES-EPES</p>
+</li>
+<li>
+<p>PAdES –BES / PAdES-EPES (Firmas PDF)</p>
+</li>
+<li>
+<p>ODF</p>
+</li>
+<li>
+<p>OOXML</p>
+</li>
+</ul>
+<p>Las firmas en formato CMS, CAdES, XMLdSig y XAdES soportarán 2 modos de
+firma:</p>
+<ul>
+<li>
+<p>Implícita: La firma generada va acompañada de los datos, normalmente
+    incluidos dentro de la firma.</p>
+</li>
+<li>
+<p>Explicita: La firma generada no mantiene relación directa con los
+    datos, salvo posiblemente una referencia externa a ellos o su huella
+    digital.</p>
+</li>
+</ul>
+<p>Las firmas PAdES, ODF y OOXML son por naturaleza implícitas y no
+soportarán este tipo de configuración.</p>
+<p>El algoritmo utilizado por defecto será SHA1withRSA, salvo cuando el
+formato de firma exija lo contrario. Para aquellos formatos que permitan
+configurar el algoritmo se soportarán:</p>
+<ul>
+<li>
+<p>MD5withRSA.</p>
+</li>
+<li>
+<p>SHA1withRSA.</p>
+</li>
+<li>
+<p>SHA256withRSA.</p>
+</li>
+<li>
+<p>SHA384withRSA.</p>
+</li>
+<li>
+<p>SHA512withRSA.</p>
+</li>
+</ul>
+<p>Se permite seleccionar el certificado electrónico para la firma de
+cualquiera de los siguientes almacenes de certificados:</p>
+<ul>
+<li>
+<p>Almacén de Windows / Internet Explorer.</p>
+</li>
+<li>
+<p>Almacén de Mozilla Firefox.</p>
+</li>
+<li>
+<p>Almacén de Apple.</p>
+</li>
+<li>
+<p>Ficheros PKCS#12 / PFX.</p>
+</li>
+<li>
+<p>Ficheros JKS.</p>
+</li>
+<li>
+<p>Dispositivos externos (configurados en alguno de los almacenes ya
+    mencionados).</p>
+</li>
+</ul>
+<p>El almacén de claves por defecto viene dado por el navegador Web y el
+sistema operativo desde el que se ejecute el Cliente @firma. Se
+configurará siempre que sea posible el mismo almacén que utiliza el
+navegador en ese sistema.</p>
+<p>La multifirma es el procedimiento que permite a varios usuarios firmar
+un único documento de datos y almacenar sus firmas en un mismo documento
+de firma. La multifirma podrá ser:</p>
+<ul>
+<li>
+<p>Cofirma o firma paralela, en el cual todos los firmantes están al
+    mismo nivel y no existe un orden prefijado</p>
+</li>
+<li>
+<p>Contrafirma o firma en cascada o jerárquica, en la que los firmantes
+    están en distintos niveles y sí existe orden entre las firmas.</p>
+</li>
+</ul>
+<p>La multifirma masiva es el proceso que permite automatizar la firma o
+multifirma de grandes cantidades de datos, aplicando la configuración en
+cada una de las operaciones (mismo certificado de firma, mismo
+algoritmo…). La multifirma masiva dispone de dos medios de aplicación:</p>
+<ul>
+<li>
+<p>El usuario puede especificar el directorio con los ficheros que se
+    desean multifirmar y configurar la operación que se aplicará a las
+    firmas.</p>
+</li>
+<li>
+<p>El usuario puede desarrollar un mecanismo programático que le
+    permita multifirmar múltiples ficheros, datos o hashes de forma más
+    sencilla que ejecutando la operación concreta sobre cada uno de
+    ellos.</p>
+</li>
+</ul>
+<p>El Cliente @firma dispone también de un sistema de cifrado de datos.
+Todos los algoritmos contemplados por este sistema son simétricos, es
+decir, se utiliza la misma clave para cifrar y descifrar los datos. Esto
+supone que la clave siempre debe ser privada.</p>
+<p>Los algoritmos soportados por el sistema de cifrado son:</p>
+<ul>
+<li>
+<p>AES</p>
+</li>
+<li>
+<p>Alleged RC4</p>
+</li>
+<li>
+<p>3DES</p>
+</li>
+<li>
+<p>DES</p>
+</li>
+<li>
+<p>Blowfish</p>
+</li>
+<li>
+<p>RC2</p>
+</li>
+<li>
+<p>PBEWithSHA1AndDESede</p>
+</li>
+<li>
+<p>PBEWithSHA1AndRC2_40</p>
+</li>
+<li>
+<p>PBEWithMD5AndDES</p>
+</li>
+</ul>
+<p>Los algoritmos PBE (los 3 últimos listados) utilizan contraseñas que
+puede insertar el propio usuario, aunque no son válidos todos los
+caracteres para estas. El resto de algoritmos usan directamente claves
+de cifrado que tienen unos requisitos específicos para cada algoritmo
+por lo que el sistema deberá tener en cuenta dichos requisitos.</p>
+<p>Los sobres digitales utilizan una combinación de algoritmos de cifrado
+simétrico y asimétrico que permiten cifrar datos de tal forma que sólo
+una serie de personas serán capaces de descifrarlos, lo que los hace
+idóneos para la transmisión de datos cifrados a otras personas.</p>
+<p>Los distintos tipos de sobres digitales soportados se encuentran
+descritos en los anexos.</p>
+<h1 id="requisitos-funcionales">Requisitos funcionales</h1>
+<p>Los requisitos funcionales que debe cumplir son los expuestos a
+continuación:</p>
+<ul>
+<li>
+<p>El sistema debe ser multiplataforma, pudiendo ser ejecutado en
+    Windows, Linux (Red Hat, Ubuntu), Solaris/ OpenSolaris y Mac OS X;
+    así mismo se debe poder ejecutar, al menos, en Internet Explorer,
+    Firefox, Safari y Chrome.</p>
+</li>
+<li>
+<p>El componente accederá por defecto a los certificados instalados en
+    el navegador donde se ejecute.</p>
+</li>
+<li>
+<p>Se permitirá utilizar un almacén de claves distinto al por defecto.
+    Si el almacén dispone de una clave de acceso, se le solicitará al
+    usuario.</p>
+</li>
+<li>
+<p>Se pueden filtrar los certificados disponibles mediante filtros
+    basados en la especificación RFC2254 o mediantes expresiones
+    regulares, definiendo valores críticos para determinados campos.</p>
+</li>
+<li>
+<p>El componente de firma será un applet e implementará toda la
+    funcionalidad de la firma en la máquina cliente, de forma que se
+    ejecutará siempre el mismo componente independientemente del proceso
+    de firma que se quiera lanzar (firma/multifirma de ficheros,
+    masiva…).</p>
+</li>
+<li>
+<p>El componente no instalará nada en la máquina del usuario salvo que
+    sea absolutamente necesario y siempre pedirá confirmación al usuario
+    para llevar a cabo este proceso. El cliente podrá ser cacheado por
+    la máquina virtual y esta caché se actualizará automáticamente cada
+    vez que se detecte una actualización desplegada en servidor.</p>
+</li>
+<li>
+<p>El componente firmará los datos introducidos, utilizando el
+    certificado que seleccione el usuario, mediante el algoritmo “RSA”
+    configurado y con un formato preestablecido.</p>
+</li>
+<li>
+<p>Se permitirá la generación de firmas EPES al configurar un formato
+    de firma avanzada (CAdES, XAdES y PAdES) y los datos de una política
+    de firma.</p>
+</li>
+<li>
+<p>El componente permitirá realizar firmas en serie (cofirmas) y en
+    cascada (contrafirma) como una operación posterior a la operación de
+    firma.</p>
+</li>
+<li>
+<p>Las contrafirmas podrán realizarse sobre firmas concretas del
+    documento de firmas, sobre todas las firmas de uno o varios
+    firmantes, sobre todas las firmas que no hayan sido anteriormente
+    contrafirmadas o sobre todas las firmas.</p>
+</li>
+<li>
+<p>Se pueden guardar las firmas/multifirmas generadas en ficheros
+    “.csig” (CMS y CAdES), “.xsig” (XADES y XMLDSIGN) y “.sig” (firma
+    electrónica simple, sin formato) o incrustadas en los documentos
+    firmados (PDF/PAdES, ODF y OOXML).</p>
+</li>
+<li>
+<p>Las multifirmas masivas se pueden realizar sobre un grupo de
+    ficheros o sobre un conjunto de hashes. También podrán realizarse
+    definiendo un proceso programático simple.</p>
+</li>
+<li>
+<p>El sistema de cifrado permitirá cifrar y descifrar contenidos en el
+    cliente mediante algoritmos simétricos.</p>
+</li>
+<li>
+<p>Los algoritmos de cifrado disponibles serán: AES, Allleged RC4,
+    Blowfish, TripleDES, DES, RC2, PBEWithSHA1AndDESede,
+    PBEWithSHA1AndRC2_40 y PBEWithMD5AndDES.</p>
+</li>
+<li>
+<p>Se permitirá generar automáticamente claves de cifrado para cada
+    algoritmo de cifrado que lo soporte.</p>
+</li>
+<li>
+<p>Se podrán almacenar las claves de cifrado utilizadas en un almacén
+    de claves único del usuario y utilizar estas claves para el cifrado
+    y descifrado de datos.</p>
+</li>
+<li>
+<p>Se da la posibilidad de crear un sobre digital CMS para transmitir
+    mensajes cifrados a uno o varios receptores.</p>
+</li>
+<li>
+<p>La incorporación de destinatarios a un sobre digital se deberá hacer
+    mediante ficheros “.cer”, cargando el certificado en memoria o desde
+    alguno de los almacenes del sistema.</p>
+</li>
+<li>
+<p>Será posible extraer certificados con clave pública de servidores
+    LDAP simples.</p>
+</li>
+<li>
+<p>Se permite guardar en ficheros los datos generados en cada momento:
+    firmas, ficheros, cifrados y descifrados, sobres digitales…</p>
+</li>
+</ul>
+<h1 id="descomposicion-funcional">Descomposición funcional</h1>
+<p>Una vez establecidos los requisitos funcionales, se van a identificar y
+definir cada uno de los procesos que deberá implementar para cumplir con
+dichos requisitos.</p>
+<h2 id="firma">Firma</h2>
+<p>Es el proceso mediante el cual el componente cliente firma unos datos
+utilizando la clave privada asociada a uno de los certificados que tiene
+el usuario instalado en su navegador.</p>
+<p>El Cliente mostrará al usuario una lista de los certificados instalados
+en el almacén o dispositivo configurado y este deberá seleccionar uno de
+ellos. También podrá configurarse que se filtren previamente estos
+certificados e, incluso, que se seleccione directamente uno de ellos sin
+que el usuario tenga que elegirlo.</p>
+<p>A continuación se detalla el caso de uso asociado a esta operativa:</p>
+<p>&lt;<img src="media/image1.emf"
+style="width:6.6875in;height:3.79167in" /></p>
+<h5 id="actores"><strong><em>Actores</em></strong></h5>
+<ul>
+<li><strong>Usuario:</strong> Usuario que quiere realizar la firma.</li>
+</ul>
+<h5 id="casos-de-uso"><strong><em>Casos de Uso</em></strong></h5>
+<ul>
+<li>
+<p><strong>Configurar firma:</strong> Es el proceso en el que se establecen los
+    distintos parámetros que afectará a la operación de firma.</p>
+<ul>
+<li>
+<p>Conf. Almacén: Configuración del almacén del que se extraerá el
+    certificado de firma.</p>
+</li>
+<li>
+<p>Conf. Filtro: Configuración de un filtro que restringirá los
+    certificados mediante los que se podrá firmar. Se podrá
+    configurar que el certificado se seleccione directamente si es
+    el único que cumple ese filtro o que se muestre un diálogo de
+    selección para que el usuario tome la decisión de cuál usar. Los
+    filtros se basarán en el uso de la RFC-2254 y los KeyUsage de
+    los certificados y permitirán filtrar por:</p>
+<ul>
+<li>
+<p>Estructura del <em>X509Principal</em> del titular del certificado.</p>
+</li>
+<li>
+<p>Estructura del <em>X509Principal</em> del emisor del certificado.</p>
+</li>
+<li>
+<p>Utilidad declarada para el certificado (firma,
+    autenticación, envoltura de claves,…).</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Conf. Política: Configuración de la política de firma.</p>
+</li>
+<li>
+<p>Conf. Algoritmo: Configuración del algoritmo de firma.</p>
+</li>
+<li>
+<p>Conf. Formato: Configuración del formato de firma. Incluye el
+    formato a utilizar y la configuración específica que admita este
+    (tipos de datos firmados, contexto de firma, versión del
+    formato…)</p>
+</li>
+<li>
+<p>Conf. Modo: Configuración del modo de firma.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Seleccionar documento:</strong> Es el proceso en el que se seleccionan
+    los datos sobre los que se desea realizar la firma. Por defecto, se
+    solicita seleccionar un fichero. Las alternativas son las
+    siguientes:</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Configurar fichero: Establece un fichero sobre el que realizar la
+    firma.</p>
+</li>
+<li>
+<p>Configurar datos: Establece los datos sobre los que realizar la
+    firma.</p>
+</li>
+<li>
+<p>Configurar hash: Establece el hash sobre el que realizar la firma.
+    La operación de firma no aplicará algoritmo de hash.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>Seleccionar certificado:</strong> Es el proceso de selección del
+    certificado con el que se va a firmar. Las alternativas son:</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Configurar alias: El integrador establece el alias del certificado
+    del almacén configurado que se debe utilizar.</p>
+</li>
+<li>
+<p>Seleccionar en diálogo de certificados: Muestra un diálogo para la
+    selección del certificado por parte del usuario. En este diálogo
+    sólo aparecerán los certificados que cumplan el filtro de
+    certificados definido anteriormente.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p><strong>Firmar:</strong> Ejecuta la operación de firma conforme a los parámetros
+    configurados anteriormente.</p>
+</li>
+<li>
+<p><strong>Obtener firma:</strong> Se toma el resultado de la operación de firma.
+    Las alternativas, no excluyentes, son:</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Extraer firma: Extrae la firma generada.</p>
+</li>
+<li>
+<p>Guardar firma: Almacena en disco la firma generada.</p>
+</li>
+</ul>
+<p><em>Resultado Error:</em> En caso de producirse un error, el proceso <strong>Firmar</strong>
+establecerá el mensaje correspondiente y lo pondrá a disposición del
+integrador.</p>
+<h2 id="cofirma">Cofirma</h2>
+<p>Permite a varios usuarios firmar el mismo elemento.</p>
+<p>&lt;<img src="media/image2.emf"
+style="width:6.26806in;height:3.08521in" /></p>
+<h5 id="actores_1"><strong><em>Actores</em></strong></h5>
+<ul>
+<li><strong>Usuario:</strong> Usuario que quiere realizar la cofirma.</li>
+</ul>
+<h5 id="casos-de-uso_1"><strong><em>Casos de Uso</em></strong></h5>
+<ul>
+<li><strong>Configurar firma:</strong> Es el proceso en el que se establecen los
+    distintos parámetros que afectará a la operación de firma.</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Conf. Almacén: Configuración del almacén del que se extraerá el
+    certificado de firma.</p>
+<ul>
+<li>
+<p>Conf. Filtro: Configuración de un filtro que restringirá los
+    certificados mediante los que se podrá firmar. Se podrá
+    configurar que el certificado se seleccione directamente si es
+    el único que cumple ese filtro o que se muestre un diálogo de
+    selección para que el usuario tome la decisión de cuál usar. Los
+    filtros se basarán en el uso de la RFC-2254 y los KeyUsage de
+    los certificados y permitirán filtrar por:</p>
+<ul>
+<li>
+<p>Estructura del <em>X509Principal</em> del titular del certificado.</p>
+</li>
+<li>
+<p>Estructura del <em>X509Principal</em> del emisor del certificado.</p>
+</li>
+<li>
+<p>Utilidad declarada para el certificado (firma,
+    autenticación, envoltura de claves,…).</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Conf. Política: Configuración de la política de firma.</p>
+</li>
+<li>
+<p>Conf. Algoritmo: Configuración del algoritmo de firma.</p>
+</li>
+<li>
+<p>Conf. Formato: Configuración del formato de firma. Incluye el
+    formato a utilizar y la configuración específica que admita este
+    (tipos de datos firmados, contexto de firma, versión del formato…)</p>
+</li>
+<li>
+<p>Conf. Modo: Configuración del modo de firma.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>Seleccionar documento:</strong> Es el proceso en el que se seleccionan
+    los datos sobre los que se desea realizar la firma. Por defecto, se
+    solicita seleccionar un fichero. En el proceso de cofirma, la
+    selección del documento no es obligatorio cuando la firma que se
+    selecciona en el paso siguiente contiene ya los datos que se
+    firmaron originalmente.</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Configurar fichero: Establece un fichero sobre el que realizar la
+    firma.</p>
+</li>
+<li>
+<p>Configurar datos: Establece los datos sobre los que realizar la
+    firma.</p>
+</li>
+<li>
+<p>Configurar hash: Establece el hash sobre el que realizar la firma.
+    La operación de firma no aplicará algoritmo de hash.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>Seleccionar firma:</strong> Es el proceso de selección del documento de
+    firma al que se le desea agregar una nueva cofirma.</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Conf. Fichero firma: Configura el fichero de firma al que se le
+    quiere agregar la cofirma.</p>
+</li>
+<li>
+<p>Conf. Datos firma: Configura la firma (en memoria) a la que se
+    quiere agregar la cofirma.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>Seleccionar certificado:</strong> Es el proceso de selección del
+    certificado con el que se va a firmar.</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Configurar alias: Establece el alias del certificado en el almacén
+    configurado.</p>
+</li>
+<li>
+<p>Seleccionar en diálogo de certificados: Muestra un diálogo para la
+    selección del certificado por parte del usuario.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p><strong>Cofirmar:</strong> Ejecuta la operación de cofirma conforme a los
+    parámetros configurados anteriormente.</p>
+</li>
+<li>
+<p><strong>Obtener firma:</strong> Se toma el resultado de la operación de firma.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Extraer firma: Extrae la firma generada.</p>
+</li>
+<li>
+<p>Guardar firma: Almacena en disco la firma generada.</p>
+</li>
+</ul>
+<p><em>Resultado Error.</em> En caso de producirse un error, el proceso
+<strong>Cofirmar</strong> establecerá el mensaje correspondiente y lo pondrá a
+disposición del integrador.</p>
+<h2 id="contrafirmar">Contrafirmar</h2>
+<p>Permite firmar a un usuario la firma de otro usuario. La contrafirma se
+puede realizar sobre: todas las firmas de un documento, las firmas
+todavía no contrafirmadas, las firmas de un firmante o determinadas
+firmas.</p>
+<p>&lt;<img src="media/image3.emf"
+style="width:6.26806in;height:3.3in" /></p>
+<h5 id="actores_2"><strong><em>Actores</em></strong></h5>
+<ul>
+<li><strong>Usuario:</strong> Usuario que quiere realizar la contrafirma.</li>
+</ul>
+<h5 id="casos-de-uso_2"><strong><em>Casos de Uso</em></strong></h5>
+<ul>
+<li><strong>Configurar firma:</strong> Es el proceso en el que se establecen los
+    distintos parámetros que afectará a la operación de firma.</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Conf. Almacén: Configuración del almacén del que se extraerá el
+    certificado de firma.</p>
+<ul>
+<li>
+<p>Conf. Filtro: Configuración de un filtro que restringirá los
+    certificados mediante los que se podrá firmar. Se podrá
+    configurar que el certificado se seleccione directamente si es
+    el único que cumple ese filtro o que se muestre un diálogo de
+    selección para que el usuario tome la decisión de cuál usar. Los
+    filtros se basarán en el uso de la RFC-2254 y los KeyUsage de
+    los certificados y permitirán filtrar por:</p>
+<ul>
+<li>
+<p>Estructura del <em>X509Principal</em> del titular del certificado.</p>
+</li>
+<li>
+<p>Estructura del <em>X509Principal</em> del emisor del certificado.</p>
+</li>
+<li>
+<p>Utilidad declarada para el certificado (firma,
+    autenticación, envoltura de claves,…).</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Conf. Política: Configuración de la política de firma.</p>
+</li>
+<li>
+<p>Conf. Algoritmo: Configuración del algoritmo de firma.</p>
+</li>
+<li>
+<p>Conf. Formato: Configuración del formato de firma. Incluye el
+    formato a utilizar y la configuración específica que admita este
+    (tipos de datos firmados, contexto de firma, versión del formato…)</p>
+</li>
+<li>
+<p>Conf. Modo: Configuración del modo de firma.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>Seleccionar firma:</strong> Es el proceso de selección del documento de
+    firma al que se le desea agregar las contrafirmas.</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Conf. Fichero firma: Configura el fichero con los datos de firma al
+    que se le quiere agregar las contrafirmas.</p>
+</li>
+<li>
+<p>Conf. Datos firma: Configura los datos de firma a los que se quiere
+    agregar las contrafirmas.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>Seleccionar certificado:</strong> Es el proceso de selección del
+    certificado con el que se va a firmar.</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Configurar alias: Establece el alias del certificado en el almacén
+    configurado.</p>
+</li>
+<li>
+<p>Seleccionar en diálogo de certificados: Muestra un diálogo para la
+    selección del certificado por parte del usuario.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>Contrafirmar:</strong> Ejecuta la operación de contrafirma conforme a los
+    parámetros configurados anteriormente. La operación aplicará a una
+    serie de nodos de firma.</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Cont. Árbol: Contrafirma todos los nodos.</p>
+</li>
+<li>
+<p>Cont. Hojas: Contrafirma los nodos hoja del árbol.</p>
+</li>
+<li>
+<p>Cont. Nodos: Contrafirma una serie de nodos.</p>
+</li>
+<li>
+<p>Cont. Firmantes: Contrafirma todos los nodos de una serie de
+    firmantes.</p>
+</li>
+<li>
+<p>Conf. Nodos: Configura los nodos/firmantes que se desean
+    contrafirmar.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>Obtener firma:</strong> Se toma el resultado de la operación de firma.</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Extraer firma: Extrae la firma generada.</p>
+</li>
+<li>
+<p>Guardar firma: Almacena en disco la firma generada.</p>
+</li>
+</ul>
+<p><em>Resultado Error.</em> En caso de producirse un error, la tarea
+<strong>Contrafirmar</strong> establecerá el mensaje correspondiente y lo pondrá a
+disposición del integrador.</p>
+<h2 id="firma-masiva-de-hashes-procedimiento-deprecado">Firma masiva de hashes (Procedimiento deprecado)</h2>
+<p>Permite firmar una serie de hashes.</p>
+<p>&lt;<img src="media/image4.emf"
+style="width:6.26806in;height:2.88018in" /></p>
+<h5 id="actores_3"><strong><em>Actores</em></strong></h5>
+<ul>
+<li><strong>Usuario:</strong> Usuario que quiere realizar la firma masiva de hashes.</li>
+</ul>
+<h5 id="casos-de-uso_3"><strong><em>Casos de Uso</em></strong></h5>
+<ul>
+<li><strong>Configurar firma:</strong> Es el proceso en el que se establecen los
+    distintos parámetros que afectará a la operación de firma.</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Conf. Almacén: Configuración del almacén del que se extraerá el
+    certificado de firma.</p>
+<ul>
+<li>
+<p>Conf. Filtro: Configuración de un filtro que restringirá los
+    certificados mediante los que se podrá firmar. Se podrá
+    configurar que el certificado se seleccione directamente si es
+    el único que cumple ese filtro o que se muestre un diálogo de
+    selección para que el usuario tome la decisión de cuál usar. Los
+    filtros se basarán en el uso de la RFC-2254 y los KeyUsage de
+    los certificados y permitirán filtrar por:</p>
+<ul>
+<li>
+<p>Estructura del <em>X509Principal</em> del titular del certificado.</p>
+</li>
+<li>
+<p>Estructura del <em>X509Principal</em> del emisor del certificado.</p>
+</li>
+<li>
+<p>Utilidad declarada para el certificado (firma,
+    autenticación, envoltura de claves,…).</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Conf. Política: Configuración de la política de firma.</p>
+</li>
+<li>
+<p>Conf. Algoritmo: Configuración del algoritmo de firma.</p>
+</li>
+<li>
+<p>Conf. Formato: Configuración del formato de firma. Incluye el
+    formato a utilizar y la configuración específica que admita este
+    (tipos de datos firmados, contexto de firma, versión del formato…).
+    Los únicos formatos que soportan esta operación son CMS, CAdES,
+    XMLdSIG y XAdES.</p>
+</li>
+<li>
+<p>Conf. Modo: Configuración del modo de firma.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p><strong>Seleccionar hashes:</strong> Operación mediante la que se seleccionan
+    todos los hashes que se desean firmar.</p>
+</li>
+<li>
+<p><strong>Seleccionar certificado:</strong> Es el proceso de selección del
+    certificado con el que se va a firmar.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Configurar alias: Establece el alias del certificado en el almacén
+    configurado.</p>
+</li>
+<li>
+<p>Seleccionar en diálogo de certificados: Muestra un diálogo para la
+    selección del certificado por parte del usuario.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p><strong>Firmar hashes:</strong> Ejecuta la operación de firma sobre cada uno de
+    los hashes configurados.</p>
+</li>
+<li>
+<p><strong>Obtener firmas:</strong> Obtiene todas las firmas generadas a partir de
+    los hashes introducidos.</p>
+</li>
+</ul>
+<p><em>Resultado Error.</em> En caso de producirse un error, la tarea <strong>Firmar
+hashes</strong> establecerá el mensaje correspondiente y lo pondrá a
+disposición del integrador.</p>
+<h2 id="multifirma-masiva-de-ficheros">Multifirma masiva de ficheros</h2>
+<p>Permite multifirmar los ficheros de un directorio. Esto es, permite
+configurar una operación de firma o multifirma, establecer una
+configuración de firma y aplicarlas sobre cada uno de los ficheros de un
+directorio o una selección de los mismos.</p>
+<p>&lt;<img src="media/image5.emf"
+style="width:6.26806in;height:3.67101in" /></p>
+<h5 id="actores_4"><strong><em>Actores</em></strong></h5>
+<ul>
+<li><strong>Usuario:</strong> Usuario que quiere realizar la multifirma masiva de
+    ficheros.</li>
+</ul>
+<h5 id="casos-de-uso_4"><strong><em>Casos de Uso</em></strong></h5>
+<ul>
+<li><strong>Configurar firma:</strong> Es el proceso en el que se establecen los
+    distintos parámetros que afectará a la operación de firma.</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Conf. Almacén: Configuración del almacén del que se extraerá el
+    certificado de firma.</p>
+<ul>
+<li>
+<p>Conf. Filtro: Configuración de un filtro que restringirá los
+    certificados mediante los que se podrá firmar. Se podrá
+    configurar que el certificado se seleccione directamente si es
+    el único que cumple ese filtro o que se muestre un diálogo de
+    selección para que el usuario tome la decisión de cuál usar. Los
+    filtros se basarán en el uso de la RFC-2254 y los KeyUsage de
+    los certificados y permitirán filtrar por:</p>
+<ul>
+<li>
+<p>Estructura del <em>X509Principal</em> del titular del certificado.</p>
+</li>
+<li>
+<p>Estructura del <em>X509Principal</em> del emisor del certificado.</p>
+</li>
+<li>
+<p>Utilidad declarada para el certificado (firma,
+    autenticación, envoltura de claves,…).</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Conf. Política: Configuración de la política de firma.</p>
+</li>
+<li>
+<p>Conf. Algoritmo: Configuración del algoritmo de firma.</p>
+</li>
+<li>
+<p>Conf. Formato: Configuración del formato de firma. Incluye el
+    formato a utilizar y la configuración específica que admita este
+    (tipos de datos firmados, contexto de firma, versión del formato…).
+    Los únicos formatos que soportan esta operación son CMS, CAdES,
+    XMLdSIG y XAdES.</p>
+</li>
+<li>
+<p>Conf. Modo: Configuración del modo de firma.</p>
+</li>
+<li>
+<p>Conf. Directorio salida: Configuración del directorio en el que se
+    almacenarán las firmas generadas.</p>
+</li>
+<li>
+<p>Conf. Operación: Configuración de la operación a realizar: firma,
+    cofirma, contrafirma de todo el árbol de firmas o contrafirma de los
+    nodos hoja.</p>
+</li>
+<li>
+<p>Conf. Recursividad: Configuración de la recursividad de proceso. Si
+    se indica que sea recursivo, se firmarán también los ficheros de los
+    subdirectorios.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p><strong>Seleccionar directorio:</strong> Configuración del directorio con los
+    ficheros que se desean firmar.</p>
+</li>
+<li>
+<p><strong>Seleccionar certificado:</strong> Es el proceso de selección del
+    certificado con el que se va a firmar.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Configurar alias: Establece el alias del certificado en el almacén
+    configurado.</p>
+</li>
+<li>
+<p>Seleccionar en diálogo de certificados: Muestra un diálogo para la
+    selección del certificado por parte del usuario.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>Firmar directorio:</strong> Ejecuta la operación de masiva sobre cada uno
+    de los ficheros del directorio. Las firmas resultantes irán a parar
+    al directorio de salida o al mismo directorio de entrada si no se
+    configuró. El resultado de las firmas individuales se reflejará en
+    un fichero de log en el directorio de salida de las firmas.</li>
+</ul>
+<p><em>Resultado Error.</em> El proceso continúa hasta tratar todos los ficheros
+del directorio que sean objetivo de la operación. En caso de producirse
+errores en operaciones individuales del proceso, se reflejarán los
+mensajes correspondientes en el fichero de log generado.</p>
+<h2 id="multifirma-masiva-programatica">Multifirma masiva programática</h2>
+<p>Permite firmar, cofirmar y contrafirmar datos, fichero y hashes con una
+misma configuración de firma. Esta operación permitirá establecer una
+configuración de firma única y aplicarla en cada operación individual.
+El integrador aplicará la operación sobre cada objetivo de firma
+concreto, obteniendo directamente su resultado . Este proceso no se
+aplica a múltiples objetivos, el integrador debe ordenar explícitamente
+cada operación individual.</p>
+<p>Este modo de operación está orientado a facilitar la integración del
+cliente en sistemas de firma masiva de documentos. Por ejemplo, recorrer
+un listado de datos objetivo y aplicar la operación sobre cada uno de
+ellos.</p>
+<p>&lt;<img src="media/image6.png"
+style="width:6.26806in;height:3.68472in" /></p>
+<h5 id="actores_5"><strong><em>Actores</em></strong></h5>
+<ul>
+<li><strong>Usuario:</strong> Usuario que quiere realizar la firma masiva de hashes.</li>
+</ul>
+<h5 id="casos-de-uso_5"><strong><em>Casos de Uso</em></strong></h5>
+<ul>
+<li><strong>Configurar firma:</strong> Es el proceso en el que se establecen los
+    distintos parámetros que afectará a la operación de firma.</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Conf. Almacén: Configuración del almacén del que se extraerá el
+    certificado de firma.</p>
+<ul>
+<li>
+<p>Conf. Filtro: Configuración de un filtro que restringirá los
+    certificados mediante los que se podrá firmar. Se podrá
+    configurar que el certificado se seleccione directamente si es
+    el único que cumple ese filtro o que se muestre un diálogo de
+    selección para que el usuario tome la decisión de cuál usar. Los
+    filtros se basarán en el uso de la RFC-2254 y los KeyUsage de
+    los certificados y permitirán filtrar por:</p>
+<ul>
+<li>
+<p>Estructura del <em>X509Principal</em> del titular del certificado.</p>
+</li>
+<li>
+<p>Estructura del <em>X509Principal</em> del emisor del certificado.</p>
+</li>
+<li>
+<p>Utilidad declarada para el certificado (firma,
+    autenticación, envoltura de claves,…).</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Conf. Política: Configuración de la política de firma.</p>
+</li>
+<li>
+<p>Conf. Algoritmo: Configuración del algoritmo de firma.</p>
+</li>
+<li>
+<p>Conf. Formato: Configuración del formato de firma. Incluye el
+    formato a utilizar y la configuración específica que admita este
+    (tipos de datos firmados, contexto de firma, versión del formato…).
+    Los únicos formatos que soportan esta operación son CMS, CAdES,
+    XMLdSIG y XAdES.</p>
+</li>
+<li>
+<p>Conf. Modo: Configuración del modo de firma.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>Seleccionar certificado:</strong> Es el proceso de selección del
+    certificado con el que se va a firmar.</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Configurar alias: Establece el alias del certificado en el almacén
+    configurado.</p>
+</li>
+<li>
+<p>Seleccionar en diálogo de certificados: Muestra un diálogo para la
+    selección del certificado por parte del usuario.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p><strong>Configurar operación:</strong> Es el proceso por el que se configura el
+    tipo de operación que se debe realizar. Las operaciones permitidas
+    serán: firma, cofirma, contrafirma de nodos hoja y contrafirma del
+    árbol de firma.</p>
+</li>
+<li>
+<p><strong>Ejecutar operación:</strong> Ejecuta la operación configurada con los
+    parámetros establecidos en los pasos anteriores. La operación
+    devuelve directamente el resultado, no siendo necesario recogerlo en
+    un paso posterior.</p>
+</li>
+</ul>
+<p><em>Resultado Error.</em> En caso de producirse un error, la tarea <strong>Ejecutar
+operación</strong> no generará la firma y establecerá el mensaje
+correspondiente poniéndolo a disposición del integrador.</p>
+<h2 id="cifrado-simetrico">Cifrado simétrico</h2>
+<p>Permite el cifrado de datos por medio de una clave simétrica. Esto es,
+se podrán descifrar los datos mediante esa misma clave.</p>
+<p>&lt;<img src="media/image7.emf"
+style="width:6.26806in;height:3.02663in" /></p>
+<h5 id="actores_6"><strong><em>Actores</em></strong></h5>
+<ul>
+<li><strong>Usuario:</strong> Usuario que quiere realizar el cifrado.</li>
+</ul>
+<h5 id="casos-de-uso_6"><strong><em>Casos de Uso</em></strong></h5>
+<ul>
+<li><strong>Configurar cifrado:</strong> Es el proceso en el que se establecen los
+    distintos parámetros que afectarán a la operación de cifrado.</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Conf. Modo clave: Configuración del origen de la clave de cifrado
+    (autogenerada, insertada por el usuario, mediante contraseña o desde
+    almacén).</p>
+</li>
+<li>
+<p>Conf. Algoritmo: Configuración del algoritmo de cifrado.</p>
+</li>
+<li>
+<p>Conf. Clave/Contraseña: Configuración de la clave o contraseña de
+    cifrado.</p>
+</li>
+<li>
+<p>Conf. Almacén cifrado: Configuración del almacén para extraer claves
+    de cifrado.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>Seleccionar documento:</strong> Es el proceso en el que se selecciona el
+    elemento que se desea cifrar. Por defecto, se solicita seleccionar
+    un fichero.</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Configurar fichero: Establece un fichero a cifrar.</p>
+</li>
+<li>
+<p>Configurar datos: Establece los datos a cifrar.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p><strong>Cifrar:</strong> Ejecuta el cifrado conforme a los parámetros
+    configurados anteriormente.</p>
+</li>
+<li>
+<p><strong>Obtener cifrado:</strong> Se toma el resultado de la operación de
+    cifrado.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Extraer cifrado: Recupera los datos cifrados.</p>
+</li>
+<li>
+<p>Guardar cifrado: Almacena en disco los datos cifrados obtenidos.</p>
+</li>
+</ul>
+<p><em>Resultado Error.</em> En caso de error, devuelve la cadena de texto
+asociada al error encontrado.</p>
+<h2 id="descifrado-simetrico">Descifrado simétrico</h2>
+<p>Permite el descifrado simétrico de datos especificando la clave de
+cifrado.</p>
+<p>&lt;<img src="media/image8.emf"
+style="width:6.26806in;height:3.02663in" /></p>
+<h5 id="actores_7"><strong><em>Actores</em></strong></h5>
+<ul>
+<li><strong>Usuario:</strong> Usuario que quiere descifrar los datos.</li>
+</ul>
+<h5 id="casos-de-uso_7"><strong><em>Casos de Uso</em></strong></h5>
+<ul>
+<li><strong>Configurar descifrado:</strong> Es el proceso en el que se establecen los
+    distintos parámetros que afectarán a la operación de descifrado.</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Conf. Modo clave: Configuración del origen de la clave para el
+    descifrado (insertada por el usuario, mediante contraseña o desde
+    almacén).</p>
+</li>
+<li>
+<p>Conf. Algoritmo: Configuración del algoritmo de cifrado.</p>
+</li>
+<li>
+<p>Conf. Clave/Contraseña: Configuración de la clave o contraseña de
+    cifrado.</p>
+</li>
+<li>
+<p>Conf. Almacén cifrado: Configuración del almacén para la carga de
+    claves de cifrado.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>Seleccionar cifrado:</strong> Es el proceso en el que se selecciona el
+    documento cifrado que se desea descifrar. Por defecto, se solicita
+    seleccionar un fichero.</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Configurar fichero: Establece la ruta del fichero cifrado.</p>
+</li>
+<li>
+<p>Configurar datos: Establece los datos cifrados.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p><strong>Descifrar:</strong> Ejecuta la operación de descifrado conforme a los
+    parámetros configurados.</p>
+</li>
+<li>
+<p><strong>Obtener datos:</strong> Se toma el resultado de la operación de cifrado.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Extraer datos: Recupera los datos descifrados.</p>
+</li>
+<li>
+<p>Guardar datos: Almacena en disco los datos descifrados obtenidos.</p>
+</li>
+</ul>
+<p><em>Resultado Error.</em> En caso de error, devuelve la cadena de texto
+asociada al error encontrado.</p>
+<h2 id="ensobrado-digital">Ensobrado digital</h2>
+<p>Permite generar un paquete de datos cifrados e indicar quienes podrán
+descifrarlo. Se utilizará una estructura CMS como soporte de los datos
+resultantes.</p>
+<p>&lt;<img src="media/image9.emf"
+style="width:6.26806in;height:2.24557in" /></p>
+<h5 id="actores_8"><strong><em>Actores</em></strong></h5>
+<ul>
+<li><strong>Usuario:</strong> Usuario que quiere generar el sobre digital.</li>
+</ul>
+<h5 id="casos-de-uso_8"><strong><em>Casos de Uso</em></strong></h5>
+<ul>
+<li><strong>Configurar sobre:</strong> Es el proceso en el que se establecen los
+    distintos parámetros que afectarán a la generación del sobre
+    digital.</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>Conf. tipo sobre: Configuración del tipo de sobre que se desea
+    generar: Sobre simple (EnvelopedData), sobre firmado
+    (SignedAndEnvelopedData) o sobre autenticado
+    (AuthenticatedAndEnvelopedData).</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>Seleccionar documento:</strong> Es el proceso en el que se selecciona el
+    elemento que se desea ensobrar. Por defecto, se solicita seleccionar
+    un fichero.</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Configurar fichero: Establece un fichero a ensobrar.</p>
+</li>
+<li>
+<p>Configurar datos: Establece los datos a ensobrar.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p><strong>Configurar destinatarios:</strong> Configura quienes son los
+    destinatarios del sobre digital a partir de sus certificados con
+    clave pública. Estos certificados pueden tomarse de disco, de un
+    almacén, de un servidor LDAP o configurarse directamente.</p>
+</li>
+<li>
+<p><strong>Configurar remitente:</strong> Configura el remitente del sobre a partir
+    de su certificado en almacén.</p>
+</li>
+<li>
+<p><strong>Ensobrar:</strong> Genera el sobre digital conforme a los parámetros
+    configurados anteriormente.</p>
+</li>
+<li>
+<p><strong>Obtener sobre:</strong> Se toma el resultado de la operación de
+    ensobrado.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Recuperar sobre: Recupera el sobre digital.</p>
+</li>
+<li>
+<p>Guardar sobre: Almacena en disco el sobre digital.</p>
+</li>
+</ul>
+<p><em>Resultado Error.</em> En caso de error, devuelve la cadena de texto
+asociada al error encontrado.</p>
+<h2 id="abrir-sobre-digital">Abrir sobre digital</h2>
+<p>Permite al receptor de un sobre digital extraer su contenido utilizando
+su propia clave privada.</p>
+<p>&lt;<img src="media/image10.emf"
+style="width:6.26806in;height:1.76716in" /></p>
+<h5 id="actores_9"><strong><em>Actores</em></strong></h5>
+<ul>
+<li><strong>Usuario:</strong> Destinatario del sobre digital.</li>
+</ul>
+<h5 id="casos-de-uso_9"><strong><em>Casos de Uso</em></strong></h5>
+<ul>
+<li><strong>Seleccionar sobre:</strong> Es el proceso en el que se selecciona el
+    sobre digital del que se desean extraer los datos. Por defecto, se
+    solicita seleccionar un fichero.</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Configurar fichero: Establece la ruta del sobre digital.</p>
+</li>
+<li>
+<p>Configurar datos: Establece el sobre digital.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>Seleccionar destinatario:</strong> Es el proceso de selección del
+    certificado con el que se va a descifrar el sobre digital.</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Configurar alias: Establece el alias del certificado en el almacén
+    configurado.</p>
+</li>
+<li>
+<p>Seleccionar en diálogo de certificados: Muestra un diálogo para la
+    selección del certificado por parte del usuario.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p><strong>Desensobrar:</strong> Ejecuta la operación de extracción de datos del
+    sobre digital.</p>
+</li>
+<li>
+<p><strong>Obtener datos:</strong> Se toma el resultado de la operación de
+    desensobrado.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Extraer datos: Recupera los datos extraídos del sobre.</p>
+</li>
+<li>
+<p>Guardar datos: Almacena en disco los datos extraídos del sobre.</p>
+</li>
+</ul>
+<p><em>Resultado Error.</em> En caso de error, devuelve la cadena de texto
+asociada al error encontrado.</p>
+<h1 id="algoritmos-de-cifrado">Algoritmos de cifrado</h1>
+<p>Los algoritmos simétricos utilizan la misma clave tanto para cifrar como
+para descifrar, por lo que se recomienda una clave segura. Se
+incorporará un mecanismo de generación de claves seguras.</p>
+<ul>
+<li>
+<p><strong>AES</strong>: Advanced Encryption Standard. Sistema de encriptación
+    adoptado por el gobierno de Estados Unidos (FIPS-PUB 197) y fue
+    propuesto por el NIST. Cifrado simétrico en bloques de 128 bits y
+    con claves de 128, 192 o 256 bits. Este estándar contempla el
+    algoritmo para 10, 12 o 14 vueltas aunque está previsto aumentarlas
+    debido al éxito obtenido con criptoanálisis que encuentra
+    coincidencia con 277 bloques bajo 256 claves y requiere sobre 2224
+    pasos para completarse.</p>
+</li>
+<li>
+<p><strong>ARCFOUR</strong>: Es el sistema de cifrado de flujo más utilizado y se
+    usa en los protocolos más populares como Transport Layer Security
+    (TLS/SSL) y Wired Equivalent Privacy (WEP) Este algoritmo fue
+    excluido de los estándares de alta seguridad debido a su sistema de
+    criptografía muy inseguro. El factor principal de su popularidad es
+    su velocidad y simplicidad, así como la implementación tanto en
+    software como en hardware es sencilla de desarrollar. El algoritmo
+    es simple, ya que consiste en la combinación de 2 algoritmos 1-KSA y
+    2 PRGA</p>
+</li>
+<li>
+<p><strong>BLOWFISH</strong>: Es un codificador de bloques simétricos, diseñado por
+    Bruce Schneier en 1993. Usa bloques de 64 bits y claves que van
+    desde los 32 bits hasta los 448 bits. Es un codificador de 16 rondas
+    Feistel y usa llaves que dependen de las Cajas-S. Este algoritmo de
+    cifrado correrá 521 veces para generar todas las subclaves, con lo
+    que cerca de 4Kb de datos son procesados.</p>
+</li>
+<li>
+<p><strong>Data Encryption Standard (DES)</strong>: Es un algoritmo prototipado del
+    cifrado por bloques, un algoritmo que toma un texto de una longitud
+    fija de bits y lo transforma mediante una serie de operaciones
+    básicas en otro texto cifrado de la misma longitud. DES utiliza
+    también una clave criptográfica para modificar la transformación, de
+    modo que le descifrado sólo puede ser realizado por aquellos que
+    conozcan la clave concreta utilizada en el cifrado. El cifrado se
+    realiza con una clave de 56 bits, la cual es corta, y debido a
+    algunos elementos de diseño clasificados propició las sospechas de
+    la existencia de una puerta trasera para la National Security
+    Agency.</p>
+</li>
+<li>
+<p><strong>Triple DES (3DES)</strong>: Basado en DES (Data Encryption Standard).
+    Cifrado en bloques de 64 bits con clave de 168 bits (192 incluyendo
+    bits de paridad). Actualmente ha sido sustituido por AES, pero se
+    sigue utilizando ampliamente. Los últimos criptoanálisis revelan que
+    son necesarias 2108 operaciones para romper una clave TripleDES,
+    pero si se concentra en las 3 claves DES, basta con 290 operaciones.</p>
+</li>
+<li>
+<p><strong>RC2</strong>: Es un cifrado de bloques diseñado por Ron Rivest en 1987.
+    El desarrollo de RC2 fue patrocinado por Lotus el cual fue exportado
+    como parte de su software Lotus Notes. Este cifrado cuyo tamaño de
+    clave es de 40 bits fue aprobado para exportarlo en 1989 bajo la
+    regulación de los EEUU. RC2 es un cifrado de bloques de 64 bits con
+    una clave de tamaño variable. Consta de 18 ciclos, 16 de un tipo
+    MIXING y dos ciclos de otro tipo MASHING.</p>
+</li>
+<li>
+<p><strong>Algoritmos PBE (Password Basic Encryptation)</strong>: Algoritmos que
+    generan una clave secreta a partir de una contraseña introducida por
+    el usuario. Estas técnicas plantean problemas debido a que los
+    requerimientos de usuario difieren de los requerimientos de
+    seguridad del sistema, ya que el usuario desea una frase fácil de
+    recordar, sin embargo una clave segura actualmente requiere al menos
+    128 bits aleatorios. Además, los sistemas de encriptación basados en
+    contraseñas son normalmente utilizados en aplicaciones donde un
+    atacante puede repetidamente intentar adivinar la contraseña, con lo
+    que se pueden utilizar métodos de fuerza bruta para obtener las
+    contraseñas. Existen varios algoritmos que utilizan este sistema,
+    como:</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p><strong>PBEWithSHA1AndRC2_40</strong>: Este modo encripta con 40-bits RC2</p>
+</li>
+<li>
+<p><strong>PBEWithMD5AndDES</strong>: Este algoritmo combina los beneficios de una
+    lenta e insegura encriptación de 56 bits con una insegura función
+    hash. No es recomendable su uso. Es definido como “PKCS #5”</p>
+</li>
+<li>
+<p><strong>PBEWithSHA1AndDESede:</strong> Este algoritmo utiliza una encriptación
+    triple DES y una función de hash sha1.</p>
+</li>
+</ul>
+<h1 id="sobres-digitales">Sobres digitales</h1>
+<p>El estándar CMS permite define una arquitectura capaz de encapsular
+distintos tipos de contenido como datos planos, datos firmados, datos
+cifrados, hashes… Las estructuras definidas por CMS nos permiten
+construir sobres digitales.</p>
+<p>Nuestro objetivo al usar sobres digitales será poder distribuir
+documentos de forma segura y privada a uno o varios destinatarios. La
+estructura general del sobre será:</p>
+<p>&lt;<img src="media/image11.emf"
+style="width:2.90625in;height:2.08333in" /></p>
+<p>Donde ContentType será una cadena asociada ASN.1 que define el tipo del
+contenido y Content será los datos contenidos en el CMS. Estos datos los
+dividiremos en dos modos de implementación de CMS.</p>
+<p>Debemos recordar que los tipos CMS son anidables y que, por ejemplo, el
+contenido a encriptar puede ser un contenido previamente firmado y
+viceversa.</p>
+<h2 id="cms-cifrado">CMS cifrado</h2>
+<p>Es un sobre digital simple que contiene el elemento cifrado y en el cual
+no se incluye ninguna información sobre la clave de cifrado. Esto hace
+que la clave de cifrado deba ser transmitida de forma ajena al
+envoltorio CMS. La estructura de este CMS es la siguiente:</p>
+<p>&lt;<img src="media/image12.wmf"
+style="width:2.91667in;height:2.32292in" /></p>
+<p>Donde:</p>
+<p>CMS versión será 0 si no existen atributos asociados y 2 si existen.</p>
+<ul>
+<li><em>EncryptedContentInfo</em> contiene la información encriptada.</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>ContentType: Define el tipo del contenido definida según ASN.1</p>
+</li>
+<li>
+<p>ContentEncryptionAlgorithm: Indica el algoritmo utilizado para
+    encriptar el contenido.</p>
+</li>
+<li>
+<p>EncryptedContent: Contenido cifrado por el algoritmo anteriormente
+    indicado y la clave suministrada a los receptores.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><em>Attributes</em> es un conjunto de atributos no encriptados que definen
+    algunos parámetros como el algoritmo utilizado.</li>
+</ul>
+<h2 id="cms-envuelto">CMS envuelto</h2>
+<p>Este tipo de sobre digital permite cifrar un contenido y distribuirlo a
+varios receptores e incluye la clave de cifrado. La estructura es la
+siguiente:</p>
+<p>&lt;<img src="media/image13.emf"
+style="width:2.97917in;height:3.97917in" /></p>
+<p>Donde encontramos los siguientes elementos:</p>
+<ul>
+<li>
+<p><strong>CMS version</strong>, indica la versión de CMS y estará definido según
+    los parámetros OriginatorInfo, RecipientInfo y Attributes (definidos
+    en RFC3852).</p>
+</li>
+<li>
+<p><strong>OriginatorInfo</strong>. Incluye opcionalmente información sobre el
+    creador del mensaje. Puede incluir una lista de certificados, con
+    intención de crear un camino de certificación hasta el root, o una
+    colección de CRLs.</p>
+</li>
+<li>
+<p><strong>RecipientInfo</strong>. Incluye la información necesaria para que los
+    destinatarios puedan descifrar el mensaje. Aunque existen varios
+    tipos, el más útil para nuestro propósito es el que transporta la
+    clave de cifrado y cuyos campos vienen definidos a continuación:</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>CMS version. Define la versión del campo en función del tipo de
+    identificador elegido.</p>
+</li>
+<li>
+<p>RecipientIdentifier. Puede incluir el emisor y número de serie del
+    certificado (versión 0) o un identificador del certificado (versión
+    2).</p>
+</li>
+<li>
+<p>KeyEncryptionAlgorithm. Define el algoritmo utilizado para cifrar la
+    clave.</p>
+</li>
+<li>
+<p>EncryptedKey. Clave usada para cifrar el contenido del documento y
+    cifrada a su vez por el algoritmo especificado anteriormente.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>EncryptedContentInfo.</strong> Se compone de:</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>ContentType: Define el tipo del contenido definido según ASN.1</p>
+</li>
+<li>
+<p>ContentEncryptionAlgorithm: Indica el algoritmo utilizado para
+    cifrar el contenido.</p>
+</li>
+<li>
+<p>EncryptedContent: Contenido cifrado por el algoritmo anteriormente
+    indicado y la clave suministrada a los receptores.</p>
+</li>
+</ul>
+<h2 id="pkcs7-firmado-y-envuelto">PKCS#7 firmado y envuelto</h2>
+<p>Este tipo de sobre no está definido dentro del estándar CMS sino de su
+predecesor, PKCS#7. Los PKCS#7 firmados y envueltos van firmados por
+quien genera el sobre y permiten cifrar un contenido y distribuirlo a
+varios receptores. La clave de cifrado del contenido va incrustada en el
+propio sobre. La estructura es la siguiente:</p>
+<p>Donde encontramos los siguientes elementos:</p>
+<ul>
+<li>
+<p><strong>Version</strong>, indica la versión de la sintaxis con la que se ha
+    construido el objeto.</p>
+</li>
+<li>
+<p><strong>RecipientInfo</strong>. Incluye la información necesaria para que los
+    destinatarios puedan descifrar el mensaje. Aunque existen varios
+    tipos, el más útil para nuestro propósito es el que transporta la
+    clave de cifrado y cuyos campos vienen definidos a continuación:</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Version. Indica la versión de la sintaxis con la que se ha
+    construido el objeto.</p>
+</li>
+<li>
+<p>IssuerAndSerialNumber. Puede incluir el emisor y número de serie del
+    certificado.</p>
+</li>
+<li>
+<p>KeyEncryptionAlgorithm. Define el algoritmo utilizado para cifrar la
+    clave.</p>
+</li>
+<li>
+<p>EncryptedKey. Clave usada para cifrar el contenido del documento y
+    cifrada a su vez por el algoritmo especificado anteriormente.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>EncryptedContentInfo. Se compone de:</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>ContentType: Define el tipo del contenido definido según ASN.1</p>
+</li>
+<li>
+<p>ContentEncryptionAlgorithm: Indica el algoritmo utilizado para
+    cifrar el contenido.</p>
+</li>
+<li>
+<p>EncryptedContent: Contenido cifrado por el algoritmo anteriormente
+    indicado y la clave suministrada a los receptores.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>SignerInfos.</strong> Listado de firmas del contenido.</li>
+</ul>
+<h2 id="cms-autenticado-y-envuelto">CMS Autenticado y envuelto</h2>
+<p>Este tipo de sobre viene definido en la RFC 5083, que actualiza el
+estándar CMS (RFC 3852). Este tipo de contenido combina los métodos de
+autenticación y encriptado de datos definidos en la RFC 3852. La
+estructura es la siguiente:</p>
+<p>Donde encontramos los siguientes elementos:</p>
+<ul>
+<li>
+<p><strong>Version</strong>, indica la versión de la sintaxis con la que se ha
+    construido el objeto.</p>
+</li>
+<li>
+<p><strong>OriginatorInfo</strong>. Incluye información sobre el creador del
+    mensaje. Puede incluir una lista de certificados, con intención de
+    crear un camino de certificación hasta el root, o una colección de
+    CRLs.</p>
+</li>
+<li>
+<p><strong>RecipientInfo</strong>. Incluye la información necesaria para que los
+    destinatarios puedan descifrar el mensaje. Aunque existen varios
+    tipos, el más útil para nuestro propósito es el que transporta la
+    clave de cifrado y cuyos campos vienen definidos a continuación:</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>Version. Indica la versión de la sintaxis con la que se ha
+    construido el objeto.</p>
+</li>
+<li>
+<p>IssuerAndSerialNumber. Puede incluir el emisor y número de serie del
+    certificado.</p>
+</li>
+<li>
+<p>KeyEncryptionAlgorithm. Define el algoritmo utilizado para cifrar la
+    clave.</p>
+</li>
+<li>
+<p>EncryptedKey. Clave usada para cifrar el contenido del documento y
+    cifrada a su vez por el algoritmo especificado anteriormente.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>EncryptedContentInfo.</strong> Se compone de:</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>ContentType: Define el tipo del contenido definido según ASN.1</p>
+</li>
+<li>
+<p>ContentEncryptionAlgorithm: Indica el algoritmo utilizado para
+    cifrar el contenido.</p>
+</li>
+<li>
+<p>EncryptedContent: Contenido cifrado por el algoritmo anteriormente
+    indicado y la clave suministrada a los receptores.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>MenssageAuthenticationCode.</strong> Código de autenticación del
+    contenido.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../CF_distribuciones/" class="btn btn-neutral float-left" title="CF distribuciones"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../CF_guia-incidencias/" class="btn btn-neutral float-right" title="CF guia incidencias">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../CF_distribuciones/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../CF_guia-incidencias/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

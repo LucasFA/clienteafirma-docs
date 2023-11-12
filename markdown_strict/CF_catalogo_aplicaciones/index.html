@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>CF catalogo aplicaciones - My Docs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "CF catalogo aplicaciones";
+        var mkdocs_page_input_path = "markdown_strict/CF_catalogo_aplicaciones.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> My Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Welcome to MkDocs</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Markdown strict</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Firmar_AutoFirma_Linux/">AF Firmar AutoFirma Linux</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Firmar_AutoFirma_OS_X/">AF Firmar AutoFirma OS X</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Linux/">Preparación del entorno</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Mac%20OS%20X/">AF Instalador Mac OS X</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Windows/">AF Instalador Windows</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_desarrollo_plugins_ES/">AF manual desarrollo plugins ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_instalacion_usuarios_ES/">AF manual instalacion usuarios ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_instalacion_y_gestion_ES/">AF manual instalacion y gestion ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ANEXO_Firma-electronica-en-varias-fases/">Firma electrónica en tres fases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_arquitectura_ES/">CF arquitectura ES</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">CF catalogo aplicaciones</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#las-distintas-aplicaciones-del-proyecto-cliente-firma">Las distintas aplicaciones del proyecto Cliente @firma</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#applet-cliente-firma">Applet Cliente @firma</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#miniapplet-cliente-firma">MiniApplet Cliente @firma</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cliente-firma-standalone">Cliente @firma StandAlone</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#firma-facil-con-firma">“Firma Fácil con @firma”</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tablas-de-caracteristicas-de-las-aplicaciones-del-proyecto-cliente-firma">Tablas de características de las aplicaciones del proyecto Cliente @firma</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#compatibilidad-con-modos-de-despliegueoperacion">Compatibilidad con modos de despliegue/operación</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#compatibilidad-con-sistemas-operativos">Compatibilidad con sistemas operativos</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#compatibilidad-con-navegadores-web-modo-applet">Compatibilidad con navegadores Web (modo Applet)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#compatibilidad-con-versiones-del-entorno-de-ejecucion-de-java-jre">Compatibilidad con versiones del entorno de ejecución de Java (JRE)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#tipos-de-operaciones-criptograficas-soportadas">Tipos de operaciones criptográficas soportadas</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#formatos-de-firma-electronica-soportados">Formatos de firma electrónica soportados</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#accesibilidad-para-personas-con-discapacidades">Accesibilidad para personas con discapacidades</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_distribuciones/">CF distribuciones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_funcional_ES/">CF funcional ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-incidencias/">CF guia incidencias</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-uso-interfaz/">CF guia uso interfaz</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-uso/">CF guia uso</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-firmas-pdf/">CF manual firmas pdf</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-firmas-xml/">CF manual firmas xml</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-integrador/">CF manual integrador</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-migracion/">CF manual migracion</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual_integracion_modulos_ES/">CF manual integracion modulos ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_plan-pruebas/">CF plan pruebas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_roadmap_ES/">CF roadmap ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Comunicacion_Navegador_y_App_en_Entorno_Movil/">El camino de ida: Desde el navegador Web hacia la App</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../DECLARACION_ACCESIBILIDAD/">Declaración de Accesibilidad</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Diagramas%20de%20secuencia%20de%20los%20procesos%20de%20firma%20m%C3%B3vil/">Firma monofásica (Windows 8 / Windows RT y Android)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Firma_por_lotes_predefinidos_con_el_MiniApplet_Cliente/">Firma por lotes predefinidos con el MiniApplet Cliente</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Informe%20-%20Alternativas_Applets_para_firma/">Informe   Alternativas Applets para firma</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Invocaci%C3%B3n%20por%20protocolo%20de%20aplicaciones%20nativas%20desde%20p%C3%A1ginas%20Web/">¿Qué es la invocación por protocolo?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../La_seguridad_en_el_Servicio_de_firma_del_Cliente/">Tabla de contenido</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MCF_manual-integrador_ES/">MCF manual integrador ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MCF_roadmap_ES/">MCF roadmap ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Manual%20para%20la%20configuraci%C3%B3n%20de%20los%20campos%20de%20firma%20para%20la%20aplicaci%C3%B3n%20de%20firma%20manuscrita%20en%20tableta/">Manual para la configuración de los campos de firma para la aplicación de firma manuscrita en tableta</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_Manual_App_Portafirmas_Android/">PF Manual App Portafirmas Android</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_Manual_App_Portafirmas_iOS/">PF Manual App Portafirmas iOS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_manual-configuracion_servicios_ES/">PF manual configuracion servicios ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Sintaxis_invocacion_Cliente_Afirma/">Sintaxis invocacion Cliente Afirma</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../afirma_movil_intro/"><<img src="media/image1.jpeg"</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">My Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Markdown strict</li>
+      <li class="breadcrumb-item active">CF catalogo aplicaciones</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>Catálogo de aplicaciones de</p>
+<p><<img src="media/image1.wmf"
+style="width:1.44792in;height:0.51042in" /></p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<p>&lt;<img src="media/image2.png"
+style="width:0.91667in;height:0.32292in"
+alt="Creative Commons License" /></p>
+<p>Esta obra está bajo una licencia <a href="#Licencia_Creative_Commons">Creative Commons
+Reconocimiento-NoComercial-CompartirIgual 3.0
+Unported</a>.</p>
+<p><strong>Índice</strong></p>
+<p><a href="#la-aplicación-cliente-firma-adecuada-a-sus-necesidades">1 La aplicación Cliente @firma adecuada a sus necesidades
+[3](#la-aplicación-cliente-firma-adecuada-a-sus-necesidades)</a></p>
+<p><a href="#las-distintas-aplicaciones-del-proyecto-cliente-firma">1.1 Las distintas aplicaciones del proyecto Cliente @firma
+[3](#las-distintas-aplicaciones-del-proyecto-cliente-firma)</a></p>
+<p><a href="#applet-cliente-firma">1.1.1 Applet Cliente @firma
+[3](#applet-cliente-firma)</a></p>
+<p><a href="#miniapplet-cliente-firma">1.1.2 MiniApplet Cliente @firma
+[4](#miniapplet-cliente-firma)</a></p>
+<p><a href="#cliente-firma-standalone">1.1.3 Cliente @firma StandAlone
+[5](#cliente-firma-standalone)</a></p>
+<p><a href="#firma-fácil-con-firma">1.1.4 “Firma Fácil con @firma”
+[6](#firma-fácil-con-firma)</a></p>
+<p><a href="#tablas-de-características-de-las-aplicaciones-del-proyecto-cliente-firma">1.2 Tablas de características de las aplicaciones del proyecto Cliente
+@firma
+[7](#tablas-de-características-de-las-aplicaciones-del-proyecto-cliente-firma)</a></p>
+<p><a href="#compatibilidad-con-modos-de-despliegueoperación">1.2.1 Compatibilidad con modos de despliegue/operación
+[7](#compatibilidad-con-modos-de-despliegueoperación)</a></p>
+<p><a href="#compatibilidad-con-sistemas-operativos">1.2.2 Compatibilidad con sistemas operativos
+[7](#compatibilidad-con-sistemas-operativos)</a></p>
+<p><a href="#compatibilidad-con-navegadores-web-modo-applet">1.2.3 Compatibilidad con navegadores Web (modo Applet)
+[8](#compatibilidad-con-navegadores-web-modo-applet)</a></p>
+<p><a href="#compatibilidad-con-versiones-del-entorno-de-ejecución-de-java-jre">1.2.4 Compatibilidad con versiones del entorno de ejecución de Java
+(JRE)
+[8](#compatibilidad-con-versiones-del-entorno-de-ejecución-de-java-jre)</a></p>
+<p><a href="#tipos-de-operaciones-criptográficas-soportadas">1.2.5 Tipos de operaciones criptográficas soportadas
+[8](#tipos-de-operaciones-criptográficas-soportadas)</a></p>
+<p><a href="#formatos-de-firma-electrónica-soportados">1.2.6 Formatos de firma electrónica soportados
+[9](#formatos-de-firma-electrónica-soportados)</a></p>
+<p><a href="#accesibilidad-para-personas-con-discapacidades">1.2.7 Accesibilidad para personas con discapacidades
+[9](#accesibilidad-para-personas-con-discapacidades)</a></p>
+<h1 id="la-aplicacion-cliente-firma-adecuada-a-sus-necesidades">La aplicación Cliente @firma adecuada a sus necesidades</h1>
+<h2 id="las-distintas-aplicaciones-del-proyecto-cliente-firma">Las distintas aplicaciones del proyecto Cliente @firma</h2>
+<p>El proyecto @firma cuenta con un conjunto de cuatro aplicaciones
+independientes diseñadas para cubrir cualquier necesidad en cuanto a
+firmas electrónicas. Es posible desplegar o utilizar una o varias de
+estas aplicaciones, y cada una de ellas cubre un segmento de
+funcionalidades y modos de operación diferentes.</p>
+<h3 id="applet-cliente-firma">Applet Cliente @firma</h3>
+<p>El Applet Cliente @firma es la aplicación dentro del proyecto más
+extendida actualmente entre las administraciones públicas, y proporciona
+un amplísimo rango de operaciones criptográficas y de firma electrónica
+para ser operadas vía Web con la máxima compatibilidad con distintos
+entornos operativos.</p>
+<p>El Applet proporciona (entre otras) las siguientes funcionalidades:</p>
+<ul>
+<li>
+<p>Firmas electrónicas</p>
+<ul>
+<li>Consulte los formatos de firma soportados en el apartado
+    <u>Formatos de firma electrónica soportados</u>.</li>
+</ul>
+</li>
+<li>
+<p>Firmas electrónicas masivas</p>
+<ul>
+<li>
+<p>Basada en directorios</p>
+</li>
+<li>
+<p>Programática (hay que proveer la lógica que indica los ficheros
+    a firmar externamente)</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Cifrados simétricos</p>
+</li>
+<li>
+<p>Sobres digitales</p>
+</li>
+<li>
+<p>Filtros de certificados configurables</p>
+</li>
+<li>
+<p>Métodos de utilidad para funcionalidades avanzadas</p>
+</li>
+</ul>
+<h3 id="miniapplet-cliente-firma">MiniApplet Cliente @firma</h3>
+<p>El MiniApplet Cliente @firma no es una versión reducida del Applet
+Cliente @firma, sino una nueva implementación de las funcionalidades más
+solicitadas en cuenta a firma electrónica implementadas en un Applet de
+Java pequeño, eficiente y extremadamente ágil.</p>
+<p>Si sus necesidades en cuanto a firma se ven cubiertas por las soportadas
+por el MiniApplet, este será siempre la opción preferente, ya que
+proporciona una mejor experiencia de usuario (menos tiempo de carga) y
+una mayor facilidad de integración (operación simplificada).</p>
+<p>El Applet proporciona (entre otras) las siguientes funcionalidades:</p>
+<ul>
+<li>
+<p>Firmas electrónicas</p>
+<ul>
+<li>Consulte los formatos de firma soportados en el apartado
+    <u>Formatos de firma electrónica soportados</u>.</li>
+</ul>
+</li>
+<li>
+<p>Filtros de certificados pre-configurados</p>
+</li>
+</ul>
+<h3 id="cliente-firma-standalone">Cliente @firma StandAlone</h3>
+<p>&lt;<img src="media/image3.png"
+style="width:4.86111in;height:2.76709in" /></p>
+<p>Ilustración 5: Interfaz del Cliente @firma StandAlone</p>
+<p>El Cliente @firma StandAlone no es una aplicación Web, sino una
+aplicación Java de escritorio compatible con cualquier sistema operativo
+y capaz de realizar prácticamente cualquier operación criptográfica y
+tipo de firma electrónica.</p>
+<p>Una notable característica de esta aplicación es su alto grado de
+accesibilidad, que la convierte en la opción preferente para garantizar
+su adecuado uso por parte de personas con algún tipo de discapacidad.</p>
+<p>La aplicación “StandAlone” proporciona (entre otras) las siguientes
+funcionalidades:</p>
+<ul>
+<li>
+<p>Firmas electrónicas</p>
+<ul>
+<li>Consulte los formatos de firma soportados en el apartado
+    <u>Formatos de firma electrónica soportados</u>.</li>
+</ul>
+</li>
+<li>
+<p>Firmas electrónicas masivas basadas en directorios</p>
+</li>
+<li>
+<p>Validación y extracción de datos de firma</p>
+</li>
+<li>
+<p>Cifrados simétricos</p>
+</li>
+<li>
+<p>Sobres digitales</p>
+</li>
+<li>
+<p>Interfaz gráfico accesible</p>
+</li>
+</ul>
+<h3 id="firma-facil-con-firma">“Firma Fácil con @firma”</h3>
+<p>&lt;<img src="media/image4.tiff"
+style="width:4.80208in;height:3.07826in"
+alt="C:\Users\Tomas\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.Outlook\A4R6NFZC\firmafacil.tiff" /></p>
+<p>Ilustración 6: Interfaz gráfico de "Firma Fácil con @firma"</p>
+<p>Cuando necesitamos una aplicación de escritorio, pero deseamos
+únicamente realizar firmas electrónicas avanzadas (AdES) y es
+conveniente una operación fácil y sencilla, la aplicación “Firma Fácil
+con @firma” pasa a ser la opción más adecuada.</p>
+<p>“Firma Fácil con @firma” restringe la funcionalidad a firmas
+electrónicas AdES, pero proporciona un interfaz gráfico visualmente
+atractivo, intuitivo y fácil de usar y perfectamente adaptado a los
+sistemas operativos modernos.</p>
+<p>La aplicación “Firma Fácil” proporciona (entre otras) las siguientes
+funcionalidades:</p>
+<ul>
+<li>
+<p>Firmas electrónicas</p>
+<ul>
+<li>Consulte los formatos de firma soportados en el apartado
+    <u>Formatos de firma electrónica soportados</u>.</li>
+</ul>
+</li>
+<li>
+<p>Interfaz gráfico avanzado</p>
+</li>
+</ul>
+<h2 id="tablas-de-caracteristicas-de-las-aplicaciones-del-proyecto-cliente-firma">Tablas de características de las aplicaciones del proyecto Cliente @firma</h2>
+<h3 id="compatibilidad-con-modos-de-despliegueoperacion">Compatibilidad con modos de despliegue/operación</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Web Applet</th>
+<th>Escritorio PC/Mac</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Applet</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>MiniApplet</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>StandAlone</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>FirmaFácil</td>
+<td><sup>*</sup></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><sup>*</sup> La aplicación “Firma Fácil con @firma” puede ser
+desplegada en forma de Applet de Java, pero no proporciona
+automatización ni integración con JavaScript, manteniendo la operación
+con su propio interfaz gráfico, solo que empotrado en una página Web.</p>
+<p>Ninguna de las aplicaciones actuales es compatible con despliegue sobre
+sistemas operativos móviles, como Apple iOS, Google Android, RIM
+BlackBerry o Microsoft Windows Phone.</p>
+<h3 id="compatibilidad-con-sistemas-operativos">Compatibilidad con sistemas operativos</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Microsoft Windows</th>
+<th>Linux</th>
+<th>Apple Mac OS X</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Applet</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>MiniApplet</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>StandAlone</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>FirmaFácil</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Puede consultar en los manuales de integración de las aplicaciones
+“Applet” y “MiniApplet”, el manual de uso de la interfaz StandAlone y el
+fichero Readme de Firma Fácil para identificar las distintas versiones
+de sistemas operativos compatibles.</p>
+<p>Ninguna de las aplicaciones actuales es compatible con sistemas
+operativos móviles, como Apple iOS, Google Android, RIM BlackBerry o
+Microsoft Windows Phone.</p>
+<h3 id="compatibilidad-con-navegadores-web-modo-applet">Compatibilidad con navegadores Web (modo Applet)</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Internet Explorer</th>
+<th>Mozilla Firefox</th>
+<th>Google Chrome</th>
+<th>Apple Safari</th>
+<th>Opera</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Applet</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>MiniApplet</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>StandAlone</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>FirmaFácil</td>
+<td><sup>*</sup></td>
+<td><sup>*</sup></td>
+<td><sup>*</sup></td>
+<td><sup>*</sup></td>
+<td><sup>*</sup></td>
+</tr>
+</tbody>
+</table>
+<p><sup>*</sup> La aplicación “Firma Fácil con @firma” aunque compatible
+con despliegue Web en modo Applet, no permite automatización ni
+integración mediante JavaScript. No se proporciona soporte sobre el
+despliegue como Applet de “Firma Fácil con @firma”.</p>
+<p>Puede consultar en los manuales de integración de las aplicaciones
+“Applet” y “MiniApplet” las distintas versiones de navegadores
+compatibles.</p>
+<h3 id="compatibilidad-con-versiones-del-entorno-de-ejecucion-de-java-jre">Compatibilidad con versiones del entorno de ejecución de Java (JRE)</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Java 5</th>
+<th>Java 6</th>
+<th>Java 7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Applet</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>MiniApplet</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>StandAlone</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>FirmaFácil</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>La compatibilidad se refiere tanto a versiones de 32 como de 64 bits.</p>
+<h3 id="tipos-de-operaciones-criptograficas-soportadas">Tipos de operaciones criptográficas soportadas</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Firmas Electrónicas</th>
+<th>Firmas Másivas</th>
+<th>Sobres Digitales</th>
+<th>Cifrados Simétricos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Applet</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>MiniApplet</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>StandAlone</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>FirmaFácil</td>
+<td></td>
+<td><sup>*</sup></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><sup>*</sup> Es posible simular medios de firma masiva con el
+MiniApplet usando programación JavaScript y filtros de certificados
+pre-programados.</p>
+<h3 id="formatos-de-firma-electronica-soportados">Formatos de firma electrónica soportados</h3>
+<p>Salvo que se indique lo contrario las distintas herramientas soportan
+las variantes BES y EPES de los formatos de firma avanzados (AdES).</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>XAdES</th>
+<th>PAdES</th>
+<th>CAdES</th>
+<th>OOXML</th>
+<th>ODF</th>
+<th>CMS</th>
+<th>XMLDSig</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Applet</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>MiniApplet</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>StandAlone</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>FirmaFácil</td>
+<td><sup>*</sup></td>
+<td><sup>*</sup></td>
+<td><sup>*</sup></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><sup>*</sup> La aplicación “Firma Fácil con @firma” únicamente soporta
+las siguientes variantes de cada formato:</p>
+<ol>
+<li>
+<p>PAdES: BES para fichero PDF (<em>Portable Document Format</em>).</p>
+</li>
+<li>
+<p>CAdES: BES Con contenido (implícitas) para ficheros binarios.</p>
+</li>
+<li>
+<p>XAdES: <em>EPES Enveloped</em> para facturas electrónicas y BES
+    <em>Enveloping</em> para otros ficheros.</p>
+</li>
+</ol>
+<h3 id="accesibilidad-para-personas-con-discapacidades">Accesibilidad para personas con discapacidades</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Accesible</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Applet</td>
+<td></td>
+</tr>
+<tr>
+<td>MiniApplet</td>
+<td></td>
+</tr>
+<tr>
+<td>StandAlone</td>
+<td></td>
+</tr>
+<tr>
+<td>FirmaFácil</td>
+<td><sup>*</sup></td>
+</tr>
+</tbody>
+</table>
+<p><sup>*</sup> La aplicación “Firma Fácil con @firma” presenta un nivel
+alto de accesibilidad, aunque con ciertas carencias en las lecturas de
+textos en pantalla.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../CF_arquitectura_ES/" class="btn btn-neutral float-left" title="CF arquitectura ES"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../CF_distribuciones/" class="btn btn-neutral float-right" title="CF distribuciones">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../CF_arquitectura_ES/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../CF_distribuciones/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

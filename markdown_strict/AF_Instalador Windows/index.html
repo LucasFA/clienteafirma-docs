@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>AF Instalador Windows - My Docs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "AF Instalador Windows";
+        var mkdocs_page_input_path = "markdown_strict/AF_Instalador Windows.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> My Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Welcome to MkDocs</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Markdown strict</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Firmar_AutoFirma_Linux/">AF Firmar AutoFirma Linux</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Firmar_AutoFirma_OS_X/">AF Firmar AutoFirma OS X</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Linux/">Preparación del entorno</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Mac%20OS%20X/">AF Instalador Mac OS X</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">AF Instalador Windows</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_desarrollo_plugins_ES/">AF manual desarrollo plugins ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_instalacion_usuarios_ES/">AF manual instalacion usuarios ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_instalacion_y_gestion_ES/">AF manual instalacion y gestion ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ANEXO_Firma-electronica-en-varias-fases/">Firma electrónica en tres fases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_arquitectura_ES/">CF arquitectura ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_catalogo_aplicaciones/">CF catalogo aplicaciones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_distribuciones/">CF distribuciones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_funcional_ES/">CF funcional ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-incidencias/">CF guia incidencias</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-uso-interfaz/">CF guia uso interfaz</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-uso/">CF guia uso</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-firmas-pdf/">CF manual firmas pdf</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-firmas-xml/">CF manual firmas xml</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-integrador/">CF manual integrador</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-migracion/">CF manual migracion</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual_integracion_modulos_ES/">CF manual integracion modulos ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_plan-pruebas/">CF plan pruebas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_roadmap_ES/">CF roadmap ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Comunicacion_Navegador_y_App_en_Entorno_Movil/">El camino de ida: Desde el navegador Web hacia la App</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../DECLARACION_ACCESIBILIDAD/">Declaración de Accesibilidad</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Diagramas%20de%20secuencia%20de%20los%20procesos%20de%20firma%20m%C3%B3vil/">Firma monofásica (Windows 8 / Windows RT y Android)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Firma_por_lotes_predefinidos_con_el_MiniApplet_Cliente/">Firma por lotes predefinidos con el MiniApplet Cliente</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Informe%20-%20Alternativas_Applets_para_firma/">Informe   Alternativas Applets para firma</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Invocaci%C3%B3n%20por%20protocolo%20de%20aplicaciones%20nativas%20desde%20p%C3%A1ginas%20Web/">¿Qué es la invocación por protocolo?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../La_seguridad_en_el_Servicio_de_firma_del_Cliente/">Tabla de contenido</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MCF_manual-integrador_ES/">MCF manual integrador ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MCF_roadmap_ES/">MCF roadmap ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Manual%20para%20la%20configuraci%C3%B3n%20de%20los%20campos%20de%20firma%20para%20la%20aplicaci%C3%B3n%20de%20firma%20manuscrita%20en%20tableta/">Manual para la configuración de los campos de firma para la aplicación de firma manuscrita en tableta</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_Manual_App_Portafirmas_Android/">PF Manual App Portafirmas Android</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_Manual_App_Portafirmas_iOS/">PF Manual App Portafirmas iOS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_manual-configuracion_servicios_ES/">PF manual configuracion servicios ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Sintaxis_invocacion_Cliente_Afirma/">Sintaxis invocacion Cliente Afirma</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../afirma_movil_intro/"><<img src="media/image1.jpeg"</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">My Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Markdown strict</li>
+      <li class="breadcrumb-item active">AF Instalador Windows</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>AutoFirma cuenta con dos tipos de instaladores para sistemas operativos
+Windows:</p>
+<ul>
+<li>
+<p><u><strong>Fichero .exe</strong>:</u> Permite instalar la aplicación mediante una
+    serie de diálogo gráficos que permiten seleccionar varias opciones
+    de configuración.</p>
+<ul>
+<li>El instalador .exe de AutoFirma está pensado para ser utilizado
+    por los usuarios de la aplicación.</li>
+</ul>
+</li>
+<li>
+<p><strong><u>Fichero .msi:</u></strong> Permite automatizar el proceso de
+    instalación, reduciendo al mínimo la intervención manual, ya que
+    toda la información.</p>
+<ul>
+<li>El instalador .msi de AutoFirma está pensado para ser utilizado
+    por administradores de sistemas que deseen realizar despliegues
+    masivos de la aplicación.</li>
+</ul>
+</li>
+</ul>
+<p>Este documento tiene como objetivo la explicación en detalle de los
+pasos necesarios para la generación de ambos ficheros.</p>
+<p>Los instaladores Windows de AutoFirma incluyen la JRE con la que se va a
+ejecutar la aplicación en el equipo del usuario. Para abarcar los
+equipos de 32 y 64 bits, se creará una versión para cada una de las
+arquitecturas en donde la aplicación será la misma y cambiará únicamente
+algunas propiedades del empaquetado y la versión de Java con la cual se
+empaqueta.</p>
+<p>Así pues, obtendremos 4 versiones del instalador de AutoFirma para
+Windows:</p>
+<ul>
+<li>
+<p>AutoFirma_32_vX_Y_Z_installer.exe</p>
+</li>
+<li>
+<p>AutoFirma_64_vX_Y_Z_installer.exe</p>
+</li>
+<li>
+<p>AutoFirma_32_vX_Y_Z_installer.msi</p>
+</li>
+<li>
+<p>AutoFirma_64_vX_Y_Z_installer.msi</p>
+</li>
+</ul>
+<p>Los proyectos java utilizados (AutoFirma y AutoFirmaConfigurador) son
+los mismos para todos los instaladores.</p>
+<h1 id="requisitos-minimos">Requisitos mínimos</h1>
+<p>Sistema operativo:</p>
+<ul>
+<li>Windows XP SP3 con arquitectura 32 (x86) o 64 (x64) bits.</li>
+</ul>
+<p>Adicionalmente para la construcción de los instaladores se hace uso de
+las siguientes herramientas:</p>
+<ul>
+<li>
+<p>Java SE Runtime Environment 8 o 9 (32 y 64 bits)
+    (<a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a>)</p>
+<ul>
+<li>JREs con la que se empaquetarán los instaladores.</li>
+</ul>
+</li>
+<li>
+<p>Launch4j (<a href="https://sourceforge.net/projects/launch4j/files/launch4j-3/3.8/">https://sourceforge.net/projects/launch4j/files/launch4j-3/</a>)</p>
+<ul>
+<li>Herramienta para la envoltura de los JAR de AutoFirma a modo de
+    EXE.</li>
+</ul>
+</li>
+<li>
+<p>WiX (<a href="http://wixtoolset.org/releases/">http://wixtoolset.org/releases/</a>)</p>
+<ul>
+<li>Herramienta para la generación del instalador MSI.</li>
+</ul>
+</li>
+<li>
+<p>NSIS (<a href="http://nsis.sourceforge.net/Download">http://nsis.sourceforge.net/Download</a>)</p>
+<ul>
+<li>
+<p>Herramienta para la generación de los EXE de instalación.</p>
+</li>
+<li>
+<p>Se requieren también los siguientes plugins:</p>
+<ul>
+<li>
+<p>NsProcess Plugin
+    (<a href="http://nsis.sourceforge.net/NsProcess_plugin">http://nsis.sourceforge.net/NsProcess_plugin</a>)</p>
+<ul>
+<li>Plugin para permitir la detección y manipulación de
+    procesos durante la instalación.</li>
+</ul>
+</li>
+<li>
+<p>Registry Plugin
+    (<a href="https://nsis.sourceforge.io/Registry_plug-in">https://nsis.sourceforge.io/Registry_plug-in</a>)</p>
+<ul>
+<li>Plugin para permitir la búsqueda de entradas en el
+    registro.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Deberán localizarse los ficheros de los plugins según la
+    siguiente jerarquía:</p>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>NSIS 2.x:</strong></p>
+<p>NSIS/<br />
+├── Include/<br />
+│ └── nsProcess.nsh<br />
+└── Plugins/<br />
+    └── nsProcess.dll</p>
+<p>└── registry.dll</p>
+<p><strong>NSIS 3.x:</strong></p>
+<p>NSIS/<br />
+├── Include/<br />
+│ └── nsProcess.nsh</p>
+<p>│ └── Registry.nsh<br />
+└── Plugins/<br />
+    ├── x86-ansi/<br />
+    │ └── nsProcess.dll</p>
+<p>│ └── registry.dll</p>
+<p>└── x86-unicode/<br />
+        └── nsProcess.dll</p>
+<p>└── registry.dll</p>
+</blockquote>
+<h1 id="preparacion-del-entorno">Preparación del entorno</h1>
+<p>Para la generación del instalador de AutoFirma será necesario disponer
+del software listado en el apartado de requisitos mínimos.</p>
+<p>Los distintos instaladores de AutoFirma se construirán en base a la
+estructura de directorios y los recursos alojados en el módulo
+<strong>afirma-simple-installler</strong> del proyecto <strong>clienteafirma</strong> en GitHub
+(<a href="https://github.com/ctt-gob-es/clienteafirma/tree/master/afirma-simple-installer">https://github.com/ctt-gob-es/clienteafirma/tree/master/afirma-simple-installer</a>).</p>
+<h2 id="estructura-de-ficheros">Estructura de ficheros</h2>
+<p>Los directorios y ficheros de utilidad que encontraremos dentro de este
+módulo son:</p>
+<ul>
+<li>
+<p>AutoFirma32</p>
+<ul>
+<li>Directorio en el que se generarán los ejecutables de 32bits.</li>
+</ul>
+</li>
+<li>
+<p>AutoFirma64</p>
+<ul>
+<li>Directorio en el que se generarán los ejecutables de 64bits.</li>
+</ul>
+</li>
+<li>
+<p>certificados</p>
+<ul>
+<li>Directorio con los certificados SSL que deben considerarse de
+    confianza.</li>
+</ul>
+</li>
+<li>
+<p>jar</p>
+<ul>
+<li>Directorio en el que guardar los JAR de AutoFirma.</li>
+</ul>
+</li>
+<li>
+<p>java32</p>
+<ul>
+<li>Directorio en el que guardar la JRE que se dese empaquetar con
+    AutoFirma 32bits.</li>
+</ul>
+</li>
+<li>
+<p>java64</p>
+<ul>
+<li>Directorio en el que guardar la JRE que se dese empaquetar con
+    AutoFirma 64bits.</li>
+</ul>
+</li>
+<li>
+<p>AutoFirma_32_installer.wxs</p>
+<ul>
+<li>Fichero para la construcción del instalador MSI de 32bits.</li>
+</ul>
+</li>
+<li>
+<p>AutoFirma_64_installer.wxs</p>
+<ul>
+<li>Fichero para la construcción del instalador MSI de 64bits.</li>
+</ul>
+</li>
+<li>
+<p>AutoFirma_launch4J_Configurador_project_32.xml</p>
+<ul>
+<li>Fichero para el empaquetado EXE 32bits de AutoFirmaConfigurador.</li>
+</ul>
+</li>
+<li>
+<p>AutoFirma_launch4J_Configurador_project_64.xml</p>
+<ul>
+<li>Fichero para el empaquetado EXE 64bits de AutoFirmaConfigurador.</li>
+</ul>
+</li>
+<li>
+<p>AutoFirma_launch4J_project_32.xml</p>
+<ul>
+<li>Fichero para el empaquetado EXE 32bits de AutoFirma.</li>
+</ul>
+</li>
+<li>
+<p>AutoFirma_launch4J_project_64.xml</p>
+<ul>
+<li>Fichero para el empaquetado EXE 64bits de AutoFirma.</li>
+</ul>
+</li>
+<li>
+<p>AutoFirma_NSIS_project_EXE_32.nsi</p>
+<ul>
+<li>Fichero para la generación del instalador EXE de 32bits.</li>
+</ul>
+</li>
+<li>
+<p>AutoFirma_NSIS_project_EXE_64.nsi</p>
+<ul>
+<li>Fichero para la generación del instalador EXE de 64bits.</li>
+</ul>
+</li>
+<li>
+<p>AutoFirma_NSIS_project_MSI_32.nsi</p>
+<ul>
+<li>Fichero para generar el EXE de instalación a partir del cual se
+    construye el instalador MSI de 32bits.</li>
+</ul>
+</li>
+<li>
+<p>AutoFirma_NSIS_project_MSI_64.nsi</p>
+<ul>
+<li>Fichero para generar el EXE de instalación a partir del cual se
+    construye el instalador MSI de 64bits.</li>
+</ul>
+</li>
+<li>
+<p>AutoFirmaCommandLine_launch4J_project_32.xml</p>
+<ul>
+<li>Fichero para el empaquetado EXE 32bits de AutoFirma para línea
+    de comandos.</li>
+</ul>
+</li>
+<li>
+<p>AutoFirmaCommandLine_launch4J_project_64.xml</p>
+<ul>
+<li>Fichero para el empaquetado EXE 64bits de AutoFirma para línea
+    de comandos.</li>
+</ul>
+</li>
+<li>
+<p>AutoFirmaConfigurator.manifest</p>
+<ul>
+<li>Fichero de permisos para que ejecución de AutoFirmaConfigurador
+    con permisos de administrador.</li>
+</ul>
+</li>
+<li>
+<p>AutoFirma_to_msi_32.bat</p>
+<ul>
+<li>Script para la creación del instalador MSI de 32 bits a partir
+    de su pre-instalador.</li>
+</ul>
+</li>
+<li>
+<p>AutoFirma_to_msi_64.bat</p>
+<ul>
+<li>Script para la creación del instalador MSI de 64 bits a partir
+    de su pre-instalador.</li>
+</ul>
+</li>
+<li>
+<p>ic_firmar.ico</p>
+<ul>
+<li>Icono de la aplicación.</li>
+</ul>
+</li>
+<li>
+<p>ic_head.bmp</p>
+<ul>
+<li>Imagen de cabecera del instalador EXE.</li>
+</ul>
+</li>
+<li>
+<p>ic_install.bmp</p>
+<ul>
+<li>Imagen lateral del instalador EXE.</li>
+</ul>
+</li>
+<li>
+<p>ic_launcher.ico</p>
+<ul>
+<li>Icono del lanzador de la aplicación.</li>
+</ul>
+</li>
+<li>
+<p>licencia.txt</p>
+<ul>
+<li>Información de la licencia del producto.</li>
+</ul>
+</li>
+<li>
+<p>no_ejecutar_x64.exe</p>
+<ul>
+<li>Desinstalador de la aplicación para el MSI de 64bits.</li>
+</ul>
+</li>
+<li>
+<p>no_ejecutar_x86.exe</p>
+<ul>
+<li>Desinstalador de la aplicación para el MSI de 32bits.</li>
+</ul>
+</li>
+<li>
+<p>splash.bmp</p>
+<ul>
+<li>Imagen <em>splash</em> que se muestra al abrir la aplicación antes de
+    que aparezca la primera pantalla.</li>
+</ul>
+</li>
+</ul>
+<h2 id="configuracion-de-las-jre-empaquetadas">Configuración de las JRE empaquetadas</h2>
+<p>Las JRE con las que se empaquetarán los instaladores de AutoFirma en
+Windows no están incluidos en el directorio cargado en el repositorio de
+código. El desarrollador encargado de empaquetarlo deberá introducirlos
+en su copia local de esta estructura. No se debe subir nunca su
+contenido al repositorio por su tamaño, que no siempre querremos usar la
+misma JRE y, según la versi´çon empleada, por problemas de licencia.</p>
+<p>Las instrucciones para la configuración de las JRE son las siguientes:</p>
+<ol>
+<li>Copiar las JRE</li>
+</ol>
+<ul>
+<li>
+<p>El usuario deberá copiar a los directorios “java32” y “java64” una
+    JRE de 32 y 64 bits respectivamente. Aquí se debe copiar el
+    directorio “jre” (directorio incluido) de la JRE que se desee
+    utilizar.</p>
+</li>
+<li>
+<p>La estructura resultante sería:</p>
+<ul>
+<li>
+<p>java32</p>
+<ul>
+<li>
+<p>jre</p>
+<ul>
+<li><em>&lt;ficheros_jre&gt;</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>java64</p>
+<ul>
+<li>
+<p>jre</p>
+<ul>
+<li><em>&lt;ficheros_jre&gt;</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Podemos, por ejemplo, instalarnos una JRE en nuestro equipo y luego
+    copiar el directorio “jre” del directorio de instalación en el
+    directorio “java32” o “java64” según corresponda.</p>
+</li>
+<li>
+<p>Se debe utilizar una JRE 8 o superior, aunque se recomienda utilizar
+    siempre la última disponible en el momento de empaquetar.</p>
+</li>
+<li>
+<p>Las JRE de 32 y 64 bits utilizadas pueden tener distinta versión.</p>
+</li>
+</ul>
+<ol>
+<li>Eliminar lo innecesario</li>
+</ol>
+<ul>
+<li>
+<p>Opcionalmente, se pueden eliminar los ficheros de las JRE que se
+    sepan que son innecesarios para el correcto funcionamiento de la JVM
+    durante la ejecución de AutoFirma.</p>
+</li>
+<li>
+<p>Esto sirve para reducir el tamaño del instalador final y debería
+    hacerse única y exclusivamente cuando estemos seguros de que no
+    afectará a la operativa de la aplicación.</p>
+</li>
+<li>
+<p>Por ejemplo, se pueden eliminar ficheros relativos al uso de JavaFX,
+    ya que este API no se utiliza en AutoFirma y no son parte
+    imprescindible de la JRE. Así pues, se eliminarían, entre otros, la
+    extensión “jfxrt.jar” (17 Mb) y la biblioteca “jfxwebkit.dll” (42
+    Mb).</p>
+</li>
+</ul>
+<ol>
+<li>Instalar certificados SSL</li>
+</ol>
+<ul>
+<li>
+<p>Para el correcto funcionamiento de AutoFirma frente a determinados
+    servicios sobre SSL es necesario que se inserten en el almacén de
+    confianza de las JRE los certificados de las autoridades
+    susceptibles a utilizar por los servicios y que no estén reconocidas
+    por defecto en Java.</p>
+</li>
+<li>
+<p>En el directorio “certificados” se han guardado los certificados de
+    raíces e intermedios de varias autoridades españolas. Si se desean
+    agregar otros certificados como de confianza por defecto para
+    AutoFirma, se deberían copiar los correspondientes certificados a
+    este directorio.</p>
+</li>
+<li>
+<p>Para insertar los certificados del directorio “certificados” en los
+    almacenes de confianza de las dos JRE configuradas, se deberá
+    ejecutar el script “insert_cacerts.bat” del directorio certificados.
+    Este script utilizará la herramienta “keytool” de las JRE para
+    insertar todos los certificados del directorio “certificados” en el
+    almacén de confianza (cacerts) de las propias JRE.</p>
+</li>
+</ul>
+<h2 id="configuracion-de-la-version-de-autofirma">Configuración de la versión de AutoFirma</h2>
+<p>Cada nueva versión de AutoFirma puede requerir que se actualicen
+diversos recursos de los ficheros de instalación. Ejemplos claros son el
+número de versión y la fecha del <em>copyright</em>. Los textos susceptibles de
+actualizarse en cada nueva versión de AutoFirma se encuentran en los
+siguientes ficheros de la estructura de directorios:</p>
+<ul>
+<li>
+<p>AutoFirma_32_installer.wxs</p>
+<ul>
+<li>Número de versión de AutoFirma 32bits.</li>
+</ul>
+</li>
+<li>
+<p>AutoFirma_64_installer.wxs</p>
+<ul>
+<li>Número de versión de AutoFirma 64bits.</li>
+</ul>
+</li>
+<li>
+<p>AutoFirma_launch4J_project_32.xml</p>
+<ul>
+<li>Número de versión del configurador de 32bits.</li>
+</ul>
+</li>
+<li>
+<p>AutoFirma_launch4J_project_64.xml</p>
+<ul>
+<li>Número de versión del configurador de 64bits.</li>
+</ul>
+</li>
+<li>
+<p>AutoFirmaCommandLine_launch4J_project_32.xml</p>
+<ul>
+<li>Número de versión de AutoFirma 32bits.</li>
+</ul>
+</li>
+<li>
+<p>AutoFirmaCommandLine_launch4J_project_64.xml</p>
+<ul>
+<li>Número de versión de AutoFirma 32bits.</li>
+</ul>
+</li>
+<li>
+<p>AutoFirma_NSIS_project_EXE_32.nsi</p>
+<ul>
+<li>Número de versión y nombre del instalador EXE de 32bits.</li>
+</ul>
+</li>
+<li>
+<p>AutoFirma_NSIS_project_EXE_64.nsi</p>
+<ul>
+<li>Número de versión y nombre del instalador EXE de 64bits.</li>
+</ul>
+</li>
+<li>
+<p>AutoFirma_NSIS_project_MSI_32.nsi</p>
+<ul>
+<li>Número de versión de AutoFirma 32bits.</li>
+</ul>
+</li>
+<li>
+<p>AutoFirma_NSIS_project_MSI_64.nsi</p>
+<ul>
+<li>Número de versión de AutoFirma 64bits.</li>
+</ul>
+</li>
+<li>
+<p>AutoFirma_to_msi_32.bat</p>
+<ul>
+<li>Número de versión del nombre del instalador MSI de 32bits.</li>
+</ul>
+</li>
+<li>
+<p>AutoFirma_to_msi_64.bat</p>
+<ul>
+<li>Número de versión del nombre del instalador MSI de 64bits.</li>
+</ul>
+</li>
+<li>
+<p>licencia.txt</p>
+<ul>
+<li>Texto de licencia, versión y año de <em>copyright</em>.</li>
+</ul>
+</li>
+<li>
+<p>splash.bmp</p>
+<ul>
+<li>Año del <em>copyright</em>.</li>
+</ul>
+</li>
+</ul>
+<h2 id="generacion-de-los-ejecutables-jar">Generación de los ejecutables JAR</h2>
+<p>Como primer paso para la creación de los instaladores de AutoFirma, es
+necesario generar sus ejecutables. Para ello, deberemos descargarnos el
+proyecto “clienteafirma” de GitHub
+(<a href="https://github.com/ctt-gob-es/clienteafirma">https://github.com/ctt-gob-es/clienteafirma</a>) y generar los distintos
+artefactos. Todas las dependencias de este proyecto están en el
+repositorio central de Maven pero, si se estuviese utilizando una
+versión aún no publicada de las biblioteca modificadas de AutoFirma y
+del proyecto JMulticard, sería necesario descargar y compilar también
+estos proyectos.</p>
+<p>Para compilar cada uno de los proyectos, deberemos ejecutar el siguiente
+comando en el directorio principal de cada uno de ellos:</p>
+<p>mvn clean install –DskipTests</p>
+<p>El orden de ejecución debe ser:</p>
+<ul>
+<li>
+<p>Proyecto “clienteafirma-external” (Sólo si se usase una versión no
+    publicada)</p>
+</li>
+<li>
+<p>Proyecto “jmulticard” (Sólo si se usase una versión no publicada)</p>
+</li>
+<li>
+<p>Proyecto “clienteafirma”</p>
+</li>
+</ul>
+<p>Una vez hecho esto, se habrán generado todos los artefactos del núcleo
+del Cliente @firma. Para generar los artefactos distribuibles se deberá
+ejecutar, en el directorio del proyecto “clienteafirma” el comando::</p>
+<p>mvn clean install –DskipTests –Denv=install</p>
+<p>Esta ejecución habrá generado los JAR “<strong>AutoFirma.jar</strong>” y
+“<strong>AutoFirmaConfigurador.jar</strong>” dentro del directorio “target” de los
+módulos “afirma-simple” y “afirma-ui-simple-configurator”,
+respectivamente.</p>
+<h2 id="generacion-de-los-ejecutables-exe">Generación de los ejecutables EXE</h2>
+<p>El siguiente paso es generar los ficheros EXE de la aplicación a partir
+de los archivos JAR que se generaron en el apartado anterior. Para ello,
+primeramente, copiaremos los ficheros “<strong>AutoFirma.jar</strong>” y
+“<strong>AutoFirmaConfigurador.jar</strong>” al directorio “jar” del módulo
+<strong>afirma-simple-installer</strong>.</p>
+<p>Para obtener los ejecutables EXE de AutoFirma se hará uso de la
+aplicación Launch4j.</p>
+<p>Así, deberemos abrir la aplicación, seleccionar uno de los ficheros de
+configuración (icono con el icono de carpeta) y pulsar el botón “Build
+wrapper” (botón con el icono de engranaje) (Figuras 1 y 2).</p>
+<p>&lt;<img src="media/image1.png"
+style="width:6.22153in;height:3.74289in" /></p>
+<p><strong>Figura 1</strong></p>
+<p>&lt;<img src="media/image2.png"
+style="width:6.22153in;height:1.63615in" /></p>
+<p><strong>Figura 2</strong></p>
+<p>El proceso debe repetirse para los ficheros de configuración:</p>
+<ul>
+<li>
+<p>AutoFirma_launch4J_project_32.xml</p>
+</li>
+<li>
+<p>AutoFirmaCommandLine_launch4J_project_32.xml</p>
+</li>
+<li>
+<p>AutoFirmaConfigurator_launch4J_project_32.xml</p>
+</li>
+<li>
+<p>AutoFirma_launch4J_project_64.xml</p>
+</li>
+<li>
+<p>AutoFirmaCommandLine_launch4J_project_64.xml</p>
+</li>
+<li>
+<p>AutoFirmaConfigurator_launch4J_project_64.xml</p>
+</li>
+</ul>
+<blockquote>
+<p>Como resultado, se deben haber generado los ficheros EXE
+“<strong>AutoFirma.exe</strong>”, “<strong>AutoFirmaCommandLine.exe</strong>” y
+“<strong>AutoFirmaConfigurador.exe</strong>”, tanto en el directorio “AutoFirma32”
+como en “AutoFirma64” (6 ficheros en total).</p>
+</blockquote>
+<h2 id="firma-de-los-ejecutables">Firma de los ejecutables</h2>
+<p>La firma de los ejecutables generados en el apartado anterior es
+opcional, pero debería hacerse cuando haya intención de publicar el
+instalador que se va a generar.</p>
+<p>Los ejecutables anteriores no son corrientes, ya que en realidad son
+archivos JAR con una envoltura EXE. Este EXE, además, no está preparado
+para ser firmado directamente y debe realizarse a través de la
+herramienta “sign4j”, que a su vez utilizará otra herramienta de firma.
+Un ejemplo del uso de esta herramienta para la firma del fichero EXE con
+la herramienta SignTool de Microsoft, algoritmo SHA256withRSA y un sello
+de tiempo sería:</p>
+<p>sign4j signtool sign /f ALMACEN.p12 /p CONTRASEÑA /a /fd SHA256 /tr
+http://sha256timestamp.ws.symantec.com/sha256/timestamp RUTA_EXE</p>
+<p>En este comando:</p>
+<ul>
+<li>
+<p>ALMACEN.p12:</p>
+<ul>
+<li>Es la ruta del almacén PKCS#12/PFX que contiene la clave de
+    firma.</li>
+</ul>
+</li>
+<li>
+<p>CONTRASEÑA:</p>
+<ul>
+<li>Es la contraseña del almacén de claves.</li>
+</ul>
+</li>
+<li>
+<p>RUTA_EXE:</p>
+<ul>
+<li>Es la ruta hacia el fichero EXE que se desea firmar.</li>
+</ul>
+</li>
+</ul>
+<h2 id="generacion-de-los-instaladores-exe">Generación de los instaladores EXE</h2>
+<p>Una vez disponemos de los ficheros ejecutables EXE (ya sea firmados o
+no) se generará el instalador mediante la herramienta NSIS.</p>
+<p>Para esto, se pincha con el botón derecho del ratón en el fichero
+AutoFirma_NSIS_project_EXE_32.nsi y se pulsa en la opción “Compile NSIS
+Script” (Figura 3). Este proceso generará en el directorio “AutoFirma32”
+el instalador <strong>AutoFirma_32_vX_Y_Z_installer.exe</strong> (Figura 4).</p>
+<p>&lt;<img src="media/image3.png"
+style="width:4.95108in;height:1.92832in" /></p>
+<p><strong>Figura 3</strong></p>
+<p>&lt;<img src="media/image4.png"
+style="width:3.02739in;height:2.85104in" /></p>
+<p><strong>Figura 4</strong></p>
+<p>Al repetir el proceso con el fichero AutoFirma_NSIS_project_EXE_64.nsi,
+se obtendrá el instalador <strong>AutoFirma_64_vX_Y_Z_installer.exe</strong> en el
+directorio “AutoFirma64”.</p>
+<p>Con esto, ya estarían operativos los ejecutables EXE. Sin embargo, en
+caso de que se deseasen publicar, es recomendable que se firmen antes
+con un certificado de firma de código reconocido por Microsoft. El
+proceso de firma se detalla en el apartado <u>Firma de los
+instaladores</u>.</p>
+<h2 id="generacion-de-los-instaladores-msi">Generación de los instaladores MSI</h2>
+<p>Para la generación del instalador MSI se hace uso de las herramientas de
+WiX que deben descargarse, instalarse y agregarse su ruta de binarios a
+la variable de entorno PATH. La ruta en cuestión para la instalación por
+defecto es <u>C:\Program Files (x86)\WiX Toolset v3.11\bin</u>.</p>
+<p>A continuación, se ejecutará el script NSIS
+<u>AutoFirma_NSIS_project_MSI_32.nsi</u> o
+<u>AutoFirma_NSIS_project_MSI_64.nsi</u>, según se desee generar el
+instalador de 32 o 64 bits. (Figura 5).</p>
+<p>&lt;<img src="media/image5.png"
+style="width:4.61665in;height:1.73124in" /></p>
+<p><strong>Figura 5</strong></p>
+<p>Esto dará lugar al ejecutable “AutoFirmaGenerator.exe” en el directorio
+“AutoFirma32” o “AutoFirma64”, según corresponda.</p>
+<p>A diferencia de los instaladores EXE generados anteriormente, el
+instalador MSI no crea ni elimina información del registro, ni tampoco
+genera un ejecutable de desinstalación. Únicamente crea la estructura de
+directorios de la aplicación y genera e importa los certificados
+necesarios. El resto de tareas las completa el ejecutable
+“AutoFirmaGenerator.exe” que acabamos de generar y que ya contiene las
+aplicaciones de AutoFirma y la JRE. Este ejecutable es el que se deberá
+empaquetar en forma de MSI.</p>
+<p>Si el instalador MSI que vamos a generar va a publicarse, deberíamos
+firmar antes el ejecutable “AutoFirmaGenerator.exe”. El proceso de firma
+de este ejecutable es igual que el de los propios instaladores. Consulte
+el apartado <u>Firma de los instaladores</u> para más información.</p>
+<p>Para generar el instalador MSI, ya se haya firmado
+“AutoFirmaGenerator.exe” o no, se deberá ejecutar el script
+<u>AutoFirma_to_msi_32.bat</u>, o su equivalente para 64 bits. Este
+script utiliza los siguientes recursos para la generación del
+instalador:</p>
+<ul>
+<li>
+<p>AutoFirmaGenerator.exe: El pre-instalador generado anteriormente.</p>
+</li>
+<li>
+<p>no_ejecutar_x86.exe / no_ejecutar_x64.exe: Ejecutables para la
+    desinstalación parcial de la aplicación. Se les ha asignado ese
+    nombre para evitar que un usuario lo ejecute, dado que desinstalaría
+    la aplicación, pero no eliminaría su registro del panel de
+    aplicaciones. Se encuentran ya en el directorio.</p>
+</li>
+<li>
+<p>AutoFirma_32_installer.wxs / AutoFirma_64_installer.wxs: Fichero de
+    configuración que definen el proceso de generación del instalador
+    MSI.</p>
+</li>
+<li>
+<p>Iconos de la aplicación</p>
+</li>
+</ul>
+<p>El instalador MSI creado habrá aparecido en el directorio “AutoFirma32”
+con el nombre <strong>AutoFirma_32_vX_Y_Z_installer.msi</strong>, o en el directorio
+“AutoFirma64” con el nombre AutoFirma_64_vX_Y_Z_installer.msi, según
+cuál se ejecutase.</p>
+<p>Con esto, ya estarían operativos los ejecutables MSI. Sin embargo, en
+caso de que se deseasen publicar, es recomendable que se firmen antes
+con un certificado de firma de código reconocido por Microsoft. El
+proceso de firma se detalla en el apartado <u>Firma de los
+instaladores</u>.</p>
+<h3 id="crear-nuevos-desinstaladores">Crear nuevos desinstaladores</h3>
+<p>Es necesario destacar que los desinstaladores de la aplicación
+(“no_ejecutar_x86.exe” y “no_ejecutar_x64.exe”) no se generan como parte
+de la creación del instalador MSI y por eso es necesario disponer de
+ellos antes de generar el instalador. Estos desinstaladores, en
+realidad, se han generado como parte de la creación del instalador EXE.</p>
+<p>Sin embargo, los desinstaladores del MSI, al contrario que los del EXE,
+deben ser totalmente silenciosos, por lo que deben cerrar los
+navegadores web abiertos automáticamente y no pedir consentimiento al
+usuario.</p>
+<p>Para generar los desinstaladores del MSI es necesario modificar el
+script de desinstalación del instalador EXE para que cierre
+automáticamente los navegadores web, después generar una versión de los
+instaladores EXE (32 y 64 bits) con los scripts modificados, instalarlos
+y coger sus desinstaladores. Después se les debe cambiar el nombre a
+<strong>no_ejecutar_x86.exe</strong> y <strong>no_ejecutar_x64.exe</strong>, según corresponde.</p>
+<p>La versión del instalador EXE generado debe desecharse, ya que el
+proceso de desinstalación de los instaladores EXE, sí debe pedir al
+usuario que cierre los navegadores web abiertos.</p>
+<p>Si en algún momento fuese necesario modificar el comportamiento del
+desinstalador del MSI, se debería modificar el script de creación del
+instalador EXE y repetir el proceso descrito.</p>
+<p>Para realizar el cambio concreto de cerrar los navegadores
+silenciosamente, en la sección “uninstall” de los ficheros de
+configuración “AutoFirma_NSIS_project_EXE_32.nsi” y
+“AutoFirma_NSIS_project_EXE_64.nsi” se ha dejado comentado el cambio a
+realizar.</p>
+<p>Los nuevos desinstaladores deberían subirse al repositorio para evitar
+repetir el proceso cada vez.</p>
+<h2 id="firma-de-los-instaladores">Firma de los instaladores</h2>
+<p>Firmar los ejecutables con un certificado de firma de código reconocido
+por Microsoft permitirá a los usuarios identificar si la aplicación está
+generada por una entidad de confianza.</p>
+<p>La firma de los instaladores EXE, MSI y del pre-instalador
+“AutoFirmaGenerator.exe” se puede realizar como el de cualquier otro
+ejecutable Microsoft Windows. Un ejemplo del comando para la firma con
+la herramienta SignTool de Microsoft, algoritmo SHA256withRSA y un sello
+de tiempo sería:</p>
+<p>signtool sign /f ALMACEN.p12 /p CONTASEÑA /a /fd SHA256 /tr
+http://sha256timestamp.ws.symantec.com/sha256/timestamp RUTA_EJECUTABLE</p>
+<p>En este comando:</p>
+<ul>
+<li>
+<p>ALMACEN.p12:</p>
+<ul>
+<li>Es la ruta del almacén PKCS#12/PFX que contiene la clave de
+    firma.</li>
+</ul>
+</li>
+<li>
+<p>CONTRASEÑA:</p>
+<ul>
+<li>Es la contraseña del almacén de claves.</li>
+</ul>
+</li>
+<li>
+<p>RUTA_EJECUTABLE:</p>
+<ul>
+<li>Es la ruta hacia el fichero EXE o MSI que se desea firmar.</li>
+</ul>
+</li>
+</ul>
+<p><strong><br />
+</strong></p>
+<p>&lt;<img src="media/image6.png"
+style="width:0.91667in;height:0.32292in"
+alt="Creative Commons License" /></p>
+<p>Esta obra está bajo una licencia <a href="#Licencia_Creative_Commons">Creative Commons
+Reconocimiento-NoComercial-CompartirIgual 3.0
+Unported</a>.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../AF_Instalador%20Mac%20OS%20X/" class="btn btn-neutral float-left" title="AF Instalador Mac OS X"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../AF_manual_desarrollo_plugins_ES/" class="btn btn-neutral float-right" title="AF manual desarrollo plugins ES">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../AF_Instalador%20Mac%20OS%20X/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../AF_manual_desarrollo_plugins_ES/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

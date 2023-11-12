@@ -1,0 +1,2229 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Sintaxis invocacion Cliente Afirma - My Docs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Sintaxis invocacion Cliente Afirma";
+        var mkdocs_page_input_path = "markdown_strict/Sintaxis_invocacion_Cliente_Afirma.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> My Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Welcome to MkDocs</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Markdown strict</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Firmar_AutoFirma_Linux/">AF Firmar AutoFirma Linux</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Firmar_AutoFirma_OS_X/">AF Firmar AutoFirma OS X</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Linux/">Preparación del entorno</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Mac%20OS%20X/">AF Instalador Mac OS X</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Windows/">AF Instalador Windows</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_desarrollo_plugins_ES/">AF manual desarrollo plugins ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_instalacion_usuarios_ES/">AF manual instalacion usuarios ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_instalacion_y_gestion_ES/">AF manual instalacion y gestion ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ANEXO_Firma-electronica-en-varias-fases/">Firma electrónica en tres fases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_arquitectura_ES/">CF arquitectura ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_catalogo_aplicaciones/">CF catalogo aplicaciones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_distribuciones/">CF distribuciones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_funcional_ES/">CF funcional ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-incidencias/">CF guia incidencias</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-uso-interfaz/">CF guia uso interfaz</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-uso/">CF guia uso</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-firmas-pdf/">CF manual firmas pdf</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-firmas-xml/">CF manual firmas xml</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-integrador/">CF manual integrador</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-migracion/">CF manual migracion</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual_integracion_modulos_ES/">CF manual integracion modulos ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_plan-pruebas/">CF plan pruebas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_roadmap_ES/">CF roadmap ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Comunicacion_Navegador_y_App_en_Entorno_Movil/">El camino de ida: Desde el navegador Web hacia la App</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../DECLARACION_ACCESIBILIDAD/">Declaración de Accesibilidad</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Diagramas%20de%20secuencia%20de%20los%20procesos%20de%20firma%20m%C3%B3vil/">Firma monofásica (Windows 8 / Windows RT y Android)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Firma_por_lotes_predefinidos_con_el_MiniApplet_Cliente/">Firma por lotes predefinidos con el MiniApplet Cliente</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Informe%20-%20Alternativas_Applets_para_firma/">Informe   Alternativas Applets para firma</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Invocaci%C3%B3n%20por%20protocolo%20de%20aplicaciones%20nativas%20desde%20p%C3%A1ginas%20Web/">¿Qué es la invocación por protocolo?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../La_seguridad_en_el_Servicio_de_firma_del_Cliente/">Tabla de contenido</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MCF_manual-integrador_ES/">MCF manual integrador ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MCF_roadmap_ES/">MCF roadmap ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Manual%20para%20la%20configuraci%C3%B3n%20de%20los%20campos%20de%20firma%20para%20la%20aplicaci%C3%B3n%20de%20firma%20manuscrita%20en%20tableta/">Manual para la configuración de los campos de firma para la aplicación de firma manuscrita en tableta</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_Manual_App_Portafirmas_Android/">PF Manual App Portafirmas Android</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_Manual_App_Portafirmas_iOS/">PF Manual App Portafirmas iOS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_manual-configuracion_servicios_ES/">PF manual configuracion servicios ES</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Sintaxis invocacion Cliente Afirma</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../afirma_movil_intro/"><<img src="media/image1.jpeg"</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">My Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Markdown strict</li>
+      <li class="breadcrumb-item active">Sintaxis invocacion Cliente Afirma</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>El presente documento presenta la sintaxis de invocación de las
+aplicaciones del Cliente @firma para permitir el uso de sus capacidades
+de firma desde una aplicación externa. El documento expone los distintos
+mecanismos de comunicación existentes entre la aplicación cliente y la
+aplicación de firma, las operaciones admitidas y los parámetros que se
+deben proporcionar para cada una de estas operaciones.</p>
+<h1 id="introduccion">Introducción</h1>
+<p>El Cliente @firma es un conjunto de aplicaciones cliente que permiten al
+usuario ejecutar operaciones de firma con sus certificados electrónicos
+locales. Las aplicaciones englobadas en la denominación Cliente @firma
+son:</p>
+<ul>
+<li>
+<p>AutoFirma:</p>
+<ul>
+<li>Aplicación de escritorio para sistemas Windows, Linux y macOS.
+    Puede ser invocada desde una aplicación externa para la
+    generación de firmas electrónicas o generar firmas directamente
+    desde su interfaz gráfica. Permite el uso de distintos almacenes
+    de certificados del sistema, almacenes PKCS#12/JKS y tarjetas
+    inteligentes.</li>
+</ul>
+</li>
+<li>
+<p>Cliente móvil Android:</p>
+<ul>
+<li>Aplicación de firma para sistemas Android. Puede ser invocada
+    desde una aplicación externa para la generación de firmas
+    electrónicas o generar firmas directamente desde su interfaz
+    gráfica. Utiliza los certificados del almacén del sistema.</li>
+</ul>
+</li>
+<li>
+<p>Cliente móvil iOS:</p>
+<ul>
+<li>Aplicación de firma para sistemas iOS. Puede ser invocada desde
+    una aplicación externa para la generación de firmas
+    electrónicas. Utiliza certificados previamente importados en la
+    aplicación a través del sistema de ficheros o iTunes.</li>
+</ul>
+</li>
+</ul>
+<p>El modo común de operación es la invocación de estas aplicaciones desde
+un trámite Web por medio del JavaScript de despliegue (autoscript.js)
+suministrado con el kit de integración del Cliente @firma. Este modo de
+operación permite a las aplicaciones web enviar datos al Cliente @firma
+para firmarlos y obtener las firmas resultantes como parte del flujo de
+un trámite online.</p>
+<p>El mecanismo de invocación del Cliente @firma sólo permite enviar a la
+aplicación de firma una serie de parámetros, pero no obtener una
+respuesta. Esto obliga a establecer un mecanismo de comunicación
+bidireccional que será definido por la aplicación que realiza la llamada
+al Cliente @firma. A lo largo de la vida del Cliente @firma, este
+mecanismo de comunicación ha ido evolucionando, pero se ha mantenido la
+compatibilidad hacia atrás para permitir la compatibilidad entre
+versiones del Cliente @firma y dadas las limitaciones del entorno de
+algunas de las aplicaciones.</p>
+<p>Los mecanismos de comunicación que existen actualmente son:</p>
+<ul>
+<li>
+<p>Comunicación a través de servidor intermedio:</p>
+<ul>
+<li>
+<p>El paso de datos entre la aplicación cliente y la aplicación de
+    firma se realizará directamente en la llamada de invocación y la
+    respuesta se subirá a un servidor intermedio del que la
+    descargará la aplicación cliente. En caso de que los parámetros
+    de la llamada sean demasiado grandes, estos se enviarán al
+    servidor intermedio para que los descargue la aplicación de
+    firma.</p>
+</li>
+<li>
+<p>El servidor intermedio lo proporcionará el organismo propietario
+    de la aplicación y los servicios para el guardado y la descarga
+    de la información se distribuyen en el kit de despliegue del
+    Cliente @firma.</p>
+</li>
+<li>
+<p>Las URL de acceso a los servicios de carga y descarga de datos
+    del servidor los proporciona la aplicación cliente en la llamada
+    a la aplicación de firma.</p>
+</li>
+<li>
+<p>Este modo de operación obliga a que la aplicación de firma se
+    tenga que abrir por cada petición de la aplicación cliente.</p>
+</li>
+<li>
+<p>Este mecanismo de comunicación está soportado por todas las
+    aplicaciones cliente.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Comunicación por Sockets:</p>
+<ul>
+<li>
+<p>El paso de datos entre la aplicación cliente y la aplicación de
+    firma se hace a través de un socket abierto por la aplicación de
+    firma. Tras la invocación por protocolo, la aplicación de firma
+    abrirá el socket. La aplicación cliente solicitará todas las
+    peticiones a través de ese socket y obtendrá la respuesta del
+    mismo.</p>
+</li>
+<li>
+<p>La aplicación cliente envía tres números de puerto aleatorios a
+    la aplicación de firma en la llamada por protocolo y la
+    aplicación tratará de abrir el socket en uno de ellos. Si
+    fallase la apertura del socket, lo intentaría con el siguiente
+    puerto hasta conseguir abrir uno o fallar si no se pudo en
+    ninguno de los puertos proporcionados. La aplicación cliente
+    tratará de comunicarse con la aplicación de firma por medio de
+    los 3 puertos hasta que identifique cual será finalmente el
+    puerto por el que se establecerá la comunicación.</p>
+</li>
+<li>
+<p>Este modo de operación mantiene abierta la aplicación cliente
+    hasta que pasa un minuto de inactividad tras la última llamada.</p>
+</li>
+<li>
+<p>Este mecanismo de comunicación sólo está soportado por
+    AutoFirma.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Comunicación por WebSockets:</p>
+<ul>
+<li>
+<p>El paso de datos entre la aplicación cliente y la aplicación de
+    firma se hace a través de un WebSocket abierto por la aplicación
+    de firma en el puerto 63117. Tras la invocación por protocolo,
+    la aplicación de firma abrirá el WebSocket. La aplicación
+    cliente solicitará todas las peticiones a través de ese socket y
+    obtendrá la respuesta del mismo.</p>
+</li>
+<li>
+<p>Este modo de operación mantiene abierta la aplicación cliente
+    hasta que la aplicación cliente cierra la conexión.</p>
+</li>
+<li>
+<p>Este mecanismo de comunicación sólo está soportado por AutoFirma
+    1.7 y superiores.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Todas las operaciones con el Cliente @firma deben hacerse de forma
+secuencial. No se debe realizar una nueva petición a la aplicación hasta
+que no se ha recibido la respuesta de la petición anterior.</p>
+<h1 id="estructura-de-la-url-de-invocacion">Estructura de la URL de invocación</h1>
+<p>Durante la instalación de las aplicaciones cliente de firma, estas
+registran el esquema “afirma” en el sistema. De esa manera, todas las
+llamadas que se realicen con ese protocolo abrirán la aplicación de
+firma instalada.</p>
+<p>Podemos distinguir las siguientes partes en la estructura de una URL:</p>
+<p>[scheme://][authority][path][?query][#fragment]</p>
+<ul>
+<li>
+<p>[scheme://] Esquema de la URL:</p>
+<ul>
+<li>En las llamadas al Cliente @firma siempre será ‘afirma’.</li>
+</ul>
+</li>
+<li>
+<p>[authority] Autoridad del protocolo:</p>
+<ul>
+<li>
+<p>Comúnmente puede contener una sección <em>host</em>, un puerto e
+    información del usuario.</p>
+</li>
+<li>
+<p>En las llamadas al Cliente @firma este parámetro expresará la
+    operación a realizar. Los valores que se pueden establecer en
+    las llamadas al Cliente @firma dependen de la operación y del
+    modo de comunicación que se desee activar entre la aplicación de
+    firma y el cliente que lo solicita.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>[path] Ruta del protocolo:</p>
+<ul>
+<li>En la llamada al Cliente @firma, no se admite que figuren rutas.</li>
+</ul>
+</li>
+<li>
+<p>[?query] Consulta del protocolo:</p>
+<ul>
+<li>
+<p>Son los parámetros que deseamos transmitir a la aplicación.</p>
+</li>
+<li>
+<p>En las llamadas al Cliente @firma, contendrá los parámetros que
+    configuran la operación indicada en el apartado de
+    [authority].</p>
+</li>
+<li>
+<p>Los parámetros se proporcionarán con codificación URL Encoded.
+    En el caso de valores en Base 64, también se proporcionarán con
+    una codificación URL SAFE (caracteres ‘+’ sustituidos por ‘-’ y
+    caracteres ‘/’ sustituidos por ‘_’).</p>
+</li>
+</ul>
+</li>
+<li>
+<p>[#fragment] Fragmento del protocolo:</p>
+<ul>
+<li>En la llamada al Cliente @firma, no se admite que figure el
+    apartado de fragmento.</li>
+</ul>
+</li>
+</ul>
+<p>Algunos ejemplos de llamadas al Cliente @firma son:</p>
+<ul>
+<li>
+<p>afirma://websocket/?v=3</p>
+<ul>
+<li>URL de invocación para iniciar la comunicación por WebSockets.</li>
+</ul>
+</li>
+<li>
+<p>afirma://sign/?ver=3&amp;op=sign&amp;id=yy1oMJsxoHSoMzLdJywW&amp;key=71313199&amp;stservlet=http%3A%2F%2Fappprueba%3A8080%2Fafirma-signature-storage%2FStorageService&amp;format=CAdES&amp;algorithm=SHA512withRSA&amp;properties=c2VydmVyVXJsPWh0dHA6Ly9hcHBwcnVlYmE6ODA4MC9hZmlybWEtc2VydmVyLXRyaXBoYXNlLXNpZ25lci9TaWduYXR1cmVTZXJ2aWNl&amp;aw=true</p>
+<ul>
+<li>URL de invocación para solicitar la firma de un fichero
+    seleccionado por el usuario con la configuración proporcionada.</li>
+</ul>
+</li>
+</ul>
+<p>En los siguientes apartados se describen las URL de invocación que se
+pueden utilizar para la comunicación con el Cliente @firma según el tipo
+de comunicación escogido.</p>
+<h1 id="comunicacion-por-websockets">Comunicación por WebSockets</h1>
+<p>La comunicación por WebSockets requiere de una única llamada por
+protocolo al Cliente @firma. Una vez se le invoca, el resto de la
+comunicación se realizará a través del <em>websocket</em> abierto.</p>
+<p>La composición de la URL para el inicio de la comunicación por
+WebSockets es la siguiente:</p>
+<ul>
+<li>
+<p>Esquema:</p>
+<ul>
+<li>afirma</li>
+</ul>
+</li>
+<li>
+<p>Host:</p>
+<ul>
+<li>websocket</li>
+</ul>
+</li>
+<li>
+<p>Parámetros:</p>
+<ul>
+<li>
+<p>v</p>
+<ul>
+<li>
+<p>Número de versión del protocolo.</p>
+</li>
+<li>
+<p>La versión actual de protocolo que se soporta es: 3</p>
+</li>
+</ul>
+</li>
+<li>
+<p>jvc</p>
+<ul>
+<li>
+<p>Versión del JavaScript de despliegue que realiza la
+    invocación.</p>
+</li>
+<li>
+<p>La versión notificada actualmente es la: 2</p>
+</li>
+</ul>
+</li>
+<li>
+<p>mcv</p>
+<ul>
+<li>Opcional. Versión mínima exigida de AutoFirma (no aplicable
+    a los clientes móviles).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>La URL de llamada al Cliente @firma para el inicio de una comunicación
+por WebSocket es la siguiente:</p>
+<table>
+<thead>
+<tr>
+<th>afirma://websocket?v=3&amp;jvc=2&amp;mcv=1.7.0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Para ordenar a través de WebSocket la ejecución las distintas
+operaciones del Cliente @firma se enviarán al WebSocket nuevas URL con
+los parámetros específicos para la ejecución de esa operación. Se pueden
+consultar las distintas operaciones en el apartado <u>7 Peticiones de
+operación</u>.</p>
+<p>Adicionalmente a las peticiones de operación, se puede enviar a través
+del socket la cadena “echo=” para comprobar si el WebSocket está activo.
+La respuesta a esta petición deber ser la cadena “OK”.</p>
+<p>La comunicación por WebSocket sólo está soportada por AutoFirma 1.7 y
+superiores.</p>
+<h1 id="comunicacion-por-sockets">Comunicación por <em>sockets</em></h1>
+<p>La comunicación por <em>sockets</em> requiere de una única llamada por
+protocolo al Cliente @firma. Una vez se le invoca, el resto de la
+comunicación se realizará a través del <em>socket</em> abierto.</p>
+<p>La composición de la URL para el inicio de la comunicación por <em>sockets</em>
+es la siguiente:</p>
+<ul>
+<li>
+<p>Esquema:</p>
+<ul>
+<li>afirma</li>
+</ul>
+</li>
+<li>
+<p>Host:</p>
+<ul>
+<li>service</li>
+</ul>
+</li>
+<li>
+<p>Parámetros:</p>
+<ul>
+<li>
+<p>v</p>
+<ul>
+<li>
+<p>Número de versión del protocolo.</p>
+</li>
+<li>
+<p>La versión actual de AutoFirma soporta la versión: 1</p>
+</li>
+</ul>
+</li>
+<li>
+<p>jvc</p>
+<ul>
+<li>
+<p>Versión del JavaScript de despliegue que realiza la
+    invocación.</p>
+</li>
+<li>
+<p>La versión notificada actualmente es la: 2</p>
+</li>
+</ul>
+</li>
+<li>
+<p>mcv</p>
+<ul>
+<li>Opcional. Versión mínima exigida de AutoFirma (no aplicable
+    a los clientes móviles).</li>
+</ul>
+</li>
+<li>
+<p>ports</p>
+<ul>
+<li>Listado de puertos (separados por comas) por los que se va a
+    intentar establecer la comunicación.</li>
+</ul>
+</li>
+<li>
+<p>idsession</p>
+<ul>
+<li>
+<p>Cadena base 64 a modo de identificador de sesión.</p>
+</li>
+<li>
+<p>Todas las peticiones enviadas a través del socket una vez
+    abierto deberán notificar este identificador de sesión.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Una URL de ejemplo de llamada al Cliente @firma para el inicio de una
+comunicación por sockets es la siguiente:</p>
+<table>
+<thead>
+<tr>
+<th>afirma://service?ports=60572,64733,56552&amp;v=1&amp;jvc=2&amp;idsession=CT8Dubp4IDxjSnhxh15A</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Para ordenar a través de <em>socket</em> la ejecución las distintas operaciones
+del Cliente @firma se enviarán al <em>socket</em> nuevas URL con los parámetros
+específicos para la ejecución de esa operación. Se pueden consultar las
+distintas operaciones en el apartado <u>7 Peticiones de operación</u>.</p>
+<p>La comunicación por Sockets sólo está soportada por AutoFirma.</p>
+<h1 id="comunicacion-por-servidor-intermedio">Comunicación por servidor intermedio</h1>
+<p>La comunicación por servidor intermedio no permite abrir el cliente de
+firma y mantener una comunicación con varios mensajes. Este modo
+requiere que se habrá la aplicación de firma por cada petición, motivo
+por el cual no permite el uso de algunas de las funciones auxiliares, ya
+que no está justificado el que se abra la aplicación sólo por ellas.
+Tampoco es adecuada para casos de uso en los que se realizan múltiples
+aplicaciones simultaneas.</p>
+<p>La comunicación por servidor intermedio tiene las siguientes ventajas:</p>
+<ul>
+<li>
+<p>Es compatible con los clientes móviles Android e iOS.</p>
+</li>
+<li>
+<p>No requieren que en la instalación de la aplicación se instale un
+    certificado SSL en el almacén de confianza de los navegadores.</p>
+</li>
+</ul>
+<p>Por el contrario, presenta las siguientes desventajas frente a las
+opciones anteriores:</p>
+<ul>
+<li>
+<p>Requiere desplegar los servicios de intercambio de datos en un
+    servidor accesible por la aplicación cliente y la aplicación de
+    firma.</p>
+</li>
+<li>
+<p>Más lento.</p>
+</li>
+<li>
+<p>Puede tener algún recargo para el usuario si el uso de la red para
+    la conexión con el servidor tiene un gasto asociado (como en el caso
+    de la comunicación por datos móviles).</p>
+</li>
+<li>
+<p>No es apto para ser usado recurrentemente. Algunas aplicaciones,
+    incluso, pueden haber establecido restricciones de seguridad que
+    bloqueen las llamadas, como Google Chrome que establece un tiempo
+    máximo que puede transcurrir entre una interacción del usuario y la
+    llamada por protocolo.</p>
+</li>
+</ul>
+<p>La principal particularidad de las llamadas para el uso del servidor
+intermedio es que requieren que se a la aplicación de firma las URL de
+los servicios para el guardado del resultado de la operación y, si
+aplica, la descarga de los datos de la petición.</p>
+<p>Adicionalmente, pueden darse dos casos de uso:</p>
+<ul>
+<li>
+<p>Todos los parámetros de la operación pueden enviarse en la URL.</p>
+<ul>
+<li>En este caso, se llama a la aplicación de firma utilizando la
+    URL correspondiente a la operación que deseemos proporcionándole
+    todos los parámetros. Este puede ser el caso de uso normal en
+    muchos contextos, pero no en otros en los que se establece un
+    tamaño máximo de la URL de entrada. Esto ocurre, por ejemplo,
+    con los navegadores web.</li>
+</ul>
+</li>
+<li>
+<p>Los parámetros de la operación no pueden enviarse en la URL.</p>
+<ul>
+<li>En este caso, los parámetros a enviar conforman una URL
+    demasiado grande para ser transmitida directamente. Para poder
+    transferir los datos a la aplicación de firma, será necesario
+    que se suban estos datos al servidor intermedio y luego se llame
+    a la aplicación de firma para que se los descargue de ahí y
+    pueda procesarlos a continuación.</li>
+</ul>
+</li>
+</ul>
+<p>La comunicación con el servidor intermedio es asíncrona, dado que la
+aplicación cliente debe consultar activamente el servidor intermedio a
+través del servicio de recuperación de datos para saber si la operación
+se ha procesado o no. En este caso, además de la respuesta con el
+resultado de la operación, la aplicación podría recuperar también alguna
+de las siguientes respuestas:</p>
+<ul>
+<li>
+<p>Cadena que empieza por “err-06”:</p>
+<ul>
+<li>Señala que el servidor intermedio no ha recibido el resultado de
+    la operación. La aplicación cliente debería esperar un poco más
+    antes de volver a reintentar recuperar el resultado de la
+    operación.</li>
+</ul>
+</li>
+<li>
+<p>Cadena que empieza por “#wait”:</p>
+<ul>
+<li>
+<p>Señala que la aplicación de firma todavía no tiene el resultado
+    de la aplicación, pero ha indicado que la petición se está en
+    procesó y que la aplicación cliente debería seguir esperando el
+    resultado.</p>
+</li>
+<li>
+<p>Este valor se usará cuando se haya invocado a AutoFirma con el
+    parámetro “aw” para que el Cliente @firma (solo soportado por
+    AutoFirma) vaya notificando periódicamente si la aplicación
+    cliente debería seguir esperando el resultado.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="url-con-parametros-de-operacion">URL con parámetros de operación</h2>
+<p>En el caso de llamar al Cliente @firma con los parámetros de la
+operación, pasaremos todos los parámetros necesarios para la propia
+operación más los parámetros necesarios para guardar el resultado en el
+servidor intermedio.</p>
+<p>La composición de la URL para este tipo de petición sería la siguiente:</p>
+<ul>
+<li>
+<p>Esquema:</p>
+<ul>
+<li>afirma</li>
+</ul>
+</li>
+<li>
+<p>Host:</p>
+<ul>
+<li>Código de la operación en cuestión</li>
+</ul>
+</li>
+<li>
+<p>Parámetros:</p>
+<ul>
+<li>
+<p>ver</p>
+<ul>
+<li>
+<p>Número de versión del protocolo.</p>
+</li>
+<li>
+<p>La versión actual de protocolo que se soporta es: 3</p>
+</li>
+</ul>
+</li>
+<li>
+<p>jvc</p>
+<ul>
+<li>
+<p>Versión del JavaScript de despliegue que realiza la
+    invocación.</p>
+</li>
+<li>
+<p>La versión notificada actualmente es la: 2</p>
+</li>
+</ul>
+</li>
+<li>
+<p>mcv</p>
+<ul>
+<li>Opcional. Versión mínima exigida de AutoFirma (no aplicable
+    a los clientes móviles).</li>
+</ul>
+</li>
+<li>
+<p>id</p>
+<ul>
+<li>
+<p>Identificador de la transacción. Es el identificador con el
+    que debe guardarse la respuesta en el servidor intermedio.</p>
+</li>
+<li>
+<p>Para más información sobre el guardado y la recuperación de
+    datos del servidor intermedio, consulte el apartado <u>ANEXO
+    I Servidor intermedio</u>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>stservlet</p>
+<ul>
+<li>
+<p>URL del servicio para el guardado del resultado en el
+    servidor intermedio.</p>
+</li>
+<li>
+<p>Para más información sobre el guardado y la recuperación de
+    datos del servidor intermedio, consulte el apartado <u>ANEXO
+    I Servidor intermedio</u>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>key</p>
+<ul>
+<li>
+<p>Clave DES para el cifrado del fichero de configuración.</p>
+</li>
+<li>
+<p>Los datos que se envíen al servidor intermedio se deben
+    cifrar con esta clave DES. La aplicación cliente después
+    deberá usar esta misma clave para descifrar el resultado.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>aw</p>
+<ul>
+<li>
+<p>Booleano que indica si la aplicación de firma debe notificar
+    periódicamente a través del servidor intermedio si aún está
+    operando. Esto es útil para evitar esperar indefinidamente
+    el resultado de la operación, cuando es posible que esta
+    haya fallado por algún motivo y no se haya podio notificar a
+    través del servidor intermedio. Por ejemplo, si la
+    aplicación de firma no recibió la petición o si no pudo
+    enviar el resultado al servidor intermedio.</p>
+</li>
+<li>
+<p>Por defecto, false.</p>
+</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<ul>
+<li>
+<p>Parámetros de operación</p>
+<ul>
+<li>Parámetros propios del tipo de operación que deseemos
+    realizar.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Un ejemplo de URL para la invocación de una operación de firma sería:</p>
+<table>
+<thead>
+<tr>
+<th>afirma://sign/?jvc=2&amp;mcv=1.7.0&amp;ver=1&amp;op=sign&amp;id=llUQSzruWssVQxIeFNtV&amp;key=72993139&amp;stservlet=https%3A%2F%2Fvalide.redsara.es%2FfirmaMovil%2Fafirma-signature-storage%2FStorageService&amp;format=CAdES&amp;algorithm=SHA256withRSA&amp;properties=bW9kZT1leHBsaWNpdApzZXJ2ZXJVcmw9aHR0cHM6Ly92YWxpZGUucmVkc2FyYS5lcy9maXJtYU1vdmlsL2FmaXJtYS1zZXJ2ZXItdHJpcGhhc2Utc2lnbmVyL1NpZ25hdHVyZVNlcnZpY2U%3D&amp;aw=true</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Las operaciones disponibles y sus parámetros están indicadas en el
+apartado <u>7 Peticiones de operación</u>.</p>
+<h2 id="url-sin-parametros-de-operacion">URL sin parámetros de operación</h2>
+<p>En el caso de llamar al Cliente @firma sin los parámetros de la
+operación, deberemos haber enviado estos parámetros previamente al
+servidor intermedio, y pasar al Cliente @firma los parámetros necesarios
+para que se los descargue.</p>
+<p>La composición de la URL para este tipo de petición sería la siguiente:</p>
+<ul>
+<li>
+<p>Esquema:</p>
+<ul>
+<li>afirma</li>
+</ul>
+</li>
+<li>
+<p>Host:</p>
+<ul>
+<li>Código de la operación en cuestión</li>
+</ul>
+</li>
+<li>
+<p>Parámetros:</p>
+<ul>
+<li>
+<p>fileId</p>
+<ul>
+<li>
+<p>Identificador asignado al fichero de configuración en el
+    servidor remoto. Este es el identificador que se le asigna a
+    la configuración cuando se envía a almacenar en el servidor
+    intermedio.</p>
+</li>
+<li>
+<p>Para más información sobre el guardado y la recuperación de
+    datos del servidor intermedio, consulte el apartado <u>ANEXO
+    I Servidor intermedio</u>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>rtservlet</p>
+<ul>
+<li>
+<p>URL del servicio para la recuperación del fichero de
+    configuración.</p>
+</li>
+<li>
+<p>Para más información sobre el guardado y la recuperación de
+    datos del servidor intermedio, consulte el apartado <u>ANEXO
+    I Servidor intermedio</u>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>key</p>
+<ul>
+<li>
+<p>Clave DES para el descifrado del fichero de configuración.</p>
+</li>
+<li>
+<p>Los datos que se envían al servidor intermedio deberían
+    cifrarse con un cifrado DES. En caso de hacerlo, en este
+    parámetro se debería indicar la clave empleada (que debería
+    ser una cadena de texto).</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Un ejemplo de URL de invocación sería:</p>
+<p>afirma://sign/?fileid=1mlL13MJMKMU4KMUI4Co&amp;rtservlet=https%3A%2F%2Fvalide.redsara.es%2FfirmaMovil%2Fafirma-signature-retriever%2FRetrieveService&amp;key=56542304</p>
+<p>Los parámetros que se deberán enviar al servidor intermedio son los
+mismos que usaríamos si todos los parámetros se enviasen en la URL de
+petición. Consulte el apartado anterior para comprobar los parámetros
+necesario y el apartado <u>7 Peticiones de operación</u> para ver el
+listado de operaciones disponibles y los parámetros que estas necesitan.</p>
+<p>Para el envío de los datos al servidor, los estructuraremos en forma de
+fichero XML con el formato:</p>
+<p>&lt;COD_OPERACION&gt;</p>
+<p>&lt;e k=”CLAVE1” v=”VALOR1” /&gt;</p>
+<p>&lt;e k=”CLAVE2” v=”VALOR2” /&gt;</p>
+<p>…</p>
+<p>&lt;e k=”CLAVEn” v=”VALORn” /&gt;</p>
+<p>&lt;/COD_OPERACION&gt;</p>
+<p>En donde:</p>
+<ul>
+<li>
+<p><em>COD_OPERACION</em>: Código de la operación que se configura.</p>
+</li>
+<li>
+<p><em>CLAVEx</em>: Nombre del parámetro del listado de parámetros de
+    configuración de la operación.</p>
+</li>
+<li>
+<p><em>VALORx</em>: Valor que deseemos asignar a ese parámetro.</p>
+</li>
+</ul>
+<p>Un ejemplo de XML es:</p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>&lt;sign&gt;</p>
+<p>&lt;e k="id" v="000987508929"/&gt;</p>
+<p>&lt;e k="key" v="39772569"/&gt;</p>
+<p>&lt;e k="stservlet"
+v="http://192.168.177.173:8080/afirma-signature-storage/StorageService"/&gt;</p>
+<p>&lt;e k="format" v="CAdES"/&gt;</p>
+<p>&lt;e k="algorithm" v="SHA1withRSA"/&gt;</p>
+<p>&lt;e k="properties"
+v="c2VydmVyVXJsPWh0dHA6Ly8xOTIuMTY4LjE3Ny4xNzM6ODA4MC9hZmlybWEtc2VydmVyLXRyaXBoYXNlLXNpZ25lci9TaWduYXR1cmVTZXJ2aWNlCgkJIA%3D%3D"/&gt;</p>
+<p>&lt;e k="dat" v="ZnVsYW5pdG9AYXRvcy5uZXQ%3D"/&gt;</p>
+<p>&lt;/sign&gt;</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<p>Este XML se enviará, codificado en base 64 al mismo servicio de
+almacenamiento cuya ruta se establece a través del parámetro
+“stservlet”. Esta cadena a su vez puede estar cifrada con una clave DES
+(la proporcionada en el parámetro “key” de la llamada) y codificada en
+base 64.</p>
+<p>Es importante recordar que no todas las operaciones del Cliente @firma
+pueden ejecutarse cuando la comunicación se realiza a través de servidor
+intermedio.</p>
+<h1 id="operaciones-del-cliente-firma">Operaciones del Cliente @firma</h1>
+<p>Aquí se listan todas las operaciones soportadas por el Cliente @firma
+cuando se le invoca por protocolo y los parámetros necesarios para
+configurar dichas operaciones. Algunas de ellas, sin embargo, no están
+disponibles en todas las aplicaciones.</p>
+<p>El listado completo de operaciones es el siguiente:</p>
+<ul>
+<li>
+<p>Firma.</p>
+</li>
+<li>
+<p>Cofirma.</p>
+</li>
+<li>
+<p>Contrafirma.</p>
+</li>
+<li>
+<p>Firma de lote.</p>
+<ul>
+<li>Sólo disponible en AutoFirma.</li>
+</ul>
+</li>
+<li>
+<p>Selección de certificado.</p>
+</li>
+<li>
+<p>Guardado.</p>
+<ul>
+<li>Sólo disponible en AutoFirma y la app de firma Android.</li>
+</ul>
+</li>
+<li>
+<p>Firma y guardado.</p>
+<ul>
+<li>Sólo disponible en AutoFirma.</li>
+</ul>
+</li>
+<li>
+<p>Carga de datos.</p>
+<ul>
+<li>Sólo disponible en AutoFirma.</li>
+</ul>
+</li>
+<li>
+<p>Recuperación del log.</p>
+<ul>
+<li>Sólo disponible en AutoFirma.</li>
+</ul>
+</li>
+</ul>
+<p>Los parámetros de las aplicaciones siempre se proporcionarán codificados
+para URL (“<em>URL Encoded</em>”). Si el valor de un parámetro se expresase en
+forma de cadena Base 64, ésta siempre se codificará en forma <em>URL SAFE</em>
+(el símbolo ‘+’ se sustituye por ‘-’ y el símbolo ‘/’ se sustituye por
+‘_’).</p>
+<h2 id="operacion-de-firma-sign">Operación de firma (<em>sign</em>)</h2>
+<p>Operación para la ejecución de una firma electrónica.</p>
+<p>Código de operación:</p>
+<ul>
+<li>sign</li>
+</ul>
+<p>Parámetros admitidos:</p>
+<ul>
+<li>
+<p>op</p>
+<ul>
+<li>Código de operación. En este caso, será: sign</li>
+</ul>
+</li>
+<li>
+<p>dat</p>
+<ul>
+<li>
+<p>Datos a firmar codificados en Base 64 URL SAFE.</p>
+</li>
+<li>
+<p>Si no se indican y la aplicación es AutoFirma, se permitirá al
+    usuario seleccionar un fichero.</p>
+</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>format</p>
+<ul>
+<li>Formato de firma.</li>
+</ul>
+</li>
+<li>
+<p>algorithm</p>
+<ul>
+<li>Algoritmo de firma.</li>
+</ul>
+</li>
+<li>
+<p>properties</p>
+<ul>
+<li>
+<p>Propiedades de configuración específicas del formato de firma y
+    configuración de la operación.</p>
+</li>
+<li>
+<p>Se proporcionarán en forma cadena compuesta por duplas
+    propiedad=valor separadas por ‘\n’. La cadena resultante se
+    proporcionará en Base 64 URL SAFE.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>ksb64 (opcional)</p>
+<ul>
+<li>
+<p>Configuración del almacén de claves a utilizar codificada en
+    base 64.</p>
+</li>
+<li>
+<p>Sólo se procesa en AutoFirma.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>sticky (opcional)</p>
+<ul>
+<li>
+<p>Valor booleano que indica si debe recordarse el certificado de
+    firma que se seleccione o, si ya se recuerda uno anterior, si
+    debe usarse ese automáticamente (true); o si se debe permitir
+    seleccionar un nuevo certificado y olvidar cualquiera que se
+    recuerde (false).</p>
+</li>
+<li>
+<p>Sólo se procesa en AutoFirma.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>resetsticky (opcional)</p>
+<ul>
+<li>
+<p>Valor booleano que indica si debe olvidarse cualquier
+    certificado previamente seleccionado independientemente del
+    valor del parámetro sticky (true), o si no (false, valor por
+    defecto).</p>
+</li>
+<li>
+<p>Este valor se puede utilizar junto con sticky si ya teníamos un
+    certificado seleccionado y queremos olvidar ese y recordar el
+    nuevo que se seleccione.</p>
+</li>
+<li>
+<p>Sólo se procesa en AutoFirma.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Para ver los formatos, algoritmos, parámetros de configuración del
+formato de firma y los almacenes de claves a configurar, consulte el
+manual del integrador del Cliente @firma.</p>
+<p>En caso de finalizar correctamente, esta operación obtiene como
+resultado una cadena con el formato:</p>
+<p>CERT_B64|FIRMA_B64|FILENAME_B64</p>
+<p>En donde:</p>
+<ul>
+<li>
+<p>CERT_B64</p>
+<ul>
+<li>Certificado de firma utilizado codificado en Base 64 URL SAFE.</li>
+</ul>
+</li>
+<li>
+<p>FIRMA_B64</p>
+<ul>
+<li>Firma generada codificada en Base 64 URL SAFE.</li>
+</ul>
+</li>
+<li>
+<p>FILENAME_B64</p>
+<ul>
+<li>
+<p>Si no se indicaron los datos a firmar y el usuario tuvo que
+    seleccionar un fichero, este será el nombre del fichero
+    seleccionado codificado en Base 64 URL SAFE.</p>
+</li>
+<li>
+<p>Este valor solo se devolverá en AutoFirma 1.7 y superiores.</p>
+</li>
+<li>
+<p>En caso de no aparecer, tampoco lo hará el carácter separador
+    ‘|’.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>En caso de cancelarse la operación, se obtiene como resultado la cadena
+“CANCEL” o “CANCEL\r\n”.</p>
+<p>En caso de error, se obtiene una cadena que empieza por “err-”.</p>
+<p>Un ejemplo de llamada a la operación de firma es:</p>
+<table>
+<thead>
+<tr>
+<th>afirma://sign/?ver=1&amp;op=sign&amp;id=llUQSzruWssVQxIeFNtV&amp;format=CAdES&amp;algorithm=SHA256withRSA&amp;properties=bW9kZT1leHBsaWNpdApzZXJ2ZXJVcmw9aHR0cHM6Ly92YWxpZGUucmVkc2FyYS5lcy9maXJtYU1vdmlsL2FmaXJtYS1zZXJ2ZXItdHJpcGhhc2Utc2lnbmVyL1NpZ25hdHVyZVNlcnZpY2U%3D</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Recuerde que, esta llamada deberá incluir los parámetros necesarios para
+el uso del servidor intermedio si se utiliza este mecanismo de
+comunicación.</p>
+<h2 id="operacion-de-cofirma-o-firma-en-paralelo-cosign">Operación de cofirma o firma en paralelo (<em>cosign</em>)</h2>
+<p>Operación para la ejecución de una firma electrónica.</p>
+<p>Código de operación:</p>
+<ul>
+<li>cosign</li>
+</ul>
+<p>Parámetros admitidos:</p>
+<ul>
+<li>
+<p>op</p>
+<ul>
+<li>Código de operación. En este caso, será: cosign</li>
+</ul>
+</li>
+<li>
+<p>dat</p>
+<ul>
+<li>
+<p>Firma a cofirmar codificada Base64 URL SAFE.</p>
+</li>
+<li>
+<p>Si no se indican y la aplicación es AutoFirma, se permitirá al
+    usuario seleccionar un fichero.</p>
+</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>format</p>
+<ul>
+<li>Formato de firma.</li>
+</ul>
+</li>
+<li>
+<p>algorithm</p>
+<ul>
+<li>Algoritmo de firma.</li>
+</ul>
+</li>
+<li>
+<p>properties</p>
+<ul>
+<li>
+<p>Propiedades de configuración específicas del formato de firma y
+    configuración de la operación.</p>
+</li>
+<li>
+<p>Se proporcionarán en forma cadena compuesta por duplas
+    propiedad=valor separadas por ‘\n’. La cadena resultante se
+    proporcionará en Base 64 URL SAFE.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>ksb64 (opcional)</p>
+<ul>
+<li>
+<p>Configuración del almacén de claves a utilizar codificada en
+    base 64.</p>
+</li>
+<li>
+<p>Sólo se procesa en AutoFirma.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>sticky (opcional)</p>
+<ul>
+<li>
+<p>Valor booleano que indica si debe recordarse el certificado de
+    firma que se seleccione o, si ya se recuerda uno anterior, si
+    debe usarse ese automáticamente (true); o si se debe permitir
+    seleccionar un nuevo certificado y olvidar cualquiera que se
+    recuerde (false).</p>
+</li>
+<li>
+<p>Sólo se procesa en AutoFirma.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>resetsticky (opcional)</p>
+<ul>
+<li>
+<p>Valor booleano que indica si debe olvidarse cualquier
+    certificado previamente seleccionado independientemente del
+    valor del parámetro sticky (true), o si no (false, valor por
+    defecto).</p>
+</li>
+<li>
+<p>Este valor se puede utilizar junto con sticky si ya teníamos un
+    certificado seleccionado y queremos olvidar ese y recordar el
+    nuevo que se seleccione.</p>
+</li>
+<li>
+<p>Sólo se procesa en AutoFirma.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Para ver los formatos, algoritmos, parámetros de configuración del
+formato de firma y los almacenes de claves a configurar, consulte el
+manual del integrador del Cliente @firma.</p>
+<p>En caso de finalizar correctamente, esta operación obtiene como
+resultado una cadena con el formato:</p>
+<p>CERT_B64|COFIRMA_B64|FILENAME_B64</p>
+<p>En donde:</p>
+<ul>
+<li>
+<p>CERT_B64</p>
+<ul>
+<li>Certificado de firma utilizado codificado en Base 64 URL SAFE.</li>
+</ul>
+</li>
+<li>
+<p>COFIRMA_B64</p>
+<ul>
+<li>Cofirma generada codificada en Base 64 URL SAFE.</li>
+</ul>
+</li>
+<li>
+<p>FILENAME_B64</p>
+<ul>
+<li>
+<p>Si no se indicó una firma a cofirmar y el usuario tuvo que
+    seleccionar un fichero, este será el nombre del fichero
+    seleccionado codificado en Base 64 URL SAFE.</p>
+</li>
+<li>
+<p>Este valor solo se devolverá en AutoFirma 1.7 y superiores.</p>
+</li>
+<li>
+<p>En caso de no aparecer, tampoco lo hará el carácter separador
+    ‘|’.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>En caso de cancelarse la operación, se obtiene como resultado la cadena
+“CANCEL” o “CANCEL\r\n”.</p>
+<p>En caso de error, se obtiene una cadena que empieza por “err-”.</p>
+<p>Un ejemplo de llamada a la operación de cofirma (en la que se omite
+parte del parámetro de datos por legibilidad) es:</p>
+<table>
+<thead>
+<tr>
+<th>afirma://cosign?op=cosign&amp;algorithm=SHA512withRSA&amp;format=XAdES&amp;properties=c2VydmVyVXJsPWh0dHA6Ly9hcHBwcnVlYmE6ODA4MC9hZmlybWEtc2VydmVyLXRyaXBoYXNlLXNpZ25lci9TaWduYXR1cmVTZXJ2aWNl&amp;sticky=false&amp;dat=PD94bWwgdmVyc2lv…B-PC9wcm9qZWN0Pg==</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Recuerde que, esta llamada deberá incluir los parámetros necesarios para
+el uso del servidor intermedio si se utiliza este mecanismo de
+comunicación.</p>
+<h2 id="operacion-de-contrafirma-o-firma-en-cascada-contersign">Operación de contrafirma o firma en cascada (<em>contersign</em>)</h2>
+<p>Operación para la ejecución de una firma electrónica.</p>
+<p>Código de operación:</p>
+<ul>
+<li>countersign</li>
+</ul>
+<p>Parámetros admitidos:</p>
+<ul>
+<li>
+<p>op</p>
+<ul>
+<li>Código de operación. En este caso, será: countersign</li>
+</ul>
+</li>
+<li>
+<p>dat</p>
+<ul>
+<li>
+<p>Firma a contrafirmar codificada en Base64 URL SAFE.</p>
+</li>
+<li>
+<p>Si no se indican y la aplicación es AutoFirma, se permitirá al
+    usuario seleccionar un fichero.</p>
+</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>format</p>
+<ul>
+<li>Formato de firma.</li>
+</ul>
+</li>
+<li>
+<p>algorithm</p>
+<ul>
+<li>Algoritmo de firma.</li>
+</ul>
+</li>
+<li>
+<p>properties</p>
+<ul>
+<li>
+<p>Propiedades de configuración específicas del formato de firma y
+    configuración de la operación.</p>
+</li>
+<li>
+<p>Se proporcionarán en forma cadena compuesta por duplas
+    propiedad=valor separadas por ‘\n’. La cadena resultante se
+    proporcionará en Base 64 URL SAFE.</p>
+</li>
+<li>
+<p>Para la operación de contrafirma, se puede indicar la propiedad
+    “target” con el valor “tree” para indicar que se desea
+    contrafirmar todo el árbol de firmas o con cualquier otro valor
+    para indicar que sólo se deben contrafirmas los nodos hoja.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>ksb64 (opcional)</p>
+<ul>
+<li>
+<p>Configuración del almacén de claves a utilizar codificada en
+    base 64.</p>
+</li>
+<li>
+<p>Sólo se procesa en AutoFirma.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>sticky (opcional)</p>
+<ul>
+<li>
+<p>Valor booleano que indica si debe recordarse el certificado de
+    firma que se seleccione o, si ya se recuerda uno anterior, si
+    debe usarse ese automáticamente (true); o si se debe permitir
+    seleccionar un nuevo certificado y olvidar cualquiera que se
+    recuerde (false).</p>
+</li>
+<li>
+<p>Sólo se procesa en AutoFirma.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>resetsticky (opcional)</p>
+<ul>
+<li>
+<p>Valor booleano que indica si debe olvidarse cualquier
+    certificado previamente seleccionado independientemente del
+    valor del parámetro sticky (true), o si no (false, valor por
+    defecto).</p>
+</li>
+<li>
+<p>Este valor se puede utilizar junto con sticky si ya teníamos un
+    certificado seleccionado y queremos olvidar ese y recordar el
+    nuevo que se seleccione.</p>
+</li>
+<li>
+<p>Sólo se procesa en AutoFirma.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Para ver los formatos, algoritmos, parámetros de configuración del
+formato de firma y los almacenes de claves a configurar, consulte el
+manual del integrador del Cliente @firma.</p>
+<p>En caso de finalizar correctamente, esta operación obtiene como
+resultado una cadena con el formato:</p>
+<p>CERT_B64|CONTRAFIRMA_B64|FILENAME_B64</p>
+<p>En donde:</p>
+<ul>
+<li>
+<p>CERT_B64</p>
+<ul>
+<li>Certificado de firma utilizado codificado en Base 64 URL SAFE.</li>
+</ul>
+</li>
+<li>
+<p>CONTRAFIRMA_B64</p>
+<ul>
+<li>Contrafirma generada codificada en Base 64 URL SAFE.</li>
+</ul>
+</li>
+<li>
+<p>FILENAME_B64</p>
+<ul>
+<li>
+<p>Si no se indicó una firma a contrafirmar y el usuario tuvo que
+    seleccionar un fichero, este será el nombre del fichero
+    seleccionado codificado en Base 64 URL SAFE.</p>
+</li>
+<li>
+<p>Este valor solo se devolverá en AutoFirma 1.7 y superiores.</p>
+</li>
+<li>
+<p>En caso de no aparecer, tampoco lo hará el carácter separador
+    ‘|’.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>En caso de cancelarse la operación, se obtiene como resultado la cadena
+“CANCEL” o “CANCEL\r\n”.</p>
+<p>En caso de error, se obtiene una cadena que empieza por “err-”.</p>
+<p>Un ejemplo de llamada a la operación de contrafirma (en la que se omite
+parte del parámetro de datos por legibilidad) es:</p>
+<table>
+<thead>
+<tr>
+<th>afirma://countersign?op=countersign&amp;algorithm=SHA512withRSA&amp;format=XAdES&amp;properties=c2VydmVyVXJsPWh0dHA6Ly9hcHBwcnVlYmE6ODA4MC9hZmlybWEtc2VydmVyLXRyaXBoYXNlLXNpZ25lci9TaWduYXR1cmVTZXJ2aWNl&amp;sticky=false&amp;dat=C9hZmlybWEtc2Vy…YXR1cmU-PC9wcm9qZWN0Pg==</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Recuerde que, esta llamada deberá incluir los parámetros necesarios para
+el uso del servidor intermedio si se utiliza este mecanismo de
+comunicación.</p>
+<h2 id="firma-en-lote-batch">Firma en lote (<em>batch</em>)</h2>
+<p>Operación para la firma, cofirma o contrafirma de múltiples documentos
+en una única operación.</p>
+<p>Esta operación sólo es compatible con AutoFirma.</p>
+<p>Código de operación:</p>
+<ul>
+<li>batch</li>
+</ul>
+<p>Parámetros admitidos:</p>
+<ul>
+<li>
+<p>op</p>
+<ul>
+<li>Código de operación. En este caso, será: batch</li>
+</ul>
+</li>
+<li>
+<p>dat</p>
+<ul>
+<li>
+<p>XML codificado en Base64 URL SAFE con la configuración del lote
+    de firma.</p>
+</li>
+<li>
+<p>Se consultar el formato del XML en el manual del integrador del
+    Cliente @firma.</p>
+</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>batchpresignerurl</p>
+<ul>
+<li>URL del servicio de prefirma de lotes (disponible junto al
+    servicio de firma trifásica).</li>
+</ul>
+</li>
+<li>
+<p>batchpostsignerurl</p>
+<ul>
+<li>URL del servicio de postfirma de lotes (disponible junto al
+    servicio de firma trifásica).</li>
+</ul>
+</li>
+<li>
+<p>needcert</p>
+<ul>
+<li>Booleano para indicar si se debe devolver también en el
+    resultado el certificado utilizado en la operación (true) o si
+    no (false, valor por defecto).</li>
+</ul>
+</li>
+<li>
+<p>ksb64 (opcional)</p>
+<ul>
+<li>
+<p>Configuración del almacén de claves a utilizar codificada en
+    base 64.</p>
+</li>
+<li>
+<p>Sólo se procesa en AutoFirma.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>sticky (opcional)</p>
+<ul>
+<li>
+<p>Valor booleano que indica si debe recordarse el certificado de
+    firma que se seleccione o, si ya se recuerda uno anterior, si
+    debe usarse ese automáticamente (true); o si se debe permitir
+    seleccionar un nuevo certificado y olvidar cualquiera que se
+    recuerde (false).</p>
+</li>
+<li>
+<p>Sólo se procesa en AutoFirma.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>resetsticky (opcional)</p>
+<ul>
+<li>
+<p>Valor booleano que indica si debe olvidarse cualquier
+    certificado previamente seleccionado independientemente del
+    valor del parámetro sticky (true), o si no (false, valor por
+    defecto).</p>
+</li>
+<li>
+<p>Este valor se puede utilizar junto con sticky si ya teníamos un
+    certificado seleccionado y queremos olvidar ese y recordar el
+    nuevo que se seleccione.</p>
+</li>
+<li>
+<p>Sólo se procesa en AutoFirma.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Para ver los formatos, algoritmos, parámetros de configuración del
+formato de firma y los almacenes de claves a configurar, consulte el
+manual del integrador del Cliente @firma.</p>
+<p>En caso de finalizar correctamente, esta operación obtiene como
+resultado una cadena con el formato:</p>
+<p>XML_B64|CERT_B64</p>
+<p>En donde:</p>
+<ul>
+<li>
+<p>XML_B64</p>
+<ul>
+<li>
+<p>XML codificado en Base 64 URL SAFE con el resultado de la firma
+    del lote.</p>
+</li>
+<li>
+<p>Se consultar el formato del XML en el manual del integrador del
+    Cliente @firma.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>CERT_B64</p>
+<ul>
+<li>
+<p>Certificado de firma utilizado codificado en Base 64 URL SAFE.</p>
+</li>
+<li>
+<p>Este valor solo se devolverá en AutoFirma 1.7 y superiores.</p>
+</li>
+<li>
+<p>En caso de no aparecer, tampoco lo hará el carácter separador
+    ‘|’.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>En caso de cancelarse la operación, se obtiene como resultado la cadena
+“CANCEL” o “CANCEL\r\n”.</p>
+<p>En caso de error, se obtiene una cadena que empieza por “err-”.</p>
+<p>Un ejemplo de llamada a la operación de firma de lotes (en la que por
+legibilidad se omite parte del parámetro de datos) es:</p>
+<table>
+<thead>
+<tr>
+<th>afirma://batch?op=batch&amp;batchpresignerurl=http%3A%2F%2Fappprueba%3A8080%2Fafirma-server-triphase-signer%2FBatchPresigner&amp;batchpostsignerurl=http%3A%2F%2Fappprueba%3A8080%2Fafirma-server-triphase-signer%2FBatchPostsigner&amp;properties=c2VydmVyVXJsPWh0dHA6Ly9hcHBwcnVlYmE6ODA4MC9hZmlybWEtc2VydmVyLXRyaXBoYXNlLXNpZ25lci9TaWduYXR1cmVTZXJ2aWNl&amp;sticky=false&amp;needcert=true&amp;dat=PD94bWwgdmVyc2lvbj0iMS4wIi…WduPgo8L3NpZ25iYXRjaD4=</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Recuerde que, esta llamada deberá incluir los parámetros necesarios para
+el uso del servidor intermedio si se utiliza este mecanismo de
+comunicación.</p>
+<h2 id="seleccion-de-certificado-selectcert">Selección de certificado (<em>selectcert</em>)</h2>
+<p>Operación para la obtención de un certificado de firma.</p>
+<p>Código de operación:</p>
+<ul>
+<li>selectcert</li>
+</ul>
+<p>Parámetros admitidos:</p>
+<ul>
+<li>
+<p>op</p>
+<ul>
+<li>Código de operación. En este caso, será: selectcert</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>ksb64 (opcional)</p>
+<ul>
+<li>
+<p>Configuración del almacén de claves a utilizar codificada en
+    base 64.</p>
+</li>
+<li>
+<p>Sólo se procesa en AutoFirma.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>properties (opcional)</p>
+<ul>
+<li>Propiedades con configuración de filtros de certificados.</li>
+</ul>
+</li>
+<li>
+<p>sticky (opcional)</p>
+<ul>
+<li>
+<p>Valor booleano que indica si debe recordarse el certificado de
+    firma que se seleccione o, si ya se recuerda uno anterior, si
+    debe usarse ese automáticamente (true); o si se debe permitir
+    seleccionar un nuevo certificado y olvidar cualquiera que se
+    recuerde (false).</p>
+</li>
+<li>
+<p>Sólo se procesa en AutoFirma.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>resetsticky (opcional)</p>
+<ul>
+<li>
+<p>Valor booleano que indica si debe olvidarse cualquier
+    certificado previamente seleccionado independientemente del
+    valor del parámetro sticky (true), o si no (false, valor por
+    defecto).</p>
+</li>
+<li>
+<p>Este valor se puede utilizar junto con sticky si ya teníamos un
+    certificado seleccionado y queremos olvidar ese y recordar el
+    nuevo que se seleccione.</p>
+</li>
+<li>
+<p>Sólo se procesa en AutoFirma.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Para ver los formatos, algoritmos, parámetros de configuración del
+formato de firma y los almacenes de claves a configurar, consulte el
+manual del integrador del Cliente @firma.</p>
+<p>En caso de finalizar correctamente, esta operación obtiene como
+resultado el certificado seleccionado codificado en Base 64 URL SAFE.</p>
+<p>En caso de cancelarse la operación, se obtiene como resultado la cadena
+“CANCEL” o “CANCEL\r\n”.</p>
+<p>En caso de error, se obtiene una cadena que empieza por “err-”.</p>
+<p>Un ejemplo de llamada a la operación de selección de certificado es:</p>
+<table>
+<thead>
+<tr>
+<th>afirma://selectcert?op=selectcert&amp;properties=ZmlsdGVycz1ub25leHBpcmVkOmZhbHNl&amp;sticky=true</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Recuerde que, esta llamada deberá incluir los parámetros necesarios para
+el uso del servidor intermedio si se utiliza este mecanismo de
+comunicación.</p>
+<h2 id="operacion-de-guardado-save">Operación de guardado (<em>save</em>)</h2>
+<p>Operación para el guardado de datos en disco.</p>
+<p>Esta operación sólo está soportada por AutoFirma y el Cliente de firma
+Android.</p>
+<p>Código de operación:</p>
+<ul>
+<li>save</li>
+</ul>
+<p>Parámetros admitidos:</p>
+<ul>
+<li>
+<p>op</p>
+<ul>
+<li>Código de operación. En este caso, será: save</li>
+</ul>
+</li>
+<li>
+<p>dat</p>
+<ul>
+<li>Datos a guardar codificados en Base64 URL SAFE.</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>title (opcional)</p>
+<ul>
+<li>Título del diálogo de guardado.</li>
+</ul>
+</li>
+<li>
+<p>filename (opcional)</p>
+<ul>
+<li>Nombre propuesto para el fichero que contendrá los datos a
+    guardar.</li>
+</ul>
+</li>
+<li>
+<p>exts (opcional)</p>
+<ul>
+<li>Lista de extensiones, separadas por coma, propuestas para el
+    fichero.</li>
+</ul>
+</li>
+<li>
+<p>desc (opcional)</p>
+<ul>
+<li>Descripción del tipo de fichero.</li>
+</ul>
+</li>
+</ul>
+<p>En caso de finalizar correctamente, esta operación obtiene como
+resultado el valor “OK” o “OK\r\n”.</p>
+<p>En caso de cancelarse la operación, se obtiene como resultado la cadena
+“CANCEL” o “CANCEL\r\n”.</p>
+<p>En caso de error, se obtiene una cadena que empieza por “err-”.</p>
+<p>Un ejemplo de llamada a la operación de guardado es:</p>
+<table>
+<thead>
+<tr>
+<th>afirma://save?op=save&amp;title=Guardar%20firma%20electr%C3%B3nica&amp;dat=PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiID8-CjxzaWducz4KIDxzaWducmVzdWx0IGlkPSI3NzAwMzAyIiByZXN1bHQ9IkRPTkVfQU5EX1NBVkVEIiBkZXNjcmlwdGlvbj0iIi8-CiA8c2lnbnJlc3VsdCBpZD0iNzAzOTg2OSIgcmVzdWx0PSJET05FX0FORF9TQVZFRCIgZGVzY3JpcHRpb249IiIvPgogPHNpZ25yZXN1bHQgaWQ9Ijg5ODMxMjIiIHJlc3VsdD0iRE9ORV9BTkRfU0FWRUQiIGRlc2NyaXB0aW9uPSIiLz4KIDxzaWducmVzdWx0IGlkPSI3OTk1MDciIHJlc3VsdD0iRE9ORV9BTkRfU0FWRUQiIGRlc2NyaXB0aW9uPSIiLz4KIDxzaWducmVzdWx0IGlkPSIzNDc1MjYzIiByZXN1bHQ9IkRPTkVfQU5EX1NBVkVEIiBkZXNjcmlwdGlvbj0iIi8-CiA8c2lnbnJlc3VsdCBpZD0iMTk3MjI5NCIgcmVzdWx0PSJET05FX0FORF9TQVZFRCIgZGVzY3JpcHRpb249IiIvPgogPHNpZ25yZXN1bHQgaWQ9IjQxNTk2MzEiIHJlc3VsdD0iRE9ORV9BTkRfU0FWRUQiIGRlc2NyaXB0aW9uPSIiLz4KIDxzaWducmVzdWx0IGlkPSIxMzA0NTYxIiByZXN1bHQ9IkRPTkVfQU5EX1NBVkVEIiBkZXNjcmlwdGlvbj0iIi8-Cjwvc2lnbnM-</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Recuerde que, esta llamada deberá incluir los parámetros necesarios para
+el uso del servidor intermedio si se utiliza este mecanismo de
+comunicación.</p>
+<h2 id="carga-de-datos-load">Carga de datos (<em>load</em>)</h2>
+<p>Operación para la carga de datos.</p>
+<p>Esta operación sólo es compatible con AutoFirma.</p>
+<p>Código de operación:</p>
+<ul>
+<li>load</li>
+</ul>
+<p>Parámetros admitidos:</p>
+<ul>
+<li>
+<p>op</p>
+<ul>
+<li>Código de operación. En este caso, será: load</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>title (opcional)</p>
+<ul>
+<li>Título del diálogo de guardado.</li>
+</ul>
+</li>
+<li>
+<p>filePath (opcional)</p>
+<ul>
+<li>Ruta del directorio por defecto.</li>
+</ul>
+</li>
+<li>
+<p>exts (opcional)</p>
+<ul>
+<li>Lista de extensiones, separadas por coma, propuestas para el
+    fichero.</li>
+</ul>
+</li>
+<li>
+<p>desc (opcional)</p>
+<ul>
+<li>Descripción del tipo de fichero.</li>
+</ul>
+</li>
+<li>
+<p>multiload (opcional)</p>
+<ul>
+<li>Booleano que indica si se debe permitir cargar más de un fichero
+    (true) o sólo uno (false, valor por defecto).</li>
+</ul>
+</li>
+</ul>
+<p>En caso de finalizar correctamente, esta operación obtiene como
+resultado los datos cargados codificados en Base 64 URL SAFE. En caso de
+ser una carga de múltiples ficheros, se recibirá el contenido de cada
+uno de ellos codificado en Base64 URL SAFE y separados por el caracter
+‘|’.</p>
+<p>En caso de cancelarse la operación, se obtiene como resultado la cadena
+“CANCEL” o “CANCEL\r\n”.</p>
+<p>En caso de error, se obtiene una cadena que empieza por “err-”.</p>
+<p>Un ejemplo de llamada a la operación de carga de datos es:</p>
+<table>
+<thead>
+<tr>
+<th>afirma://load?op=load&amp;title=&amp;exts=csig%2Cxsig%2Csig%2Cpdf%2Cxml&amp;desc=Fichero%20de%20firma%20electr%C3%B3nica&amp;multiload=false</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Recuerde que, esta llamada deberá incluir los parámetros necesarios para
+el uso del servidor intermedio si se utiliza este mecanismo de
+comunicación.</p>
+<h2 id="firma-y-guardado-signandsave">Firma y guardado (<em>signandsave</em>)</h2>
+<p>Operación para la ejecución de una firma, cofirma o contrafirma
+electrónica seguido del guardado del fichero resultante.</p>
+<p>Esta operación sólo es compatible con AutoFirma.</p>
+<p>Código de operación:</p>
+<ul>
+<li>signandsave</li>
+</ul>
+<p>Parámetros admitidos:</p>
+<ul>
+<li>
+<p>op</p>
+<ul>
+<li>Código de operación. Debe ser: signandsave</li>
+</ul>
+</li>
+<li>
+<p>cop</p>
+<ul>
+<li>Operación de firma a ejecutar. Puede ser sign, cosign o
+    countersign, según se desee realizar una firma, cofirma o
+    contrafirma, respectivamente.</li>
+</ul>
+</li>
+<li>
+<p>dat</p>
+<ul>
+<li>
+<p>Datos a firmar/multifirmar codificados en Base 64 URL SAFE.</p>
+</li>
+<li>
+<p>Si no se indican, se permitirá al usuario seleccionar un
+    fichero.</p>
+</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>format</p>
+<ul>
+<li>Formato de firma.</li>
+</ul>
+</li>
+<li>
+<p>algorithm</p>
+<ul>
+<li>Algoritmo de firma.</li>
+</ul>
+</li>
+<li>
+<p>properties</p>
+<ul>
+<li>
+<p>Propiedades de configuración específicas del formato de firma.</p>
+</li>
+<li>
+<p>Se proporcionarán en forma cadena compuesta por duplas
+    propiedad=valor separadas por ‘\n’. La cadena resultante se
+    proporcionará en Base 64 URL SAFE.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>filename (opcional)</p>
+<ul>
+<li>Nombre propuesto para el fichero de salida.</li>
+</ul>
+</li>
+<li>
+<p>ksb64 (opcional)</p>
+<ul>
+<li>
+<p>Configuración del almacén de claves a utilizar codificada en
+    base 64.</p>
+</li>
+<li>
+<p>Sólo se procesa en AutoFirma.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>sticky (opcional)</p>
+<ul>
+<li>
+<p>Valor booleano que indica si debe recordarse el certificado de
+    firma que se seleccione o, si ya se recuerda uno anterior, si
+    debe usarse ese automáticamente (true); o si se debe permitir
+    seleccionar un nuevo certificado y olvidar cualquiera que se
+    recuerde (false).</p>
+</li>
+<li>
+<p>Sólo se procesa en AutoFirma.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>resetsticky (opcional)</p>
+<ul>
+<li>
+<p>Valor booleano que indica si debe olvidarse cualquier
+    certificado previamente seleccionado independientemente del
+    valor del parámetro sticky (true), o si no (false, valor por
+    defecto).</p>
+</li>
+<li>
+<p>Este valor se puede utilizar junto con sticky si ya teníamos un
+    certificado seleccionado y queremos olvidar ese y recordar el
+    nuevo que se seleccione.</p>
+</li>
+<li>
+<p>Sólo se procesa en AutoFirma.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>En caso de éxito, esta operación obtiene como resultado una cadena con
+el formato:</p>
+<p>CERT_B64|FIRMA_B64|FILENAME_B64</p>
+<p>En donde:</p>
+<ul>
+<li>
+<p>CERT_B64</p>
+<ul>
+<li>Certificado de firma utilizado codificado en Base 64 URL SAFE.</li>
+</ul>
+</li>
+<li>
+<p>FIRMA_B64</p>
+<ul>
+<li>Firma generada codificada en Base 64 URL SAFE.</li>
+</ul>
+</li>
+<li>
+<p>FILENAME_B64</p>
+<ul>
+<li>
+<p>Si no se indicaron los datos a firmar y el usuario tuvo que
+    seleccionar un fichero, este será el nombre del fichero
+    seleccionado codificado en Base 64 URL SAFE.</p>
+</li>
+<li>
+<p>Este valor solo se devolverá en AutoFirma 1.7 y superiores.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>En caso de no aparecer, tampoco lo hará el carácter separador ‘|’.</p>
+<p>En caso de cancelarse la operación, se obtiene como resultado la cadena
+“CANCEL” o “CANCEL\r\n”.</p>
+<p>En caso de error, se obtiene una cadena que empieza por “err-”.</p>
+<p>Un ejemplo de llamada a la operación de firma y guardado es:</p>
+<table>
+<thead>
+<tr>
+<th>afirma://signandsave?op=signandsave&amp;cop=cosign&amp;algorithm=SHA512withRSA&amp;format=XAdES&amp;properties=c2VydmVyVXJsPWh0dHA6Ly9hcHBwcnVlYmE6ODA4MC9hZmlybWEtc2VydmVyLXRyaXBoYXNlLXNpZ25lci9TaWduYXR1cmVTZXJ2aWNl&amp;sticky=false&amp;filename=cofirma.xsig</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Recuerde que, esta llamada deberá incluir los parámetros necesarios para
+el uso del servidor intermedio si se utiliza este mecanismo de
+comunicación.</p>
+<h2 id="recuperacion-del-log-de-la-aplicacion-getlog">Recuperación del log de la aplicación (<em>getLog</em>)</h2>
+<p>Operación para la recuperación de las trazas de ejecución de la
+aplicación de firma.</p>
+<p>Esta operación sólo es compatible con AutoFirma.</p>
+<p>Código de operación:</p>
+<ul>
+<li>getlog</li>
+</ul>
+<p>Parámetros admitidos:</p>
+<ul>
+<li>
+<p>op</p>
+<ul>
+<li>Código de operación. Debe ser: getlog</li>
+</ul>
+</li>
+</ul>
+<p>En caso de finalizar correctamente, se devuelve la cadena de texto con
+las trazas de ejecución.</p>
+<p>En caso de error, se obtiene una cadena que empieza por “err-”.</p>
+<p>La llamada a la operación se realiza con la petición:</p>
+<table>
+<thead>
+<tr>
+<th>afirma://getLog?op=getLog</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Recuerde que, esta llamada deberá incluir los parámetros necesarios para
+el uso del servidor intermedio si se utiliza este mecanismo de
+comunicación.</p>
+<ol>
+<li><span id="_Ref53066912" class="anchor"></span>Servidor intermedio</li>
+</ol>
+<p>El servidor intermedio será un servidor proporcionado por el organismo
+que hace integra el uso del Cliente @firma en su aplicación y en el que
+se guardarán temporalmente los datos que se transfieren entre la
+aplicación cliente y la aplicación de firma (Cliente @firma) cuando se
+utilice el modo de comunicación a través de servidor intermedio.</p>
+<p>Para el uso de este servidor se distribuye en el kit de integración del
+Cliente @firma dos archivos WAR para la ejecución de las operaciones de
+guardado y carga de datos del servidor:</p>
+<ul>
+<li>
+<p>afirma-signature-storage.war</p>
+<ul>
+<li>Archivo con el <em>servlet</em> para la subida de datos al servidor
+    intermedio.</li>
+</ul>
+</li>
+<li>
+<p>afirma-signature-retriever.war</p>
+<ul>
+<li>Archivo con el <em>servlet</em> para la descarga de datos del servidor
+    intermedio.</li>
+</ul>
+<ol>
+<li><span id="_Toc54855169" class="anchor"></span>Guardado de datos</li>
+</ol>
+</li>
+</ul>
+<p>La subida de datos al servidor intermedio se realiza mediante la llamada
+a la URL del servicio de guardado junto con varios parámetros de
+configuración.</p>
+<p>El nombre por defecto del servicio de guardado es: StorageService</p>
+<p>Los parámetros necesarios son:</p>
+<ul>
+<li>
+<p>op</p>
+<ul>
+<li>Operación que se desea realizar. Se establecerá el valor: put</li>
+</ul>
+</li>
+<li>
+<p>v</p>
+<ul>
+<li>Versión del servicio. Actualmente se debe configurar el valor:
+    1_0</li>
+</ul>
+</li>
+<li>
+<p>id</p>
+<ul>
+<li>Identificador aleatorio asignado a los datos que se almacenan.</li>
+</ul>
+</li>
+<li>
+<p>dat</p>
+<ul>
+<li>Datos que se desean almacenar en base 64 URL SAFE y URL Encoded.</li>
+</ul>
+</li>
+</ul>
+<p>Por ejemplo:</p>
+<p>http://miapp.com/afirma/afirma-signature-storage<strong>/StorageService</strong>?<strong>op</strong>=put&amp;<strong>v</strong>=1_0&amp;<strong>id</strong>=000987508929&amp;<strong>dat</strong>=ZnVsYW5pdG9AYXRvcy5uZXQ%3D</p>
+<ol>
+<li><span id="_Toc54855170" class="anchor"></span>Recuperación de datos</li>
+</ol>
+<p>La descarga de datos del servidor intermedio se realiza mediante la
+llamada a la URL del servicio de recuperación junto con varios
+parámetros de configuración.</p>
+<p>El nombre por defecto del servicio de guardado es: RetrieveService</p>
+<p>Los parámetros necesarios son:</p>
+<ul>
+<li>
+<p>op</p>
+<ul>
+<li>Operación que se desea realizar. Se establecerá el valor: get</li>
+</ul>
+</li>
+<li>
+<p>v</p>
+<ul>
+<li>Versión del servicio. Actualmente se debe configurar el valor:
+    1_0</li>
+</ul>
+</li>
+<li>
+<p>id</p>
+<ul>
+<li>Identificador que se utilizó para el almacenamiento de los
+    datos.</li>
+</ul>
+</li>
+</ul>
+<p>Por ejemplo:</p>
+<p>http://miapp.com/ afirma/
+afirma-signature-retriever<strong>/RetrieveService</strong>?<strong>op</strong>=get&amp;<strong>v</strong>=1_0&amp;<strong>id</strong>=000987508929</p>
+<p>&lt;<img src="media/image1.png"
+style="width:0.91667in;height:0.32292in"
+alt="Creative Commons License" /></p>
+<p>Esta obra está bajo una licencia <a href="#Licencia_Creative_Commons">Creative Commons
+Reconocimiento-NoComercial-CompartirIgual 3.0
+Unported</a>.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../PF_manual-configuracion_servicios_ES/" class="btn btn-neutral float-left" title="PF manual configuracion servicios ES"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../afirma_movil_intro/" class="btn btn-neutral float-right" title="<<img src="media/image1.jpeg"">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../PF_manual-configuracion_servicios_ES/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../afirma_movil_intro/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

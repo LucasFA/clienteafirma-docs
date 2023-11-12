@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>CF arquitectura ES - My Docs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "CF arquitectura ES";
+        var mkdocs_page_input_path = "markdown_strict/CF_arquitectura_ES.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> My Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Welcome to MkDocs</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Markdown strict</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Firmar_AutoFirma_Linux/">AF Firmar AutoFirma Linux</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Firmar_AutoFirma_OS_X/">AF Firmar AutoFirma OS X</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Linux/">Preparación del entorno</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Mac%20OS%20X/">AF Instalador Mac OS X</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Windows/">AF Instalador Windows</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_desarrollo_plugins_ES/">AF manual desarrollo plugins ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_instalacion_usuarios_ES/">AF manual instalacion usuarios ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_instalacion_y_gestion_ES/">AF manual instalacion y gestion ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ANEXO_Firma-electronica-en-varias-fases/">Firma electrónica en tres fases</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">CF arquitectura ES</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#descripcion-general">Descripción general</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#nucleo">Núcleo</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#modulo-afirma-core">Módulo afirma-core</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#bibliotecas-o-codigo-de-terceros">Bibliotecas o código de terceros</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modulo-afirma-ui-core-jse">Módulo afirma-ui-core-jse</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#gestion-de-almacenes-de-claves-y-certificados">Gestión de almacenes de claves y certificados</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#modulo-afirma-core-keystores">Módulo afirma-core-keystores</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modulo-afirma-keystores-mozilla">Módulo afirma-keystores-mozilla</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#bibliotecas-o-codigo-de-terceros_1">Bibliotecas o código de terceros</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modulo-afirma-keystores-single">Módulo afirma-keystores-single</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modulo-afirma-keystores-capiaddressbook">Módulo afirma-keystores-capiaddressbook</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#bibliotecas-o-codigo-de-terceros_2">Bibliotecas o código de terceros</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#realizacion-de-firmas-binarias">Realización de firmas binarias</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#modulo-afirma-crypto-core-pkcs7">Módulo afirma-crypto-core-pkcs7</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#bibliotecas-o-codigo-de-terceros_3">Bibliotecas o código de terceros</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modulo-afirma-crypto-cades">Módulo afirma-crypto-cades</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#bibliotecas-o-codigo-de-terceros_4">Bibliotecas o código de terceros</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modulo-afirma-crypto-cades-multi">Módulo afirma-crypto-cades-multi</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#bibliotecas-o-codigo-de-terceros_5">Bibliotecas o código de terceros</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modulo-afirma-crypto-cades-enveloper">Módulo afirma-crypto-cades-enveloper</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#bibliotecas-o-codigo-de-terceros_6">Bibliotecas o código de terceros</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modulo-afirma-crypto-pades">Módulo afirma-crypto-pades</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#bibliotecas-o-codigo-de-terceros_7">Bibliotecas o código de terceros</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modulo-afirma-crypto-cms">Módulo afirma-crypto-cms</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#bibliotecas-o-codigo-de-terceros_8">Bibliotecas o código de terceros</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modulo-afirma-crypto-cms-enveloper">Módulo afirma-crypto-cms-enveloper</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#bibliotecas-o-codigo-de-terceros_9">Bibliotecas o código de terceros</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#realizacion-de-firmas-xml">Realización de firmas XML</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#modulo-afirma-crypto-core-xml">Módulo afirma-crypto-core-xml</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modulo-afirma-crypto-xades">Módulo afirma-crypto-xades</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#bibliotecas-o-codigo-de-terceros_10">Bibliotecas o código de terceros</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modulo-afirma-crypto-xmlsignature">Módulo afirma-crypto-xmlsignature</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#bibliotecas-o-codigo-de-terceros_11">Bibliotecas o código de terceros</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modulo-afirma-crypto-odf">Módulo afirma-crypto-odf</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modulo-afirma-crypto-ooxml">Módulo afirma-crypto-ooxml</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#realizacion-de-cifrados-simetricos">Realización de cifrados simétricos</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#modulo-afirma-crypto-cipher">Módulo afirma-crypto-cipher</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#realizacion-de-firmas-multifirmas-masivas">Realización de firmas / multifirmas masivas</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#modulo-afirma-core-massive">Módulo afirma-core-massive</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#utilidades">Utilidades</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#modulo-afirma-util">Módulo afirma-util</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_catalogo_aplicaciones/">CF catalogo aplicaciones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_distribuciones/">CF distribuciones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_funcional_ES/">CF funcional ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-incidencias/">CF guia incidencias</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-uso-interfaz/">CF guia uso interfaz</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-uso/">CF guia uso</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-firmas-pdf/">CF manual firmas pdf</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-firmas-xml/">CF manual firmas xml</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-integrador/">CF manual integrador</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-migracion/">CF manual migracion</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual_integracion_modulos_ES/">CF manual integracion modulos ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_plan-pruebas/">CF plan pruebas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_roadmap_ES/">CF roadmap ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Comunicacion_Navegador_y_App_en_Entorno_Movil/">El camino de ida: Desde el navegador Web hacia la App</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../DECLARACION_ACCESIBILIDAD/">Declaración de Accesibilidad</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Diagramas%20de%20secuencia%20de%20los%20procesos%20de%20firma%20m%C3%B3vil/">Firma monofásica (Windows 8 / Windows RT y Android)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Firma_por_lotes_predefinidos_con_el_MiniApplet_Cliente/">Firma por lotes predefinidos con el MiniApplet Cliente</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Informe%20-%20Alternativas_Applets_para_firma/">Informe   Alternativas Applets para firma</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Invocaci%C3%B3n%20por%20protocolo%20de%20aplicaciones%20nativas%20desde%20p%C3%A1ginas%20Web/">¿Qué es la invocación por protocolo?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../La_seguridad_en_el_Servicio_de_firma_del_Cliente/">Tabla de contenido</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MCF_manual-integrador_ES/">MCF manual integrador ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MCF_roadmap_ES/">MCF roadmap ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Manual%20para%20la%20configuraci%C3%B3n%20de%20los%20campos%20de%20firma%20para%20la%20aplicaci%C3%B3n%20de%20firma%20manuscrita%20en%20tableta/">Manual para la configuración de los campos de firma para la aplicación de firma manuscrita en tableta</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_Manual_App_Portafirmas_Android/">PF Manual App Portafirmas Android</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_Manual_App_Portafirmas_iOS/">PF Manual App Portafirmas iOS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_manual-configuracion_servicios_ES/">PF manual configuracion servicios ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Sintaxis_invocacion_Cliente_Afirma/">Sintaxis invocacion Cliente Afirma</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../afirma_movil_intro/"><<img src="media/image1.jpeg"</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">My Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Markdown strict</li>
+      <li class="breadcrumb-item active">CF arquitectura ES</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>Índice de contenidos</p>
+<p><a href="#arquitectura-de-módulos-del-proyecto-cliente-firma">1 Arquitectura de Módulos del proyecto Cliente @firma
+[4](#arquitectura-de-módulos-del-proyecto-cliente-firma)</a></p>
+<p><a href="#descripción-general">1.1 Descripción general
+[4](#descripción-general)</a></p>
+<p><a href="#núcleo">1.2 Núcleo [5](#núcleo)</a></p>
+<p><a href="#módulo-afirma-core">1.2.1 Módulo afirma-core [5](#módulo-afirma-core)</a></p>
+<p><a href="#módulo-afirma-ui-core-jse">1.2.2 Módulo afirma-ui-core-jse
+[5](#módulo-afirma-ui-core-jse)</a></p>
+<p><a href="#gestión-de-almacenes-de-claves-y-certificados">1.3 Gestión de almacenes de claves y certificados
+[6](#gestión-de-almacenes-de-claves-y-certificados)</a></p>
+<p><a href="#módulo-afirma-core-keystores">1.3.1 Módulo afirma-core-keystores
+[6](#módulo-afirma-core-keystores)</a></p>
+<p><a href="#módulo-afirma-keystores-mozilla">1.3.2 Módulo afirma-keystores-mozilla
+[7](#módulo-afirma-keystores-mozilla)</a></p>
+<p><a href="#módulo-afirma-keystores-single">1.3.3 Módulo afirma-keystores-single
+[8](#módulo-afirma-keystores-single)</a></p>
+<p><a href="#módulo-afirma-keystores-capiaddressbook">1.3.4 Módulo afirma-keystores-capiaddressbook
+[9](#módulo-afirma-keystores-capiaddressbook)</a></p>
+<p><a href="#realización-de-firmas-binarias">1.4 Realización de firmas binarias
+[9](#realización-de-firmas-binarias)</a></p>
+<p><a href="#módulo-afirma-crypto-core-pkcs7">1.4.1 Módulo afirma-crypto-core-pkcs7
+[10](#módulo-afirma-crypto-core-pkcs7)</a></p>
+<p><a href="#módulo-afirma-crypto-cades">1.4.2 Módulo afirma-crypto-cades
+[11](#módulo-afirma-crypto-cades)</a></p>
+<p><a href="#módulo-afirma-crypto-cades-multi">1.4.3 Módulo afirma-crypto-cades-multi
+[12](#módulo-afirma-crypto-cades-multi)</a></p>
+<p><a href="#módulo-afirma-crypto-cades-enveloper">1.4.4 Módulo afirma-crypto-cades-enveloper
+[13](#módulo-afirma-crypto-cades-enveloper)</a></p>
+<p><a href="#módulo-afirma-crypto-pades">1.4.5 Módulo afirma-crypto-pades
+[14](#módulo-afirma-crypto-pades)</a></p>
+<p><a href="#módulo-afirma-crypto-cms">1.4.6 Módulo afirma-crypto-cms
+[15](#módulo-afirma-crypto-cms)</a></p>
+<p><a href="#módulo-afirma-crypto-cms-enveloper">1.4.7 Módulo afirma-crypto-cms-enveloper
+[16](#módulo-afirma-crypto-cms-enveloper)</a></p>
+<p><a href="#realización-de-firmas-xml">1.5 Realización de firmas XML
+[17](#realización-de-firmas-xml)</a></p>
+<p><a href="#módulo-afirma-crypto-core-xml">1.5.1 Módulo afirma-crypto-core-xml
+[17](#módulo-afirma-crypto-core-xml)</a></p>
+<p><a href="#módulo-afirma-crypto-xades">1.5.2 Módulo afirma-crypto-xades
+[18](#módulo-afirma-crypto-xades)</a></p>
+<p><a href="#módulo-afirma-crypto-xmlsignature">1.5.3 Módulo afirma-crypto-xmlsignature
+[19](#módulo-afirma-crypto-xmlsignature)</a></p>
+<p><a href="#módulo-afirma-crypto-odf">1.5.4 Módulo afirma-crypto-odf
+[20](#módulo-afirma-crypto-odf)</a></p>
+<p><a href="#módulo-afirma-crypto-ooxml">1.5.5 Módulo afirma-crypto-ooxml
+[20](#módulo-afirma-crypto-ooxml)</a></p>
+<p><a href="#realización-de-cifrados-simétricos">1.6 Realización de cifrados simétricos
+[22](#realización-de-cifrados-simétricos)</a></p>
+<p><a href="#módulo-afirma-crypto-cipher">1.6.1 Módulo afirma-crypto-cipher
+[22](#módulo-afirma-crypto-cipher)</a></p>
+<p><a href="#realización-de-firmas-multifirmas-masivas">1.7 Realización de firmas / multifirmas masivas
+[23](#realización-de-firmas-multifirmas-masivas)</a></p>
+<p><a href="#módulo-afirma-core-massive">1.7.1 Módulo afirma-core-massive
+[23](#módulo-afirma-core-massive)</a></p>
+<p><a href="#dependencias-del-applet-firma-respecto-a-los-módulos">2 Dependencias del Applet @firma respecto a los módulos
+[25](#dependencias-del-applet-firma-respecto-a-los-módulos)</a></p>
+<p><a href="#descripción-general-1">2.1 Descripción general
+[25](#descripción-general-1)</a></p>
+<p><a href="#dependencias-del-miniapplet-firma-respecto-a-los-módulos">3 Dependencias del MiniApplet @firma respecto a los módulos
+[26](#dependencias-del-miniapplet-firma-respecto-a-los-módulos)</a></p>
+<p><a href="#descripción-general-2">3.1 Descripción general
+[26](#descripción-general-2)</a></p>
+<p><a href="#dependencias-del-interfaz-standalone-respecto-a-los-módulos">4 Dependencias del interfaz Standalone respecto a los módulos
+[27](#dependencias-del-interfaz-standalone-respecto-a-los-módulos)</a></p>
+<p><a href="#descripción-general-3">4.1 Descripción general
+[27](#descripción-general-3)</a></p>
+<p><a href="#dependencias-de-simpleafirma-respecto-a-los-módulos">5 Dependencias de SimpleAfirma respecto a los módulos
+[28](#dependencias-de-simpleafirma-respecto-a-los-módulos)</a></p>
+<p><a href="#descripción-general-4">5.1 Descripción general
+[28](#descripción-general-4)</a></p>
+<h1 id="arquitectura-de-modulos-del-proyecto-cliente-firma">Arquitectura de Módulos del proyecto Cliente @firma</h1>
+<p><img alt="" src="media/image1.png" /></p>
+<h2 id="descripcion-general">Descripción general</h2>
+<p>El proyecto @firma se compone de una serie de módulos funcionales con
+ciertas dependencias de cohesión y un mínimo acoplamiento que forman un
+árbol de sub-proyectos.</p>
+<p>Esta separación en módulos funcionales permite a los desarrolladores
+crear nuevos productos reutilizando partes de @firma de forma sencilla,
+a la vez que facilita la evolución, el mantenimiento y la evolución de
+las propias aplicaciones del proyecto Cliente @firma.</p>
+<h2 id="nucleo">Núcleo</h2>
+<p>&lt;<img src="media/image2.png"
+style="width:1.24419in;height:0.95526in"
+alt="C:\Users\Tomas\workspace\afirma-core\src\main\java\es\gob\afirma\core\doc-files\package-info-1.png" /></p>
+<ol>
+<li>
+<ol>
+<li></li>
+<li></li>
+</ol>
+</li>
+</ol>
+<h3 id="modulo-afirma-core">Módulo afirma-core</h3>
+<p>El módulo central del proyecto (afirma-core) es la base para el resto de
+los módulos, y contiene tanto los interfaces que definen las
+funcionalidades clave del proyecto (firma electrónica, cifrado, etc.)
+como una serie de clases de utilidad (incluyendo excepciones básicas)
+que son de uso generalizado para el resto de los módulos.</p>
+<p>El módulo afirma-core es compatible con JSE 1.5 (y superiores) y con
+Apache Batik (lo que le proporciona compatibilidad con Google Android
+2.2 y superiores).</p>
+<p>El módulo, presenta a su vez dos dependencias:</p>
+<ul>
+<li>
+<p>Dependencia dinámica con la biblioteca “Java Mime Magic Library
+    0.1.0” (que a su vez puede tener dependencias con “Apache Jakarta
+    ORO 2.0.8”), utilizada por la clase
+    es.gob.afirma.core.misc.MimeHelper para la detección de tipos de
+    contenido.</p>
+<ul>
+<li>Al ser dinámica, el módulo afirma-core es funcional (no presenta
+    errores ni en tiempo de ejecución ni en tiempo de compilación)
+    incluso si esta biblioteca no se encuentra en el CLASSPATH, pero
+    en este caso no se realizará detección de tipo de contenido y
+    siempre se devolverá el valor por defecto (contenido binario
+    genérico).</li>
+</ul>
+</li>
+<li>
+<p>Dependencia dinámica con el módulo afirma-ui-core-jse.</p>
+<ul>
+<li>Al ser dinámica, el módulo afirma-core no presenta errores en
+    tiempo de compilación) incluso si este módulo no se encuentra en
+    el CLASSPATH, pero en este caso cualquier operación que requiera
+    un interfaz gráfico resultará en error.</li>
+</ul>
+</li>
+</ul>
+<h4 id="bibliotecas-o-codigo-de-terceros">Bibliotecas o código de terceros</h4>
+<ul>
+<li>
+<p>Bibliotecas externas:</p>
+<ul>
+<li>
+<p>Java Mime Magic Library 0.1.0</p>
+</li>
+<li>
+<p>Apache Jakarta ORO 2.0.8</p>
+</li>
+<li>
+<p>Apache Commons Logging 1.1.1</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Código incluido:</p>
+<ul>
+<li>
+<p>com.sun.deploy.util.WinRegistry basado en la clase de igual
+    nombre de OpenJDK.</p>
+</li>
+<li>
+<p>es.gob.afirma.core.misc.Base64 basado en código de Mikael Grev
+    con licencia BSD.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="modulo-afirma-ui-core-jse">Módulo afirma-ui-core-jse</h3>
+<p>Para mejorar la portabilidad del núcleo a plataformas que no cuenten con
+Swing o AWT para la creación y gestión de interfaces gráficos, todas las
+operaciones relacionadas con estos interfaces gráficas se separan en un
+sub-proyecto diferente.</p>
+<p>Aunque las funcionalidades principales de este módulo se declaran en el
+interfaz es.gob.afirma.core.ui.AOUIManager, se incluyen también otras
+clases y métodos de utilidad adicionales.</p>
+<p>Este módulo es compatible con JSE 1.5, y debe ser sustituido por
+implementaciones alternativas cuando se desee usar el Cliente @firma
+haciendo uso de las capacidades gráficas predefinidas en Google Android
+u otras plataformas distintas a JSE 1.5 (y superiores). Igualmente, es
+conveniente su sustitución cuando se use el Cliente @firma en sistemas
+servidores sin entorno gráfico.</p>
+<h2 id="gestion-de-almacenes-de-claves-y-certificados">Gestión de almacenes de claves y certificados</h2>
+<p><img alt="" src="media/image3.png" /></p>
+<p>Una de las funcionalidades más importante en cualquier aplicación de
+firma electrónica es el acceso a las funcionalidades de gestión de
+certificados y claves privadas con las que se van a realizar las firmas
+(u otras operaciones criptográficas).</p>
+<p>Se soportan múltiples tipos de almacenes (PKCS#12, Windows CAPI, Mac OS
+X Keychain, Java, etc.), con la peculiaridad de que mediante dos únicas
+clases (es.gob.afirma.keystores.main.common.AOKeyStoreManager y
+es.gob.afirma.keystores.main.common.AOKeyStoreManagerFactory) se
+gestionan tanto almacenes de tipo KeyStore como de tipo CertStore.</p>
+<h3 id="modulo-afirma-core-keystores">Módulo afirma-core-keystores</h3>
+<p>&lt;<img src="media/image4.png"
+style="width:1.43282in;height:1.2093in"
+alt="C:\Users\Tomas\workspace\afirma-core-keystores\src\main\java\es\gob\afirma\keystores\main\doc-files\package-info-1.png" /></p>
+<p>Este módulo incorpora el soporte de la mayoría de tipos de almacén,
+además de las implementaciones de los interfaces del núcleo relacionados
+con almacenes de claves y certificados.</p>
+<p>Los tipos soportados son:</p>
+<ul>
+<li>
+<p>PKCS#12</p>
+</li>
+<li>
+<p>Java KeyStore (todas las variantes).</p>
+</li>
+<li>
+<p>PKCS#11</p>
+<ul>
+<li>Incluyendo DNIe vía PKCS#11</li>
+</ul>
+</li>
+<li>
+<p>Windows CAPI</p>
+<ul>
+<li>
+<p>Certificados personales</p>
+</li>
+<li>
+<p>Certificados raíz</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Llavero de Mac OS X</p>
+</li>
+</ul>
+<p>El módulo hace uso de interfaces gráficas (solicitud de contraseñas o
+PIN), por lo que necesita que el núcleo cuente con el módulo
+afirma-core-ui-jse (o una re-implementación del mismo).</p>
+<p>El módulo afirma-core-keystores es compatible con JSE 1.5 (y superiores)
+y con Apache Batik (lo que le proporciona compatibilidad con Google
+Android 2.2 y superiores), con la precaución de que en entornos
+distintos a JSE 1.5 o superiores es necesaria una re-implementación
+compatible del módulo afirma-core-ui-jse si se usan funcionalidades que
+necesiten interfaz gráfico.</p>
+<h3 id="modulo-afirma-keystores-mozilla">Módulo afirma-keystores-mozilla</h3>
+<p>&lt;<img src="media/image5.png"
+style="width:1.5814in;height:2.02743in"
+alt="C:\Users\Tomas\workspace\afirma-keystores-mozilla\doc\es\gob\afirma\keystores\mozilla\doc-files\package-info-1.png" /></p>
+<p>La gestión de almacenes NSS (<em>Netscape Security Services</em>), usados por
+los productos Mozilla (Firefox, ThunderBird, SeaMonkey, etc.) presenta
+numerosas diferencias respecto a los otros tipos soportados por
+afirma-core-keystores, por lo que se encuentra separado en un módulo
+independiente. Pese a esta separación, la factoría principal
+(es.gob.afirma.keystores.main.common.AOKeyStoreManagerFactory) será
+capaz de trabajar con estos almacenes cuando afirma-keystores-mozilla
+esté en el CLASSPATH.</p>
+<p>Este módulo soporta únicamente el almacén de certificados personales (no
+raíz o autoridades intermedias), y necesita que el sistema cuente con
+las bibliotecas NSS (Netscape Security Services) correctamente
+instaladas y de la misma arquitectura que el JRE.</p>
+<p>El módulo afirma-keystores-mozilla es compatible con JSE 1.5 (y
+superiores), con la precaución de que en entornos distintos a JSE 1.5 o
+superiores es necesaria una re-implementación compatible del módulo
+afirma-core-ui-jse si se usan funcionalidades que necesiten interfaz
+gráfico.</p>
+<p>Ha sido probado con NSS de 32 y 64 bits en Windows, Linux, Mac OS X y
+Solaris. En Mac OS X puede requerir la realización de cambios
+persistentes en el sistema, para lo cual solicitará la contraseña de
+administración la primera vez que se ejecute.</p>
+<h4 id="bibliotecas-o-codigo-de-terceros_1">Bibliotecas o código de terceros</h4>
+<ul>
+<li>
+<p>Código incluido:</p>
+<ul>
+<li>es.gob.afirma.keystores.mozilla.MozillaKeyStoreUtilities
+    contiene porciones inspiradas en clases de OpenJDK.</li>
+</ul>
+</li>
+</ul>
+<h3 id="modulo-afirma-keystores-single">Módulo afirma-keystores-single</h3>
+<p>&lt;<img src="media/image6.png"
+style="width:0.61529in;height:1.32558in"
+alt="C:\Users\Tomas\workspace\afirma-keystores-single\doc\es\gob\afirma\keystores\single\doc-files\package-info-1.png" /></p>
+<p>El módulo afirma-keystores-single es directamente un proveedor
+criptográfico JCA/JCE que implementa el SPI (<em>Service Provider
+Interface</em>) KeyStore añadiendo un almacén llamado PKCS7 que permite
+tratar como KeyStore certificados en disco en formato PKCS#7 o
+directamente X.509 (tanto binarios como Base64).</p>
+<p>Para usar este módulo es necesario instalarlo en Java como proveedor
+criptográfico JCE/JCA y obtener el KeyStore de nombre PKCS7. No se
+implementa el SPI CertStore.</p>
+<p>El módulo afirma-keystores-single es compatible con JSE 1.5 (y
+superiores) y con Apache Batik (lo que le proporciona compatibilidad con
+Google Android 2.2 y superiores), con la precaución de que en entornos
+distintos a JSE 1.5 o superiores es necesaria una re-implementación
+compatible del módulo afirma-core-ui-jse si se usan funcionalidades que
+necesiten interfaz gráfico.</p>
+<h3 id="modulo-afirma-keystores-capiaddressbook">Módulo afirma-keystores-capiaddressbook</h3>
+<p>Este módulo no tiene ninguna dependencia externa, ni con bibliotecas ni
+con otros módulos del Cliente @firma.</p>
+<p>El módulo afirma-keystores-capiaddressbook es directamente un proveedor
+criptográfico JCA/JCE que implementa el SPI (<em>Service Provider
+Interface</em>) KeyStore añadiendo dos almacenes (llamados
+Windows-ADDESSBOOK y Windows-CA) permite tratar como KeyStore
+certificados en loa almacenes de Windows “Libreta de Direcciones” y
+“Autoridades de Certificación” respectivamente.</p>
+<p>Para usar este módulo es necesario instalarlo en Java como proveedor
+criptográfico JCE/JCA y obtener el KeyStore de nombre PKCS7. No se
+implementa el SPI CertStore.</p>
+<p>El módulo afirma-core-addressbook es compatible con JSE 1.6 (y
+superiores) únicamente en entornos MS-Windows. En JRE 64 bits es
+necesario que este incluya el proveedor SunMSCAPI. No se soporta la
+arquitectura IA64.</p>
+<h4 id="bibliotecas-o-codigo-de-terceros_2">Bibliotecas o código de terceros</h4>
+<ul>
+<li>
+<p>Código incluido:</p>
+<ul>
+<li>sun.security.mscapi contiene porciones del proveedor de
+    seguridad SunMSCAPI de OpenJDK.</li>
+</ul>
+</li>
+</ul>
+<h2 id="realizacion-de-firmas-binarias">Realización de firmas binarias</h2>
+<p><img alt="" src="media/image7.png" /></p>
+<p>Los módulos de realización de firmas binarias contienen las
+funcionalidades necesarias para la creación y gestión de firmas
+electrónicas y sobres digitales en formatos PKCS#7 y derivados, donde
+encontramos los siguientes formatos:</p>
+<ul>
+<li>
+<p>Firmas electrónicas</p>
+<ul>
+<li>
+<p>CMS</p>
+</li>
+<li>
+<p>CAdES</p>
+</li>
+<li>
+<p>PAdES</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Sobres digitales</p>
+<ul>
+<li>
+<p>CMS</p>
+</li>
+<li>
+<p>CAdES</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="modulo-afirma-crypto-core-pkcs7">Módulo afirma-crypto-core-pkcs7</h3>
+<p>&lt;<img src="media/image8.png"
+style="width:1.4186in;height:1.48559in"
+alt="C:\Users\Tomas\workspace\afirma-crypto-core-pkcs7\src\main\java\es\gob\afirma\signers\pkcs7\doc-files\package-info-1.png" /></p>
+<p>El módulo afirma-crypto-core-pkcs7 contiene métodos de utilidad para la
+creación de firmas electrónicas en formatos derivados de PKCS#7, pero no
+provee ninguna funcionalidad directa a los usuarios (ni siquiera genera
+firmas en formato PKCS#7), es un módulo de uso interno por parte de
+otros módulos.</p>
+<p>Por motivos organizativos, este módulo presenta a su vez un sub-módulo
+llamado afirma-crypto-core-pkcs7-tsp, que por simplicidad no se trata de
+forma separada ni se muestra en los diagramas, considerándose que ambos
+forman un único módulo integral.</p>
+<p>El módulo presenta dependencia directa únicamente con el núcleo (módulo
+afirma-core) y con las bibliotecas externas BouncyCastle (proveedor,
+correo y TSP).</p>
+<p>El módulo no realiza ninguna llamada a interfaces gráficos y es
+compatible con JSE 1.5 y superiores y con Apache Batik (Android) 3 y
+superiores. Para compatibilidad con Android 2.x es necesario
+refactorizar el proyecto sustituyendo BouncyCastle por SpongyCastle.</p>
+<h4 id="bibliotecas-o-codigo-de-terceros_3">Bibliotecas o código de terceros</h4>
+<ul>
+<li>
+<p>Bibliotecas externas:</p>
+<ul>
+<li>BouncyCastle 1.46.</li>
+</ul>
+</li>
+</ul>
+<h3 id="modulo-afirma-crypto-cades">Módulo afirma-crypto-cades</h3>
+<p>&lt;<img src="media/image9.png"
+style="width:2.30315in;height:2.0748in" /></p>
+<p>El módulo afirma-crypto-cades contiene la funcionalidad para la
+generación de firmas electrónicas binaria acordes al estándar CAdES.
+Además de la propia funcionalidad de firma, contiene los métodos
+necesarios para la generación de multifirmas CAdES.</p>
+<p>El módulo presenta dependencia directa con el núcleo (módulo
+afirma-core), con el módulo de firma binaria (afirma-crypto-core-pkcs7)
+y con las bibliotecas externas BouncyCastle (proveedor y correo). Para
+la generación de multifirmas CAdES debe cubrirse también una dependencia
+dinámica con el módulo afirma-crypto-cades-multi.</p>
+<p>El módulo no realiza ninguna llamada a interfaces gráficos y es
+compatible con JSE 1.5 y superiores y con Apache Batik (Android) 3 y
+superiores. Para compatibilidad con Android 2.x es necesario
+refactorizar el proyecto sustituyendo BouncyCastle por SpongyCastle.</p>
+<h4 id="bibliotecas-o-codigo-de-terceros_4">Bibliotecas o código de terceros</h4>
+<ul>
+<li>
+<p>Bibliotecas externas:</p>
+<ul>
+<li>BouncyCastle 1.46.</li>
+</ul>
+</li>
+</ul>
+<h3 id="modulo-afirma-crypto-cades-multi">Módulo afirma-crypto-cades-multi</h3>
+<p>&lt;<img src="media/image10.png"
+style="width:1.90551in;height:2.38976in" /></p>
+<p>El módulo afirma-crypto-cades-multi contiene los métodos para la
+generación de multifirmas cades: cofirmas (firmas paralelas) y
+contrafirmas (firmas en cascada). Los usuarios no utilizarán estos
+métodos de forma directa, sino a través del manejador de firma CAdES
+(es.gob.afirma.crypto.cades.AOCAdESSigner) existente en el módulo
+afirma-crypto-cades.</p>
+<p>El módulo presenta dependencia directa con el módulo de firma CAdES
+(afirma-crypto-cades), con las funcionalidades de firma binaria
+(afirma-crypto-core-pkcs7), así como del propio de núcleo (módulo
+afirma-core) y con las bibliotecas externas BouncyCastle (proveedor y
+correo).</p>
+<p>El módulo no realiza ninguna llamada a interfaces gráficos y es
+compatible con JSE 1.5 y superiores y con Apache Batik (Android) 3 y
+superiores. Para compatibilidad con Android 2.x es necesario
+refactorizar el proyecto sustituyendo BouncyCastle por SpongyCastle.</p>
+<h4 id="bibliotecas-o-codigo-de-terceros_5">Bibliotecas o código de terceros</h4>
+<ul>
+<li>
+<p>Bibliotecas externas:</p>
+<ul>
+<li>BouncyCastle 1.46.</li>
+</ul>
+</li>
+</ul>
+<h3 id="modulo-afirma-crypto-cades-enveloper">Módulo afirma-crypto-cades-enveloper</h3>
+<p>&lt;<img src="media/image11.png"
+style="width:2.43701in;height:3.05906in" /></p>
+<p>El módulo afirma-crypto-cades-enveloper contiene los métodos para la
+generación de las siguientes estructuras CAdES:</p>
+<ul>
+<li>
+<p>Data</p>
+</li>
+<li>
+<p>DigestedData</p>
+</li>
+<li>
+<p>EncryptedData</p>
+</li>
+<li>
+<p>EnvelopedData</p>
+</li>
+<li>
+<p>SignedAndEnvelopedData</p>
+</li>
+</ul>
+<p>El módulo presenta dependencia directa con el núcleo (módulo
+afirma-core), el módulo CAdES (afirma-crypto-cades) , a través del que
+realiza las firmas de los empaquetados que la requieren y con las
+bibliotecas externas BouncyCastle (proveedor y correo). Adicionalmente,
+existe una dependencia indirecta con el módulo PKCS#7
+(afirma-crypto-core-pkcs7), necesario para el tratamiento de las firmas
+binarias.</p>
+<p>El módulo no realiza ninguna llamada a interfaces gráficos y es
+compatible con JSE 1.5 y superiores y con Apache Batik (Android) 3 y
+superiores. Para compatibilidad con Android 2.x es necesario
+refactorizar el proyecto sustituyendo BouncyCastle por SpongyCastle.</p>
+<h4 id="bibliotecas-o-codigo-de-terceros_6">Bibliotecas o código de terceros</h4>
+<ul>
+<li>
+<p>Bibliotecas externas:</p>
+<ul>
+<li>BouncyCastle 1.46.</li>
+</ul>
+</li>
+</ul>
+<h3 id="modulo-afirma-crypto-pades">Módulo afirma-crypto-pades</h3>
+<p>&lt;<img src="media/image12.png"
+style="width:2.80709in;height:2.27953in" /></p>
+<p>El módulo afirma-crypto-pades contiene los métodos para firmar
+electrónicamente documentos PDF. La firma PAdES es una firma derivada de
+CAdES que se inserta dentro de un documento PDF y se registra de forma
+concreta en su diccionario interno.</p>
+<p>El módulo depende directamente del módulo de firma CAdES
+(afirma-crypto-cades), del núcleo (módulo afirma-core) y de la
+biblioteca externa iText, para el manejo de documentos PDF. A su vez,
+depende indirectamente de las bibliotecas externas BouncyCastle
+(proveedor, correo y TSP) y del núcleo de firma binaria (módulo
+afirma-crypto-core-pkcs7). Para su ejecución desde entornos JSE, será
+necesario cubrir la dependencia del núcleo con el módulo
+afirma-core-ui-jse.</p>
+<p>El módulo es compatible con JSE 1.5 y superiores y con Apache Batik
+(Android) 3 y superiores. Para compatibilidad con Android 2.x es
+necesario refactorizar el proyecto sustituyendo BouncyCastle por
+SpongyCastle. En sistemas Android, será necesario remplazar el módulo
+afirma-core-ui-jse por otro que maneje correctamente los interfaces
+gráficos del entorno.</p>
+<h4 id="bibliotecas-o-codigo-de-terceros_7">Bibliotecas o código de terceros</h4>
+<ul>
+<li>
+<p>Bibliotecas externas:</p>
+<ul>
+<li>
+<p>BouncyCastle 1.46.</p>
+</li>
+<li>
+<p>iText 2.1.7.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="modulo-afirma-crypto-cms">Módulo afirma-crypto-cms</h3>
+<p>&lt;<img src="media/image13.png"
+style="width:2.43701in;height:2.41732in" /></p>
+<p>El módulo afirma-crypto-cms contiene los métodos para la firma y
+multifirma electrónica binaria en formato CMS, variante evolucionada de
+PKCS#7. El único <em>contentType</em> CMS soportado por este módulo es
+<em>signedData</em>, el correspondiente a las firmas electrónicas CMS.</p>
+<p>El módulo presenta dependencia directa con el núcleo (módulo
+afirma-core), con el módulo PKCS#7 (afirma-crypto-core-pkcs7) y con las
+bibliotecas externas BouncyCastle (proveedor y correo).</p>
+<p>El módulo no realiza ninguna llamada a interfaces gráficos y es
+compatible con JSE 1.5 y superiores y con Apache Batik (Android) 3 y
+superiores. Para compatibilidad con Android 2.x es necesario
+refactorizar el proyecto sustituyendo BouncyCastle por SpongyCastle.</p>
+<h4 id="bibliotecas-o-codigo-de-terceros_8">Bibliotecas o código de terceros</h4>
+<ul>
+<li>
+<p>Bibliotecas externas:</p>
+<ul>
+<li>BouncyCastle 1.46.</li>
+</ul>
+</li>
+</ul>
+<h3 id="modulo-afirma-crypto-cms-enveloper">Módulo afirma-crypto-cms-enveloper</h3>
+<p>&lt;<img src="media/image14.png"
+style="width:2.43701in;height:3.05906in" /></p>
+<p>El módulo afirma-crypto-cms-enveloper contiene los métodos para la
+generación de las siguientes estructuras CMS:</p>
+<ul>
+<li>
+<p>AuthenticatedData</p>
+</li>
+<li>
+<p>AuthenticatedAndEnvelopedData</p>
+</li>
+<li>
+<p>CompressedData</p>
+</li>
+<li>
+<p>Data</p>
+</li>
+<li>
+<p>DigestedData</p>
+</li>
+<li>
+<p>EncryptedData</p>
+</li>
+<li>
+<p>EnvelopedData</p>
+</li>
+<li>
+<p>SignedAndEnvelopedData</p>
+</li>
+</ul>
+<p>El módulo presenta dependencia directa con el núcleo (módulo
+afirma-core), el módulo CMS (afirma-crypto-cms) , a través del que
+realiza las firmas de los empaquetados que la requieren y con las
+bibliotecas externas BouncyCastle (proveedor y correo). Adicionalmente,
+existe una dependencia indirecta con el módulo PKCS#7
+(afirma-crypto-core-pkcs7), necesario para el tratamiento de las firmas
+binarias.</p>
+<p>El módulo no realiza ninguna llamada a interfaces gráficos y es
+compatible con JSE 1.5 y superiores y con Apache Batik (Android) 3 y
+superiores. Para compatibilidad con Android 2.x es necesario
+refactorizar el proyecto sustituyendo BouncyCastle por SpongyCastle.</p>
+<h4 id="bibliotecas-o-codigo-de-terceros_9">Bibliotecas o código de terceros</h4>
+<ul>
+<li>
+<p>Bibliotecas externas:</p>
+<ul>
+<li>BouncyCastle 1.46.</li>
+</ul>
+</li>
+</ul>
+<h2 id="realizacion-de-firmas-xml">Realización de firmas XML</h2>
+<p><img alt="" src="media/image15.png" /></p>
+<p>Los módulos de realización de firmas XML contienen las funcionalidades
+necesarias para la creación y gestión de firmas electrónicas XML. Los
+formatos de firma que se ajustan a esta categoría son:</p>
+<ul>
+<li>
+<p>XAdES</p>
+</li>
+<li>
+<p>XMLDSig</p>
+</li>
+<li>
+<p>ODF</p>
+</li>
+<li>
+<p>OOXML</p>
+</li>
+</ul>
+<h3 id="modulo-afirma-crypto-core-xml">Módulo afirma-crypto-core-xml</h3>
+<p>&lt;<img src="media/image16.png"
+style="width:0.64961in;height:1.37795in" /></p>
+<p>El módulo afirma-crypto-core-xml contiene métodos de utilidad necesarios
+para el tratamiento de firmas XML, independientemente de su formato
+concreto. Este módulo no provee ninguna funcionalidad directa a los
+usuarios, es un módulo de utilidad para su uso por otros módulos.</p>
+<p>El módulo presenta dependencia directa únicamente con el núcleo del
+proyecto (módulo afirma-core).</p>
+<p>Desde este módulo no se realiza ninguna llamada a interfaces gráficos y
+es compatible con JSE 1.6 y superiores.</p>
+<h3 id="modulo-afirma-crypto-xades">Módulo afirma-crypto-xades</h3>
+<p>&lt;<img src="media/image17.png"
+style="width:3.42126in;height:2.28346in" /></p>
+<p>El módulo afirma-crypto-xades contiene la funcionalidad para la
+generación de firmas electrónicas XML avanzadas acordes al estándar
+XAdES. El módulo está preparado para la generación de este tipo de
+firmas en sus variantes Internally Detached, Enveloping y Enveloped.
+También permite la multifirma en este formato.</p>
+<p>Existe dependencia directa de este módulo con el núcleo del Cliente
+(módulo afirma-core), el módulo de firmas XML (afirma-crypto-core-xml) y
+la biblioteca externa JXAdES. Para tener acceso a la funcionalidad
+completa del módulo es necesario cubrir dos dependencias adicionales, la
+biblioteca externa JMimeMagic, que permite identificar el tipo de
+contenido firmado, y el módulo de interfaces gráficos correspondiente al
+entorno en cuestión, por defecto, JSE (afirma-core-ui-jse), que permite
+mostrar un diálogo auxiliar para localizar las hojas de estilo
+declaradas cuando es necesario.</p>
+<p>La biblioteca externa JMimeMagic tiene a su vez dependencias con las
+bibliotecas Apache Log4Java y Apache Oro. Debido a que estas son
+dependencias externas se omitirán para simplificar el diagrama de
+arquitectura.</p>
+<p>El módulo es compatible con JSE 1.6 y superiores.</p>
+<h4 id="bibliotecas-o-codigo-de-terceros_10">Bibliotecas o código de terceros</h4>
+<ul>
+<li>
+<p>Bibliotecas externas:</p>
+<ul>
+<li>
+<p>JXAdES (Build 5705)</p>
+</li>
+<li>
+<p>JMimeMagic 0.1.0</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="modulo-afirma-crypto-xmlsignature">Módulo afirma-crypto-xmlsignature</h3>
+<p>&lt;<img src="media/image18.png"
+style="width:2.58661in;height:2.28346in" /></p>
+<p>El módulo afirma-crypto-xmlsignature contiene la funcionalidad para la
+generación de firmas electrónicas XML acordes al estándar XMLdSig. El
+módulo está preparado para la generación de este tipo de firmas en sus
+variantes Internally Detached, Enveloping y Enveloped. También permite
+la multifirma en este formato, completando las deficiencias en la
+declaración de este estándar con estructuras propias de XAdES (firma
+avanzada).</p>
+<p>Este módulo presenta dependencias directas con el núcleo del Cliente
+(módulo afirma-core) y el módulo de firmas XML (afirma-crypto-core-xml).
+Adicionalmente, para tener acceso a la funcionalidad completa del módulo
+es necesario cubrir dos dependencias adicionales, la biblioteca externa
+JMimeMagic, que permite identificar el tipo de contenido firmado, y el
+módulo de interfaces gráficos correspondiente al entorno en cuestión,
+por defecto, JSE (afirma-core-ui-jse), que permite mostrar un diálogo
+auxiliar para localizar las hojas de estilo declaradas cuando es
+necesario.</p>
+<p>La biblioteca externa JMimeMagic tiene a su vez dependencias con las
+bibliotecas Apache Log4Java y Apache Oro. Debido a que estas son
+dependencias externas se omitirán para simplificar el diagrama de
+arquitectura.</p>
+<p>El módulo es compatible con JSE 1.6 y superiores.</p>
+<h4 id="bibliotecas-o-codigo-de-terceros_11">Bibliotecas o código de terceros</h4>
+<ul>
+<li>
+<p>Bibliotecas externas:</p>
+<ul>
+<li>JMimeMagic 0.1.0</li>
+</ul>
+</li>
+</ul>
+<h3 id="modulo-afirma-crypto-odf">Módulo afirma-crypto-odf</h3>
+<p>&lt;<img src="media/image19.png"
+style="width:1.83071in;height:1.51969in" /></p>
+<p>El módulo afirma-crypto-odf contiene la funcionalidad necesaria para
+agregar firmas a un documento ODF (<em>Open Document File</em>). Las firmas
+generadas son variantes de XMLdSig que se insertan y declaran en los
+documentos ODF. Las firmas generadas por el módulo son compatibles con
+LibreOffice y OpenOffice.org 3.2 y superiores. El módulo permite la
+creación de firmas compatibles con OpenOffice.org 3.1, pero estas
+dejarán de ser compatibles con versiones superiores de esta herramienta.</p>
+<p>Este módulo presenta dependencias directas con el núcleo del Cliente
+(módulo afirma-core) y el módulo de firmas XML (afirma-crypto-core-xml).</p>
+<p>El módulo es compatible con JSE 1.6 y superiores.</p>
+<h3 id="modulo-afirma-crypto-ooxml">Módulo afirma-crypto-ooxml</h3>
+<p>&lt;<img src="media/image20.png"
+style="width:2.64961in;height:3.26378in" /></p>
+<p>El módulo afirma-crypto-ooxml contiene la funcionalidad necesaria para
+agregar firmas electrónicas a un documento OOXML (<em>Office Open XML</em>).
+Las firmas generadas son variantes de XMLdSig que se insertan y declaran
+en los documentos OOXML.</p>
+<p>Este módulo presenta dependencias directas con el núcleo del Cliente
+(módulo afirma-core), el módulo de firma XMLdSig
+(afirma-crypto-xmlsignature, que a su vez depende de
+afirma-crypto-core-xml) y la biblioteca externa Apache Commons-IO.</p>
+<p>El módulo es compatible con JSE 1.6 y superiores.</p>
+<h2 id="realizacion-de-cifrados-simetricos">Realización de cifrados simétricos</h2>
+<p><img alt="" src="media/image21.png" /></p>
+<p>Los cifrados simétricos no hacen uso de certificados ni algoritmos RSA o
+DSA, sino que usan o claves adaptadas para los distintos algoritmos de
+cifrado o contraseñas que los usuarios pueden recordar e introducir
+directamente.</p>
+<h3 id="modulo-afirma-crypto-cipher">Módulo afirma-crypto-cipher</h3>
+<p>&lt;<img src="media/image22.png"
+style="width:1.62598in;height:1.44882in" /></p>
+<p>El módulo de cifrado (afirma-crypto-cipher) hace uso del proveedor Sun
+JCE para la realización de cifrados simétricos en base a claves y
+contraseñas. Los algoritmos de cifrado soportados son:</p>
+<ul>
+<li>
+<p>Mediante clave</p>
+<ul>
+<li>
+<p>AES</p>
+</li>
+<li>
+<p>ARCFOUR</p>
+</li>
+<li>
+<p>BLOWFISH</p>
+</li>
+<li>
+<p>DES</p>
+</li>
+<li>
+<p>TripleDES</p>
+</li>
+<li>
+<p>RC2</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Mediante contraseña</p>
+<ul>
+<li>
+<p>PBE con SHA1 y TripleDES</p>
+</li>
+<li>
+<p>PBE con SHA1 y RC2.40</p>
+</li>
+<li>
+<p>PBE con MD5 y DDES</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Este módulo depende directamente del núcleo (módulo afirma-core) y, de
+forma indirecta, de un módulo de interfaces gráficos, por defecto, el de
+JSE (afirma-core-ui-jse).</p>
+<p>El módulo es compatible con JSE 1.5 y superiores.</p>
+<h2 id="realizacion-de-firmas-multifirmas-masivas">Realización de firmas / multifirmas masivas</h2>
+<p><img alt="" src="media/image23.png" /></p>
+<p>Se llaman firmas masivas a los procesos en los que se firman
+consecutivamente varios ficheros. Estas firmas consecutivas pueden
+realizarse sin interacción intermedia del usuario y las listas de
+ficheros a firmas pueden establecerse por varios medios, externamente de
+forma programática o con una lógica interna basada en directorios y
+carpetas del sistema de ficheros.</p>
+<h3 id="modulo-afirma-core-massive">Módulo afirma-core-massive</h3>
+<p>&lt;<img src="media/image24.png"
+style="width:5.51042in;height:3.87649in" /></p>
+<p>El módulo afirma-core-massive proporciona dos mecanismos para la firma
+masiva de datos. Estos son:</p>
+<ul>
+<li>
+<p>Firma/Multifirma de directorios: Proporciona los métodos para firmar
+    y multifirmar los ficheros de un directorio. Admite configurar el
+    comportamiento de las operaciones individuales, las opciones de
+    firma, filtrar ficheros por extensión …</p>
+</li>
+<li>
+<p>Firma/Multifirma programática: Proporciona los métodos necesarios
+    para firmar o multifirmar datos, proporcionando estos, un fichero o
+    su huella digital.</p>
+</li>
+</ul>
+<p>Este módulo depende directamente del núcleo (módulo afirma-core) del
+proyecto. A su vez, enlaza dinámicamente con cualquier módulo de firma
+que agregue al proyecto, heredando todas sus dependencias.</p>
+<p>El módulo es compatible con JSE 1.5 y superiores.</p>
+<h2 id="utilidades">Utilidades</h2>
+<h3 id="modulo-afirma-util">Módulo afirma-util</h3>
+<p>El módulo afirma-util contiene clases de utilidad para la gestión de
+validez de certificados.</p>
+<p>Es compatible con Java 1.5 y superiores, depende únicamente del núcleo y
+no usa bibliotecas externas ni contiene código de terceros.</p>
+<h1 id="dependencias-del-applet-firma-respecto-a-los-modulos">Dependencias del Applet @firma respecto a los módulos</h1>
+<h2 id="descripcion-general_1">Descripción general</h2>
+<p>El Applet @firma es un Applet para la realización de firmas y
+multifirmas electrónicas, cifrados simétricos y sobre digitales. También
+permite la operación de masiva de firmas electrónicas.</p>
+<p>El applet @firma tiene como dependencias los módulos del Cliente del
+siguiente listado:</p>
+<ul>
+<li>
+<p>afirma-core</p>
+</li>
+<li>
+<p>afirma-ui-core-jse</p>
+</li>
+<li>
+<p>afirma-core-keystores</p>
+</li>
+<li>
+<p>afirma-keystores-mozilla</p>
+</li>
+<li>
+<p>afirma-keystores-single</p>
+</li>
+<li>
+<p>afirma-keystores-capiaddressbook</p>
+</li>
+<li>
+<p>afirma-crypto-core-pkcs7</p>
+</li>
+<li>
+<p>afirma-crypto-cades</p>
+</li>
+<li>
+<p>afirma-crypto-cades-multi</p>
+</li>
+<li>
+<p>afirma-crypto-pades</p>
+</li>
+<li>
+<p>afirma-crypto-cms</p>
+</li>
+<li>
+<p>afirma-crypto-cms-enveloper</p>
+</li>
+<li>
+<p>afirma-crypto-core-xml</p>
+</li>
+<li>
+<p>afirma-crypto-xades</p>
+</li>
+<li>
+<p>afirma-crypto-xmlsignature</p>
+</li>
+<li>
+<p>afirma-crypto-odf</p>
+</li>
+<li>
+<p>afirma-crypto-ooxml</p>
+</li>
+<li>
+<p>afirma-crypto-cipher</p>
+</li>
+<li>
+<p>afirma-core-massive</p>
+</li>
+<li>
+<p>afirma-util</p>
+</li>
+</ul>
+<h1 id="dependencias-del-miniapplet-firma-respecto-a-los-modulos">Dependencias del MiniApplet @firma respecto a los módulos</h1>
+<h2 id="descripcion-general_2">Descripción general</h2>
+<p>El MiniApplet @firma es un frontal de firma electrónica en forma de
+Applet para su ejecución en entorno Web. Este aplicativo permite su
+ejecución desde cualquier navegador Web soportado por el Cliente y la
+generación de firma en formatos CAdES, PAdES, XAdES y ODF.</p>
+<p>Los módulos del Cliente de los que depende el MiniApplet @firma son:</p>
+<ul>
+<li>
+<p>afirma-core</p>
+</li>
+<li>
+<p>afirma-ui-core-jse</p>
+</li>
+<li>
+<p>afirma-core-keystores</p>
+</li>
+<li>
+<p>afirma-keystores-mozilla</p>
+</li>
+<li>
+<p>afirma-crypto-core-pkcs7</p>
+</li>
+<li>
+<p>afirma-crypto-cades</p>
+</li>
+<li>
+<p>afirma-crypto-cades-multi</p>
+</li>
+<li>
+<p>afirma-crypto-pdf</p>
+</li>
+<li>
+<p>afirma-crypto-core-xml</p>
+</li>
+<li>
+<p>afirma-crypto-xades</p>
+</li>
+</ul>
+<h1 id="dependencias-del-interfaz-standalone-respecto-a-los-modulos">Dependencias del interfaz Standalone respecto a los módulos</h1>
+<h2 id="descripcion-general_3">Descripción general</h2>
+<p>El interfaz Standalone es un aplicativo de escritorio que permite la
+generación de firmas electrónicas, cifrados simétricos y sobre
+digitales, además de permitir operaciones de firma masiva y la
+validación y extracción de datos de firma.</p>
+<p>Los módulos del Cliente de los que depende el interfaz Standalone son:</p>
+<ul>
+<li>
+<p>afirma-core</p>
+</li>
+<li>
+<p>afirma-ui-core-jse</p>
+</li>
+<li>
+<p>afirma-core-keystores</p>
+</li>
+<li>
+<p>afirma-keystores-mozilla</p>
+</li>
+<li>
+<p>afirma-keystores-single</p>
+</li>
+<li>
+<p>afirma-keystores-capiaddressbook</p>
+</li>
+<li>
+<p>afirma-crypto-core-pkcs7</p>
+</li>
+<li>
+<p>afirma-crypto-cades</p>
+</li>
+<li>
+<p>afirma-crypto-cades-multi</p>
+</li>
+<li>
+<p>afirma-crypto-pdf</p>
+</li>
+<li>
+<p>afirma-crypto-cms</p>
+</li>
+<li>
+<p>afirma-crypto-cms-enveloper</p>
+</li>
+<li>
+<p>afirma-crypto-core-xml</p>
+</li>
+<li>
+<p>afirma-crypto-xades</p>
+</li>
+<li>
+<p>afirma-crypto-xmlsignature</p>
+</li>
+<li>
+<p>afirma-crypto-odf</p>
+</li>
+<li>
+<p>afirma-crypto-ooxml</p>
+</li>
+<li>
+<p>afirma-crypto-cipher</p>
+</li>
+<li>
+<p>afirma-core-massive</p>
+</li>
+<li>
+<p>afirma-util</p>
+</li>
+</ul>
+<h1 id="dependencias-de-simpleafirma-respecto-a-los-modulos">Dependencias de SimpleAfirma respecto a los módulos</h1>
+<h2 id="descripcion-general_4">Descripción general</h2>
+<p>El interfaz SimpleAfirma es un aplicativo de escritorio que permite la
+generación sencilla de firmas electrónicas.</p>
+<p>Los módulos del Cliente de los que depende el interfaz SimpleAfirma son:</p>
+<ul>
+<li>
+<p>afirma-core</p>
+</li>
+<li>
+<p>afirma-ui-core-jse</p>
+</li>
+<li>
+<p>afirma-core-keystores</p>
+</li>
+<li>
+<p>afirma-keystores-mozilla</p>
+</li>
+<li>
+<p>afirma-crypto-core-pkcs7</p>
+</li>
+<li>
+<p>afirma-crypto-cades</p>
+</li>
+<li>
+<p>afirma-crypto-cades-multi</p>
+</li>
+<li>
+<p>afirma-crypto-pdf</p>
+</li>
+<li>
+<p>afirma-crypto-core-xml</p>
+</li>
+<li>
+<p>afirma-crypto-xades</p>
+</li>
+<li>
+<p>afirma-util</p>
+</li>
+</ul>
+<h1 id="tabla-resumen-de-dependencias-de-las-aplicaciones-firma-respecto-a-los-modulos">Tabla resumen de dependencias de las aplicaciones @firma respecto a los módulos</h1>
+<table>
+<colgroup>
+<col style="width: 43%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Módulos</th>
+<th><strong>Applet</strong></th>
+<th><strong>MiniApplet</strong></th>
+<th><strong>StandAlone</strong></th>
+<th><strong>Simple</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><blockquote>
+<p>afirma-core</p>
+</blockquote></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><blockquote>
+<p>afirma-ui-core-jse</p>
+</blockquote></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><blockquote>
+<p>afirma-core-keystores</p>
+</blockquote></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><blockquote>
+<p>afirma-keystores-mozilla</p>
+</blockquote></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><blockquote>
+<p>afirma-keystores-single</p>
+</blockquote></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><blockquote>
+<p>afirma-keystores-capiaddressbook</p>
+</blockquote></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><blockquote>
+<p>afirma-crypto-core-pkcs7</p>
+</blockquote></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><blockquote>
+<p>afirma-crypto-cades</p>
+</blockquote></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><blockquote>
+<p>afirma-crypto-cades-multi</p>
+</blockquote></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><blockquote>
+<p>afirma-crypto-pdf</p>
+</blockquote></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><blockquote>
+<p>afirma-crypto-cms</p>
+</blockquote></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><blockquote>
+<p>afirma-crypto-cms-enveloper</p>
+</blockquote></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><blockquote>
+<p>afirma-crypto-core-xml</p>
+</blockquote></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><blockquote>
+<p>afirma-crypto-xades</p>
+</blockquote></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><blockquote>
+<p>afirma-crypto-xmlsignature</p>
+</blockquote></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><blockquote>
+<p>afirma-crypto-odf</p>
+</blockquote></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><blockquote>
+<p>afirma-crypto-ooxml</p>
+</blockquote></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><blockquote>
+<p>afirma-crypto-cipher</p>
+</blockquote></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><blockquote>
+<p>afirma-core-massive</p>
+</blockquote></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><blockquote>
+<p>afirma-util</p>
+</blockquote></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Leyenda: Verde: Utiliza el módulo. Blanco: No utiliza el módulo</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../ANEXO_Firma-electronica-en-varias-fases/" class="btn btn-neutral float-left" title="Firma electrónica en tres fases"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../CF_catalogo_aplicaciones/" class="btn btn-neutral float-right" title="CF catalogo aplicaciones">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../ANEXO_Firma-electronica-en-varias-fases/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../CF_catalogo_aplicaciones/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

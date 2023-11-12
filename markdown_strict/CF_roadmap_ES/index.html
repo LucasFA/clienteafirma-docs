@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>CF roadmap ES - My Docs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "CF roadmap ES";
+        var mkdocs_page_input_path = "markdown_strict/CF_roadmap_ES.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> My Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Welcome to MkDocs</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Markdown strict</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Firmar_AutoFirma_Linux/">AF Firmar AutoFirma Linux</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Firmar_AutoFirma_OS_X/">AF Firmar AutoFirma OS X</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Linux/">Preparación del entorno</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Mac%20OS%20X/">AF Instalador Mac OS X</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Windows/">AF Instalador Windows</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_desarrollo_plugins_ES/">AF manual desarrollo plugins ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_instalacion_usuarios_ES/">AF manual instalacion usuarios ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_instalacion_y_gestion_ES/">AF manual instalacion y gestion ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ANEXO_Firma-electronica-en-varias-fases/">Firma electrónica en tres fases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_arquitectura_ES/">CF arquitectura ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_catalogo_aplicaciones/">CF catalogo aplicaciones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_distribuciones/">CF distribuciones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_funcional_ES/">CF funcional ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-incidencias/">CF guia incidencias</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-uso-interfaz/">CF guia uso interfaz</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-uso/">CF guia uso</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-firmas-pdf/">CF manual firmas pdf</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-firmas-xml/">CF manual firmas xml</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-integrador/">CF manual integrador</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-migracion/">CF manual migracion</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual_integracion_modulos_ES/">CF manual integracion modulos ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_plan-pruebas/">CF plan pruebas</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">CF roadmap ES</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#cambios-en-el-establecimiento-de-politica-de-firma">Cambios en el establecimiento de política de firma</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#multifirmas-de-firmas-implicitas">Multifirmas de firmas implícitas</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mejora-de-experiencia-de-usuario">Mejora de experiencia de usuario</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mejora-de-la-documentacion">Mejora de la documentación</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#soporte-para-la-validacion-de-firmas-explicitas">Soporte para la validación de firmas explícitas</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#decodificacion-de-datos-base-64-extraidos-de-firmas-implicitas">Decodificación de datos base 64 extraídos de firmas implícitas</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Comunicacion_Navegador_y_App_en_Entorno_Movil/">El camino de ida: Desde el navegador Web hacia la App</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../DECLARACION_ACCESIBILIDAD/">Declaración de Accesibilidad</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Diagramas%20de%20secuencia%20de%20los%20procesos%20de%20firma%20m%C3%B3vil/">Firma monofásica (Windows 8 / Windows RT y Android)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Firma_por_lotes_predefinidos_con_el_MiniApplet_Cliente/">Firma por lotes predefinidos con el MiniApplet Cliente</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Informe%20-%20Alternativas_Applets_para_firma/">Informe   Alternativas Applets para firma</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Invocaci%C3%B3n%20por%20protocolo%20de%20aplicaciones%20nativas%20desde%20p%C3%A1ginas%20Web/">¿Qué es la invocación por protocolo?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../La_seguridad_en_el_Servicio_de_firma_del_Cliente/">Tabla de contenido</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MCF_manual-integrador_ES/">MCF manual integrador ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MCF_roadmap_ES/">MCF roadmap ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Manual%20para%20la%20configuraci%C3%B3n%20de%20los%20campos%20de%20firma%20para%20la%20aplicaci%C3%B3n%20de%20firma%20manuscrita%20en%20tableta/">Manual para la configuración de los campos de firma para la aplicación de firma manuscrita en tableta</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_Manual_App_Portafirmas_Android/">PF Manual App Portafirmas Android</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_Manual_App_Portafirmas_iOS/">PF Manual App Portafirmas iOS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_manual-configuracion_servicios_ES/">PF manual configuracion servicios ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Sintaxis_invocacion_Cliente_Afirma/">Sintaxis invocacion Cliente Afirma</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../afirma_movil_intro/"><<img src="media/image1.jpeg"</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">My Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Markdown strict</li>
+      <li class="breadcrumb-item active">CF roadmap ES</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="version-21">Versión 2.1</h2>
+<h3 id="cambios-en-el-establecimiento-de-politica-de-firma">Cambios en el establecimiento de política de firma</h3>
+<p>La mejora en el establecimiento de política de firma propuesta para la
+versión 2.1 consistiría en la solicitud, vía diálogo de configuración
+(opciones) de los distintos campos que pueden figurar en una política
+AdES (identificador, huella digital del identificador, algoritmo
+utilizado para la huella y calificador al menos). La política por
+defecto se guardará junto al resto de opciones de usuario. Además, el
+usuario podrá seleccionar una política preconfigurada (AGE o FacturaE)
+de modo que no tenga que teclear manualmente los valores.</p>
+<h3 id="multifirmas-de-firmas-implicitas">Multifirmas de firmas implícitas</h3>
+<p>La mejora en la funcionalidad para las multifirmas de firmas implícitas
+consiste en:</p>
+<ul>
+<li>
+<p>Dar la posibilidad al usuario de, cuando se va a realizar una
+    cofirma o contrafirma, extraer y visualizar los datos originalmente
+    firmados.</p>
+</li>
+<li>
+<p>Cofirmar una firma sin necesidad de seleccionar los datos
+    originalmente firmados cuando estos ya estuviesen incluidos dentro
+    de la propia firma.</p>
+</li>
+</ul>
+<h3 id="mejora-de-experiencia-de-usuario">Mejora de experiencia de usuario</h3>
+<p>La mejora de experiencia de usuario propuesta para la versión 2.1
+consistiría principalmente en una revisión de como se gestionan en el
+interfaz gráfico las tareas de proceso de la aplicación, introduciendo
+hilos de ejecución para pasar a segundo plano ciertos procesos, usar
+diálogos de espera e introducir cursores de espera (reloj de arena).</p>
+<p>También se automatizarán o agilizarán algunas tareas como, por ejemplo,
+la asignación de extensiones por defecto a los ficheros descifrados.</p>
+<h3 id="mejora-de-la-documentacion">Mejora de la documentación</h3>
+<p>Se agregará a la documentación del proyecto información adicional de
+utilidad para el usuario final. Esta mejora incluye:</p>
+<ul>
+<li>
+<p>Proceso de instalación del controlador del DNIe mediante el
+    instalador accesible de Inteco,</p>
+</li>
+<li>
+<p>Proceso de instalación del OpenDNIe.</p>
+</li>
+</ul>
+<h3 id="soporte-para-la-validacion-de-firmas-explicitas">Soporte para la validación de firmas explícitas</h3>
+<p>Se ampliará la funcionalidad del validador de la interfaz para el
+soporte de firmas explícitas. Cuando se detecte una firma sin contenido
+implícito, se pedirá al usuario que seleccione el fichero de datos en
+base al que se generó la firma para poder validarla al completo.</p>
+<p>Cuando el usuario selecciona el fichero se validará con respecto a estos
+datos y se mostrará el resultado de la validación. Si el usuario no
+selecciona el diálogo, se validará el resto de la estructura y, en caso
+de ser correcta, se mostrará una advertencia indicando que no se ha
+podido completar la validación debido a que faltan los datos firmados.</p>
+<h3 id="decodificacion-de-datos-base-64-extraidos-de-firmas-implicitas">Decodificación de datos base 64 extraídos de firmas implícitas</h3>
+<p>Existen aplicaciones de firma que codifican los datos a base 64 para
+firmarlos sin declarar la transformación, con lo cual firman la versión
+codificada de estos datos en lugar de los datos originales. Aunque el
+comportamiento por defecto sería extraer estos datos tal como se
+firmaron, esto plantearía un problema para el usuario final que desea
+recuperar los datos originales.</p>
+<p>Se agregará a la aplicación la lógica necesaria para que se detecte si
+los datos firmados son base 64 y, en esos casos, se descodifiquen al
+extraerlos de la firma.</p>
+<h2 id="version-22">Versión 2.2</h2>
+<h3 id="soporte-de-factura-electronica">Soporte de factura electrónica</h3>
+<p>El soporte de factura electrónica (Factura-e) planificado para la
+versión 2.2 consiste en la introducción de un nuevo formato de firma
+específico para facturas electrónicas.</p>
+<p>Al seleccionar este formato se comprobará que los datos se ajustan a la
+estructura básica de una factura electrónica y se preguntará al usuario
+qué política de firma se desea utilizar para firmarla (por defecto, la
+versión 3.1 de la política).</p>
+<h3 id="incorporacion-soporte-dnie-100-java">Incorporación soporte DNIe 100% Java</h3>
+<p>Esta tarea consiste en la integración en la herramienta de un
+controlador Java para DNIe. El soporte de este dispositivo se reflejará
+en la aparición de un nuevo almacén de certificados, con la nomenclatura
+“DNIe”, disponible tanto desde la vista simple como avanzada de la
+interfaz de escritorio. Los usuarios podrán seleccionar este almacén de
+certificados para que se invoque a este controlador.</p>
+<p>El uso de este controlador permitirá listar únicamente los certificados
+del DNIe y utilizarlos sin necesidad de que se haya instalado el
+controlador del DNIe en el sistema del usuario.</p>
+<h3 id="mejora-del-sistema-de-notificacion-de-errores">Mejora del sistema de notificación de errores</h3>
+<p>Se estructurará el mecanismo de notificación de errores para ofrecer al
+usuario mensajes más concretos que le ayuden a entender el motivo de
+cualquier error que pueda haberse producido durante la ejecución de
+cualquier operación criptográfica: Firma electrónica, configuración de
+parámetros de firma, acceso a un almacén de certificados, cifrado
+simétrico…</p>
+<h1 id="evolucion-de-la-aplicacion-de-escritorio-firma-facil-con-firma">Evolución de la aplicación de escritorio “Firma Fácil con @firma”</h1>
+<h2 id="version-11">Versión 1.1</h2>
+<h3 id="incorporacion-soporte-dnie-100-java_1">Incorporación soporte DNIe 100% Java</h3>
+<p>Esta tarea consiste en la integración en la herramienta de un
+controlador Java para DNIe. Este controlador se utilizará por defecto
+para el acceso al DNIe del usuario. En caso de no estar insertado este
+en un lector de tarjetas configurado, se cargará el almacén de claves
+por defecto del sistema.</p>
+<p>El uso de este controlador permitirá listar únicamente los certificados
+del DNIe y utilizarlos sin necesidad de que se haya instalado el
+controlador del DNIe en el sistema del usuario.</p>
+<h3 id="soporte-configuraciones-de-usuario-menu-opciones">Soporte configuraciones de usuario (menú opciones)</h3>
+<p>El soporte de configuraciones de usuario propuesto para la versión 1.1
+supondría la adición de un menú de opciones con una serie de diálogos
+donde el usuario podrá modificar ciertos parámetros de la ejecución del
+programa (por ejemplo, configurar una política de firma, indicar si las
+firmas CAdES deben o no incluir internamente una copia del contenido,
+etc.). Estas opciones se podrán salvar (por usuario), y no introducirán
+ningún cambio en la operativa de firma.</p>
+<h3 id="mejoras-menores-en-accesibilidad">Mejoras menores en accesibilidad</h3>
+<p>Las mejoras menores en accesibilidad propuestas para la versión 1.1
+consistirían en una adecuación en el comportamiento de las barras de
+menú en sistemas Windows y Linux (nunca en Mac OS X) de modo que sigan
+la operativa normal de Windows posibilitando su uso con las teclas Alt,
+Enter y las flechas de cursor (aspecto que los menús de Java no
+soportan).</p>
+<h3 id="decodificacion-de-datos-base-64-extraidos-de-firmas-implicitas_1">Decodificación de datos base 64 extraídos de firmas implícitas</h3>
+<p>Existen aplicaciones de firma que codifican los datos a base 64 para
+firmarlos sin declarar la transformación, con lo cual firman la versión
+codificada de estos datos en lugar de los datos originales. Aunque el
+comportamiento por defecto sería extraer estos datos tal como se
+firmaron, esto plantearía un problema para el usuario final que desea
+recuperar los datos originales.</p>
+<p>Se agregará a la aplicación la lógica necesaria para que se detecte si
+los datos firmados son base 64 y, en esos casos, se descodifiquen al
+extraerlos de la firma.</p>
+<h2 id="version-111">Versión 1.11</h2>
+<h3 id="splashscreen-animado">SplashScreen animado</h3>
+<p>Esta tarea consiste en el diseño e integración de una imagen animada que
+permita saber a los usuarios cuando la aplicación está cargándose. La
+imagen de carga animada mejorará la experiencia de usuario eliminando
+tiempos en los que usuario puede percibir que la aplicación no responde
+como debería.</p>
+<h1 id="evolucion-del-miniapplet-firma">Evolución del MiniApplet @firma</h1>
+<h2 id="version-11_1">Versión 1.1</h2>
+<h3 id="soporte-de-firmas-masivas-via-javascript">Soporte de firmas masivas vía JavaScript</h3>
+<p>Se proporcionará al integrador las bibliotecas JavaScript necesarias
+para la automatización de firmas masivas. Para ello también será
+necesario permitir que sólo se deba seleccionar el certificado de
+usuario durante la primera operación de firma.</p>
+<p>La configuración de esta autoselección del certificado de firma en
+sucesivas operaciones se realizará mediante un filtro de certificados
+especial para este fin.</p>
+<h3 id="autocomprobaciones-de-entorno-por-funcion">Autocomprobaciones de entorno por función</h3>
+<p>La versión 1.1 del MiniApplet integrará un sistema de comprobación del
+sistema en todas aquellas funciones en las que existan riesgo de
+incompatibilidades. De esta forma, el MiniApplet se ejecutará
+normalmente en un sistema que presente incompatibilidades con una
+función concreta y, sólo si se requiere de esta función se producirá un
+error de incompatibilidad.</p>
+<p>Las incompatibilidades estarán claramente definidas y, cuando falle la
+ejecución de una función debido a una incompatibilidad, se notificará
+expresamente cual es esta para permitir al integrador trasladar los
+mensajes oportunos al usuario.</p>
+<p>Ejemplos de incompatibilidad son:</p>
+<ul>
+<li>
+<p>Versión inferior a la necesaria de BouncyCastle.</p>
+</li>
+<li>
+<p>Falta de extensión imprescindible en el JRE en ejecución.</p>
+</li>
+</ul>
+<p>Las “autocomprobaciones de entorno por función” planteadas para la
+versión 1.1 implican una evolución de los módulos subyacentes
+(prácticamente todos: desde el núcleo hasta la gestión de almacenes,
+pasando por los de firma).</p>
+<h3 id="soporte-avanzado-de-codificaciones-de-texto">Soporte avanzado de codificaciones de texto</h3>
+<p>Se ampliará la funcionalidad de aquellos métodos que permiten la
+configuración de la codificación de texto que se debe utilizar para que
+soporten parámetros especiales que permitan:</p>
+<ul>
+<li>
+<p>La detección de la codificación a partir del texto de entrada. Esta
+    detección está sujeta a errores debido a la ambigüedad existente en
+    muchas codificaciones cuando no aparecen caracteres en los que
+    difieran.</p>
+</li>
+<li>
+<p>La codificación del texto a partir de la codificación por defecto
+    del sistema.</p>
+</li>
+</ul>
+<h3 id="filtro-de-certificados-cualificados">Filtro de certificados cualificados</h3>
+<p>Se creará un nuevo filtro para la selección de certificados de firma
+cualificados. A partir del número de serie de un certificado, se buscará
+si este tiene un certificado asociado y cualificado para firma si es
+así, se utilizará el certificado asociado. Si no se encuentra este
+certificado se utilizará el certificado al que pertenece el número de
+serie.</p>
+<p>La detección del certificado asociado se realizará siguiendo
+determinados criterios, muy especialmente:</p>
+<ul>
+<li>
+<p>Autoridad de certificación: Ambos certificados deben pertenecer a la
+    misma autoridad de certificación.</p>
+</li>
+<li>
+<p>Número de serie del Subject: Se buscará que el número de serie del
+    Subject de ambos certificados coincida.</p>
+</li>
+</ul>
+<p>Nombre del Subject: Será preferible que el nombre común (CN) del Subject
+de ambos certificados sea el mismo. Es posible que esto no ocurra en
+certificados asociados. Por ejemplo, en el DNIe el nombre del Subject
+del certificado de firma incluye la cadena “(FIRMA)” mientras que en el
+de autenticación aparece la cadena “(AUTENTICACIÓN)”.</p>
+<h3 id="ejemplos-avanzados-de-uso-en-documentacion">Ejemplos avanzados de uso en documentación</h3>
+<p>Ejemplos avanzados de uso desarrollados a partir de los trabajos
+realizados por la AEAT para la integración del MiniApplet en sus
+sistemas. Estos ejemplos se documentarán y expondrán como casos de uso
+avanzados.</p>
+<h2 id="version-12">Versión 1.2</h2>
+<h3 id="soporte-de-facturas-electronicas">Soporte de facturas electrónicas</h3>
+<p>El soporte de facturas electrónicas planteado para la versión 1.2
+consistiría en una “macro” que simplifique la configuración para
+facturas (una única orden seleccionaría el formato, comprobaría si es o
+no una factura lo que se firma, configuraría la política, etc.).</p>
+<h3 id="incorporacion-soporte-dnie-100-java_2">Incorporación soporte DNIe 100% Java</h3>
+<p>Esta tarea consiste en la integración en la herramienta de un
+controlador Java para DNIe. Este controlador se utilizará por defecto
+para el acceso al DNIe del usuario. En caso de no estar insertado este
+en un lector de tarjetas configurado, se cargará el almacén de claves
+por defecto del sistema.</p>
+<p>El uso de este controlador permitirá listar únicamente los certificados
+del DNIe y utilizarlos sin necesidad de que se haya instalado el
+controlador del DNIe en el sistema del usuario.</p>
+<h1 id="evolucion-del-applet-firma">Evolución del Applet @firma</h1>
+<h2 id="version-331">Versión 3.3.1</h2>
+<h3 id="mantenimiento-general">Mantenimiento general</h3>
+<p>Esta tarea consistirá en un conjunto de actividades de mantenimiento
+orientadas a la optimización del proyecto y cambios debidos, entre
+otros, a:</p>
+<ul>
+<li>
+<p>Nuevos requisitos del proyecto.</p>
+</li>
+<li>
+<p>Aparición de nuevas versiones de Java, navegadores Web,…</p>
+</li>
+<li>
+<p>Actualización de políticas de firma.</p>
+</li>
+<li>
+<p>Nuevas versiones de formatos de firma.</p>
+</li>
+</ul>
+<h3 id="mejora-en-la-gestion-de-almacenes-pkcs12">Mejora en la gestión de almacenes PKCS#12</h3>
+<p>Esta mejora permitirá el uso de almacenes de certificados PKCS#12 con
+una configuración distinta a la por defecto. Actualmente el Cliente no
+soporta almacenes PKCS#12 en los que:</p>
+<ul>
+<li>
+<p>Se ha cambiado la contraseña inicial.</p>
+</li>
+<li>
+<p>Se ha importado más de un certificado. Esto es útil para el uso de
+    un único almacén que podamos transportar en almacenamiento físico y
+    en el que se hayan importado nuestros certificados, normalmente,
+    autenticación y firma.</p>
+</li>
+</ul>
+<p>La mejora permitirá utilizar los certificados de los almacenes PKCS#12
+aun cuando se cumpla alguno de los casos problemáticos mencionados.</p>
+<h2 id="version-332">Versión 3.3.2</h2>
+<h3 id="soporte-de-facturas-electronicas_1">Soporte de facturas electrónicas</h3>
+<p>El soporte de facturas electrónicas planteado para la versión 1.2
+consistiría en una “macro” que simplifique la configuración para
+facturas (una única orden seleccionaría el formato, comprobaría si es o
+no una factura lo que se firma, configuraría la política, etc.).</p>
+<h3 id="paso-a-java-6-como-version-minima-de-jre">Paso a Java 6 como versión mínima de JRE</h3>
+<p>Se propone el abandono de Java 5 como versión mínima de JRE, pasando
+esta a ser Java 6, lo cual conlleva:</p>
+<ul>
+<li>
+<p>Posibilidad de uso de funcionalidades y clases únicamente existentes
+    en Java 6.</p>
+</li>
+<li>
+<p>Desaparición del componente “BootLoader”, cuya principal función es
+    la compatibilidad con Java 5.</p>
+<ul>
+<li>
+<p>Simplifica el despliegue, evitando los problemas derivados del
+    arranque de dos máquinas virtuales en la misma página Web.</p>
+</li>
+<li>
+<p>Simplifica el licenciado, eliminando los problemas de incluir
+    componentes del JDK con licencia “Java Research” u otras
+    incompatibles con GPLv2/EUPL.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="incorporacion-soporte-dnie-100-java_3">Incorporación soporte DNIe 100% Java</h3>
+<p>Esta tarea consiste en la integración en la herramienta de un
+controlador Java para DNIe. El soporte de este dispositivo se reflejará
+en la aparición de un nuevo almacén de certificados, con la nomenclatura
+“DNIe”, disponible para su configuración por parte del integrador. El
+uso de este controlador permitirá listar únicamente los certificados del
+DNIe y utilizarlos sin necesidad de que se haya instalado el controlador
+del DNIe en el sistema del usuario.</p>
+<h3 id="adaptacion-a-la-nueva-politica-de-firma-de-la-age">Adaptación a la nueva política de firma de la AGE</h3>
+<p>La nueva versión de la política de la AGE introduce los criterios para
+el uso del formato de firma PAdES. Esta tarea deberá compatibilidad el
+Cliente @firma para la generación de firmas compatibles con los
+criterios establecidos por esta política.</p>
+<p>Así mismo, se ampliará el comportamiento del Cliente @firma para su
+compatibilidad con los distintos atributos opcionales comprendidos por
+la política. Se excluyen de estos atributos aquellos para los que se
+necesita conexión con servicios externos como, por ejemplo, los
+atributos que incluyen un sello de tiempo.</p>
+<h1 id="mejoras-funcionales-en-los-modulos-del-cliente-firma">Mejoras funcionales en los módulos del Cliente @firma</h1>
+<h2 id="soporte-de-firmas-en-ficheros-adjuntos-o-empotrados-en-ficheros-pdf-en-concordancia-con-las-secciones-4-y-5-de-pades">Soporte de firmas en ficheros adjuntos o empotrados en ficheros PDF en concordancia con las secciones 4 y 5 de PAdES</h2>
+<p>Actualmente, la firma PAdES de documentos PDF ignora los ficheros
+adjuntos o empotrados en los propios documentos, aunque la norma PAdES
+especifica que estos ficheros deben ser firmados de forma independiente,
+mediante CAdES o XAdES según su tipo (XML con XAdES y distinto a XML con
+CAdES).</p>
+<p>La tarea propuesta consistirá en el añadido a los actuales módulos de
+firma PAdES de estas funcionalidades, añadiendo los mecanismos
+necesarios para que el integrador pueda desactivar la firma de ficheros
+adjuntos o empotrados si así lo prefiere.</p>
+<h2 id="soporte-para-agregacion-de-almacenes-de-certificados-software-con-el-almacen-de-dnie-basado-en-el-controlador-100-java">Soporte para agregación de almacenes de certificados software con el almacén de DNIe basado en el controlador 100% Java</h2>
+<p>Hay ciertas ocasiones en las que es necesario que los certificados del
+DNIe estén disponibles dentro de un cierto almacén (NSS en Firefox,
+Llavero en Mac OS X, CAPI en Windows, etc.) pero que no lo están debido
+a ciertas circunstancias:</p>
+<ul>
+<li>
+<p>El controlador de DNIe no está correctamente instalado o
+    directamente no está instalado.</p>
+</li>
+<li>
+<p>El controlador de DNIe no se puede cargar desde el Cliente @firma.</p>
+</li>
+<li>
+<p>El controlador de DNIe no es compatible con el almacén cargado (CSP
+    vs. Tokend vs. PKCS#11).</p>
+</li>
+<li>
+<p>Etc.</p>
+</li>
+</ul>
+<p>Esta tarea propone el uso de controlador 100% Java para DNIe como fuente
+de los certificados y claves de DNIe y que sea posible integrar estos
+dentro de un segundo almacén de forma transparente para el integrador y
+el usuario.</p>
+<p>Se propone una secuencia de operación similar a la siguiente:</p>
+<p><img alt="" src="media/image1.png" /></p>
+<h1 id="material-de-formacion">Material de formación</h1>
+<p>Se reunirá y redactará material formativo para agregarla a la
+documentación del proyecto. Esta documentación irá orientada a ayudar a
+las distintas oficinas que den soporte a integradores y usuarios del
+Cliente @firma y mostrar las nuevas características y herramientas
+construidas en base a él. Los aspectos en los que incidirá
+principalmente este material son:</p>
+<ul>
+<li>
+<p>Requisitos mínimos y problemas de entorno.</p>
+</li>
+<li>
+<p>Despliegue del Cliente y uso del Cliente.</p>
+</li>
+<li>
+<p>Mejoras en la funcionalidad.</p>
+</li>
+<li>
+<p>Herramientas que se han construido entorno al Cliente.</p>
+<ul>
+<li>
+<p>MiniApplet @firma</p>
+</li>
+<li>
+<p>SimpleAfirma</p>
+</li>
+<li>
+<p>Interfaz de escritorio 2.0</p>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="desarrollos-nativos-en-c-objetivo-principal-soporte-de-apple-ios-iphone-ipad-ipod">Desarrollos nativos en C (Objetivo principal: Soporte de Apple iOS – iPhone / iPad / iPod)</h1>
+<h2 id="motor-de-firma-cades-en-c-generico">Motor de firma CAdES en C genérico</h2>
+<p>Se prevé la construcción de un motor de firma CAdES en lenguaje C
+completamente independiente de la plataforma.</p>
+<p>Un desarrollo en C codificado de forma cuidadosa (uso de macros para
+independencia de tipos, codificación de funciones a medida para soporte
+tanto de <em>Little Endian</em> como de <em>Big Endian</em>, etc.) puede reutilizarse
+sin cambios en muchas plataformas distintas.</p>
+<p>En cualquier caso, ciertas funcionalidades, como la firma PKCS#1 o el
+acceso a los almacenes de certificados quedarán siempre como parte
+dependiente de la plataforma.</p>
+<h3 id="ios">iOS</h3>
+<p>iOS es la plataforma destino preferente para un motor de firma CAdES.
+Este motor permitirá el desarrollo de una aplicación iOS que permita ser
+usada tanto desde el navegador Web (Safari / WebKit) como por si misma
+(con su interfaz gráfico).</p>
+<p>Desarrollos adicionales al motor:</p>
+<ol>
+<li>
+<p>Generación de firmas CAdES.</p>
+</li>
+<li>
+<p>Gestión de almacenes de claves y certificados.</p>
+<ol>
+<li>Incluyendo importación.</li>
+</ol>
+</li>
+<li>
+<p>Gestión de comunicación con navegador Web.</p>
+</li>
+<li>
+<p>Interfaz gráfico iOS compatible tanto con iPhone/iPod como con iPad.</p>
+</li>
+</ol>
+<h1 id="modo-de-operacion-en-dispositivo-movil">Modo de operación en dispositivo móvil</h1>
+<p>Cada plataforma móvil es muy diferente a las otras, y sin embargo es
+posible diseñar componentes software y de arquitectura que se reutilicen
+entre todas.</p>
+<p>Se propone la definición de un modo de operación que pueda ser
+extensible a cualquier plataforma, incluyendo Apple iOS, RIM BlackBerry,
+Google Android y Microsoft Windows Phone, y que además se pueda hacer
+extensiva a los sistemas operativos de escritorio, como MS-Windows,
+Linux o Mac OS X con extensiones nativas.</p>
+<p>Son dos las opciones principales a explorar:</p>
+<ol>
+<li>
+<p>Definición de un protocolo propio basado en URL que permita la
+    transferencia de control desde una página Web a una aplicación
+    externa.</p>
+<ol>
+<li>Por ejemplo, una llamada a afirma:// podría arrancar la
+    aplicación, que recogería sus parámetros de operación de la
+    propia URL (<em>URL Encoding</em>).</li>
+</ol>
+</li>
+<li>
+<p>Definición de un tipo de fichero propio (con una extensión y un
+    MIME-Type propios) que permitiese, por asociación, arrancar la
+    aplicación de firma. El fichero contendría los parámetros operativos
+    de esta.</p>
+</li>
+</ol>
+<p>Convendría, tras la definición del mecanismo más adecuado, una evolución
+del MiniApplet para soportarlo.</p>
+<h1 id="firma-en-android-apache-dalvik">@firma en Android / Apache Dalvik</h1>
+<ol>
+<li>
+<p>Aplicación completa.</p>
+<ol>
+<li>Aplicación con interfaz gráfico para firmar ficheros, usando la
+    tarjeta de memoria SD como medio de entrada/salida de ficheros a
+    firmar.</li>
+</ol>
+</li>
+<li>
+<p>Motor PAdES</p>
+</li>
+<li>
+<p>Adaptación de los módulos a Android 4.</p>
+<ol>
+<li>Gestión de almacenes de claves y certificados.</li>
+</ol>
+</li>
+<li>
+<p>Medios de sincronización de ficheros</p>
+</li>
+</ol>
+<h1 id="firma-en-net">@firma en .NET</h1>
+<ol>
+<li>
+<p>Motor de firma CAdES.</p>
+</li>
+<li>
+<p>Aplicación Windows de escritorio compatible Windows 8 MarketPlace</p>
+</li>
+</ol>
+<h1 id="firma-trifasica">Firma Trifásica</h1>
+<p>Ver documento adicional “Firmas Electrónicas en varias fases”.</p>
+<p>Se debe plantear la posibilidad de soportar no solo CAdES y PAdES, sino
+también XAdES.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../CF_plan-pruebas/" class="btn btn-neutral float-left" title="CF plan pruebas"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Comunicacion_Navegador_y_App_en_Entorno_Movil/" class="btn btn-neutral float-right" title="El camino de ida: Desde el navegador Web hacia la App">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../CF_plan-pruebas/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Comunicacion_Navegador_y_App_en_Entorno_Movil/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

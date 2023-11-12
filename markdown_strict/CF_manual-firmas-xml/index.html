@@ -1,0 +1,3147 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>CF manual firmas xml - My Docs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "CF manual firmas xml";
+        var mkdocs_page_input_path = "markdown_strict/CF_manual-firmas-xml.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> My Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Welcome to MkDocs</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Markdown strict</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Firmar_AutoFirma_Linux/">AF Firmar AutoFirma Linux</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Firmar_AutoFirma_OS_X/">AF Firmar AutoFirma OS X</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Linux/">Preparación del entorno</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Mac%20OS%20X/">AF Instalador Mac OS X</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_Instalador%20Windows/">AF Instalador Windows</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_desarrollo_plugins_ES/">AF manual desarrollo plugins ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_instalacion_usuarios_ES/">AF manual instalacion usuarios ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AF_manual_instalacion_y_gestion_ES/">AF manual instalacion y gestion ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ANEXO_Firma-electronica-en-varias-fases/">Firma electrónica en tres fases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_arquitectura_ES/">CF arquitectura ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_catalogo_aplicaciones/">CF catalogo aplicaciones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_distribuciones/">CF distribuciones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_funcional_ES/">CF funcional ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-incidencias/">CF guia incidencias</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-uso-interfaz/">CF guia uso interfaz</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_guia-uso/">CF guia uso</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-firmas-pdf/">CF manual firmas pdf</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">CF manual firmas xml</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-integrador/">CF manual integrador</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual-migracion/">CF manual migracion</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_manual_integracion_modulos_ES/">CF manual integracion modulos ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_plan-pruebas/">CF plan pruebas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CF_roadmap_ES/">CF roadmap ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Comunicacion_Navegador_y_App_en_Entorno_Movil/">El camino de ida: Desde el navegador Web hacia la App</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../DECLARACION_ACCESIBILIDAD/">Declaración de Accesibilidad</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Diagramas%20de%20secuencia%20de%20los%20procesos%20de%20firma%20m%C3%B3vil/">Firma monofásica (Windows 8 / Windows RT y Android)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Firma_por_lotes_predefinidos_con_el_MiniApplet_Cliente/">Firma por lotes predefinidos con el MiniApplet Cliente</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Informe%20-%20Alternativas_Applets_para_firma/">Informe   Alternativas Applets para firma</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Invocaci%C3%B3n%20por%20protocolo%20de%20aplicaciones%20nativas%20desde%20p%C3%A1ginas%20Web/">¿Qué es la invocación por protocolo?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../La_seguridad_en_el_Servicio_de_firma_del_Cliente/">Tabla de contenido</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MCF_manual-integrador_ES/">MCF manual integrador ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MCF_roadmap_ES/">MCF roadmap ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Manual%20para%20la%20configuraci%C3%B3n%20de%20los%20campos%20de%20firma%20para%20la%20aplicaci%C3%B3n%20de%20firma%20manuscrita%20en%20tableta/">Manual para la configuración de los campos de firma para la aplicación de firma manuscrita en tableta</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_Manual_App_Portafirmas_Android/">PF Manual App Portafirmas Android</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_Manual_App_Portafirmas_iOS/">PF Manual App Portafirmas iOS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PF_manual-configuracion_servicios_ES/">PF manual configuracion servicios ES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Sintaxis_invocacion_Cliente_Afirma/">Sintaxis invocacion Cliente Afirma</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../afirma_movil_intro/"><<img src="media/image1.jpeg"</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">My Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Markdown strict</li>
+      <li class="breadcrumb-item active">CF manual firmas xml</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>&lt;<img src="media/image2.wmf"
+style="width:6in;height:2.375in" /></p>
+<p>&lt;<img src="media/image3.png"
+style="width:0.91667in;height:0.32292in"
+alt="Creative Commons License" /></p>
+<p>Esta obra está bajo una licencia <a href="#Licencia_Creative_Commons">Creative Commons
+Reconocimiento-NoComercial-CompartirIgual 3.0
+Unported</a>.</p>
+<ol>
+<li>
+<p>Índice</p>
+<p><a href="#introducción">1 Introducción [3](#introducción)</a></p>
+<p><a href="#objetivos">2 Objetivos [4](#objetivos)</a></p>
+<p><a href="#formatos-de-firma-soportados">3 Formatos de firma soportados
+[5](#formatos-de-firma-soportados)</a></p>
+<p><a href="#matriz-de-formatos-soportados-por-el-módulo">3.1 Matriz de formatos soportados por el módulo
+[5](#matriz-de-formatos-soportados-por-el-módulo)</a></p>
+<p><a href="#uso-de-los-parámetros-de-funcionamiento">3.2 Uso de los parámetros de funcionamiento
+[7](#uso-de-los-parámetros-de-funcionamiento)</a></p>
+<p><a href="#parámetros-de-funcionamiento">3.3 Parámetros de funcionamiento
+[7](#parámetros-de-funcionamiento)</a></p>
+<p><a href="#xml-digital-signature-xmldsig">3.4 XML Digital Signature (XMLDSig)
+[10](#xml-digital-signature-xmldsig)</a></p>
+<p><a href="#xmldsig-detached">3.4.1 XMLDSig Detached [10](#xmldsig-detached)</a></p>
+<p><a href="#xmldsig-enveloping">3.4.2 XMLDSig Enveloping
+[13](#xmldsig-enveloping)</a></p>
+<p><a href="#xmldsig-enveloped">3.4.3 XMLDSig Enveloped
+[15](#xmldsig-enveloped)</a></p>
+<p><a href="#co-firmas-en-xmldsig">3.4.4 Co-Firmas en XMLDSig
+[16](#co-firmas-en-xmldsig)</a></p>
+<p><a href="#contrafirmas-en-xmldsig">3.4.5 Contrafirmas en XMLDSig
+[17](#contrafirmas-en-xmldsig)</a></p>
+<p><a href="#xml-advanced-digital-signature-xades">3.5 XML Advanced Digital Signature (XAdES)
+[18](#xml-advanced-digital-signature-xades)</a></p>
+<p><a href="#factura-electrónica">3.6 Factura Electrónica
+[19](#factura-electrónica)</a></p>
+<p><a href="#open-document-format-odf">3.7 Open Document Format (ODF)
+[20](#open-document-format-odf)</a></p>
+<p><a href="#office-open-xml-ooxml">3.8 Office Open XML (OOXML)
+[21](#office-open-xml-ooxml)</a></p>
+<p><a href="#información-sobre-el-módulo">4 Información sobre el módulo
+[22](#información-sobre-el-módulo)</a></p>
+<p><a href="#compatibilidad">4.1 Compatibilidad [22](#compatibilidad)</a></p>
+<p><a href="#situación-del-nodo-de-firma-en-xades-enveloped">4.2 Situación del nodo de firma en XAdES Enveloped
+[22](#situación-del-nodo-de-firma-en-xades-enveloped)</a></p>
+<p><a href="#metadatos-adicionales-en-las-firmas-xades">4.3 Metadatos adicionales en las firmas XAdES
+[23](#metadatos-adicionales-en-las-firmas-xades)</a></p>
+<p><a href="#cadena-de-certificación-en-firmas-xmldsig-y-xades">4.4 Cadena de certificación en firmas XMLdSig y XAdES
+[24](#cadena-de-certificación-en-firmas-xmldsig-y-xades)</a></p>
+<p><a href="#firmas-de-contenido-binario-en-xmldsig-y-xades">4.5 Firmas de contenido binario en XMLDSig y XAdES
+[24](#firmas-de-contenido-binario-en-xmldsig-y-xades)</a></p>
+<p><a href="#firma-de-hojas-de-estilo-en-xmldsig-y-xades">4.6 Firma de hojas de estilo en XMLDSig y XAdES
+[27](#firma-de-hojas-de-estilo-en-xmldsig-y-xades)</a></p>
+<p><a href="#_Toc397501073">4.6.1 Notas importantes sobre la firma de hojas de estilo XML
+[28](#_Toc397501073)</a></p>
+<p><a href="#transformaciones-xml">4.6.2 Transformaciones XML
+[29](#transformaciones-xml)</a></p>
+<p><a href="#incidencias-conocidas">4.7 Incidencias conocidas
+[31](#incidencias-conocidas)</a></p>
+<p><a href="#mensajes-extraños-en-consola">4.7.1 Mensajes extraños en consola
+[31](#mensajes-extraños-en-consola)</a></p>
+<p><a href="#diferencias-en-las-firmas-generadas-respecto-a-versiones-anteriores-del-cliente-y-sus-módulos">4.8 Diferencias en las firmas generadas respecto a versiones
+anteriores del cliente y sus módulos
+[31](#diferencias-en-las-firmas-generadas-respecto-a-versiones-anteriores-del-cliente-y-sus-módulos)</a></p>
+<p><a href="#ejemplos-de-estructuras-xml-generadas-por-el-módulo">5 Ejemplos de Estructuras XML generadas por el módulo
+[32](#ejemplos-de-estructuras-xml-generadas-por-el-módulo)</a></p>
+<p><a href="#xmldsig">5.1 XMLDSig [32](#xmldsig)</a></p>
+<p><a href="#detached-interno-explícito-implícito">5.1.1 Detached Interno Explícito / Implícito
+[32](#detached-interno-explícito-implícito)</a></p>
+<p><a href="#enveloping-explícito-implícito">5.1.2 Enveloping Explícito / Implícito
+[34](#enveloping-explícito-implícito)</a></p>
+<p><a href="#enveloped">5.1.3 Enveloped [35](#enveloped)</a></p>
+<p><a href="#co-firmas">5.1.4 Co-Firmas [37](#co-firmas)</a></p>
+<p><a href="#contrafirmas">5.1.5 Contrafirmas [39](#contrafirmas)</a></p>
+<p><a href="#xades">5.2 XAdES [41](#xades)</a></p>
+<p><a href="#detached-interno-explícito-implícito-1">5.2.1 Detached Interno Explícito / Implícito
+[41](#detached-interno-explícito-implícito-1)</a></p>
+<p><a href="#enveloping-explícito-implícito-1">5.2.2 Enveloping Explícito / Implícito
+[44](#enveloping-explícito-implícito-1)</a></p>
+<p><a href="#enveloped-1">5.2.3 Enveloped [46](#enveloped-1)</a></p>
+<p><a href="#co-firmas-1">5.2.4 Co-Firmas [48](#co-firmas-1)</a></p>
+<p><a href="#contrafirmas-1">5.2.5 Contrafirmas [52](#contrafirmas-1)</a></p>
+<p><a href="#distintas-versiones-de-xades">5.2.6 Distintas versiones de XAdES
+[56](#distintas-versiones-de-xades)</a></p>
+<p><a href="#información-de-utilidad">6 Información de utilidad
+[58](#información-de-utilidad)</a></p>
+<p><a href="#glosario-de-términos">7 Glosario de términos
+[59](#glosario-de-términos)</a></p>
+<p><a href="#Licencia_Creative_Commons">Creative Commons
+[62](#Licencia_Creative_Commons)</a></p>
+</li>
+</ol>
+<h1 id="introduccion">Introducción</h1>
+<p>El Cliente de Firma es una herramienta de Firma Electrónica que funciona
+en forma de Applet de Java integrado en una página Web mediante
+JavaScript.</p>
+<p>El Cliente hace uso de los certificados digitales X.509 y de las claves
+privadas asociadas a los mismos que estén instalados en el repositorio o
+almacén de claves y certificados (<em>keystore</em>) del navegador web
+(<em>Internet Explorer, Mozilla, Firefox</em>) o el sistema operativo así como
+de los que estén en dispositivos (tarjetas inteligentes<em>,</em> dispositivos
+<em>USB</em>) configurados en el mismo (el caso de los DNI-e).</p>
+<p>El Cliente de Firma, como su nombre indica, es una aplicación que se
+ejecuta en cliente (en el ordenador del usuario, no en el servidor Web).
+Esto es así para evitar que la clave privada asociada a un certificado
+tenga que “salir” del contenedor del usuario (tarjeta, dispositivo USB o
+navegador) ubicado en su PC. De hecho, nunca llega a salir del
+navegador, el Cliente le envía los datos a firmar y éste los devuelve
+firmados.</p>
+<p>El Cliente de Firma contiene las interfaces y componentes web necesarios
+para la realización de los siguientes procesos (además de otros
+auxiliares como cálculos de hash, lectura de ficheros, etc…):</p>
+<ul>
+<li>
+<p>Firma de formularios Web (siendo tarea del integrador el crear la
+    lógica JavaScript para ello).</p>
+</li>
+<li>
+<p>Firma de datos y ficheros.</p>
+</li>
+<li>
+<p>Multifirma masiva de datos y ficheros.</p>
+</li>
+<li>
+<p>Cofirma (CoSignature) Multifirma al mismo nivel.</p>
+</li>
+<li>
+<p>Contrafirma (CounterSignature) Multifirma en cascada.</p>
+</li>
+</ul>
+<p>Como complemento al cliente de firma, se encuentra un cliente de cifrado
+que nos permite realizar las funciones de encriptación y desencriptación
+de datos atendiendo a diferentes algoritmos y configuraciones. Además
+permite la generación de sobres digitales.</p>
+<h1 id="objetivos">Objetivos</h1>
+<p>El objetivo del presente documento es reflejar las capacidades del
+Cliente @firma en cuanto a firmas electrónicas basadas en formatos XML
+(<em>Extensible Markup Language</em>), las peculiaridades de este relativas a
+estos formatos, sus opciones de configuración y su compatibilidad.</p>
+<h1 id="formatos-de-firma-soportados">Formatos de firma soportados</h1>
+<h2 id="matriz-de-formatos-soportados-por-el-modulo">Matriz de formatos soportados por el módulo</h2>
+<p><img alt="" src="media/image4.png" /></p>
+<p>Dentro de la normativa XAdES, la versión actual del módulo soporta
+únicamente las variante básica, conocida como XAdES BES y la acorde a
+política de firma, EPES, no soportándose ninguna otra (X, XL, etc.):</p>
+<p><img alt="" src="media/image5.png" /></p>
+<p>Adicionalmente, el módulo es capaz de hacer firmas XML según la
+normativa Open Document Format (ODF) acorde con la implementación de
+OpenOffice.org 3.2 y superiores.</p>
+<p>Si bien las firmas OpenOffice.org 3.0 y 3.1 no son compatibles con las
+firmas LibreOffice / OpenOffice.org 3.2 y superiores (por defecto estas
+últimas en el Cliente @firma), es posible forzar la generación de firmas
+en el formato OpenOffice.org 3.0/3.1. Consulte la documentación JavaDoc
+de la clase es.gob.afirma.signers.odf.AOODFSigner para mayor información
+sobre los parámetros adicionales en este sentido.</p>
+<p>Debemos recordar que los documentos ODF están basados en XML, y sus
+firmas digitales son una variante de XMLDSig.</p>
+<p>La matriz de compatibilidad (siguiendo la misma leyenda que la matriz
+anterior), es la siguiente:</p>
+<p><img alt="" src="media/image6.png" /></p>
+<p>En el caso de las “cofirmas” sobre documentos ODF, estas deben tratarse
+como la aplicación de varias firmas al mismo documento a un mismo nivel
+jerárquico, en lo que también puede llamarse “multifirma” de un
+documento.</p>
+<p>Otra variante de firmas XML soportada por el Cliente es OOXML, formato
+de documentos ofimáticos de Microsoft Office 2007, 2008 for Mac, 2010
+(x86 y x64) y 2011 for Mac.</p>
+<p>La matriz de compatibilidad (siguiendo la misma leyenda que la matriz
+anterior), es la siguiente:</p>
+<p><img alt="" src="media/image7.png" /></p>
+<p>En el caso de las “cofirmas” sobre documentos OOXML, estas deben
+tratarse como la aplicación de varias firmas al mismo documento a un
+mismo nivel jerárquico, en lo que también puede llamarse “multifirma” de
+un documento.</p>
+<h2 id="uso-de-los-parametros-de-funcionamiento">Uso de los parámetros de funcionamiento</h2>
+<ol>
+<li>
+<p>Los formatos de firma XML (XAdES, XMLDSig, Factura-e, ODF y OOXML)
+    está únicamente disponible en las construcciones Media y Completa
+    del cliente de firma.</p>
+<p>Para realizar una firma en este formato sólo es necesario su
+configuración como formato de firma mediante el método del Applet
+cliente:</p>
+<p>setSignatureFormat(String format)</p>
+<p>Puede llamarse a esta función desde las páginas Web que integren el
+cliente por medio de la sentencia JavaScript:</p>
+<p>clienteFirma.setSignatureFormat(String format)</p>
+<p>Esto configurará el cliente de firma para realizar alguna de las
+firmas XML (consultar el apartado “<strong>Parámetros de
+funcionamiento</strong>”, para conocer las referencias concretas para cada
+uno de los formatos), siendo necesario también completar la
+configuración del cliente que se considere necesaria (algoritmo de
+firma, modo, tratamiento de errores,…), establecer los datos que se
+desean firmar y ordenar el proceso de firma.</p>
+</li>
+</ol>
+<p>Esta y el resto de funciones del cliente están documentadas en el
+JavaDoc del Applet y el manual del integrador del cliente @firma.
+Remítase a estos documentos para más información.</p>
+<h2 id="parametros-de-funcionamiento">Parámetros de funcionamiento</h2>
+<p>Cadenas de identificación de formato (varias alternativas insensibles a
+mayúsculas y minúsculas por cada formato, por flexibilidad de uso):</p>
+<ul>
+<li>
+<p>XAdES Detached Interna</p>
+<ul>
+<li>"XAdES Detached" / "XAdES_Detached" / "XADES" / "XADES-BES"</li>
+</ul>
+</li>
+<li>
+<p>XAdES Enveloped</p>
+<ul>
+<li>"XAdES Enveloped" / "XAdES_Enveloped"</li>
+</ul>
+</li>
+<li>
+<p>XAdES Enveloping</p>
+<ul>
+<li>"XAdES Enveloping" / "XAdES_Enveloping"</li>
+</ul>
+</li>
+<li>
+<p>XMLDSig Detached Interna</p>
+<ul>
+<li>"XMLDSig Detached" / "XMLDSig_Detached"</li>
+</ul>
+</li>
+<li>
+<p>XMLDSig Enveloped</p>
+<ul>
+<li>"XMLDSig Enveloped" / "XMLDSign Enveloped" / "XMLDSig_Enveloped"
+    / "XMLDSig_Enveloped"</li>
+</ul>
+</li>
+<li>
+<p>XMLDSig Enveloping</p>
+<ul>
+<li>"XMLDSig Enveloping" / "XMLDSign Enveloping" /
+    "XMLDSig_Enveloping" / "XMLDSign_Enveloping"</li>
+</ul>
+</li>
+<li>
+<p>Factura-e</p>
+<ul>
+<li>"FacturaE" / "Factura-e" / "Factura Electronica" / "Factura
+    Electrónica" / "Factura"</li>
+</ul>
+</li>
+<li>
+<p>ODF</p>
+<ul>
+<li>"ODF" / "ODT" / "ODP" / "ODS" / "OpenOffice" / "OpenOffice.org"</li>
+</ul>
+</li>
+<li>
+<p>OOXML</p>
+<ul>
+<li>
+<p>"OOXML" / "OOXML (Office Open XML)" / "DOCX" / "PPTX" / "XLSX"</p>
+<p>Cadenas de identificación del modo de firma (insensibles a
+mayúsculas y minúsculas):</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Explícita (no aplica a las contrafirmas)</p>
+<ul>
+<li>"Explicit"</li>
+</ul>
+</li>
+<li>
+<p>Implícita</p>
+<ul>
+<li>
+<p>"Implicit"</p>
+<p>Ficheros de entrada</p>
+</li>
+</ul>
+</li>
+<li>
+<p>XMLDSig y XAdES, Enveloping y Detached, Implícitas y Explícitas</p>
+<ul>
+<li>Binarios (*.*) y XML (*.xml)</li>
+</ul>
+</li>
+<li>
+<p>XMLDSig y XAdES, Enveloped</p>
+<ul>
+<li>XML (*.xml)</li>
+</ul>
+</li>
+<li>
+<p>ODF</p>
+<ul>
+<li>ODF (*.odt, *.ods, *.odp)</li>
+</ul>
+</li>
+<li>
+<p>OOXML</p>
+<ul>
+<li>
+<p>OOXML (*.docx, *.pptx, *.xlsx)</p>
+<p>Ficheros de salida</p>
+</li>
+</ul>
+</li>
+<li>
+<p>XAdES</p>
+<ul>
+<li>Fichero de firma avanzada (*.xsig)</li>
+</ul>
+</li>
+<li>
+<p>XMLDSig</p>
+<ul>
+<li>Fichero de firma (*.xsig)</li>
+</ul>
+</li>
+<li>
+<p>ODF</p>
+<ul>
+<li>ODF (*.odt, *.ods, *.odp)</li>
+</ul>
+</li>
+<li>
+<p>OOXML</p>
+<ul>
+<li>
+<p>OOXML(*.docx, *.pptx, *.xlsx)</p>
+<p><strong><br />
+NOTAS IMPORTANTES:</strong></p>
+<p>Los algoritmos de huella digital <strong>MD2 y MD5 no están
+soportados</strong> en ninguno de los formatos y variantes de firma
+aportados por este módulo, por motivos de obsolescencia. Esta es
+una limitación impuesta por los estándares y normativas
+afectadas.</p>
+<p>En las operaciones de firma, las algoritmos de huella digital
+<strong>SHA-256, SHA-384 y SHA-512</strong> <strong>no están soportados</strong> en ningún
+sistema basado en CAPI (Windows + Internet Explorer) con
+versiones de Java que sufran el error 6753664
+(<a href="http://bugs.sun.com/view_bug.do?bug_id=6753664">http://bugs.sun.com/view_bug.do?bug_id=6753664</a>) ni, aun sobre
+sistemas diferentes a CAPI, en los entornos de ejecución de Java
+anteriores a la <strong>versión 1.6u18.</strong></p>
+<p>El algoritmo de huella digital <strong>SHA-224 no está soportado</strong>, y
+no se soportará en un futuro.</p>
+<p>No se soportan firmas XML <strong>sin realizar huellas digitales</strong>,
+por no estar contemplada esta posibilidad en ninguna normativa
+ni estándar.</p>
+<p><strong>No se soporta la firma en más de una fase en ningún formato o
+variante de firma realizado por este módulo</strong>.</p>
+<p>Ciertos entornos de ejecución de Java (Java 1.6 anteriores a la
+versión 1.6.0_10) están afectados por un error
+(<a href="http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6696582">http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6696582</a>)
+que impide la realización de firmas de documentos ODF. <strong>Es
+necesario un Java 6 en versión superior a la 1.6.0_10 para
+realizar firmas ODF</strong>. Este error no se da en Java 5, por lo que
+sus usuarios no necesitan actualizar (aunque siempre se
+recomienda la actualización a Java 1.6.0_25).</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="xml-digital-signature-xmldsig">XML Digital Signature (XMLDSig)</h2>
+<h3 id="xmldsig-detached">XMLDSig Detached</h3>
+<p>La firma XML en modo “Detached” permite tener una firma de forma
+separada e independiente del contenido firmado, pudiendo relacionar
+firma con contenido firmado mediante una referencia de tipo URI. Este
+tipo de firmas es útil cuando no se puede modificar el contenido
+original pero se desea constatar su autenticidad, procedencia, etc.</p>
+<p>Un uso común de este formato es en la descarga de ficheros, pudiendo
+poner a disposición del internauta, junto al contenido a descargar, un
+pequeño fichero de firma para verificar la integridad del primero.</p>
+<p>Un ejemplo de este tipo de firmas sería la siguiente estructura
+(resumida) XML:</p>
+<p>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</p>
+<p>&lt;ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#"&gt;</p>
+<p>&lt;ds:SignedInfo&gt;</p>
+<p>&lt;ds:CanonicalizationMethod</p>
+<p>Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/&gt;</p>
+<p>&lt;ds:SignatureMethod</p>
+<p>Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/&gt;</p>
+<p>&lt;ds:Reference URI="http://www.minhap.es/contenido"&gt;</p>
+<p>&lt;ds:DigestMethod</p>
+<p>Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/&gt;</p>
+<p>&lt;ds:DigestValue/&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;/ds:SignedInfo&gt;</p>
+<p>&lt;ds:SignatureValue/&gt;</p>
+<p>&lt;/ds:Signature&gt;</p>
+<p>En este ejemplo, los datos firmados se encuentran en un servidor Web
+accesible públicamente: http://www.minhap.es/contenido, y se referencia
+como tal, conformando lo que se denomina “Externally Detached” o
+“Detached Externa”. <strong>Las firmas Externally Detached NO están soportadas
+actualmente por el Cliente @firma</strong>.</p>
+<p>Cuando se desea firmar un contenido con un formato “Detached”, pero se
+quiere eliminar la dependencia de la disponibilidad externa del
+contenido firmado, es posible crear una estructura XML que contenga los
+propios contenidos y la firma, pero cada uno en una subestructura
+independiente, manteniendo así el concepto de “Detached” (firma y
+contenido firmado no se interrelacionan directamente). Para adecuarse al
+estándar <strong>los nodos de firma y contenido debe encontrarse en el mismo
+nivel</strong> dentro del XML.</p>
+<p>Un ejemplo de estructura XML sería:</p>
+<p>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</p>
+<p>&lt;internally-detached&gt;</p>
+<p>&lt;ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#"&gt;</p>
+<p>&lt;ds:SignedInfo&gt;</p>
+<p>&lt;ds:CanonicalizationMethod</p>
+<p>Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/&gt;</p>
+<p>&lt;ds:SignatureMethod</p>
+<p>Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/&gt;</p>
+<p>&lt;ds:Reference URI="#data"&gt;</p>
+<p>&lt;ds:DigestMethod</p>
+<p>Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/&gt;</p>
+<p>&lt;ds:DigestValue/&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;/ds:SignedInfo&gt;</p>
+<p>&lt;ds:SignatureValue/&gt;</p>
+<p>&lt;/ds:Signature&gt;</p>
+<p>&lt;document Id="data"&gt;</p>
+<p>&lt;title&gt;title&lt;/title&gt;</p>
+<p>&lt;author&gt;writer&lt;/author&gt;</p>
+<p>&lt;date&gt;today&lt;/date&gt;</p>
+<p>&lt;content&gt;</p>
+<p>&lt;para&gt;First paragraph&lt;/para&gt;</p>
+<p>&lt;para&gt;Second paragraph&lt;/para&gt;</p>
+<p>&lt;/content&gt;</p>
+<p>&lt;/document&gt;</p>
+<p>&lt;/internally-detached&gt;</p>
+<p>En este caso, la estructura “internally-detached” contiene dos
+subestructuras, la firma (“Signature”) y el propio contenido firmado
+(“document”). La forma de relacionar ambos es, como ocurría en el primer
+ejemplo, con una URI, solo que en este caso es interna al documento XML,
+referenciando el identificador de la subestructura del contenido firmado
+(“data”).</p>
+<p>A esta variante de firma “Detached” se la conoce como “Internally
+Detached”, o “Detached Interna”.[1]</p>
+<p>Para unificar las superestructuras creadas dentro de un formato
+“Detached Interno”, el Cliente @firma construye siempre el siguiente
+esqueleto XML:</p>
+<p>&lt;CONTENT Id=”id” Encoding=”codificacion” MimeType=”MimeType”
+Algorithm=”…”&gt;</p>
+<p>&lt;! – CONTENIDO FIRMADO --&gt;</p>
+<p>&lt;/CONTENT&gt;</p>
+<p>Es decir, el contenido a firmar, ya sea XML o no-XML, se encapsula
+dentro de una etiqueta XML llamada CONTENT, en la que se indica la
+codificación del contenido (UTF-8, Base64, etc.), el tipo de contenido
+(imagen JPEG, texto, XML, etc.) y el algoritmo utilizado para calcular
+la huella digital de este (por ejemplo, SHA-1).</p>
+<p>Como la superestructura es XML, si el contenido también es XML la
+inserción es directa (como en el primer ejemplo de “Detached Interna”,
+pero si no es XML se codifica en Base64 antes de insertarse, resultando
+una estructura con una forma similar a la siguiente:</p>
+<p>&lt;CONTENT Id=”id” Encoding=”Base64”
+MimeType=”application/octect-stream” Algorithm=”…”&gt;</p>
+<p>SFGJKASGFJKASEGUYFGEYGEYRGADFJKASGDFSUYFGAUYEGWEYJGDFYKGYKGWJKEGYFWYJ</p>
+<p>&lt;/CONTENT&gt;</p>
+<p>La larga cadena de caracteres sería una codificación Base64 del original
+interpretado en su forma binaria pura.</p>
+<p>Como la variante “Detached Interna” almacena dentro de la
+superestructura XML el contenido firmado, la firma de un contenido de
+gran tamaño generaría igualmente un fichero de firma de gran tamaño,
+aspecto claramente no deseable (especialmente en un formato “Detached”),
+por lo que este módulo introduce una sub-variante llamada “Detached
+Interna Explícita” (quedando la anteriormente descrita como “Detached
+Interna Implícita”. En esta sub-variante, se sustituyen los datos
+firmados (ya sean binarios o XML) dentro de la superestructura XML que
+los contenía tanto a ellos como a la firma por su huella digital
+calculada mediante el algoritmo SHA-1, y codificada en Base64.</p>
+<p>Es importante reseñar aquí que <strong>la sub-variante Detached Interna
+Explícita no está respaldada directamente por el estándar XML Digital
+Signature</strong> (aunque su estructura interna cumple con el formato).
+Adicionalmente, esta variante explícita no es de aplicación para las
+contrafirmas.</p>
+<p>Debido a que las firmas Detached Internas, tanto explícita como
+implícita, comparten la misma estructura y no es posible distinguirlas,
+<strong>el cliente marcará las firmas explícitas con el MimeType no estándar
+“hash/sha1”, independientemente de que se especifique el MimeType de los
+datos</strong>. En caso de generar la firma explícita indicando directamente al
+Cliente @firma el hash que debe firmar en lugar de los datos, este debe
+proporcionarse siempre calculado con el algoritmo SHA1.</p>
+<p>La importancia de recalcar este punto reside en que un “validador” de
+firmas XMLDSig estándar dará siempre por buena la firma Detached
+Explícita, pero no la validará contra el contenido original, por lo que
+debemos asegurarnos o que se soporta ésta sub-variante o que la
+validación se realiza contra la huella digital del contenido firmado y
+luego se compara esta huella digital con una obtenida directamente de
+este último.</p>
+<h3 id="xmldsig-enveloping">XMLDSig Enveloping</h3>
+<p>Otra variante de firma es la “Enveloping”, en la que la estructura XML
+de firma es la única en el documento de firma, y esta contiene
+internamente el contenido firmado (en un nodo propio).</p>
+<p>Un posible ejemplo de este tipo de firma podría ser:</p>
+<p>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</p>
+<p>&lt;ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#"&gt;</p>
+<p>&lt;ds:SignedInfo&gt;</p>
+<p>&lt;ds:CanonicalizationMethod</p>
+<p>Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/&gt;</p>
+<p>&lt;ds:SignatureMethod</p>
+<p>Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/&gt;</p>
+<p>&lt;ds:Reference URI="#obj"&gt;</p>
+<p>&lt;ds:DigestMethod</p>
+<p>Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/&gt;</p>
+<p>&lt;ds:DigestValue/&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;/ds:SignedInfo&gt;</p>
+<p>&lt;ds:SignatureValue/&gt;</p>
+<p>&lt;ds:Object
+Id="obj"&gt;SFGJKASGFJKASEGUYFGEYGEYRGADFJKASGDFSUYFG=&lt;/ds:Object&gt;</p>
+<p>&lt;/ds:Signature&gt;</p>
+<p>En este caso, los datos firmados se encuentran en el nodo “Object”
+referenciados internamente al XML mediante el identificador “obj”.[2]</p>
+<p>Al igual que ocurría con el formato “Detached”, si los datos no son XML,
+no es posible insertarlos directamente dentro de una estructura XML, por
+lo que se codifican previamente en Base64.</p>
+<p>Al contener el resultado de la firma los datos firmados empotrados
+internamente, esta formato sufre el mismo problema que la variante
+“Detached Interna” (Implícita), por lo que también se ha optado por
+incluir una sub-variante denominada “Enveloping Explícita” (definiendo
+la “Enveloping” como “Enveloping Implícita”), en la que de nuevo se
+sustituyen los datos originalmente firmados por su huella digital
+calculada mediante el algoritmo SHA-1.</p>
+<p>Es importante reseñar aquí que <strong>la sub-variante Enveloping Explícita no
+está respaldada directamente por el estándar XML Digital Signature</strong>
+(aunque su estructura interna cumple con el formato). Adicionalmente,
+esta variante explícita no es de aplicación para las contrafirmas.</p>
+<p>La importancia de recalcar este punto reside en que un “validador” de
+firmas XMLDSig estándar dará siempre por buena la firma Enveloping
+Explícita, pero no la validará contra el contenido original, por lo que
+debemos asegurarnos o que se soporta esta sub-variante o que la
+validación se realiza contra la huella digital del contenido firmado y
+luego se compara esta huella digital con una obtenida directamente de
+este último.</p>
+<p>Debido a que las firmas Enveloping explícita e implícita comparten la
+misma estructura y no es posible distinguirlas, <strong>el cliente marcará las
+firmas explícitas con el MimeType no estándar “hash/sha1”,
+independientemente de que se especifique el MimeType de los datos</strong>. En
+caso de generar la firma explícita indicando directamente al Cliente
+@firma el hash que debe firmar en lugar de los datos, se firmará este
+hash y se establecerá como MimeType el valor “hash/<em>sha1</em>”.</p>
+<h3 id="xmldsig-enveloped">XMLDSig Enveloped</h3>
+<p>Este formato de firma XMLDSig está pensado para que un contenido XML
+pueda auto-contener su propia firma digital, insertándola en un nodo
+propio interno, por lo que, al contrario que en los formatos anteriores,
+no es posible firmar contenido que no sea XML.</p>
+<p>Un ejemplo simple del resultado de una firma “Enveloped” podría ser el
+siguiente:</p>
+<p>&lt;!DOCTYPE Envelope [</p>
+<p>&lt;!ENTITY ds "http://www.w3.org/2000/09/xmldsig#"&gt;</p>
+<p>&lt;!ENTITY c14n "http://www.w3.org/TR/2001/REC-xml-c14n-20010315"&gt;</p>
+<p>&lt;!ENTITY enveloped
+"http://www.w3.org/2000/09/xmldsig#enveloped-signature"&gt;</p>
+<p>&lt;!ENTITY xslt "http://www.w3.org/TR/1999/REC-xslt-19991116"&gt;</p>
+<p>&lt;!ENTITY digest "http://www.w3.org/2000/09/xmldsig#sha1"&gt;</p>
+<p>]&gt;</p>
+<p>&lt;Letter&gt;</p>
+<p>&lt;Return-address&gt;address&lt;/Return-address&gt;</p>
+<p>&lt;To&gt;You&lt;/To&gt;</p>
+<p>&lt;Message&gt;msg body&lt;/Message&gt;</p>
+<p>&lt;From&gt;</p>
+<p>&lt;ds:Signature xmlns:ds="&ds;"&gt;</p>
+<p>&lt;ds:SignedInfo&gt;</p>
+<p>&lt;ds:CanonicalizationMethod Algorithm=</p>
+<p>"http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/&gt;</p>
+<p>&lt;ds:SignatureMethod Algorithm=</p>
+<p>"http://www.w3.org/2000/09/xmldsig#rsa-sha1"/&gt;</p>
+<p>&lt;ds:Reference URI=""&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform Algorithm="&enveloped;"&gt;</p>
+<p>&lt;/ds:Transform&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm="&digest;"/&gt;</p>
+<p>&lt;ds:DigestValue&gt;&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;/ds:SignedInfo&gt;</p>
+<p>&lt;ds:SignatureValue/&gt;</p>
+<p>&lt;/ds:Signature&gt;</p>
+<p>&lt;/From&gt;</p>
+<p>&lt;Attach&gt;attachement&lt;/Attach&gt;</p>
+<p>&lt;/Letter&gt;</p>
+<p>En este caso, el documento original (“Letter”), contiene internamente la
+estructura de firma digital (“Signature”).[3]</p>
+<p>Una peculiaridad de la estructura generada es que esta referenciada
+mediante una URI vacía (“URI=””), lo cual indica que la firma aplica a
+la totalidad del documento original.</p>
+<p>Aunque en este caso el módulo no ha definido sub-variantes, para
+mantener una coherencia en la nomenclatura, ha denominado a este formato
+“Enveloped Implícita”.</p>
+<h3 id="co-firmas-en-xmldsig">Co-Firmas en XMLDSig</h3>
+<p>Cuando un mismo documento es firmado (en una misma jerarquía de firma)
+por varios firmantes, de produce una operación de co-firma.</p>
+<p>A nivel interno, una co-firma no es más que una sucesión de objetos o
+estructuras XML de tipo “Signature” (como los que figuran en los
+ejemplos anteriores) que se refieren a los mismos datos. Las co-firmas
+XMLDSig pueden aplicarse a todos los formatos y variantes del estándar.</p>
+<p>El módulo de firmas XML del Cliente @firma permite co-firmas en todas
+las variantes y sub-variantes soportadas de XMLDSig.</p>
+<h5 id="cofirmas-enveloping">Cofirmas Enveloping</h5>
+<p>Una firma XML <em>enveloping</em> exige que los datos firmados estén contenidos
+en un nodo XML dentro de la propia firma. Cuando se solicita una cofirma
+XML <em>enveloping</em> al Cliente @firma, se generará un nodo raíz
+&lt;AFIRMA&gt; que contendrá todas las firmas generadas. Cada una de las
+firmas contendrá su propio nodo de datos, por lo que este tipo de firmas
+puede crecer rápidamente en tamaño.</p>
+<p>Se recomienda utilizar las firmas Internally Detached cuando se quieran
+realizar múltiples firmas sobre los mismos datos y que estos contenidos
+en la firma.</p>
+<p>Este comportamiento aplica tanto a XMLDSig como a su variante XAdES.</p>
+<h5 id="cofirmas-cruzadas-entre-xmldsig-y-xades">Cofirmas cruzadas entre XMLDSig y XAdES</h5>
+<p>Las cofirmas de un documento dan como resultado dos firmas sobre este
+mismo documento que se encuentran a un mismo nivel, es decir, que
+ninguna envuelve a la otra ni una prevalece sobre la otra.</p>
+<p>A nivel de formato interno, esto quiere decir que cuando cofirmamos un
+documento ya firmado previamente, esta firma previa no se modifica. Si
+tenemos en cuenta que XAdES es en realidad un subconjunto de XMLDSig, el
+resultado de una cofirma XAdES sobre un documento firmado previamente
+con XMLDSig (o viceversa), son dos firmas independientes, una en XAdES y
+otra en XMLDSig. Dado que todas las firmas XAdES son XMLDSig pero no
+todas las firmas XMLDSig son XAdES, el resultado global de la firma se
+adecúa al estándar más amplio, XMLDSig en este caso.</p>
+<h3 id="contrafirmas-en-xmldsig">Contrafirmas en XMLDSig</h3>
+<p>Una contrafirma es un tipo de multi-firma (varios firmantes en un único
+documento), en el que las firmas de los firmantes no están a un mismo
+nivel, sino que siguen una jerarquía de firmas, donde un firmante asume
+la firma de otro firmante previo, formándose en el proceso un árbol de
+firmas (o firmantes).</p>
+<p>Un ejemplo de uso de este tipo de multi-firmas podríamos encontrarlo en
+una revisión en cadena de un documento:</p>
+<ol>
+<li>
+<p>El autor del documento firma el original.</p>
+<ol>
+<li>
+<p>El documento pasa al gerente de ventas, el cual firma sobre la
+    firma del autor</p>
+<ol>
+<li>El documento pasa al director de ventas, el cual asume el
+    buen trabajo de su gerente y firma sobre su firma.</li>
+</ol>
+</li>
+<li>
+<p>El documento pasa, también desde el propio autor, al gerente de
+    calidad, el cual firma sobre la firma del autor.</p>
+<ol>
+<li>El documento pasa al director de calidad, el cual asume el
+    buen trabajo de su gerente y firma sobre su firma.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>El documento pasa al director general, el cual firma las firmas de
+    sus directores, asumiendo igualmente su trabajo.</p>
+<p>Adicionalmente, es posible combinar co-firmas con contrafirmas,
+pudiendo tener así árboles de firma complejos, incluso con varios
+nodos raíz.</p>
+<p>La especificación del estándar XMLDSig no define la forma de
+contrafirmar un documento, aunque deja abierta la posibilidad de
+realizar contrafirmas. No obstante, la especificación XAdES [ETSI
+TS 101 903 V1.3.2 (2006-03)] especifica un formato de contrafirma
+retro-compatible con el formato XMLDSig mediante referencias de tipo
+“CountersignedSignature”
+(<a href="http://uri.etsi.org/01903#CountersignedSignature">http://uri.etsi.org/01903#CountersignedSignature</a>).</p>
+<p>El módulo de firmas XML del cliente @firma implementa las
+contrafirmas según este método, pero es importante resaltar que,
+dado que la normativa XMLDSig no adopta este formato de contrafirmas
+directamente (sino que se define en la normativa XAdES), <strong>las
+contrafirmas XMLDSig creadas mediante el cliente @firma pueden no
+reconocerse en algunas plataformas de validación de firmas</strong>.</p>
+</li>
+</ol>
+<h2 id="xml-advanced-digital-signature-xades">XML Advanced Digital Signature (XAdES)</h2>
+<p>Las firmas XAdES son una evolución de las firmas XMLDSig a la que añaden
+ciertas extensiones y en la que se concretan con más definición algunas
+operaciones, como las contrafirmas.</p>
+<p>El formato XAdES admite múltiples variantes, con distintas aplicaciones
+(desde sellos de tiempo hasta archivo longevo). La actual versión del
+módulo de firmas XML del cliente @firma soporta únicamente la versiones
+básica (BES), de aplicación general no especializada y la acorde a
+política de firma (EPES).</p>
+<p><img alt="" src="media/image8.png" /></p>
+<p>La tabla anterior muestra las variantes de XAdES existentes, estando
+marcadas únicamente las básica (BES) y acorde a política de firma (EPES)
+en verde, como indicativo de soporte por el módulo.</p>
+<p>Dado que XAdES es una extensión retro-compatible con XMLDSig, los
+formatos soportados son los mismos que en este segundo, aunque
+encontrando las siguientes diferencias y aspectos a recalcar:</p>
+<p>Las contrafirmas se realizan mediante un atributo especialmente
+especificado por XAdES (“CounterSignature”), por lo que, al contrario
+que en XMLDSig, sí están plenamente respaldadas por el estándar.</p>
+<p>Al igual que ocurría con XMLDSig, todas las sub-variantes explícitas
+<strong>no están directamente respaldadas por el estándar</strong>.</p>
+<p>Adicionalmente, es importante comentar que los atributos específicos
+XAdES implementados por el módulo de firmas XML son (además de los
+relativos a las políticas de firma):</p>
+<ul>
+<li>
+<p>SigningTime</p>
+</li>
+<li>
+<p>SigningCerticate</p>
+</li>
+<li>
+<p>IssuerSerial</p>
+</li>
+<li>
+<p>SignedDataObjectProperties</p>
+</li>
+</ul>
+<h2 id="factura-electronica">Factura Electrónica</h2>
+<p>La firma en formato de factura electrónica es en realidad una firma
+XAdES Enveloped particular. La firma de facturas se realizan de acuerdo
+a la versión 3.1 del esquema de factura electrónica.</p>
+<p>Detalles a tener en cuenta del formato de firma de factura son:</p>
+<ul>
+<li>
+<p>Los datos de entrada deben ser una factura electrónica conforme a
+    las normas FacturaE.</p>
+</li>
+<li>
+<p>No contempla las operaciones de cofirma ni contrafirma.</p>
+</li>
+<li>
+<p>Las firmas son siempre implícitas, por lo que no se atenderá a la
+    configuración de modo del cliente.</p>
+</li>
+<li>
+<p>No es necesario configurar la política de firma de factura
+    electrónica. La política se establece automáticamente cuando se
+    utiliza este formato.</p>
+<p>Los parámetros configurables de la firma son:</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>signatureProductionCity: Ciudad desde la que se realiza la firma.</p>
+</li>
+<li>
+<p>signatureProductionProvince: Provincia desde la que se realiza la
+    firma.</p>
+</li>
+<li>
+<p>signatureProductionPostalCode: Código postal desde el que se realiza
+    la firma.</p>
+</li>
+<li>
+<p>signatureProductionCountry: País desde el que se realiza la firma.</p>
+<p>Puedes configurarse estos parámetros mediante el método:</p>
+<p>addExtraParam(String param, String value);</p>
+</li>
+</ul>
+<ol>
+<li>
+<p>Puede llamarse a esta función desde las páginas Web que integren el
+    cliente por medio de la sentencia JavaScript:</p>
+<p>clienteFirma.addExtraParam(String param, String value)</p>
+</li>
+</ol>
+<h2 id="open-document-format-odf">Open Document Format (ODF)</h2>
+<p>ODF, la normativa de documentos ofimáticos implementada por
+OpenOffice.org, implementa para sus firmas digitales una variante
+específica de XMLDSig.</p>
+<p>El módulo es capaz de realizar las firmas según esta variante,
+resultando en documentos firmados reconocidos por los productos
+OpenOffice.org 3.2 y 3.3.</p>
+<p>Por problemas de evolución del propio formato ODF, las firmas generadas
+en la configuración por defecto del Cliente no son válidas en el formato
+ODF generado por OpenOffice.org 3.0 / 3.1.</p>
+<p>No se soportan firmas electrónicas en formato OpenOffice.org 2.x, por
+considerarse obsoleto.</p>
+<p>La compatibilidad en cuanto a tipo de documento es la siguiente:</p>
+<p><img alt="" src="media/image9.png" /></p>
+<p>Se soportan documentos Impress, Calc y Writer.</p>
+<p>Detalles a tener en cuenta del formato de firma ODF son:</p>
+<ul>
+<li>
+<p>No contempla la operación de contrafirma</p>
+</li>
+<li>
+<p>Las firmas son siempre implícitas, por lo que no se atenderá a la
+    configuración de modo del cliente.</p>
+</li>
+<li>
+<p>El único algoritmo de firma soportado por el formato es SHA1withRSA,
+    por lo que no se atenderá a la configuración del cliente.</p>
+<p><strong>NOTAS IMPORTANTES:</strong></p>
+<p>El formato ODF ha introducido en los últimos años numerosas
+variantes incompatibles entre sí. Las firmas generadas con
+OpenOffice.org 3.3 y 3.2 y LibreOffice no son reconocidas por
+versiones anteriores, y las firmas generadas por OpenOffice.org 3.0
+y 3.1 no son reconocidas por versiones anteriores y son reconocidas
+como incompletas por versiones posteriores. Por estas
+inconsistencias en la evolución del formato (completamente ajenas al
+Cliente @firma), no puede garantizarse un correcto funcionamiento en
+versiones futuras de OpenOffice.org o LibreOffice.</p>
+<p>Existe la posibilidad de generar con el Cliente firmas compatibles
+con OpenOffice.org 3.0 y 3.1 (que serán reconocidas como incompletas
+por OpenOffice.org 3.2 y 3.3) mediante el siguiente parámetro
+adicional que debe ser proporcionado al módulo de firma (consulte el
+Manual del Integrador para más información sobre paso de parámetros
+adicionales a los módulos de firma):</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>“useOpenOffice31Mode” con el valor “true”</li>
+</ul>
+<h2 id="office-open-xml-ooxml">Office Open XML (OOXML)</h2>
+<p>OOXML, la normativa de documentos ofimáticos implementada por Microsoft
+Office, implementa para sus firmas digitales una variante específica de
+XMLDSig.</p>
+<p>El módulo es capaz de realizar las firmas según esta variante,
+resultando en documentos firmados reconocidos por los productos Office
+2007, 2008 for Mac, 2010 y 2011 for Mac, no previéndose que existan
+problemas de compatibilidad en futuras versiones.</p>
+<p>La compatibilidad en cuanto a tipo de documento es la siguiente:</p>
+<p><img alt="" src="media/image10.png" /></p>
+<p>Se soportan documentos Word, Excel y PowerPoint.</p>
+<p>Detalles a tener en cuenta del formato de firma OOXML son:</p>
+<ul>
+<li>
+<p>No contempla la operación de contrafirma.</p>
+</li>
+<li>
+<p>Las firmas son siempre implícitas, por lo que no se atenderá a la
+    configuración de modo del cliente.</p>
+<p><strong>ADVERTENCIA:</strong> La herramienta de validación VALIDe, en su versión
+actual, no soporta la validación de firmas OOXML. Es posible
+comprobar la validez de estas firmas abriendo el documento con
+Microsoft Office 2007 o superior.</p>
+</li>
+</ul>
+<h1 id="informacion-sobre-el-modulo">Información sobre el módulo</h1>
+<h2 id="compatibilidad">Compatibilidad</h2>
+<p>El módulo de firmas XML del cliente @firma es compatible con la versión
+3 y superiores del cliente, en todas las plataformas, sistemas
+operativos, arquitecturas y versiones de entorno de ejecución de Java
+soportadas por este.</p>
+<p>Las firmas ODF que genera el módulo en la configuración por defecto del
+Cliente son interpretadas correctamente solo por OpenOffice.org 3.2 y
+superiores, consulte el apartado <u>Open Document Format (ODF)</u> para
+más información.</p>
+<h2 id="situacion-del-nodo-de-firma-en-xades-enveloped">Situación del nodo de firma en XAdES Enveloped</h2>
+<p>Por defecto, el Cliente @firma sitúa la firma electrónica en su nodo
+“Signature” directamente como hijo de la raíz del XML. No obstante, hay
+situaciones en las que puede interesar situar este nodo de firma en una
+situación arbitraria del XML.</p>
+<p>Para ello, puede usarse el parámetro adicional
+“<strong><em>insertEnvelopedSignatureOnNodeByXPath</em></strong>”, en el que, mediante una
+expresión XPath v1, podemos indicar el nodo en el que queremos se
+inserte la firma (el nodo “Signature” pasará a ser el primer hijo de
+este). Si la expresión XPath resolviese varios nodos, se usará el
+primero de ellos.</p>
+<p>Por ejemplo, en el siguiente XML:</p>
+<p>&lt;?xml version=<em>"1.0"</em> encoding=<em>"UTF-8"</em>?&gt;</p>
+<p>&lt;bookstore&gt;</p>
+<p>&lt;book category=<em>"COOKING"</em>&gt;</p>
+<p>&lt;title lang=<em>"en"</em>&gt;Everyday Italian&lt;/title&gt;</p>
+<p>&lt;author&gt;Giada De Laurentiis&lt;/author&gt;</p>
+<p>&lt;year&gt;2005&lt;/year&gt;</p>
+<p>&lt;price&gt;30.00&lt;/price&gt;</p>
+<p>&lt;/book&gt;</p>
+<p>&lt;book category=<em>"CHILDREN"</em>&gt;</p>
+<p>&lt;title lang=<em>"en"</em>&gt;Harry Potter&lt;/title&gt;</p>
+<p>&lt;author&gt;J K. Rowling&lt;/author&gt;</p>
+<p>&lt;year&gt;2005&lt;/year&gt;</p>
+<p>&lt;price&gt;29.99&lt;/price&gt;</p>
+<p>&lt;/book&gt;</p>
+<p>&lt;/bookstore&gt;</p>
+<p>Si indicamos el parámetro con este valor:</p>
+<p>insertEnvelopedSignatureOnNodeByXPath = /bookstore/book[1]/title</p>
+<p>La firma se insertara como nodo hijo del título del primer libro:</p>
+<p>&lt;?xml version=<em>"1.0"</em> encoding=<em>"UTF-8"</em>?&gt;</p>
+<p>&lt;bookstore&gt;</p>
+<p>&lt;book category=<em>"COOKING"</em>&gt;</p>
+<p>&lt;title lang=<em>"en"</em>&gt;</p>
+<p>Everyday Italian</p>
+<p><strong>&lt;ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="S1"&gt;</strong></p>
+<p><strong>…</strong></p>
+<p><strong>&lt;/ds:Signature&gt;</strong></p>
+<p>&lt;/title&gt;</p>
+<p>&lt;author&gt;Giada De Laurentiis&lt;/author&gt;</p>
+<p>&lt;year&gt;2005&lt;/year&gt;</p>
+<p>&lt;price&gt;30.00&lt;/price&gt;</p>
+<p>&lt;/book&gt;</p>
+<p>&lt;book category=<em>"CHILDREN"</em>&gt;</p>
+<p>&lt;title lang=<em>"en"</em>&gt;Harry Potter&lt;/title&gt;</p>
+<p>&lt;author&gt;J K. Rowling&lt;/author&gt;</p>
+<p>&lt;year&gt;2005&lt;/year&gt;</p>
+<p>&lt;price&gt;29.99&lt;/price&gt;</p>
+<p>&lt;/book&gt;</p>
+<p>&lt;/bookstore&gt;</p>
+<h2 id="metadatos-adicionales-en-las-firmas-xades">Metadatos adicionales en las firmas XAdES</h2>
+<p>las firmas XAdES pueden contener opcionalmente una serie de metadatos
+acerca de la firma, el firmante y el propio proceso de firma. En @firma,
+es posible establecer estos metadatos mediante el uso de “parámetros
+adicionales”.</p>
+<p>Los “parámetros adicionales” admitidos en este sentido son:</p>
+<ul>
+<li>
+<p>signerClaimedRoles</p>
+<ul>
+<li>Cargos atribuidos para el firmante. Deben separarse los cargos
+    con el carácter “|” (y este no puede estar en el propio texto
+    de ningún cargo).</li>
+</ul>
+</li>
+<li>
+<p>signatureProductionCity</p>
+<ul>
+<li>Ciudad en la que se realiza la firma.</li>
+</ul>
+</li>
+<li>
+<p>signatureProductionProvince</p>
+<ul>
+<li>Provincia en la que se realiza la firma.</li>
+</ul>
+</li>
+<li>
+<p>signatureProductionPostalCode</p>
+<ul>
+<li>Código postal en el que se realiza la firma</li>
+</ul>
+</li>
+<li>
+<p>signatureProductionCountry</p>
+<ul>
+<li>País en el que se realiza la firma</li>
+</ul>
+</li>
+<li>
+<p>commitmentTypeIndications</p>
+<ul>
+<li>Número de “commitment type indications” que se van a
+    especificar. Estas son, las finalidades especificadas para la
+    firma que se va a generar.</li>
+</ul>
+</li>
+<li>
+<p>commitmentTypeIndication<strong><em>n</em></strong>Indentifier</p>
+<ul>
+<li>
+<p>Identificador de la finalidad número <strong><em>n</em></strong> (que va desde 0
+    hasta el valor menos 1 indicado en la propiedad anterior) que se
+    le asigna a la firma.</p>
+</li>
+<li>
+<p>Los valores posibles que puede tomar y el significado de cada
+    uno son:</p>
+<ul>
+<li>
+<p>1: La firma constituye “Prueba de origen”.</p>
+</li>
+<li>
+<p>2: La firma constituye “Prueba de recepción”.</p>
+</li>
+<li>
+<p>3: La firma constituye “Prueba de entrega”.</p>
+</li>
+<li>
+<p>4: La firma constituye “Prueba de envío”.</p>
+</li>
+<li>
+<p>5: La firma constituye “Prueba de aprobación”.</p>
+</li>
+<li>
+<p>6: La firma constituye “Prueba de creación”.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>commitmentTypeIndication<strong><em>n</em></strong>Description</p>
+<ul>
+<li>Descripción libre de la finalidad número <strong><em>n</em></strong>. Este atributo
+    es opcional.</li>
+</ul>
+</li>
+</ul>
+<p>Las nombres de las propiedades deben escribirse tal y como figuran,
+respetando mayúsculas y minúsculas. Para más información sobre el
+establecimiento de “parámetros adicionales” en @firma consulte con el
+Manual del Integrador.</p>
+<p>Para el establecimiento programático desde Java de parámetros
+adicionales consulte con el JavaDoc.</p>
+<h2 id="cadena-de-certificacion-en-firmas-xmldsig-y-xades">Cadena de certificación en firmas XMLdSig y XAdES</h2>
+<p>Desde la versión 3.3 del Cliente @firma en las firmas XAdES se incluye,
+por defecto, la cadena de certificación completa del certificado
+firmante. Este comportamiento, aunque es el recomendado por el estándar,
+genera firmas XAdES no compatibles con versión anteriores a la 5.5 de la
+Plataforma @firma.</p>
+<p>En la versión 3.3.1 del Cliente @firma se agrega el parámetro
+“includeOnlySignningCertificate” con el que es posible configurar este
+comportamiento. Para obligar al Cliente @firma a que sólo incluya el
+certificado del firmante en las firmas, cofirmas y contrafirmas
+generadas es necesario configurar este parámetro con el valor “true”.
+Para configurar este comportamiento estableceremos el valor del
+parámetro mediante el método addExtraParam(String, String).</p>
+<ul>
+<li>addExtraParam(“includeOnlySignningCertificate”, “true”);</li>
+</ul>
+<p>Este parámetro afecta tanto a las firmas XMLdSig como XAdES.</p>
+<h2 id="firmas-de-contenido-binario-en-xmldsig-y-xades">Firmas de contenido binario en XMLDSig y XAdES</h2>
+<p>Cuando se indica al Cliente que se desea firmar datos binarios y estos
+se facilitan efectivamente en formato binario, el cliente los transforma
+a Base64 antes de firmarlos, de forma que estos puedan ser insertados en
+el XML.</p>
+<p>La normativa (<a href="http://www.w3.org/TR/xmldsig-core/#sec-Object">http://www.w3.org/TR/xmldsig-core/#sec-Object</a>) indica
+que siempre que sobre los datos originales se realice una transformación
+de este tipo, esta debe declararse en la referencia de la firma XML
+mediante el algoritmo <a href="http://www.w3.org/2000/09/xmldsig#base64">http://www.w3.org/2000/09/xmldsig#base64</a>.</p>
+<p>Declarando esta transformación, la huella digital firmada corresponderá
+con el original binario, y no con su versión codificada en Base64.</p>
+<p>No obstante, el cliente incorpora ciertas peculiaridades en la
+aplicación de esta norma:</p>
+<p>Únicamente se declaran trasformaciones Base64 en las firmas XAdES y
+XMLDSig. OOXML y ODF no necesitan estas transformaciones nunca.</p>
+<p>Únicamente se declaran transformaciones Base64 de forma automática si es
+el cliente el que realiza la transformación de binario a Base64. Si los
+datos se proporcionan ya en Base64 (la transformación se ha realizado
+externamente), es el integrador quien debe asegurarse de que, si desea
+que se declare esta transformación, se añade de forma manual.</p>
+<h5 id="deshabilitacion-de-las-transformaciones-base64">Deshabilitación de las transformaciones Base64</h5>
+<p>Por si se produjesen problemas de compatibilidad con otros sistemas no
+compatibles con la normativa XMLDSig / XAdES en cuanto a
+transformaciones Base64, el cliente establece un mecanismo de
+desactivación de esta característica mediante el siguiente método del
+Applet (que es posible invocar vía JavaScript):
+ClienteFirma.addExtraParam(String paramName, String paramValue), y el
+uso concrerto:</p>
+<p>clienteFirma.addExtraParam(“avoidBase64Transforms”, “<strong>true</strong>”);</p>
+<p>Una vez deshabilitada la declaración de las transformaciones Base64,
+estas se dejarán de añadir hasta que se reinicie el Applet o se vuelvan
+a habilitar mediante la llamada complementaria:</p>
+<p>clienteFirma.addExtraParam(“avoidBase64Transforms”, “<strong>false</strong>”);</p>
+<p>Puede encontrar más información sobre el método addExtraParam en la
+documentación JavaDoc.</p>
+<h2 id="firma-de-hojas-de-estilo-en-xmldsig-y-xades">Firma de hojas de estilo en XMLDSig y XAdES</h2>
+<p>La normativa XMLDSig (punto 8.1.3) indica que si un XML declara una hoja
+de estilo, esta debe ser firmada junto al XML para que la firma asocie a
+este último con su visualización, respetando el concepto “lo que se ve
+es lo que se firma”.</p>
+<p>Dado que las hojas de estilo pueden declararse de distintas formas, el
+cliente adopta distintas estrategias para cada forma de declaración y
+según la variante de firma.</p>
+<p>Las formas de declarar una hoja de estilo y la forma de firmar el XML en
+ese caso por el Cliente son las siguientes:</p>
+<p>La hoja de estilo está empotrada dentro del XML, y se declara con una
+referencia local (el valor del atributo href de la declaración del XSL
+es un nombre de identificador de nodo XML precedido por “#”).</p>
+<ul>
+<li>
+<p>En este caso no es necesaria ninguna estrategia adicional, pues al
+    ser parte la hoja de estilo del XML, siempre que se firma uno, se
+    firma también el otro. Esto aplica a la totalidad de las firmas XML.</p>
+<p>La hoja de estilo está accesible remotamente por protocolo HTTP o
+HTTPS (el valor del atributo href es una URL válida con esquema http
+o https).</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>En este caso se añade una referencia a la firma que apunta a la hoja
+    de estilo mediante la misma URL (una referencia Externally
+    Detached). Esto aplica a la totalidad de las firmas XML).</p>
+<p>Se referencia a la hoja de estilo mediante una referencia relativa
+local.</p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p>En este caso, dado que las referencias relativas locales se pierden
+    al firmar (el Applet no sabe en qué directorio o carpeta estaba el
+    XML para localizar el XSL, y no puede asumir dónde se guardará la
+    firma generada), las hojas de estilo no se firman.</p>
+<p><span id="_Toc397501073" class="anchor"></span></p>
+</li>
+</ul>
+<h3 id="notas-importantes-sobre-la-firma-de-hojas-de-estilo-xml">Notas importantes sobre la firma de hojas de estilo XML</h3>
+<h5 id="_1"></h5>
+<h5 id="desactivacion-y-activacion-de-firma-de-las-hojas-de-estilo">Desactivación y activación de firma de las hojas de estilo</h5>
+<p>El Cliente NO firma por defecto aquellas hojas de estilo que encuentra
+ya que estas pueden hacer referencia a recursos locales del usuario o
+recursos remotos no accesibles, pero permite modificar este
+comportamiento mediante el método del Applet (que es posible invocar vía
+JavaScript): clienteFirma.addExtraParam(String paramName, String
+paramValue), y el siguiente uso:</p>
+<p>Desactivar firma de hoja de estilo:</p>
+<p>clienteFirma.addExtraParam(“ignoreStyleSheets”, “<strong>true</strong>”);</p>
+<p>Activar firma de hoja de estilo:</p>
+<p>clienteFirma.addExtraParam(“ignoreStyleSheets”, “<strong>false</strong>”);</p>
+<p>Una vez deshabilitada o habilitada la firma de hojas de estilo, se
+mantendrá ese comportamiento hasta que se reinicie el Applet o se vuelva
+a cambiar mediante la llamada complementaria.</p>
+<p>Puede encontrar más información sobre el método addExtraParam en la
+documentación JavaDoc.</p>
+<h5 id="hojas-de-estilo-anidadas">Hojas de estilo anidadas</h5>
+<p>Las hojas de estilo XSL pueden referenciar a su vez a otras hojas de
+estilo mediante las clausulas &lt;xsl:include&gt; y &lt;xsl:import&gt;.
+Mediante estas etiquetas, se puede construir una cadena de ficheros de
+definición de estilos en forma de árbol, donde unas referencian a otras
+tanto de forma remota como local, en modo relativo o absoluto.</p>
+<p>En la actualidad, el Cliente @firma no sigue la cadena de referencias
+para firmar la totalidad de los ficheros que definen el estilo del XML,
+sino que opera únicamente sobre el primer fichero referenciado por el
+XML en el atributo href de la etiqueta xml-stylesheet.</p>
+<p>Intente en la medida de lo posible evitar el uso de &lt;xsl:include&gt;
+y &lt;xsl:import&gt; en hojas de estilo, y valore la posibilidad de
+incluir clausulas en su aplicación reflejando esta limitación.</p>
+<h3 id="transformaciones-xml">Transformaciones XML</h3>
+<p>Los formatos de firma XAdES y XMLdSig permiten la configuración de
+transformaciones XML personalizadas. Estas transformaciones se aplican a
+un XML de datos antes de firmarlo, de tal forma que no se firma el XML
+original, sino el transformado. Las transformaciones quedan declaradas
+en la firma para que quede constancia de ellas y sea posible validar la
+firma por medio del XML de datos original.</p>
+<p>La declaración de transformaciones XML para la firma es útil para la
+ejecución de firmas con un formato específico. Por ejemplo, la
+especificación de factura electrónica establece que no se debe firmar el
+XML de datos al completo, sino partes específicas del mismo.</p>
+<p>Se permite la declaración de distintos tipos de transformaciones,
+algunos de los cuales tienen subtipos. La lógica de una transformación
+se especifica mediante un cuerpo, salvo en casos concretos en los que la
+lógica está predefinida por el tipo de transformación (caso de las
+transformaciones Base64 y Enveloped).</p>
+<p>Los tipos de transformaciones soportados son:</p>
+<p>Transformación <strong>XPATH</strong>:</p>
+<p><strong>Tipo:</strong> http://www.w3.org/TR/1999/REC-xpath-19991116</p>
+<p><strong>Subtipos:</strong> No tiene subtipos.</p>
+<p><strong>Cuerpo:</strong> Especificado mediante sentencias de tipo XPATH.</p>
+<p>Transformación <strong>XPATH2</strong>:</p>
+<p><strong>Tipo:</strong> http://www.w3.org/2002/06/xmldsig-filter2</p>
+<p><strong>Subtipos:</strong></p>
+<ul>
+<li>
+<p><strong>subtract</strong>: Operación de substracción.</p>
+</li>
+<li>
+<p><strong>intersect</strong>: Operación de intersección.</p>
+</li>
+<li>
+<p><strong>union</strong>: Operación de unión.</p>
+<p><strong>Cuerpo:</strong> Especificado mediante sentencias de tipo XPATH2.</p>
+<p>Transformación <strong>BASE64</strong> (esta transformación ya se establece por
+defecto cuando se firman datos binarios, por lo que no se recomienda
+su uso de forma independiente). Requiere que los datos
+proporcionados estén en Base64 y que se indique so codificación
+mediante el parámetro “encoding=base64”:</p>
+<p><strong>Tipo:</strong> http://www.w3.org/2000/09/xmldsig#base64</p>
+<p><strong>Subtipos:</strong> No tiene subtipos.</p>
+<p><strong>Cuerpo:</strong> No tiene cuerpo.</p>
+<p>Transformación <strong>ENVELOPED</strong> (esta transformación ya se establece
+por defecto en los formatos de firma enveloped, por lo que no se
+recomienda su uso de forma independiente):</p>
+<p><strong>Tipo:</strong> http://www.w3.org/2000/09/xmldsig#enveloped-signature</p>
+<p><strong>Subtipos:</strong> No tiene subtipos.</p>
+<p><strong>Cuerpo:</strong> No tiene cuerpo.</p>
+<p>No es posible especificar transformaciones complejas que incluyan
+varias sentencias. En su lugar, puede declararse una sucesión de
+transformaciones simples que produzcan el mismo resultado. Cada una
+de las transformaciones se aplicará de forma ordenada sobre el
+resultado de la anterior.</p>
+<p>Las transformaciones personalizadas se declaran a través del método:</p>
+<p><strong>addXMLTransform(String tipo, String subtipo, String cuerpo)</strong></p>
+<p>Este método puede utilizarse sucesivas veces para establecer varias
+transformaciones que se apliquen ordenadamente.</p>
+<p>Para eliminar todas las transformaciones declaradas se utiliza el
+método:</p>
+<p><strong>resetXMLTransforms()</strong></p>
+</li>
+</ul>
+<h3 id="uso-de-estructuras-manifest-en-firmas-xades">Uso de estructuras <em>Manifest</em> en firmas XAdES</h3>
+<p>Es posible crear firmas XAdES en las que, siguiendo el punto 2.3 de la
+especificación XMLDSig
+(<a href="http://www.w3.org/TR/2000/WD-xmldsig-core-20000510/#sec-o-Manifest">http://www.w3.org/TR/2000/WD-xmldsig-core-20000510/#sec-o-Manifest</a>),
+las referencias XML no se firmen directamente, sino que se firme una
+estructura de tipo <em>Manifest</em> que a su vez contenga las referencias a
+firmar.</p>
+<p>De esta forma, tal y como indica la normativa, la resolución de las
+referencias incluidas dentro de una estructura <em>Manifest</em> es una
+responsabilidad del validador, y de cara a la propia firma no se
+resuelven para calcular las huellas digitales (lo que permite hacer
+firmas XML explícitas). Consulte la especificación XMLDSig para mayor
+información.</p>
+<p>Para crear firmas XAdES con estructuras <em>Manifest</em> debe especificarse el
+siguiente parámetro adicional:</p>
+<p>useManifest=true</p>
+<p>Un ejemplo muy simplificado de la estructura de una firma con <em>Manifest</em>
+sería:</p>
+<p><strong>&lt;ds:Signature Id="Signature-02553"&gt;</strong></p>
+<p><strong>&lt;ds:SignedInfo&gt;</strong></p>
+<p><strong>&lt;ds:Reference Id="Reference-894bfd39 "
+Type="http://www.w3.org/2000/09/xmldsig#Manifest"
+URI="#Manifest-36e2de7b"&gt;</strong></p>
+<p><strong>…</strong></p>
+<p><strong>&lt;/ds:Reference&gt;</strong></p>
+<p><strong>&lt;/ds:SignedInfo&gt;</strong></p>
+<p><strong>…</strong></p>
+<p><strong>&lt;ds:Object Id="ManifestObject-ffd54e53"&gt;</strong></p>
+<p><strong>&lt;ds:Manifest Id="Manifest-36e2de7b"&gt;</strong></p>
+<p><strong>&lt;ds:Reference Id="Reference-894bfd39"
+URI="myscheme://path/file"&gt;</strong></p>
+<p><strong>&lt;ds:DigestMethod
+Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/&gt;</strong></p>
+<p><strong>&lt;ds:DigestValue&gt;…&lt;/ds:DigestValue&gt;</strong></p>
+<p><strong>&lt;/ds:Reference&gt;</strong></p>
+<p><strong>&lt;/ds:Manifest&gt;</strong></p>
+<p><strong>&lt;/ds:Object&gt;</strong></p>
+<p><strong>…</strong></p>
+<p><strong>&lt;/ds:Signature&gt;</strong></p>
+<p>En este ejemplo el contenido firmado es “<strong>myscheme://path/file</strong>”, pero
+al firmar no se ha intentado acceder a ese fichero, y se ha dado por
+buena la huella digital indicada.</p>
+<h2 id="incidencias-conocidas">Incidencias conocidas</h2>
+<h3 id="mensajes-extranos-en-consola">Mensajes extraños en consola</h3>
+<p>El cliente, al firmar ficheros no-XML en modalidades implícitas o al
+firmar cualquier tipo de fichero (XML o no) en modalidades explícitas
+puede escribir el siguiente mensaje en consola:</p>
+<p>[Fatal Error] :1:1: Content is not allowed in prolog.</p>
+<p>Este mensaje debe ignorarse, ya que no se genera desde la aplicación,
+sino desde las clases de Sun Microsystems / Apache destinadas a
+identificar si el contenido del fichero es XML o no. No es posible
+ocultar este mensaje o evitar que se escriba en la consola.</p>
+<h2 id="diferencias-en-las-firmas-generadas-respecto-a-versiones-anteriores-del-cliente-y-sus-modulos">Diferencias en las firmas generadas respecto a versiones anteriores del cliente y sus módulos</h2>
+<ul>
+<li>
+<p>En la versión 3.2 del Cliente y anteriores se incluía en la firma
+    únicamente el certificado del firmantes, mientras que en la versión
+    3.3 y superiores, por defecto, se incluye toda la cadena de
+    certificación. Para conservar el comportamiento anterior es
+    necesario configurar el parámetro extra de firma
+    “includeOnlySignningCertificate” al valor “true”.</p>
+</li>
+<li>
+<p>En las contrafirmas, la versión anterior del cliente identificaba
+    las firmas según el IssuerName del certificado firmante. Si firma el
+    documento dentro de una misma organización es muy probable que el
+    IssuerName sea el mismo para todos los firmantes (normalmente, el
+    certificado lo habrá emitido la misma autoridad de certificación
+    para los empleados de una determinada organización), por lo que
+    resultaba imposible discernir entre los firmantes. Cuando se recibe
+    un documento ya firmado, para aceptar ese documento y firma, lo
+    importante es conocer quién ha firmado ese documento, por lo que es
+    aconsejable que se identifiquen según el SubjectName o el CommonName
+    de su certificado.</p>
+</li>
+<li>
+<p>Las versiones v.2.x y v3.0 del Cliente @firma nunca declaraban (en
+    ningún formato XML) transformaciones Base64 cuando realizaba estas
+    conversiones. La versión actual (ver puntos anteriores) declara
+    estas transformaciones (aspecto requerido por las normativas) para
+    las firmas XAdES y XMLDSig.</p>
+</li>
+<li>
+<p>Si se firma un XML que declara una hoja de estilo XSL en modo
+    Enveloped, las versiones del cliente v2.x y 3.0 eliminaban la
+    declaración de la hoja de estilo, mientras que el v3.1 mantiene esta
+    declaración.</p>
+</li>
+<li>
+<p>Las versiones del cliente v.2.x y v3.0 no firmaban hojas de estilo
+    asociadas a un XML, mientras que la versión actual sí las firma.</p>
+</li>
+</ul>
+<h1 id="ejemplos-de-estructuras-xml-generadas-por-el-modulo">Ejemplos de Estructuras XML generadas por el módulo</h1>
+<h2 id="xmldsig">XMLDSig</h2>
+<h3 id="detached-interno-explicito-implicito">Detached Interno Explícito / Implícito</h3>
+<p>&lt;?xml version=<em>"1.0"</em> encoding=<em>"UTF-8"</em> ?&gt;</p>
+<p>&lt;AFIRMA&gt;</p>
+<p>&lt;CONTENT Encoding=<em>"..."</em> Id=<em>"ID-CONTENT"</em>
+MimeType=<em>"..."</em>&gt;...&lt;/CONTENT&gt;</p>
+<p>&lt;ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+Id="ID-Signature"&gt;</p>
+<p>&lt;ds:SignedInfo&gt;</p>
+<p>&lt;ds:CanonicalizationMethod</p>
+<p>Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"
+/&gt;</p>
+<p>&lt;ds:SignatureMethod
+Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /&gt;</p>
+<p>&lt;ds:Reference Id="ID-Reference" URI="#ID-CONTENT"&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform
+Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"
+/&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;ds:Reference URI=<em>"#ID-KeyInfo"</em>&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform
+Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"
+/&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;/ds:SignedInfo&gt;</p>
+<p>&lt;ds:SignatureValue
+Id=<em>"ID-SignatureValue"</em>&gt;...&lt;/ds:SignatureValue&gt;</p>
+<p>&lt;ds:KeyInfo Id="2e9ff06f-a4cf-48f1-b670-b0dcdec56331-KeyInfo"&gt;</p>
+<p>&lt;ds:KeyValue&gt;</p>
+<p>&lt;ds:RSAKeyValue&gt;&lt;ds:Modulus&gt;...&lt;/ds:Modulus&gt;&lt;ds:Exponent&gt;...&lt;/ds:Exponent&gt;&lt;/ds:RSAKeyValue&gt;</p>
+<p>&lt;/ds:KeyValue&gt;</p>
+<p>&lt;ds:X509Data&gt;&lt;ds:X509Certificate&gt;...&lt;/ds:X509Certificate&gt;&lt;/ds:X509Data&gt;</p>
+<p>&lt;/ds:KeyInfo&gt;</p>
+<p>&lt;/ds:Signature&gt;</p>
+<p>&lt;/AFIRMA&gt;</p>
+<h3 id="enveloping-explicito-implicito">Enveloping Explícito / Implícito</h3>
+<p>&lt;?xml version=<em>"1.0"</em> encoding=<em>"UTF-8"</em> ?&gt;</p>
+<p>&lt;ds:Signature xmlns:ds=<em>"http://www.w3.org/2000/09/xmldsig#"</em></p>
+<p>Id=<em>"ID-Signature"</em>&gt;</p>
+<p>&lt;ds:SignedInfo&gt;</p>
+<p>&lt;ds:CanonicalizationMethod</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"</em>
+/&gt;</p>
+<p>&lt;ds:SignatureMethod
+Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#rsa-sha1"</em> /&gt;</p>
+<p>&lt;ds:Reference Id=<em>"ID-Reference"</em></p>
+<p>Type=<em>"http://www.w3.org/2000/09/xmldsig#Object"</em> URI=<em>"#ID-Object"</em>&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"</em>
+/&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em>
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;ds:Reference URI=<em>"#ID-KeyInfo"</em>&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"</em>
+/&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em>
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;/ds:SignedInfo&gt;</p>
+<p>&lt;ds:SignatureValue
+Id=<em>"ID-SignatureValue"</em>&gt;...&lt;/ds:SignatureValue&gt;</p>
+<p>&lt;ds:KeyInfo Id=<em>"ID-KeyInfo"</em>&gt;</p>
+<p>&lt;ds:KeyValue&gt;</p>
+<p>&lt;ds:RSAKeyValue&gt;</p>
+<p>&lt;ds:Modulus&gt;...&lt;/ds:Modulus&gt;</p>
+<p>&lt;ds:Exponent&gt;...&lt;/ds:Exponent&gt;</p>
+<p>&lt;/ds:RSAKeyValue&gt;</p>
+<p>&lt;/ds:KeyValue&gt;</p>
+<p>&lt;ds:X509Data&gt;</p>
+<p>&lt;ds:X509Certificate&gt;...&lt;/ds:X509Certificate&gt;</p>
+<p>&lt;/ds:X509Data&gt;</p>
+<p>&lt;/ds:KeyInfo&gt;</p>
+<p>&lt;ds:Object Encoding=<em>"..."</em> Id=<em>"ID-Object"</em>
+MimeType=<em>"..."</em>&gt;...&lt;/ds:Object&gt;</p>
+<p>&lt;/ds:Signature&gt;</p>
+<h3 id="enveloped">Enveloped</h3>
+<p>&lt;?xml version=<em>"1.0"</em> encoding=<em>"UTF-8"</em> ?&gt;</p>
+<p>&lt;documento&gt;</p>
+<p>...</p>
+<p>&lt;ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+Id="ID-Signature"&gt;</p>
+<p>&lt;ds:SignedInfo&gt;</p>
+<p>&lt;ds:CanonicalizationMethod</p>
+<p>Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"
+/&gt;</p>
+<p>&lt;ds:SignatureMethod
+Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /&gt;</p>
+<p>&lt;ds:Reference Id=<em>"ID-Reference"</em> URI=<em>""</em>&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"
+/&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;ds:Reference URI=<em>"#ID-KeyInfo"</em>&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"
+/&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;/ds:SignedInfo&gt;</p>
+<p>&lt;ds:SignatureValue
+Id=<em>"ID-SignatureValue"</em>&gt;...&lt;/ds:SignatureValue&gt;</p>
+<p>&lt;ds:KeyInfo Id=<em>"ID-KeyInfo"</em>&gt;</p>
+<p>&lt;ds:KeyValue&gt;</p>
+<p>&lt;ds:RSAKeyValue&gt;</p>
+<p>&lt;ds:Modulus&gt;...&lt;/ds:Modulus&gt;</p>
+<p>&lt;ds:Exponent&gt;...&lt;/ds:Exponent&gt;</p>
+<p>&lt;/ds:RSAKeyValue&gt;</p>
+<p>&lt;/ds:KeyValue&gt;</p>
+<p>&lt;ds:X509Data&gt;</p>
+<p>&lt;ds:X509Certificate&gt;...&lt;/ds:X509Certificate&gt;</p>
+<p>&lt;/ds:X509Data&gt;</p>
+<p>&lt;/ds:KeyInfo&gt;</p>
+<p>&lt;/ds:Signature&gt;</p>
+<p>&lt;/documento&gt;</p>
+<h3 id="co-firmas">Co-Firmas</h3>
+<p>Ejemplo con “Detached Interna” y dos firmantes:</p>
+<p>&lt;?xml version=<em>"1.0"</em> encoding=<em>"UTF-8"</em> ?&gt;</p>
+<p>&lt;AFIRMA&gt;</p>
+<p>&lt;CONTENT Encoding=<em>"base64"</em> Id=<em>"ID-CONTENT"</em>
+MimeType=<em>"..."</em>&gt;...&lt;/CONTENT&gt;</p>
+<p>&lt;ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#"</p>
+<p>Id="ID-Signature"&gt;</p>
+<p>&lt;ds:SignedInfo&gt;</p>
+<p>&lt;ds:CanonicalizationMethod</p>
+<p>Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"
+/&gt;</p>
+<p>&lt;ds:SignatureMethod
+Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /&gt;</p>
+<p>&lt;ds:Reference Id="ID-Reference" URI="#ID-CONTENT"&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"
+/&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;ds:Reference URI=<em>"#ID-KeyInfo"</em>&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"
+/&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;/ds:SignedInfo&gt;</p>
+<p>&lt;ds:SignatureValue
+Id=<em>"ID-SignatureValue"</em>&gt;...&lt;/ds:SignatureValue&gt;</p>
+<p>&lt;ds:KeyInfo Id=<em>"ID-KeyInfo"</em>&gt;</p>
+<p>&lt;ds:KeyValue&gt;</p>
+<p>&lt;ds:RSAKeyValue&gt;</p>
+<p>&lt;ds:Modulus&gt;...&lt;/ds:Modulus&gt;</p>
+<p>&lt;ds:Exponent&gt;...&lt;/ds:Exponent&gt;</p>
+<p>&lt;/ds:RSAKeyValue&gt;</p>
+<p>&lt;/ds:KeyValue&gt;</p>
+<p>&lt;ds:X509Data&gt;</p>
+<p>&lt;ds:X509Certificate&gt;...&lt;/ds:X509Certificate&gt;</p>
+<p>&lt;/ds:X509Data&gt;</p>
+<p>&lt;/ds:KeyInfo&gt;</p>
+<p>&lt;/ds:Signature&gt;</p>
+<p>&lt;ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#"</p>
+<p>Id="ID-Signature"&gt;</p>
+<p>&lt;ds:SignedInfo&gt;</p>
+<p>&lt;ds:CanonicalizationMethod</p>
+<p>Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"
+/&gt;</p>
+<p>&lt;ds:SignatureMethod
+Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /&gt;</p>
+<p>&lt;ds:Reference Id="ID-Reference" URI="#ID-CONTENT"&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"
+/&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;ds:Reference URI=<em>"#ID2-KeyInfo"</em>&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"
+/&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;/ds:SignedInfo&gt;</p>
+<p>&lt;ds:SignatureValue
+Id=<em>"ID-SignatureValue"</em>&gt;...&lt;/ds:SignatureValue&gt;</p>
+<p>&lt;ds:KeyInfo Id=<em>"ID2-KeyInfo"</em>&gt;</p>
+<p>&lt;ds:KeyValue&gt;</p>
+<p>&lt;ds:RSAKeyValue&gt;</p>
+<p>&lt;ds:Modulus&gt;...&lt;/ds:Modulus&gt;</p>
+<p>&lt;ds:Exponent&gt;...&lt;/ds:Exponent&gt;</p>
+<p>&lt;/ds:RSAKeyValue&gt;</p>
+<p>&lt;/ds:KeyValue&gt;</p>
+<p>&lt;ds:X509Data&gt;</p>
+<p>&lt;ds:X509Certificate&gt;...&lt;/ds:X509Certificate&gt;</p>
+<p>&lt;/ds:X509Data&gt;</p>
+<p>&lt;/ds:KeyInfo&gt;</p>
+<p>&lt;/ds:Signature&gt;</p>
+<p>&lt;/AFIRMA&gt;</p>
+<h3 id="contrafirmas">Contrafirmas</h3>
+<p>Ejemplo con “Detached Interna” y dos firmantes:</p>
+<p>&lt;?xml version=<em>"1.0"</em> encoding=<em>"UTF-8"</em> ?&gt;</p>
+<p>&lt;AFIRMA&gt;</p>
+<p>&lt;CONTENT Encoding=<em>"…"</em> Id=<em>"ID-CONTENT"</em>
+MimeType=<em>"..."</em>&gt;...&lt;/CONTENT&gt;</p>
+<p>&lt;ds:Signature xmlns:ds=<em>"http://www.w3.org/2000/09/xmldsig#"</em></p>
+<p>Id=<em>"ID-Signature1"</em>&gt;</p>
+<p>&lt;ds:SignedInfo&gt;</p>
+<p>&lt;ds:CanonicalizationMethod</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"</em>
+/&gt;</p>
+<p>&lt;ds:SignatureMethod
+Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#rsa-sha1"</em> /&gt;</p>
+<p>&lt;ds:Reference Id=<em>"ID-Reference"</em> URI=<em>"#ID-CONTENT"</em>&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"</em>
+/&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em>
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;sEfy8aIUCmWhhBUOsUiHyxvmLvs=&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;ds:Reference URI=<em>"#ID-KeyInfo"</em>&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"</em>
+/&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em>
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;/ds:SignedInfo&gt;</p>
+<p>&lt;ds:SignatureValue
+Id=<em>"ID-SignatureValue1"</em>&gt;...&lt;/ds:SignatureValue&gt;</p>
+<p>&lt;ds:KeyInfo Id=<em>"ID-KeyInfo"</em>&gt;</p>
+<p>&lt;ds:KeyValue&gt;</p>
+<p>&lt;ds:RSAKeyValue&gt;</p>
+<p>&lt;ds:Modulus&gt;...&lt;/ds:Modulus&gt;</p>
+<p>&lt;ds:Exponent&gt;...&lt;/ds:Exponent&gt;</p>
+<p>&lt;/ds:RSAKeyValue&gt;</p>
+<p>&lt;/ds:KeyValue&gt;</p>
+<p>&lt;ds:X509Data&gt;</p>
+<p>&lt;ds:X509Certificate&gt;...&lt;/ds:X509Certificate&gt;</p>
+<p>&lt;/ds:X509Data&gt;</p>
+<p>&lt;/ds:KeyInfo&gt;</p>
+<p>&lt;/ds:Signature&gt;</p>
+<p>&lt;ds:Signature xmlns:ds=<em>"http://www.w3.org/2000/09/xmldsig#"</em></p>
+<p>Id=<em>"ID-Signature2"</em>&gt;</p>
+<p>&lt;ds:SignedInfo&gt;</p>
+<p>&lt;ds:CanonicalizationMethod</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"</em>
+/&gt;</p>
+<p>&lt;ds:SignatureMethod
+Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#rsa-sha1"</em> /&gt;</p>
+<p>&lt;ds:Reference Id=<em>"ID-Reference"</em> URI=<em>"#ID-CONTENT"</em>&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"</em>
+/&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em>
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;…&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;ds:Reference URI=<em>"#ID-KeyInfo"</em>&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"</em>
+/&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em>
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;/ds:SignedInfo&gt;</p>
+<p>&lt;ds:SignatureValue
+Id=<em>"ID-SignatureValue2"</em>&gt;...&lt;/ds:SignatureValue&gt;</p>
+<p>&lt;ds:KeyInfo Id=<em>"ID-KeyInfo"</em>&gt;</p>
+<p>&lt;ds:KeyValue&gt;</p>
+<p>&lt;ds:RSAKeyValue&gt;</p>
+<p>&lt;ds:Modulus&gt;...&lt;/ds:Modulus&gt;</p>
+<p>&lt;ds:Exponent&gt;...&lt;/ds:Exponent&gt;</p>
+<p>&lt;/ds:RSAKeyValue&gt;</p>
+<p>&lt;/ds:KeyValue&gt;</p>
+<p>&lt;ds:X509Data&gt;</p>
+<p>&lt;ds:X509Certificate&gt;...&lt;/ds:X509Certificate&gt;</p>
+<p>&lt;/ds:X509Data&gt;</p>
+<p>&lt;/ds:KeyInfo&gt;</p>
+<p>&lt;/ds:Signature&gt;</p>
+<p>&lt;ds:Signature xmlns:ds=<em>"http://www.w3.org/2000/09/xmldsig#"</em></p>
+<p>Id=<em>"ID-Signature3"</em>&gt;</p>
+<p>&lt;ds:SignedInfo&gt;</p>
+<p>&lt;ds:CanonicalizationMethod</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"</em>
+/&gt;</p>
+<p>&lt;ds:SignatureMethod
+Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#rsa-sha1"</em> /&gt;</p>
+<p>&lt;ds:Reference Id=<em>"ID-Reference"</em></p>
+<p>Type=<em>"http://uri.etsi.org/01903#CountersignedSignature"</em>
+URI=<em>"#ID-SignatureValue1"</em>&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"</em>
+/&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em>
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;ds:Reference URI=<em>"#ID-KeyInfo"</em>&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em>
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;/ds:SignedInfo&gt;</p>
+<p>&lt;ds:SignatureValue Id=<em>"ID-SignatureValue3"</em> /&gt;</p>
+<p>&lt;ds:KeyInfo Id=<em>"ID-KeyInfo"</em>&gt;</p>
+<p>&lt;ds:KeyValue&gt;</p>
+<p>&lt;ds:RSAKeyValue&gt;</p>
+<p>&lt;ds:Modulus&gt;...&lt;/ds:Modulus&gt;</p>
+<p>&lt;ds:Exponent&gt;...&lt;/ds:Exponent&gt;</p>
+<p>&lt;/ds:RSAKeyValue&gt;</p>
+<p>&lt;/ds:KeyValue&gt;</p>
+<p>&lt;ds:X509Data&gt;</p>
+<p>&lt;ds:X509Certificate&gt;...&lt;/ds:X509Certificate&gt;</p>
+<p>&lt;/ds:X509Data&gt;</p>
+<p>&lt;/ds:KeyInfo&gt;</p>
+<p>&lt;/ds:Signature&gt;</p>
+<p>&lt;/AFIRMA&gt;</p>
+<h2 id="xades">XAdES</h2>
+<h3 id="detached-interno-explicito-implicito_1">Detached Interno Explícito / Implícito</h3>
+<p>&lt;?xml version=<em>"1.0"</em> encoding=<em>"UTF-8"</em> ?&gt;</p>
+<p>&lt;AFIRMA&gt;</p>
+<p>&lt;CONTENT Encoding=<em>"..."</em> Id=<em>"ID-CONTENT"</em>
+MimeType=<em>"..."</em>&gt;...&lt;/CONTENT&gt;</p>
+<p>&lt;ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#"</p>
+<p>Id="ID-Signature"&gt;</p>
+<p>&lt;ds:SignedInfo&gt;</p>
+<p>&lt;ds:CanonicalizationMethod</p>
+<p>Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"
+/&gt;</p>
+<p>&lt;ds:SignatureMethod
+Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /&gt;</p>
+<p>&lt;ds:Reference Id="ID-Reference" URI="#ID-CONTENT"&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"
+/&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;ds:Reference Type="http://uri.etsi.org/01903#SignedProperties"</p>
+<p>URI="#ID- SignedProperties"&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"
+/&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;ds:Reference URI=<em>"#ID-KeyInfo"</em>&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"
+/&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;/ds:SignedInfo&gt;</p>
+<p>&lt;ds:SignatureValue Id=<em>"ID-SignatureValue"</em> /&gt;</p>
+<p>&lt;ds:KeyInfo Id=<em>"ID-KeyInfo"</em>&gt;</p>
+<p>&lt;ds:KeyValue&gt;&lt;ds:RSAKeyValue&gt;</p>
+<p>&lt;ds:Modulus&gt;...&lt;/ds:Modulus&gt;</p>
+<p>&lt;ds:Exponent&gt;...&lt;/ds:Exponent&gt;</p>
+<p>&lt;/ds:RSAKeyValue&gt;&lt;/ds:KeyValue&gt;</p>
+<p>&lt;ds:X509Data&gt;</p>
+<p>&lt;ds:X509Certificate&gt;...&lt;/ds:X509Certificate&gt;</p>
+<p>&lt;/ds:X509Data&gt;</p>
+<p>&lt;/ds:KeyInfo&gt;</p>
+<p>&lt;ds:Object&gt;</p>
+<p>&lt;xades:QualifyingProperties
+xmlns:dsign=<em>"http://www.w3.org/2000/09/xmldsig#"</em></p>
+<p>xmlns:xades="http://uri.etsi.org/01903/v1.3.2#"
+Id="ID-QualifyingProperties"</p>
+<p>Target="#ID-Signature"&gt;</p>
+<p>&lt;xades:SignedProperties Id=<em>"ID-SignedProperties"</em>&gt;</p>
+<p>&lt;xades:SignedSignatureProperties&gt;</p>
+<p>&lt;xades:SigningTime&gt;...&lt;/xades:SigningTime&gt;</p>
+<p>&lt;xades:SigningCertificate&gt;</p>
+<p>&lt;xades:Cert&gt;</p>
+<p>&lt;xades:CertDigest&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm=<em>"..."</em> /&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/xades:CertDigest&gt;</p>
+<p>&lt;xades:IssuerSerial&gt;</p>
+<p>&lt;ds:X509IssuerName&gt;...&lt;/ds:X509IssuerName&gt;</p>
+<p>&lt;ds:X509SerialNumber&gt;...&lt;/ds:X509SerialNumber&gt;</p>
+<p>&lt;/xades:IssuerSerial&gt;</p>
+<p>&lt;/xades:Cert&gt;</p>
+<p>&lt;/xades:SigningCertificate&gt;</p>
+<p>&lt;/xades:SignedSignatureProperties&gt;</p>
+<p>&lt;xades:SignedDataObjectProperties&gt;</p>
+<p>&lt;xades:DataObjectFormat ObjectReference=<em>"#ID-Reference"</em>&gt;</p>
+<p>&lt;xades:Description /&gt;</p>
+<p>&lt;xades:MimeType&gt;...&lt;/xades:MimeType&gt;</p>
+<p>&lt;xades:Encoding&gt;...&lt;/xades:Encoding&gt;</p>
+<p>&lt;/xades:DataObjectFormat&gt;</p>
+<p>&lt;/xades:SignedDataObjectProperties&gt;</p>
+<p>&lt;/xades:SignedProperties&gt;</p>
+<p>&lt;/xades:QualifyingProperties&gt;</p>
+<p>&lt;/ds:Object&gt;</p>
+<p>&lt;/ds:Signature&gt;</p>
+<p>&lt;/AFIRMA&gt;</p>
+<h3 id="enveloping-explicito-implicito_1">Enveloping Explícito / Implícito</h3>
+<p>&lt;?xml version=<em>"1.0"</em> encoding=<em>"UTF-8"</em> ?&gt;</p>
+<p>&lt;ds:Signature xmlns:ds=<em>"http://www.w3.org/2000/09/xmldsig#"</em></p>
+<p>Id=<em>"ID-Signature"</em>&gt;</p>
+<p>&lt;ds:SignedInfo&gt;</p>
+<p>&lt;ds:CanonicalizationMethod</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-
+20010315#WithComments"</em> /&gt;</p>
+<p>&lt;ds:SignatureMethod
+Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#rsa-sha1"</em> /&gt;</p>
+<p>&lt;ds:Reference Id=<em>"ID-Reference"</em></p>
+<p>Type=<em>"http://www.w3.org/2000/09/xmldsig#Object"</em> URI=<em>"#ID-Object"</em>&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-
+20010315#WithComments"</em> /&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em>
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;eg9yVHgqINMyyztUbeqlfJozTzY=&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;ds:Reference Type=<em>"http://uri.etsi.org/01903#SignedProperties"</em></p>
+<p>URI=<em>"#ID- SignedProperties"</em>&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-
+20010315#WithComments"</em> /&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em>
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;8v1ohri++lnTP4D0b3P0gY9D7QI=&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;ds:Reference URI=<em>"#ID-KeyInfo"</em>&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-
+20010315#WithComments"</em> /&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em>
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;/ds:SignedInfo&gt;</p>
+<p>&lt;ds:SignatureValue
+Id=<em>"ID-SignatureValue"</em>&gt;...&lt;/ds:SignatureValue&gt;</p>
+<p>&lt;ds:KeyInfo Id=<em>"ID-KeyInfo"</em>&gt;</p>
+<p>&lt;ds:KeyValue&gt;</p>
+<p>&lt;ds:RSAKeyValue&gt;</p>
+<p>&lt;ds:Modulus&gt;...&lt;/ds:Modulus&gt;</p>
+<p>&lt;ds:Exponent&gt;...&lt;/ds:Exponent&gt;</p>
+<p>&lt;/ds:RSAKeyValue&gt;</p>
+<p>&lt;/ds:KeyValue&gt;</p>
+<p>&lt;ds:X509Data&gt;</p>
+<p>&lt;ds:X509Certificate&gt;...&lt;/ds:X509Certificate&gt;</p>
+<p>&lt;/ds:X509Data&gt;</p>
+<p>&lt;/ds:KeyInfo&gt;</p>
+<p>&lt;ds:Object Encoding=<em>"..."</em> Id=<em>"ID-Object"</em>
+MimeType=<em>"..."</em>&gt;...&lt;/ds:Object&gt;</p>
+<p>&lt;ds:Object&gt;</p>
+<p>&lt;xades:QualifyingProperties
+xmlns:dsign=<em>"http://www.w3.org/2000/09/xmldsig#"</em></p>
+<p>xmlns:xades=<em>"http://uri.etsi.org/01903/v1.3.2#"</em>
+Id=<em>"ID-QualifyingProperties"</em></p>
+<p>Target=<em>"#ID- Signature"</em>&gt;</p>
+<p>&lt;xades:SignedProperties Id=<em>"ID-SignedProperties"</em>&gt;</p>
+<p>&lt;xades:SignedSignatureProperties&gt;</p>
+<p>&lt;xades:SigningTime&gt;...&lt;/xades:SigningTime&gt;</p>
+<p>&lt;xades:SigningCertificate&gt;</p>
+<p>&lt;xades:Cert&gt;</p>
+<p>&lt;xades:CertDigest&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em>
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/xades:CertDigest&gt;</p>
+<p>&lt;xades:IssuerSerial&gt;</p>
+<p>&lt;ds:X509IssuerName&gt;...&lt;/ds:X509IssuerName&gt;</p>
+<p>&lt;ds:X509SerialNumber&gt;...&lt;/ds:X509SerialNumber&gt;</p>
+<p>&lt;/xades:IssuerSerial&gt;</p>
+<p>&lt;/xades:Cert&gt;</p>
+<p>&lt;/xades:SigningCertificate&gt;</p>
+<p>&lt;/xades:SignedSignatureProperties&gt;</p>
+<p>&lt;xades:SignedDataObjectProperties&gt;</p>
+<p>&lt;xades:DataObjectFormat ObjectReference=<em>"#ID-Reference"</em>&gt;</p>
+<p>&lt;xades:Description /&gt;</p>
+<p>&lt;xades:MimeType&gt;...&lt;/xades:MimeType&gt;</p>
+<p>&lt;xades:Encoding&gt;...&lt;/xades:Encoding&gt;</p>
+<p>&lt;/xades:DataObjectFormat&gt;</p>
+<p>&lt;/xades:SignedDataObjectProperties&gt;</p>
+<p>&lt;/xades:SignedProperties&gt;</p>
+<p>&lt;/xades:QualifyingProperties&gt;</p>
+<p>&lt;/ds:Object&gt;</p>
+<p>&lt;/ds:Signature&gt;</p>
+<h3 id="enveloped_1">Enveloped</h3>
+<p>&lt;?xml version=<em>"1.0"</em> encoding=<em>"UTF-8"</em> ?&gt;</p>
+<p>&lt;documento&gt;</p>
+<p>...</p>
+<p>&lt;ds:Signature xmlns:ds=<em>"http://www.w3.org/2000/09/xmldsig#"</em></p>
+<p>Id=<em>"ID-Signature"</em>&gt;</p>
+<p>&lt;ds:SignedInfo&gt;</p>
+<p>&lt;ds:CanonicalizationMethod</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-
+20010315#WithComments"</em> /&gt;</p>
+<p>&lt;ds:SignatureMethod
+Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#rsa-sha1"</em> /&gt;</p>
+<p>&lt;ds:Reference Id=<em>"ID-Reference"</em> URI=<em>""</em>&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#enveloped- signature"</em>
+/&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-
+20010315#WithComments"</em> /&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em>
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;ds:Reference Type=<em>"http://uri.etsi.org/01903#SignedProperties"</em></p>
+<p>URI=<em>"#ID- SignedProperties"</em>&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-
+20010315#WithComments"</em> /&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em>
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;ds:Reference URI=<em>"#ID-KeyInfo"</em>&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-
+20010315#WithComments"</em> /&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em>
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;/ds:SignedInfo&gt;</p>
+<p>&lt;ds:SignatureValue
+Id=<em>"ID-SignatureValue"</em>&gt;...&lt;/ds:SignatureValue&gt;</p>
+<p>&lt;ds:KeyInfo Id=<em>"ID-KeyInfo"</em>&gt;</p>
+<p>&lt;ds:KeyValue&gt;</p>
+<p>&lt;ds:RSAKeyValue&gt;</p>
+<p>&lt;ds:Modulus&gt;...&lt;/ds:Modulus&gt;</p>
+<p>&lt;ds:Exponent&gt;...&lt;/ds:Exponent&gt;</p>
+<p>&lt;/ds:RSAKeyValue&gt;</p>
+<p>&lt;/ds:KeyValue&gt;</p>
+<p>&lt;ds:X509Data&gt;</p>
+<p>&lt;ds:X509Certificate&gt;...&lt;/ds:X509Certificate&gt;</p>
+<p>&lt;/ds:X509Data&gt;</p>
+<p>&lt;/ds:KeyInfo&gt;</p>
+<p>&lt;ds:Object&gt;</p>
+<p>&lt;xades:QualifyingProperties
+xmlns:dsign=<em>"http://www.w3.org/2000/09/xmldsig#"</em></p>
+<p>xmlns:xades=<em>"http://uri.etsi.org/01903/v1.3.2#"</em>
+Id=<em>"ID-QualifyingProperties"</em></p>
+<p>Target=<em>"#ID- Signature"</em>&gt;</p>
+<p>&lt;xades:SignedProperties Id=<em>"ID-SignedProperties"</em>&gt;</p>
+<p>&lt;xades:SignedSignatureProperties&gt;</p>
+<p>&lt;xades:SigningTime&gt;...&lt;/xades:SigningTime&gt;</p>
+<p>&lt;xades:SigningCertificate&gt;</p>
+<p>&lt;xades:Cert&gt;</p>
+<p>&lt;xades:CertDigest&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em>
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/xades:CertDigest&gt;</p>
+<p>&lt;xades:IssuerSerial&gt;</p>
+<p>&lt;ds:X509IssuerName&gt;...&lt;/ds:X509IssuerName&gt;</p>
+<p>&lt;ds:X509SerialNumber&gt;...&lt;/ds:X509SerialNumber&gt;</p>
+<p>&lt;/xades:IssuerSerial&gt;</p>
+<p>&lt;/xades:Cert&gt;</p>
+<p>&lt;/xades:SigningCertificate&gt;</p>
+<p>&lt;/xades:SignedSignatureProperties&gt;</p>
+<p>&lt;xades:SignedDataObjectProperties&gt;</p>
+<p>&lt;xades:DataObjectFormat ObjectReference=<em>"#ID-Reference"</em>&gt;</p>
+<p>&lt;xades:Description /&gt;</p>
+<p>&lt;xades:MimeType&gt;...&lt;/xades:MimeType&gt;</p>
+<p>&lt;xades:Encoding&gt;...&lt;/xades:Encoding&gt;</p>
+<p>&lt;/xades:DataObjectFormat&gt;</p>
+<p>&lt;/xades:SignedDataObjectProperties&gt;</p>
+<p>&lt;/xades:SignedProperties&gt;</p>
+<p>&lt;/xades:QualifyingProperties&gt;</p>
+<p>&lt;/ds:Object&gt;</p>
+<p>&lt;/ds:Signature&gt;</p>
+<p>&lt;/documento&gt;</p>
+<h3 id="co-firmas_1">Co-Firmas</h3>
+<p>Ejemplo con “Detached Interna” y dos firmantes:</p>
+<p>&lt;?xml version=<em>"1.0"</em> encoding=<em>"UTF-8"</em> ?&gt;</p>
+<p>&lt;AFIRMA&gt;</p>
+<p>&lt;CONTENT Encoding=<em>"..."</em> Id=<em>"ID-CONTENT"</em>
+MimeType=<em>"..."</em>&gt;...&lt;/CONTENT&gt;</p>
+<p>&lt;ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#"</p>
+<p>Id="ID-Signature"&gt;</p>
+<p>&lt;ds:SignedInfo&gt;</p>
+<p>&lt;ds:CanonicalizationMethod</p>
+<p>Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"
+/&gt;</p>
+<p>&lt;ds:SignatureMethod
+Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /&gt;</p>
+<p>&lt;ds:Reference Id=<em>"ID-CONTENT"</em>&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"
+/&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;ds:Reference Type="http://uri.etsi.org/01903#SignedProperties"</p>
+<p>URI="#ID-SignedProperties"&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"
+/&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;ds:Reference URI=<em>"#ID-KeyInfo"</em>&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"
+/&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;/ds:SignedInfo&gt;</p>
+<p>&lt;ds:SignatureValue Id=<em>"..."</em>&gt;&lt;/ds:SignatureValue&gt;</p>
+<p>&lt;ds:KeyInfo Id=<em>"ID-KeyInfo"</em>&gt;</p>
+<p>&lt;ds:KeyValue&gt;</p>
+<p>&lt;ds:RSAKeyValue&gt;</p>
+<p>&lt;ds:Modulus&gt;...&lt;/ds:Modulus&gt;</p>
+<p>&lt;ds:Exponent&gt;...&lt;/ds:Exponent&gt;</p>
+<p>&lt;/ds:RSAKeyValue&gt;</p>
+<p>&lt;/ds:KeyValue&gt;</p>
+<p>&lt;ds:X509Data&gt;</p>
+<p>&lt;ds:X509Certificate&gt;...&lt;/ds:X509Certificate&gt;</p>
+<p>&lt;/ds:X509Data&gt;</p>
+<p>&lt;/ds:KeyInfo&gt;</p>
+<p>&lt;ds:Object&gt;</p>
+<p>&lt;xades:QualifyingProperties
+xmlns:dsign=<em>"http://www.w3.org/2000/09/xmldsig#"</em></p>
+<p>xmlns:xades="http://uri.etsi.org/01903/v1.3.2#"
+Id="ID-QualifyingProperties"</p>
+<p>Target="#ID-Signature"&gt;</p>
+<p>&lt;xades:SignedProperties Id=<em>"ID-SignedProperties"</em>&gt;</p>
+<p>&lt;xades:SignedSignatureProperties&gt;</p>
+<p>&lt;xades:SigningTime&gt;...&lt;/xades:SigningTime&gt;</p>
+<p>&lt;xades:SigningCertificate&gt;</p>
+<p>&lt;xades:Cert&gt;</p>
+<p>&lt;xades:CertDigest&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/xades:CertDigest&gt;</p>
+<p>&lt;xades:IssuerSerial&gt;</p>
+<p>&lt;ds:X509IssuerName&gt;...&lt;/ds:X509IssuerName&gt;</p>
+<p>&lt;ds:X509SerialNumber&gt;...&lt;/ds:X509SerialNumber&gt;</p>
+<p>&lt;/xades:IssuerSerial&gt;</p>
+<p>&lt;/xades:Cert&gt;</p>
+<p>&lt;/xades:SigningCertificate&gt;</p>
+<p>&lt;/xades:SignedSignatureProperties&gt;</p>
+<p>&lt;xades:SignedDataObjectProperties&gt;</p>
+<p>&lt;xades:DataObjectFormat ObjectReference=<em>"#ID-Reference"</em>&gt;</p>
+<p>&lt;xades:Description /&gt;</p>
+<p>&lt;xades:MimeType&gt;...&lt;/xades:MimeType&gt;</p>
+<p>&lt;xades:Encoding&gt;...&lt;/xades:Encoding&gt;</p>
+<p>&lt;/xades:DataObjectFormat&gt;</p>
+<p>&lt;/xades:SignedDataObjectProperties&gt;</p>
+<p>&lt;/xades:SignedProperties&gt;</p>
+<p>&lt;/xades:QualifyingProperties&gt;</p>
+<p>&lt;/ds:Object&gt;</p>
+<p>&lt;/ds:Signature&gt;</p>
+<p>&lt;dsign:Signature xmlns:dsign="http://www.w3.org/2000/09/xmldsig#"</p>
+<p>Id="ID-Signature"&gt;</p>
+<p>&lt;dsign:SignedInfo&gt;</p>
+<p>&lt;dsign:CanonicalizationMethod</p>
+<p>Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"
+/&gt;</p>
+<p>&lt;dsign:SignatureMethod
+Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /&gt;</p>
+<p>&lt;dsign:Reference Id=<em>"ID-Reference"</em> URI=<em>"#ID-CONTENT"</em>&gt;</p>
+<p>&lt;dsign:Transforms&gt;</p>
+<p>&lt;dsign:Transform</p>
+<p>Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"
+/&gt;</p>
+<p>&lt;/dsign:Transforms&gt;</p>
+<p>&lt;dsign:DigestMethod
+Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /&gt;</p>
+<p>&lt;dsign:DigestValue&gt;...&lt;/dsign:DigestValue&gt;</p>
+<p>&lt;/dsign:Reference&gt;</p>
+<p>&lt;dsign:Reference Type="http://uri.etsi.org/01903#SignedProperties"</p>
+<p>URI="#ID-SignedProperties"&gt;</p>
+<p>&lt;dsign:Transforms&gt;</p>
+<p>&lt;dsign:Transform</p>
+<p>Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"
+/&gt;</p>
+<p>&lt;/dsign:Transforms&gt;</p>
+<p>&lt;dsign:DigestMethod
+Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /&gt;</p>
+<p>&lt;dsign:DigestValue&gt;...&lt;/dsign:DigestValue&gt;</p>
+<p>&lt;/dsign:Reference&gt;</p>
+<p>&lt;dsign:Reference URI=<em>"#ID2-KeyInfo"</em>&gt;</p>
+<p>&lt;dsign:Transforms&gt;</p>
+<p>&lt;dsign:Transform</p>
+<p>Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"
+/&gt;</p>
+<p>&lt;/dsign:Transforms&gt;</p>
+<p>&lt;dsign:DigestMethod
+Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /&gt;</p>
+<p>&lt;dsign:DigestValue&gt;...&lt;/dsign:DigestValue&gt;</p>
+<p>&lt;/dsign:Reference&gt;</p>
+<p>&lt;/dsign:SignedInfo&gt;</p>
+<p>&lt;dsign:SignatureValue
+Id=<em>"ID-SignatureValue"</em>&gt;...&lt;/dsign:SignatureValue&gt;</p>
+<p>&lt;dsign:KeyInfo Id=<em>"ID2-KeyInfo"</em>&gt;</p>
+<p>&lt;dsign:KeyValue&gt;</p>
+<p>&lt;dsign:RSAKeyValue&gt;</p>
+<p>&lt;dsign:Modulus&gt;...&lt;/dsign:Modulus&gt;</p>
+<p>&lt;dsign:Exponent&gt;...&lt;/dsign:Exponent&gt;</p>
+<p>&lt;/dsign:RSAKeyValue&gt;</p>
+<p>&lt;/dsign:KeyValue&gt;</p>
+<p>&lt;dsign:X509Data&gt;</p>
+<p>&lt;dsign:X509Certificate&gt;...&lt;/dsign:X509Certificate&gt;</p>
+<p>&lt;/dsign:X509Data&gt;</p>
+<p>&lt;/dsign:KeyInfo&gt;</p>
+<p>&lt;dsign:Object&gt;</p>
+<p>&lt;xades:QualifyingProperties
+xmlns:xades=<em>"http://uri.etsi.org/01903/v1.3.2#"</em></p>
+<p>Id="ID-QualifyingProperties" Target="#ID-Signature"&gt;</p>
+<p>&lt;xades:SignedProperties Id=<em>"ID-SignedProperties"</em>&gt;</p>
+<p>&lt;xades:SignedSignatureProperties&gt;</p>
+<p>&lt;xades:SigningTime&gt;...&lt;/xades:SigningTime&gt;</p>
+<p>&lt;xades:SigningCertificate&gt;</p>
+<p>&lt;xades:Cert&gt;</p>
+<p>&lt;xades:CertDigest&gt;</p>
+<p>&lt;dsign:DigestMethod
+Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em> /&gt;</p>
+<p>&lt;dsign:DigestValue&gt;...&lt;/dsign:DigestValue&gt;</p>
+<p>&lt;/xades:CertDigest&gt;</p>
+<p>&lt;xades:IssuerSerial&gt;</p>
+<p>&lt;dsign:X509IssuerName&gt;...&lt;/dsign:X509IssuerName&gt;</p>
+<p>&lt;dsign:X509SerialNumber&gt;...&lt;/dsign:X509SerialNumber&gt;</p>
+<p>&lt;/xades:IssuerSerial&gt;</p>
+<p>&lt;/xades:Cert&gt;</p>
+<p>&lt;/xades:SigningCertificate&gt;</p>
+<p>&lt;/xades:SignedSignatureProperties&gt;</p>
+<p>&lt;xades:SignedDataObjectProperties /&gt;</p>
+<p>&lt;/xades:SignedProperties&gt;</p>
+<p>&lt;/xades:QualifyingProperties&gt;</p>
+<p>&lt;/dsign:Object&gt;</p>
+<p>&lt;/dsign:Signature&gt;</p>
+<p>&lt;/AFIRMA&gt;</p>
+<h3 id="contrafirmas_1">Contrafirmas</h3>
+<p>Ejemplo con “Detached Interna” y dos firmantes:</p>
+<p>&lt;?xml version=<em>"1.0"</em> encoding=<em>"UTF-8"</em> ?&gt;</p>
+<p>&lt;AFIRMA&gt;</p>
+<p>&lt;CONTENT Encoding=<em>"..."</em> Id=<em>"ID-CONTENT"</em>
+MimeType=<em>"..."</em>&gt;...&lt;/CONTENT&gt;</p>
+<p>&lt;ds:Signature xmlns:ds=<em>"http://www.w3.org/2000/09/xmldsig#"</em></p>
+<p>Id=<em>"ID-Signature"</em>&gt;</p>
+<p>&lt;ds:SignedInfo&gt;</p>
+<p>&lt;ds:CanonicalizationMethod</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"</em>
+/&gt;</p>
+<p>&lt;ds:SignatureMethod
+Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#rsa-sha1"</em> /&gt;</p>
+<p>&lt;ds:Reference Id=<em>"ID-Reference"</em> URI=<em>"#ID-CONTENT"</em>&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"</em>
+/&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em>
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;ds:Reference Type=<em>"http://uri.etsi.org/01903#SignedProperties"</em></p>
+<p>URI=<em>"#ID-SignedProperties"</em>&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"</em>
+/&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em>
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;ds:Reference URI=<em>"#ID-KeyInfo"</em>&gt;</p>
+<p>&lt;ds:Transforms&gt;</p>
+<p>&lt;ds:Transform</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"</em>
+/&gt;</p>
+<p>&lt;/ds:Transforms&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em>
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/ds:Reference&gt;</p>
+<p>&lt;/ds:SignedInfo&gt;</p>
+<p>&lt;ds:SignatureValue Id=<em>"..."</em>&gt;&lt;/ds:SignatureValue&gt;</p>
+<p>&lt;ds:KeyInfo Id=<em>"ID-KeyInfo"</em>&gt;</p>
+<p>&lt;ds:KeyValue&gt;</p>
+<p>&lt;ds:RSAKeyValue&gt;</p>
+<p>&lt;ds:Modulus&gt;...&lt;/ds:Modulus&gt;</p>
+<p>&lt;ds:Exponent&gt;...&lt;/ds:Exponent&gt;</p>
+<p>&lt;/ds:RSAKeyValue&gt;</p>
+<p>&lt;/ds:KeyValue&gt;</p>
+<p>&lt;ds:X509Data&gt;</p>
+<p>&lt;ds:X509Certificate&gt;...&lt;/ds:X509Certificate&gt;</p>
+<p>&lt;/ds:X509Data&gt;</p>
+<p>&lt;/ds:KeyInfo&gt;</p>
+<p>&lt;ds:Object&gt;</p>
+<p>&lt;xades:QualifyingProperties
+xmlns:dsign=<em>"http://www.w3.org/2000/09/xmldsig#"</em></p>
+<p>xmlns:xades=<em>"http://uri.etsi.org/01903/v1.3.2#"</em>
+Id=<em>"ID-QualifyingProperties"</em></p>
+<p>Target=<em>"#ID-Signature"</em>&gt;</p>
+<p>&lt;xades:SignedProperties Id=<em>"ID-SignedProperties"</em>&gt;</p>
+<p>&lt;xades:SignedSignatureProperties&gt;</p>
+<p>&lt;xades:SigningTime&gt;...&lt;/xades:SigningTime&gt;</p>
+<p>&lt;xades:SigningCertificate&gt;</p>
+<p>&lt;xades:Cert&gt;</p>
+<p>&lt;xades:CertDigest&gt;</p>
+<p>&lt;ds:DigestMethod Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em>
+/&gt;</p>
+<p>&lt;ds:DigestValue&gt;...&lt;/ds:DigestValue&gt;</p>
+<p>&lt;/xades:CertDigest&gt;</p>
+<p>&lt;xades:IssuerSerial&gt;</p>
+<p>&lt;ds:X509IssuerName&gt;...&lt;/ds:X509IssuerName&gt;</p>
+<p>&lt;ds:X509SerialNumber&gt;...&lt;/ds:X509SerialNumber&gt;</p>
+<p>&lt;/xades:IssuerSerial&gt;</p>
+<p>&lt;/xades:Cert&gt;</p>
+<p>&lt;/xades:SigningCertificate&gt;</p>
+<p>&lt;/xades:SignedSignatureProperties&gt;</p>
+<p>&lt;xades:SignedDataObjectProperties&gt;</p>
+<p>&lt;xades:DataObjectFormat ObjectReference=<em>"#ID-Reference"</em>&gt;</p>
+<p>&lt;xades:Description /&gt;</p>
+<p>&lt;xades:MimeType&gt;...&lt;/xades:MimeType&gt;</p>
+<p>&lt;xades:Encoding&gt;...&lt;/xades:Encoding&gt;</p>
+<p>&lt;/xades:DataObjectFormat&gt;</p>
+<p>&lt;/xades:SignedDataObjectProperties&gt;</p>
+<p>&lt;/xades:SignedProperties&gt;</p>
+<p>&lt;/xades:QualifyingProperties&gt;</p>
+<p>&lt;/ds:Object&gt;</p>
+<p>&lt;/ds:Signature&gt;</p>
+<p>&lt;dsign:Signature xmlns:dsign=<em>"http://www.w3.org/2000/09/xmldsig#"</em></p>
+<p>Id=<em>"ID-Signature"</em>&gt;</p>
+<p>&lt;dsign:SignedInfo&gt;</p>
+<p>&lt;dsign:CanonicalizationMethod</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"</em>
+/&gt;</p>
+<p>&lt;dsign:SignatureMethod
+Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#rsa-sha1"</em> /&gt;</p>
+<p>&lt;dsign:Reference Id=<em>"ID-Reference"</em> URI=<em>"#ID-CONTENT"</em>&gt;</p>
+<p>&lt;dsign:Transforms&gt;</p>
+<p>&lt;dsign:Transform</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"</em>
+/&gt;</p>
+<p>&lt;/dsign:Transforms&gt;</p>
+<p>&lt;dsign:DigestMethod
+Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em> /&gt;</p>
+<p>&lt;dsign:DigestValue&gt;5nfu4+SLSMHDs+CwGRGGoSjNyhw=&lt;/dsign:DigestValue&gt;</p>
+<p>&lt;/dsign:Reference&gt;</p>
+<p>&lt;dsign:Reference Type=<em>"http://uri.etsi.org/01903#SignedProperties"</em></p>
+<p>URI=<em>"#26561cf7-e5c0-455a-b220-554a822227b8-SignedProperties"</em>&gt;</p>
+<p>&lt;dsign:Transforms&gt;</p>
+<p>&lt;dsign:Transform</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"</em>
+/&gt;</p>
+<p>&lt;/dsign:Transforms&gt;</p>
+<p>&lt;dsign:DigestMethod
+Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em> /&gt;</p>
+<p>&lt;dsign:DigestValue&gt;...&lt;/dsign:DigestValue&gt;</p>
+<p>&lt;/dsign:Reference&gt;</p>
+<p>&lt;dsign:Reference URI=<em>"#ID-KeyInfo"</em>&gt;</p>
+<p>&lt;dsign:Transforms&gt;</p>
+<p>&lt;dsign:Transform</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"</em>
+/&gt;</p>
+<p>&lt;/dsign:Transforms&gt;</p>
+<p>&lt;dsign:DigestMethod
+Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em> /&gt;</p>
+<p>&lt;dsign:DigestValue&gt;...&lt;/dsign:DigestValue&gt;</p>
+<p>&lt;/dsign:Reference&gt;</p>
+<p>&lt;/dsign:SignedInfo&gt;</p>
+<p>&lt;dsign:SignatureValue
+Id=<em>"ID-SignatureValue"</em>&gt;...&lt;/dsign:SignatureValue&gt;</p>
+<p>&lt;dsign:KeyInfo Id=<em>"ID-KeyInfo"</em>&gt;</p>
+<p>&lt;dsign:KeyValue&gt;</p>
+<p>&lt;dsign:RSAKeyValue&gt;</p>
+<p>&lt;dsign:Modulus&gt;...&lt;/dsign:Modulus&gt;</p>
+<p>&lt;dsign:Exponent&gt;...&lt;/dsign:Exponent&gt;</p>
+<p>&lt;/dsign:RSAKeyValue&gt;</p>
+<p>&lt;/dsign:KeyValue&gt;</p>
+<p>&lt;dsign:X509Data&gt;</p>
+<p>&lt;dsign:X509Certificate&gt;...&lt;/dsign:X509Certificate&gt;</p>
+<p>&lt;/dsign:X509Data&gt;</p>
+<p>&lt;/dsign:KeyInfo&gt;</p>
+<p>&lt;dsign:Object&gt;</p>
+<p>&lt;xades:QualifyingProperties
+xmlns:xades=<em>"http://uri.etsi.org/01903/v1.3.2#"</em></p>
+<p>Id=<em>"ID-QualifyingProperties"</em> Target=<em>"#ID-Signature"</em>&gt;</p>
+<p>&lt;xades:SignedProperties Id=<em>"ID-SignedProperties"</em>&gt;</p>
+<p>&lt;xades:SignedSignatureProperties&gt;</p>
+<p>&lt;xades:SigningTime&gt;...&lt;/xades:SigningTime&gt;</p>
+<p>&lt;xades:SigningCertificate&gt;</p>
+<p>&lt;xades:Cert&gt;</p>
+<p>&lt;xades:CertDigest&gt;</p>
+<p>&lt;dsign:DigestMethod
+Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em> /&gt;</p>
+<p>&lt;dsign:DigestValue&gt;...&lt;/dsign:DigestValue&gt;</p>
+<p>&lt;/xades:CertDigest&gt;</p>
+<p>&lt;xades:IssuerSerial&gt;</p>
+<p>&lt;dsign:X509IssuerName&gt;...&lt;/dsign:X509IssuerName&gt;</p>
+<p>&lt;dsign:X509SerialNumber&gt;...&lt;/dsign:X509SerialNumber&gt;</p>
+<p>&lt;/xades:IssuerSerial&gt;</p>
+<p>&lt;/xades:Cert&gt;</p>
+<p>&lt;/xades:SigningCertificate&gt;</p>
+<p>&lt;/xades:SignedSignatureProperties&gt;</p>
+<p>&lt;xades:SignedDataObjectProperties /&gt;</p>
+<p>&lt;/xades:SignedProperties&gt;</p>
+<p>&lt;UnsignedProperties&gt;</p>
+<p>&lt;UnsignedSignatureProperties&gt;</p>
+<p>&lt;CounterSignature&gt;</p>
+<p>&lt;dsign:Signature Id=<em>"ID-Signature"</em>&gt;</p>
+<p>&lt;dsign:SignedInfo&gt;</p>
+<p>&lt;dsign:CanonicalizationMethod</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"</em>
+/&gt;</p>
+<p>&lt;dsign:SignatureMethod</p>
+<p>Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#rsa-sha1"</em> /&gt;</p>
+<p>&lt;dsign:Reference Id=<em>"ID-Reference"</em> URI=<em>"#ID-SignatureValue"</em>&gt;</p>
+<p>&lt;dsign:Transforms&gt;</p>
+<p>&lt;dsign:Transform</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"</em>
+/&gt;</p>
+<p>&lt;/dsign:Transforms&gt;</p>
+<p>&lt;dsign:DigestMethod
+Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em> /&gt;</p>
+<p>&lt;dsign:DigestValue&gt;...&lt;/dsign:DigestValue&gt;</p>
+<p>&lt;/dsign:Reference&gt;</p>
+<p>&lt;dsign:Reference</p>
+<p>Type=<em>"http://uri.etsi.org/01903#SignedProperties"</em>
+URI=<em>"#ID-SignedProperties"</em>&gt;</p>
+<p>&lt;dsign:Transforms&gt;</p>
+<p>&lt;dsign:Transform</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"</em>
+/&gt;</p>
+<p>&lt;/dsign:Transforms&gt;</p>
+<p>&lt;dsign:DigestMethod
+Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em> /&gt;</p>
+<p>&lt;dsign:DigestValue&gt;...&lt;/dsign:DigestValue&gt;</p>
+<p>&lt;/dsign:Reference&gt;</p>
+<p>&lt;dsign:Reference URI=<em>"#ID-KeyInfo"</em>&gt;</p>
+<p>&lt;dsign:Transforms&gt;</p>
+<p>&lt;dsign:Transform</p>
+<p>Algorithm=<em>"http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"</em>
+/&gt;</p>
+<p>&lt;/dsign:Transforms&gt;</p>
+<p>&lt;dsign:DigestMethod
+Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em> /&gt;</p>
+<p>&lt;dsign:DigestValue&gt;...&lt;/dsign:DigestValue&gt;</p>
+<p>&lt;/dsign:Reference&gt;</p>
+<p>&lt;/dsign:SignedInfo&gt;</p>
+<p>&lt;dsign:SignatureValue
+Id=<em>"ID-SignatureValue"</em>&gt;...&lt;/dsign:SignatureValue&gt;</p>
+<p>&lt;dsign:KeyInfo Id=<em>"ID-KeyInfo"</em>&gt;</p>
+<p>&lt;dsign:KeyValue&gt;</p>
+<p>&lt;dsign:RSAKeyValue&gt;</p>
+<p>&lt;dsign:Modulus&gt;...&lt;/dsign:Modulus&gt;</p>
+<p>&lt;dsign:Exponent&gt;...&lt;/dsign:Exponent&gt;</p>
+<p>&lt;/dsign:RSAKeyValue&gt;</p>
+<p>&lt;/dsign:KeyValue&gt;</p>
+<p>&lt;dsign:X509Data&gt;</p>
+<p>&lt;dsign:X509Certificate&gt;...&lt;/dsign:X509Certificate&gt;</p>
+<p>&lt;/dsign:X509Data&gt;</p>
+<p>&lt;/dsign:KeyInfo&gt;</p>
+<p>&lt;dsign:Object&gt;</p>
+<p>&lt;xades:QualifyingProperties Id=<em>"ID-QualifyingProperties"</em></p>
+<p>Target=<em>"#ID-Signature"</em>&gt;</p>
+<p>&lt;xades:SignedProperties Id=<em>"ID-SignedProperties"</em>&gt;</p>
+<p>&lt;xades:SignedSignatureProperties&gt;</p>
+<p>&lt;xades:SigningTime&gt;...&lt;/xades:SigningTime&gt;</p>
+<p>&lt;xades:SigningCertificate&gt;</p>
+<p>&lt;xades:Cert&gt;</p>
+<p>&lt;xades:CertDigest&gt;</p>
+<p>&lt;dsign:DigestMethod</p>
+<p>Algorithm=<em>"http://www.w3.org/2000/09/xmldsig#sha1"</em> /&gt;</p>
+<p>&lt;dsign:DigestValue&gt;...&lt;/dsign:DigestValue&gt;</p>
+<p>&lt;/xades:CertDigest&gt;</p>
+<p>&lt;xades:IssuerSerial&gt;</p>
+<p>&lt;dsign:X509IssuerName&gt;...&lt;/dsign:X509IssuerName&gt;</p>
+<p>&lt;dsign:X509SerialNumber&gt;...&lt;/dsign:X509SerialNumber&gt;</p>
+<p>&lt;/xades:IssuerSerial&gt;</p>
+<p>&lt;/xades:Cert&gt;</p>
+<p>&lt;/xades:SigningCertificate&gt;</p>
+<p>&lt;/xades:SignedSignatureProperties&gt;</p>
+<p>&lt;xades:SignedDataObjectProperties /&gt;</p>
+<p>&lt;/xades:SignedProperties&gt;</p>
+<p>&lt;/xades:QualifyingProperties&gt;</p>
+<p>&lt;/dsign:Object&gt;</p>
+<p>&lt;/dsign:Signature&gt;</p>
+<p>&lt;/CounterSignature&gt;</p>
+<p>&lt;/UnsignedSignatureProperties&gt;</p>
+<p>&lt;/UnsignedProperties&gt;</p>
+<p>&lt;/xades:QualifyingProperties&gt;</p>
+<p>&lt;/dsign:Object&gt;</p>
+<p>&lt;/dsign:Signature&gt;</p>
+<p>&lt;/AFIRMA&gt;</p>
+<h3 id="distintas-versiones-de-xades">Distintas versiones de XAdES</h3>
+<p>Por defecto, el cliente genera firmas conforme la versión 1.3.2 de XAdES
+(BES y EPES), pero podemos hacer que se generen firmas conforme otras
+versiones del estándar modificando dos `propiedades de la firma: la URL
+del espacio de nombres y la URL del tipo de las propiedades firmadas.</p>
+<p>Si queremos, por ejemplo, que las firmas se generen conforme la versión
+1.4.1 del estándar (útil si queremos que la firma esté preparada para
+añadir características avanzadas de sello de tiempo según la última
+versión de XAdES), debemos indicárselo expresamente al Applet mediante
+“parámetros extraordinarios”.</p>
+<p>La forma de realizar estas indicaciones es mediante el método del Applet
+clienteFirma.addExtraParam(String paramName, String paramValue), y el
+siguiente uso:</p>
+<p>clienteFirma.addExtraParam(“xadesNamespace”,
+“http://uri.etsi.org/01903/v1.4.1#”);</p>
+<p>clienteFirma.addExtraParam(“signedPropertiesTypeUrl”,
+“http://uri.etsi.org/01903#SignedProperties”);</p>
+<p>Mientras que xadesNamespace establece la URL de definición del espacio
+de nombres de XAdES signedPropertiesTypeUrl establece la URL de
+definición del tipo de propiedades firmadas.</p>
+<p>Para adecuarse a las distintas versiones de XAdES será necesario indicar
+los siguientes valores en estos atributos:</p>
+<p>Versión 1.4.1 de XAdES:</p>
+<p>xadesNamespace:
+“<a href="http://uri.etsi.org/01903/v1.4.1">http://uri.etsi.org/01903/v1.4.1#</a>”</p>
+<p>signedPropertiesTypeUrl: “http://uri.etsi.org/01903#SignedProperties”</p>
+<p>Versión 1.3.2 de XAdES:</p>
+<p>xadesNamespace: “http://uri.etsi.org/01903/v1.3.2#”</p>
+<p>signedPropertiesTypeUrl: “http://uri.etsi.org/01903#SignedProperties”</p>
+<p>Versión 1.2.2 de XAdES:</p>
+<p>xadesNamespace: “http://uri.etsi.org/01903/v1.2.2#”</p>
+<p>signedPropertiesTypeUrl:
+“http://uri.etsi.org/01903/v1.2.2#SignedProperties”</p>
+<p>Versión 1.1.1 de XAdES:</p>
+<p>xadesNamespace: “http://uri.etsi.org/01903/v1.1.1#”</p>
+<p>signedPropertiesTypeUrl:
+“http://uri.etsi.org/01903/v1.1.1#SignedProperties”</p>
+<p>Cuando establezcamos un valor para el espacio de nombres de XAdES, este
+se utilizará para todas las firmas XAdES que se realicen a partir de
+entonces (o hasta una re-inicialización del Applet). Para restablecer el
+valor por defecto debemos deshacer el establecimiento de parámetros
+extraordinarios con el método equivalente del Applet,
+ClienteFirma.removeExtraParam(String paramName), que en nuestro caso se
+concretaría en:</p>
+<p>clienteFirma.removeExtraParam(“xadesNamespace”);</p>
+<p>clienteFirma.removeExtraParam(“signedPropertiesTypeUrl”);</p>
+<p>Estos métodos pueden llamarse desde JavaScript, y puede encontrar
+información adicional en la documentación JavaDoc del Applet @firma.</p>
+<h1 id="informacion-de-utilidad">Información de utilidad</h1>
+<p>Normativa XMLDSig</p>
+<ul>
+<li>
+<p><a href="http://www.w3.org/TR/xmldsig-core/">http://www.w3.org/TR/xmldsig-core/</a></p>
+<p>Normativa XAdES</p>
+</li>
+<li>
+<p><a href="http://www.etsi.org">http://www.etsi.org</a></p>
+</li>
+</ul>
+<h1 id="glosario-de-terminos">Glosario de términos</h1>
+<h6 id="firma-electronica">Firma electrónica</h6>
+<p>Es el conjunto de datos, en forma electrónica, anejos a otros datos
+electrónicos o asociados funcionalmente con ellos, utilizados como medio
+para identificar formalmente al autor o a los autores del documento que
+la recoge.</p>
+<h6 id="xml-digital-signature-xmldsig_1">XML Digital Signature (XMLDSig)</h6>
+<p>Es una recomendación del W3C que define una sintaxis XML para la firma
+digital</p>
+<h6 id="xml-advanced-signature-xades">XML Advanced Signature (XAdES)</h6>
+<p>Es un conjunto de extensiones a las recomendaciones XML-DSig haciéndolas
+adecuadas para la firma electrónica avanzada.</p>
+<h6 id="rsa">RSA</h6>
+<p>Es un sistema criptográfico de clave pública desarrollado en 1977. En la
+actualidad, RSA es el primer y más utilizado algoritmo de este tipo y es
+válido tanto para cifrar como para firmar digitalmente.</p>
+<h6 id="xml">XML</h6>
+<p>Es un metalenguaje extensible de etiquetas desarrollado por el World
+Wide Web Consortium (W3C). Es una simplificación y adaptación del SGML y
+permite definir la gramática de lenguajes específicos (de la misma
+manera que HTML es a su vez un lenguaje definido por SGML). Por lo tanto
+XML no es realmente un lenguaje en particular, sino una manera de
+definir lenguajes para diferentes necesidades. Algunos de estos
+lenguajes que usan XML para su definición son XHTML, SVG, MathML.</p>
+<h6 id="office-open-xml-ooxml_1">Office Open XML (OOXML)</h6>
+<p>Es un formato de archivo abierto y estándar cuyas extensiones más
+comunes son .docx, .xlsx y .pptx. Se le utiliza para representar y
+almacenar hojas de cálculo, diagramas, presentaciones y documentos de
+texto. Un archivo Office Open XML contiene principalmente datos basados
+en el lenguaje de marcado XML, comprimidos en un contenedor .zip
+específico.</p>
+<h6 id="open-document-format-odf_1">Open Document Format (ODF)</h6>
+<p>Es un formato de fichero estándar para el almacenamiento de documentos
+ofimáticos tales como hojas de cálculo, memorandos, gráficas y
+presentaciones. Aunque las especificaciones fueron inicialmente
+elaboradas por Sun, el estándar fue desarrollado por el comité técnico
+para Open Office XML de la organización OASIS y está basado en un
+esquema XML inicialmente creado e implementado por la suite ofimática
+OpenOffice.org (ver OpenOffice.org XML).</p>
+<h6 id="zip">ZIP</h6>
+<p>Es un formato de almacenamiento sin pérdida, muy utilizado para la
+compresión de datos como imágenes, programas o documentos.</p>
+<h6 id="pdf">PDF</h6>
+<p>Es un formato de almacenamiento de documentos, desarrollado por la
+empresa Adobe Systems. Este formato es de tipo compuesto (imagen
+vectorial, mapa de bits y texto).</p>
+<h6 id="sha">SHA</h6>
+<p>Es un sistema de funciones hash criptográficas relacionadas de la
+Agencia de Seguridad Nacional de los Estados Unidos y publicadas por el
+National Institute of Standards and Technology (NIST). El primer miembro
+de la familia fue publicado en 1993 es oficialmente llamado SHA. Sin
+embargo, hoy día, no oficialmente se le llama SHA-0 para evitar
+confusiones con sus sucesores. Dos años más tarde el primer sucesor de
+SHA fue publicado con el nombre de SHA-1. Existen cuatro variantes más
+que se han publicado desde entonces cuyas diferencias se basan en un
+diseño algo modificado y rangos de salida incrementados: SHA-224,
+SHA-256, SHA-384, y SHA-512 (llamándose SHA-2 a todos ellos).</p>
+<h6 id="pkcs">PKCS</h6>
+<p>Se refiere a un grupo de estándares de criptografía de clave pública
+concebidos y publicados por los laboratorios de RSA en California. A RSA
+Security se le asignaron los derechos de licenciamiento para la patente
+de algoritmo de clave asimétrica RSA y adquirió los derechos de
+licenciamiento para muchas otras patentes de claves.</p>
+<h6 id="w3c">W3C</h6>
+<p>Es un consorcio internacional que produce recomendaciones para la World
+Wide Web. Está dirigida por Tim Berners-Lee, el creador original de URL
+(Uniform Resource Locator, Localizador Uniforme de Recursos), HTTP
+(HyperText Transfer Protocol, Protocolo de Transferencia de HiperTexto)
+y HTML (Lenguaje de Marcado de HiperTexto) que son las principales
+tecnologías sobre las que se basa la Web.</p>
+<h6 id="openofficeorg">OpenOffice.org</h6>
+<p>es una suite ofimática libre (código abierto y distribución gratuita)
+que incluye herramientas como procesador de textos, hoja de cálculo,
+presentaciones, herramientas para el dibujo vectorial y base de datos.
+Está disponible para varias plataformas, tales como Microsoft Windows,
+GNU/Linux, BSD, Solaris y Mac OS X. Soporta numerosos formatos de
+archivo, incluyendo como predeterminado el formato estándar ISO/IEC
+OpenDocument (ODF), entre otros formatos comunes. A febrero de 2010,
+OpenOffice soporta más de 110 idiomas.</p>
+<h6 id="base64">Base64</h6>
+<p>Es un sistema de numeración posicional que usa 64 como base. Es la mayor
+potencia de dos que puede ser representada usando únicamente los
+caracteres imprimibles de ASCII. Esto ha propiciado su uso para
+codificación de correos electrónicos, PGP y otras aplicaciones. Todas
+las variantes famosas que se conocen con el nombre de Base64 usan el
+rango de caracteres A-Z, a-z y 0-9 en este orden para los primeros 62
+dígitos, pero los símbolos escogidos para los últimos dos dígitos varían
+considerablemente de unas a otras. Otros métodos de codificación como
+UUEncode y las últimas versiones de binhex usan un conjunto diferente de
+64 caracteres para representar 6 dígitos binarios, pero éstos nunca son
+llamados Base64.</p>
+<h6 id="asn1">ASN.1</h6>
+<p>Es una norma para representar datos independientemente de la máquina que
+se esté usando y sus formas de representación internas. Es un protocolo
+de nivel de presentación en el modelo OSI.</p>
+<h6 id="autoridad-de-certificacion-ca">Autoridad de Certificación (CA)</h6>
+<p>Es una entidad de confianza, responsable de emitir y revocar los
+certificados digitales o certificados, utilizados en la firma
+electrónica, para lo cual se emplea la criptografía de clave pública.
+Jurídicamente es un caso particular de Prestador de Servicios de
+Certificación.</p>
+<h6 id="certificado-digital">Certificado Digital</h6>
+<p>Es un documento digital mediante el cual un tercero confiable (una
+autoridad de certificación) garantiza la vinculación entre la identidad
+de un sujeto o entidad y su clave pública.</p>
+<h6 id="infraestructura-de-clave-publica-pki">Infraestructura de Clave Pública (PKI)</h6>
+<p>Es una combinación de hardware y software, políticas y procedimientos de
+seguridad que permiten la ejecución con garantías de operaciones
+criptográficas como el cifrado, la firma digital o el no repudio de
+transacciones electrónicas.</p>
+<p><span class="mark"><br />
+</span><span id="Licencia_Creative_Commons"
+class="anchor"></span>Creative Commons</p>
+<p><strong>Reconocimiento-NoComercial-CompartirIgual 3.0 Unported</strong></p>
+<p><strong>Usted es libre de:</strong></p>
+<p>| &lt;<img src="media/image11.png"   <br /> style="width:0.52083in;height:0.52083in" alt="share" />  | Compartir - copiar, distribuir, ejecutar y comunicar públicamente la obra |
+|-----------|-------------------------------------------------------------|
+| &lt;<img src="media/image12.png"   <br /> style="width:0.52083in;height:0.52083in" alt="remix" />  | hacer obras derivadas                                                     |</p>
+<p><strong>Bajo las condiciones siguientes:</strong></p>
+<p>| &lt;<img src="media/image13.png"<br /> style="width:0.52083in;height:0.52083in" alt="by" />  | <strong>Atribución</strong> — Debe reconocer los créditos de la obra de la manera especificada por el autor o el licenciante (pero no de una manera que sugiera que tiene su apoyo o que apoyan el uso que hace de su obra). |
+|-----------|-------------------------------------------------------------|
+| &lt;<img src="media/image14.png"<br /> style="width:0.52083in;height:0.52083in" alt="nc" />  | <strong>NoComercial</strong> — No puede utilizar esta obra para fines comerciales.                                                                                                                                           |
+| &lt;<img src="media/image15.png"<br /> style="width:0.52083in;height:0.52083in" alt="sa" />  | <strong>Compartir bajo la Misma Licencia</strong> — Si altera o transforma esta obra, o genera una obra derivada, sólo puede distribuir la obra generada bajo una licencia idéntica a ésta.                                  |</p>
+<p><strong>Entendiendo que:</strong></p>
+<p><strong>Renuncia</strong> — Alguna de estas condiciones puede no aplicarse si se
+obtiene el permiso del titular de los derechos de autor</p>
+<p><strong>Dominio Público</strong> — Cuando la obra o alguno de sus elementos se hallen
+en el dominio público según la ley vigente aplicable, esta situación no
+quedará afectada por la licencia.</p>
+<p><strong>Otros derechos</strong> — Los derechos siguientes no quedan afectados por la
+licencia de ninguna manera:</p>
+<ul>
+<li>
+<p>Los derechos derivados de usos legítimos u otras limitaciones
+    reconocidas por ley no se ven afectados por lo anterior.</p>
+</li>
+<li>
+<p>Los derechos morales del auto;</p>
+</li>
+<li>
+<p>Derechos que pueden ostentar otras personas sobre la propia obra o
+    su uso, como por ejemplo derechos de imagen o de privacidad.</p>
+<p><strong>Aviso</strong> — Al reutilizar o distribuir la obra, tiene que dejar muy
+en claro los términos de la licencia de esta obra. La mejor forma de
+hacerlo es enlazar a esta página.</p>
+</li>
+</ul>
+<p><strong><em>Licencia</em></strong></p>
+<p>LA OBRA O LA PRESTACIÓN (SEGÚN SE DEFINEN MÁS ADELANTE) SE PROPORCIONA
+BAJO LOS TÉRMINOS DE ESTA LICENCIA PÚBLICA DE CREATIVE COMMONS (CCPL O
+LICENCIA). LA OBRA O LA PRESTACIÓN SE ENCUENTRA PROTEGIDA POR LA LEY
+ESPAÑOLA DE PROPIEDAD INTELECTUAL Y/O CUALESQUIERA OTRAS NORMAS QUE
+RESULTEN DE APLICACIÓN. QUEDA PROHIBIDO CUALQUIER USO DE LA OBRA O
+PRESTACIÓN DIFERENTE A LO AUTORIZADO BAJO ESTA LICENCIA O LO DISPUESTO
+EN LA LEY DE PROPIEDAD INTELECTUAL.</p>
+<p>MEDIANTE EL EJERCICIO DE CUALQUIER DERECHO SOBRE LA OBRA O LA
+PRESTACIÓN, USTED ACEPTA Y CONSIENTE LAS LIMITACIONES Y OBLIGACIONES DE
+ESTA LICENCIA, SIN PERJUICIO DE LA NECESIDAD DE CONSENTIMIENTO EXPRESO
+EN CASO DE VIOLACIÓN PREVIA DE LOS TÉRMINOS DE LA MISMA. EL LICENCIADOR
+LE CONCEDE LOS DERECHOS CONTENIDOS EN ESTA LICENCIA, SIEMPRE QUE USTED
+ACEPTE LOS PRESENTES TÉRMINOS Y CONDICIONES.</p>
+<p><strong>1. Definiciones</strong></p>
+<ol>
+<li>La <strong>obra</strong> es la creación literaria, artística o científica
+    ofrecida bajo los términos de esta licencia.</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>
+<p>En esta licencia se considera una <strong>prestación</strong> cualquier
+    interpretación, ejecución, fonograma, grabación audiovisual, emisión
+    o transmisión, mera fotografía u otros objetos protegidos por la
+    legislación de propiedad intelectual vigente aplicable.</p>
+</li>
+<li>
+<p>La aplicación de esta licencia a una <strong>colección</strong> (definida más
+    adelante) afectará únicamente a su estructura en cuanto forma de
+    expresión de la selección o disposición de sus contenidos, no siendo
+    extensiva a éstos. En este caso la colección tendrá la consideración
+    de obra a efectos de esta licencia.</p>
+</li>
+<li>
+<p>El <strong>titular originario</strong> es:</p>
+</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>
+<p>En el caso de una obra literaria, artística o científica, la persona
+    natural o grupo de personas que creó la obra.</p>
+</li>
+<li>
+<p>En el caso de una obra colectiva, la persona que la edite y divulgue
+    bajo su nombre, salvo pacto contrario.</p>
+</li>
+<li>
+<p>En el caso de una interpretación o ejecución, el actor, cantante,
+    músico, o cualquier otra persona que represente, cante, lea, recite,
+    interprete o ejecute en cualquier forma una obra.</p>
+</li>
+<li>
+<p>En el caso de un fonograma, el productor fonográfico, es decir, la
+    persona natural o jurídica bajo cuya iniciativa y responsabilidad se
+    realiza por primera vez una fijación exclusivamente sonora de la
+    ejecución de una obra o de otros sonidos.</p>
+</li>
+<li>
+<p>En el caso de una grabación audiovisual, el productor de la
+    grabación, es decir, la persona natural o jurídica que tenga la
+    iniciativa y asuma la responsabilidad de las fijaciones de un plano
+    o secuencia de imágenes, con o sin sonido.</p>
+</li>
+<li>
+<p>En el caso de una emisión o una transmisión, la entidad de
+    radiodifusión.</p>
+</li>
+<li>
+<p>En el caso de una mera fotografía, aquella persona que la haya
+    realizado.</p>
+</li>
+<li>
+<p>En el caso de otros objetos protegidos por la legislación de
+    propiedad intelectual vigente, la persona que ésta señale.</p>
+</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>
+<p>Se considerarán <strong>obras derivadas</strong> aquellas obras creadas a partir
+    de la licenciada, como por ejemplo: las traducciones y adaptaciones;
+    las revisiones, actualizaciones y anotaciones; los compendios,
+    resúmenes y extractos; los arreglos musicales y, en general,
+    cualesquiera transformaciones de una obra literaria, artística o
+    científica. Para evitar la duda, si la obra consiste en una
+    composición musical o grabación de sonidos, la sincronización
+    temporal de la obra con una imagen en movimiento (synching) será
+    considerada como una obra derivada a efectos de esta licencia.</p>
+</li>
+<li>
+<p>Tendrán la consideración de <strong>colecciones</strong> la recopilación de obras
+    ajenas, de datos o de otros elementos independientes como las
+    antologías y las bases de datos que por la selección o disposición
+    de sus contenidos constituyan creaciones intelectuales. La mera
+    incorporación de una obra en una colección no dará lugar a una
+    derivada a efectos de esta licencia.</p>
+</li>
+<li>
+<p>El <strong>licenciador</strong> es la persona o la entidad que ofrece la obra o
+    prestación bajo los términos de esta licencia y le concede los
+    derechos de explotación de la misma conforme a lo dispuesto en ella.</p>
+</li>
+<li>
+<p><strong>Usted</strong> es la persona o la entidad que ejercita los derechos
+    concedidos mediante esta licencia y que no ha violado previamente
+    los términos de la misma con respecto a la obra o la prestación, o
+    que ha recibido el permiso expreso del licenciador de ejercitar los
+    derechos concedidos mediante esta licencia a pesar de una violación
+    anterior.</p>
+</li>
+<li>
+<p>La <strong>transformación</strong> de una obra comprende su traducción,
+    adaptación y cualquier otra modificación en su forma de la que se
+    derive una obra diferente. La creación resultante de la
+    transformación de una obra tendrá la consideración de obra derivada.</p>
+</li>
+<li>
+<p>Se entiende por <strong>reproducción</strong> la fijación directa o indirecta,
+    provisional o permanente, por cualquier medio y en cualquier forma,
+    de toda la obra o la prestación o de parte de ella, que permita su
+    comunicación o la obtención de copias.</p>
+</li>
+<li>
+<p>Se entiende por <strong>distribución</strong> la puesta a disposición del público
+    del original o de las copias de la obra o la prestación, en un
+    soporte tangible, mediante su venta, alquiler, préstamo o de
+    cualquier otra forma.</p>
+</li>
+<li>
+<p>Se entiende por <strong>comunicación pública</strong> todo acto por el cual una
+    pluralidad de personas, que no pertenezcan al ámbito doméstico de
+    quien la lleva a cabo, pueda tener acceso a la obra o la prestación
+    sin previa distribución de ejemplares a cada una de ellas. Se
+    considera comunicación pública la puesta a disposición del público
+    de obras o prestaciones por procedimientos alámbricos o
+    inalámbricos, de tal forma que cualquier persona pueda acceder a
+    ellas desde el lugar y en el momento que elija.</p>
+</li>
+<li>
+<p>La <strong>explotación</strong> de la obra o la prestación comprende la
+    reproducción, la distribución, la comunicación pública y, en su
+    caso, la transformación.</p>
+</li>
+</ol>
+<p><strong>2. Límites de los derechos.</strong> Nada en esta licencia pretende reducir o
+restringir cualesquiera límites legales de los derechos exclusivos del
+titular de los derechos de propiedad intelectual de acuerdo con la Ley
+de propiedad intelectual o cualesquiera otras leyes aplicables, ya sean
+derivados de usos legítimos, tales como la copia privada o la cita, u
+otras limitaciones como la resultante de la primera venta de ejemplares
+(agotamiento).</p>
+<p><strong>3. Concesión de licencia.</strong> Conforme a los términos y a las
+condiciones de esta licencia, el licenciador concede, por el plazo de
+protección de los derechos de propiedad intelectual y a título gratuito,
+una licencia de ámbito mundial no exclusiva que incluye los derechos
+siguientes:</p>
+<ol>
+<li>Derecho de reproducción, distribución y comunicación pública de la
+    obra o la prestación.</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>
+<p>Derecho a incorporar la obra o la prestación en una o más
+    colecciones.</p>
+</li>
+<li>
+<p>Derecho de reproducción, distribución y comunicación pública de la
+    obra o la prestación lícitamente incorporada en una colección.</p>
+</li>
+<li>
+<p>Derecho de transformación de la obra para crear una obra derivada
+    siempre y cuando se incluya en ésta una indicación de la
+    transformación o modificación efectuada.</p>
+</li>
+<li>
+<p>Derecho de reproducción, distribución y comunicación pública de
+    obras derivadas creadas a partir de la obra licenciada.</p>
+</li>
+<li>
+<p>Derecho a extraer y reutilizar la obra o la prestación de una base
+    de datos.</p>
+</li>
+<li>
+<p>Para evitar cualquier duda, el titular originario:</p>
+</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>
+<p>Conserva el derecho a percibir las remuneraciones o compensaciones
+    previstas por actos de explotación de la obra o prestación,
+    calificadas por la ley como irrenunciables e inalienables y sujetas
+    a gestión colectiva obligatoria.</p>
+</li>
+<li>
+<p>Renuncia al derecho exclusivo a percibir, tanto individualmente como
+    mediante una entidad de gestión colectiva de derechos, cualquier
+    remuneración derivada de actos de explotación de la obra o
+    prestación que usted realice.</p>
+</li>
+</ol>
+<p>Estos derechos se pueden ejercitar en todos los medios y formatos,
+tangibles o intangibles, conocidos en el momento de la concesión de esta
+licencia. Los derechos mencionados incluyen el derecho a efectuar las
+modificaciones que sean precisas técnicamente para el ejercicio de los
+derechos en otros medios y formatos. Todos los derechos no concedidos
+expresamente por el licenciador quedan reservados, incluyendo, a título
+enunciativo pero no limitativo, los derechos morales irrenunciables
+reconocidos por la ley aplicable. En la medida en que el licenciador
+ostente derechos exclusivos previstos por la ley nacional vigente que
+implementa la directiva europea en materia de derecho sui generis sobre
+bases de datos, renuncia expresamente a dichos derechos exclusivos.</p>
+<p><strong>4. Restricciones.</strong> La concesión de derechos que supone esta licencia
+se encuentra sujeta y limitada a las restricciones siguientes:</p>
+<ol>
+<li>Usted puede reproducir, distribuir o comunicar públicamente la obra
+    o prestación solamente bajo los términos de esta licencia y debe
+    incluir una copia de la misma, o su Identificador Uniforme de
+    Recurso (URI). Usted no puede ofrecer o imponer ninguna condición
+    sobre la obra o prestación que altere o restrinja los términos de
+    esta licencia o el ejercicio de sus derechos por parte de los
+    concesionarios de la misma. Usted no puede sublicenciar la obra o
+    prestación. Usted debe mantener intactos todos los avisos que se
+    refieran a esta licencia y a la ausencia de garantías. Usted no
+    puede reproducir, distribuir o comunicar públicamente la obra o
+    prestación con medidas tecnológicas que controlen el acceso o el uso
+    de una manera contraria a los términos de esta licencia. Esta
+    sección 4.a también afecta a la obra o prestación incorporada en una
+    colección, pero ello no implica que ésta en su conjunto quede
+    automáticamente o deba quedar sujeta a los términos de la misma. En
+    el caso que le sea requerido, previa comunicación del licenciador,
+    si usted incorpora la obra en una colección y/o crea una obra
+    derivada, deberá quitar cualquier crédito requerido en el apartado
+    4.b, en la medida de lo posible.</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>Si usted reproduce, distribuye o comunica públicamente la obra o la
+    prestación, una colección que la incorpore o cualquier obra
+    derivada, debe mantener intactos todos los avisos sobre la propiedad
+    intelectual e indicar, de manera razonable conforme al medio o a los
+    medios que usted esté utilizando:</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>
+<p>El nombre del autor original, o el seudónimo si es el caso, así como
+    el del titular originario, si le es facilitado.</p>
+</li>
+<li>
+<p>El nombre de aquellas partes (por ejemplo: institución, publicación,
+    revista) que el titular originario y/o el licenciador designen para
+    ser reconocidos en el aviso legal, las condiciones de uso, o de
+    cualquier otra manera razonable.</p>
+</li>
+<li>
+<p>El título de la obra o la prestación si le es facilitado.</p>
+</li>
+<li>
+<p>El URI, si existe, que el licenciador especifique para ser vinculado
+    a la obra o la prestación, a menos que tal URI no se refiera al
+    aviso legal o a la información sobre la licencia de la obra o la
+    prestación.</p>
+</li>
+<li>
+<p>En el caso de una obra derivada, un aviso que identifique la
+    transformación de la obra en la obra derivada (p. ej., "traducción
+    castellana de la obra de Autor Original," o "guión basado en obra
+    original de Autor Original").</p>
+<p>Este reconocimiento debe hacerse de manera razonable. En el caso de
+una obra derivada o incorporación en una colección estos créditos
+deberán aparecer como mínimo en el mismo lugar donde se hallen los
+correspondientes a otros autores o titulares y de forma comparable a
+los mismos. Para evitar la duda, los créditos requeridos en esta
+sección sólo serán utilizados a efectos de atribución de la obra o
+la prestación en la manera especificada anteriormente. Sin un
+permiso previo por escrito, usted no puede afirmar ni dar a entender
+implícitamente ni explícitamente ninguna conexión, patrocinio o
+aprobación por parte del titular originario, el licenciador y/o las
+partes reconocidas hacia usted o hacia el uso que hace de la obra o
+la prestación.</p>
+</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>Para evitar cualquier duda, debe hacerse notar que las restricciones
+    anteriores (párrafos 4.a y 4.b) no son de aplicación a aquellas
+    partes de la obra o la prestación objeto de esta licencia que
+    únicamente puedan ser protegidas mediante el derecho sui generis
+    sobre bases de datos recogido por la ley nacional vigente
+    implementando la directiva europea de bases de datos</li>
+</ol>
+<p><strong>5. Exoneración de responsabilidad</strong></p>
+<p>A MENOS QUE SE ACUERDE MUTUAMENTE ENTRE LAS PARTES, EL LICENCIADOR
+OFRECE LA OBRA O LA PRESTACIÓN TAL CUAL (ON AN "AS-IS" BASIS) Y NO
+CONFIERE NINGUNA GARANTÍA DE CUALQUIER TIPO RESPECTO DE LA OBRA O LA
+PRESTACIÓN O DE LA PRESENCIA O AUSENCIA DE ERRORES QUE PUEDAN O NO SER
+DESCUBIERTOS. ALGUNAS JURISDICCIONES NO PERMITEN LA EXCLUSIÓN DE TALES
+GARANTÍAS, POR LO QUE TAL EXCLUSIÓN PUEDE NO SER DE APLICACIÓN A USTED.</p>
+<p><strong>6. Limitación de responsabilidad.</strong> SALVO QUE LO DISPONGA EXPRESA E
+IMPERATIVAMENTE LA LEY APLICABLE, EN NINGÚN CASO EL LICENCIADOR SERÁ
+RESPONSABLE ANTE USTED POR CUALESQUIERA DAÑOS RESULTANTES, GENERALES O
+ESPECIALES (INCLUIDO EL DAÑO EMERGENTE Y EL LUCRO CESANTE), FORTUITOS O
+CAUSALES, DIRECTOS O INDIRECTOS, PRODUCIDOS EN CONEXIÓN CON ESTA
+LICENCIA O EL USO DE LA OBRA O LA PRESTACIÓN, INCLUSO SI EL LICENCIADOR
+HUBIERA SIDO INFORMADO DE LA POSIBILIDAD DE TALES DAÑOS.</p>
+<p><strong>7. Finalización de la licencia</strong></p>
+<ol>
+<li>Esta licencia y la concesión de los derechos que contiene terminarán
+    automáticamente en caso de cualquier incumplimiento de los términos
+    de la misma. Las personas o entidades que hayan recibido de usted
+    obras derivadas o colecciones bajo esta licencia, sin embargo, no
+    verán sus licencias finalizadas, siempre que tales personas o
+    entidades se mantengan en el cumplimiento íntegro de esta licencia.
+    Las secciones 1, 2, 5, 6, 7 y 8 permanecerán vigentes pese a
+    cualquier finalización de esta licencia.</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>Conforme a las condiciones y términos anteriores, la concesión de
+    derechos de esta licencia es vigente por todo el plazo de protección
+    de los derechos de propiedad intelectual según la ley aplicable. A
+    pesar de lo anterior, el licenciador se reserva el derecho a
+    divulgar o publicar la obra o la prestación en condiciones distintas
+    a las presentes, o de retirar la obra o la prestación en cualquier
+    momento. No obstante, ello no supondrá dar por concluida esta
+    licencia (o cualquier otra licencia que haya sido concedida, o sea
+    necesario ser concedida, bajo los términos de esta licencia), que
+    continuará vigente y con efectos completos a no ser que haya
+    finalizado conforme a lo establecido anteriormente, sin perjuicio
+    del derecho moral de arrepentimiento en los términos reconocidos por
+    la ley de propiedad intelectual aplicable.</li>
+</ol>
+<p><strong>8. Miscelánea</strong></p>
+<ol>
+<li>Cada vez que usted realice cualquier tipo de explotación de la obra
+    o la prestación, o de una colección que la incorpore, el licenciador
+    ofrece a los terceros y sucesivos licenciatarios la concesión de
+    derechos sobre la obra o la prestación en las mismas condiciones y
+    términos que la licencia concedida a usted.</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>
+<p>Cada vez que usted realice cualquier tipo de explotación de una obra
+    derivada, el licenciador ofrece a los terceros y sucesivos
+    licenciatarios la concesión de derechos sobre la obra objeto de esta
+    licencia en las mismas condiciones y términos que la licencia
+    concedida a usted.</p>
+</li>
+<li>
+<p>Si alguna disposición de esta licencia resulta inválida o
+    inaplicable según la Ley vigente, ello no afectará la validez o
+    aplicabilidad del resto de los términos de esta licencia y, sin
+    ninguna acción adicional por cualquiera las partes de este acuerdo,
+    tal disposición se entenderá reformada en lo estrictamente necesario
+    para hacer que tal disposición sea válida y ejecutiva.</p>
+</li>
+<li>
+<p>No se entenderá que existe renuncia respecto de algún término o
+    disposición de esta licencia, ni que se consiente violación alguna
+    de la misma, a menos que tal renuncia o consentimiento figure por
+    escrito y lleve la firma de la parte que renuncie o consienta.</p>
+</li>
+<li>
+<p>Esta licencia constituye el acuerdo pleno entre las partes con
+    respecto a la obra o la prestación objeto de la licencia. No caben
+    interpretaciones, acuerdos o condiciones con respecto a la obra o la
+    prestación que no se encuentren expresamente especificados en la
+    presente licencia. El licenciador no estará obligado por ninguna
+    disposición complementaria que pueda aparecer en cualquier
+    comunicación que le haga llegar usted. Esta licencia no se puede
+    modificar sin el mutuo acuerdo por escrito entre el licenciador y
+    usted.</p>
+</li>
+</ol>
+<p>[1] Ejemplos y nomenclatura de XMLDSig Detached © 2009 Microsoft
+Corporation</p>
+<p>http://msdn.microsoft.com/en-us/library/ms759193%28VS.85%29.aspx</p>
+<p>[2] Ejemplos de XMLDSig Enveloping © 2009 Microsoft Corporation</p>
+<p>http://msdn.microsoft.com/en-us/library/ms753722(v=VS.85).aspx</p>
+<p>[3] Ejemplos de XMLDSig Enveloped © 2009 Microsoft Corporation</p>
+<p>http://msdn.microsoft.com/en-us/library/ms767623(v=VS.85).aspx</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../CF_manual-firmas-pdf/" class="btn btn-neutral float-left" title="CF manual firmas pdf"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../CF_manual-integrador/" class="btn btn-neutral float-right" title="CF manual integrador">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../CF_manual-firmas-pdf/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../CF_manual-integrador/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
