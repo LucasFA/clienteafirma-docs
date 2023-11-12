@@ -1,0 +1,19 @@
+#!/bin/bash
+declare -a versiones_markdown=("markdown" "markdown_strict" "markdown_mmd" "commonmark" "html" "gfm")
+
+for version in "${versiones_markdown[@]}"
+do 
+  echo "-----------------------------"
+  echo "Convirtiendo a: $version"
+
+  for file in ./input/*
+  do
+    echo "$file"
+    output_file=$(basename "$file" )
+    output_file=${output_file%.*}
+    echo "Argumento: $output_file"
+
+    pandoc --to "$version" "$file" -o "./${version}/${output_file}.md"
+  done
+done
+

@@ -1,0 +1,135 @@
+Nótese que hay cierta jerarquía entre las versiones de Markdown. Por orden de flexibilidad,
+
+markdown_strict < commonmark < gfm
+
+markdown_strict < markdown_mmd
+
+
+Mkdocs utiliza como base markdown_strict, pero acepta ciertas extensiones. 
+mdBook utiliza como base commonmark.
+
+
+## Extensiones disponibles pero no activadas por defecto en MkDocs
+
+
+Extra                   ---- extra
+Abbreviations           ---- abbr
+Attribute Lists         ---- attr_list
+Definition Lists        ---- def_list
+Fenced Code Blocks      ---- fenced_code
+Footnotes               ---- footnotes
+Markdown in HTML        ---- md_in_html
+Tables                  ---- tables
+Admonition              ---- admonition
+CodeHilite              ---- codehilite
+Legacy Attributes       ---- legacy_attrs
+Legacy Emphasis         ---- legacy_em
+Meta-Data               ---- meta
+New Line to Break       ---- nl2br
+Sane Lists              ---- sane_lists
+SmartyPants             ---- smarty
+Table of Contents       ---- toc
+WikiLinks               ---- wikilinks
+
+## Extensiones ya activadas por defecto de python_markdown (MkDocs)
+
+Middle-word differences
+-intraword_underscores
+
+## EXTENSIONES COMUNES ENTRE LAS TABLAS DE ARRIBA Y ESTA DE ABAJO
+
+Fenced Code Blocks      ---- fenced_code
+-backtick_code_blocks
+-fenced_code_attributes
+
+Markdown in HTML        ---- md_in_html
+-markdown_in_html_blocks
+
+Middle-word differences
+-intraword_underscores
+
+Tables                  ---- tables
+-pipe_tables -- preferido
+-simple_tables
+-multiline_tables
+
+SmartyPants             ---- smarty
+-smart
+
+Otras que igualmente debería de poner:
+
+-blank_before_header
+
+
+## Extensiones disponibles para markdown_strict en pandoc (with some irrelevant ones removed)
+
+-abbreviations
+-all_symbols_escapable
+-angle_brackets_escapable
+-ascii_identifiers
+-auto_identifiers
+-autolink_bare_uris
+-backtick_code_blocks
+-blank_before_blockquote
+-blank_before_header
+-bracketed_spans
+-citations
+-compact_definition_lists
+-definition_lists
+-east_asian_line_breaks
+-emoji
+-escaped_line_breaks
+-example_lists
+-fancy_lists
+-fenced_code_attributes
+-fenced_code_blocks
+-fenced_divs
+-footnotes
+-four_space_rule
+-gfm_auto_identifiers
+-grid_tables
+-hard_line_breaks
+-header_attributes
+-ignore_line_breaks
+-implicit_figures
+-implicit_header_references
+-inline_code_attributes
+-inline_notes
+-intraword_underscores
+-line_blocks
+-link_attributes
+-lists_without_preceding_blankline
+-literate_haskell
+-markdown_attribute
+-markdown_in_html_blocks
+-mmd_header_identifiers
+-mmd_link_attributes
+-mmd_title_block
+-multiline_tables
+-native_divs
+-native_spans
+-old_dashes
+-pandoc_title_block
+-pipe_tables
+-raw_attribute
++raw_html
+-raw_tex
++shortcut_reference_links
+-simple_tables
+-smart
+-space_in_atx_header
++spaced_reference_links
+-startnum
+-strikeout
+-subscript
+-superscript
+-task_lists
+-table_captions
+yaml_metadata_block
+-gutenberg
+
+-latex_macros
+-tex_math_dollars
+-tex_math_double_backslash
+-tex_math_single_backslash
+-

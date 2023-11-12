@@ -1,0 +1,65 @@
+#!/bin/bash
+mkdir -p markdown_strict
+cd markdown_strict || exit
+
+for file in ../input/*
+do
+  echo "$file"
+  output_file=$(basename "$file" )
+  output_file=${output_file%.*}
+  echo "Argumento: $output_file"
+
+  pandoc \
+    --to markdown_strict+intraword_underscores+backtick_code_blocks+fenced_code_blocks+markdown_in_html_blocks+pipe_tables+blank_before_header\
+    --extract-media="./${output_file}/" \
+    "$file" \
+    -o "./${output_file}.md"
+done
+
+echo ""
+echo "Finished pandoc loop"
+echo ""
+
+# Find all .emf files in the current directory and its subdirectories
+find . -iname "*.emf" -print0 | while IFS= read -r -d $'\0' file; do
+  echo "Converting ${file} to png"
+
+  # Move to the directory containing the file
+  cd "$(dirname "$file")" || exit
+
+  # Perform the conversion using libreoffice
+  libreoffice --headless --convert-to png "$(basename "$file")"
+
+  # Check if the conversion was successful
+  if [ $? -eq 0 ]; then
+    rm "$(basename "$file")"
+  else
+    echo "png conversion failed for ${file}"
+  fi
+
+  # Move back to the original directory
+  cd - || exit
+done
+
+echo "--------------------------------"
+echo "Converted images from emf to png"
+
+echo "Replacing the instances of .emf in the markdown files for .png"
+find . -type f -name "*.md" -exec sed -i 's/\.emf)/.png)/g' {} +
+
+echo "Replacing instances of ./filename/media with filename/media"
+find . -type f -name "*.md" -exec sh -c 'file="$1"; base=$(basename "$file" .md); sed -i "s|\./${base}/media/|${base}/media/|g" "$file"' _ {} \;
+
+echo "Replacing the instances of <img src="filename/media/ to remove name in html calls""
+find . -type f -name "*.md" -exec sh -c 'file="$1"; base=$(basename "$file" .md); sed -i "s|\<img src=\"${base}/media/|<img src=\"media/|g" "$file"' _ {} \;
+
+echo "Delete indices de contenido"
+# find . -type f -name "*.md" -exec sed -i '/^# Introducc/,/^#/ { /^#/!d }' {} +
+find . -type f -name "*.md" -exec sed -i '/^# Índice de contenidos/,/^#/d' {} +
+find . -type f -name "*.md" -exec sed -i '/^# Contenido/,/^#/d' {} +
+
+cd ..
+rm -r ./clienteafirma-docs/docs/markdown_strict/
+cp -r markdown_strict ./clienteafirma-docs/docs/
+
+

@@ -1,0 +1,13 @@
+site_name: My Docs
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+theme:
+  name: readthedocs
+markdown_extensions:
+  - fenced_code
+  - md_in_html
+  - toc
+  - sane_lists
+
