@@ -10,4 +10,5 @@ markdown_extensions:
   - md_in_html
   - toc
   - sane_lists
-
+exclude_docs:
+  other_files/

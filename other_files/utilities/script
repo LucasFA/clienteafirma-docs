@@ -1,4 +1,13 @@
 #!/bin/bash
+
+# requiere una carpeta al mismo nivel,
+# ./input/, con los archivos docx.
+# para las últimas líneas requiere un directorio ./clienteafirma-docs/ conteniendo else
+# proyecto mkdocs, en particular con un directorio docs donde se moverá el resultado del script,
+# una carpeta ./markdown_strict -> ./clienteafirma-docs/docs/markdown_strict. Esta carpeta contiene archivos [nombre].md
+# y a cada archivo ./markdown_strict/[nombre].md lo acompaña una carpeta ./markdown_strict/[nombre]/media, conteniendo las
+# imágenes extraídas del docx.
+
 mkdir -p markdown_strict
 cd markdown_strict || exit
 
